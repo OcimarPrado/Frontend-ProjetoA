@@ -1,0 +1,41 @@
+{
+  "header": {
+    "logo": "Ocyan-Tech",
+    "slogan": "Atendimento Inteligente Automatizando Resultados",
+    "menu": {
+      "inicio": "Início",
+      "comoFunciona": "Como Funciona",
+      "planos": "Planos",
+      "contato": "Contato",
+      "comecarAgora": "Começar Agora"
+    }
+  },
+  "hero": {
+    "title": "Acelere seu atendimento, transforme experiências e converta cada interação em resultados.",
+    "description": "Ajudamos você a se conectar com seus clientes de forma inteligente e automatizada — aproximando pessoas, otimizando tempo e gerando resultados reais.",
+    "features": ["Atendimento 24/7", "IA Treinada", "Configuração Rápida"],
+    "infoTitle": "Como Sua Empresa Será Atendida",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Cadastro rápido",
+        "description": "Acesse o painel e configure seu atendente virtual com informações do seu negócio."
+      },
+      {
+        "number": "2",
+        "title": "Receba seu link",
+        "description": "Exemplo: ocyan-tech.com.br/seu-negocio"
+      },
+      {
+        "number": "3",
+        "title": "Cliente acessa",
+        "description": "Seus clientes conversam com IA treinada especificamente para seu negócio."
+      },
+      {
+        "number": "4",
+        "title": "IA atende automaticamente",
+        "description": "Responde dúvidas, agenda horários e qualifica leads 24 horas por dia."
+      }
+    ]
+  }
+}

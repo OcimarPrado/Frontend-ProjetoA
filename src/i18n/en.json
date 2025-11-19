@@ -1,0 +1,41 @@
+{
+  "header": {
+    "logo": "Ocyan-Tech",
+    "slogan": "Intelligent Service Automating Results",
+    "menu": {
+      "inicio": "Home",
+      "comoFunciona": "How It Works",
+      "planos": "Plans",
+      "contato": "Contact",
+      "comecarAgora": "Get Started"
+    }
+  },
+  "hero": {
+    "title": "Accelerate your service, transform experiences, and convert every interaction into results.",
+    "description": "We help you connect with your clients intelligently and automatically — saving time, enhancing relationships, and generating real results.",
+    "features": ["24/7 Service", "Trained AI", "Quick Setup"],
+    "infoTitle": "How Your Business Will Be Served",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Quick Registration",
+        "description": "Access the dashboard and set up your virtual assistant with your business information."
+      },
+      {
+        "number": "2",
+        "title": "Receive Your Link",
+        "description": "Example: ocyan-tech.com.br/your-business"
+      },
+      {
+        "number": "3",
+        "title": "Client Access",
+        "description": "Your clients interact with AI trained specifically for your business."
+      },
+      {
+        "number": "4",
+        "title": "Automatic AI Assistance",
+        "description": "Answers questions, schedules appointments, and qualifies leads 24/7."
+      }
+    ]
+  }
+}

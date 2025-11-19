@@ -1,0 +1,91 @@
+.como-funciona {
+  padding: 80px 10%;
+  background-color: #f5f8ff;
+  text-align: center;
+}
+
+.como-funciona h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+  font-weight: 800;
+}
+
+.como-funciona .subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 60px;
+}
+
+.steps {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.step-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 260px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 35px rgba(0, 123, 255, 0.15);
+}
+
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #e6f3ff;
+  border-radius: 50%;
+}
+
+.step-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.step-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #007bff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.step-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 900px) {
+  .steps {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .como-funciona h2 {
+    font-size: 2rem;
+  }
+
+  .como-funciona .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+}

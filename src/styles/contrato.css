@@ -1,0 +1,181 @@
+
+        
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+          .contrato-container {
+            max-width: 900px;
+            margin: 60px auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            font-family: "Poppins", sans-serif;
+            color: #333;
+          }
+
+          .contrato-header {
+            text-align: center;
+            margin-bottom: 30px;
+          }
+
+          .contrato-header h1 {
+            color: #004aad;
+            margin-bottom: 10px;
+            font-size: 2rem;
+            font-weight: 700; /* Added for Poppins bold */
+          }
+
+          .contrato-header p {
+            font-size: 1rem;
+            color: #666;
+          }
+
+          .plano-detalhes {
+            background: #f7faff;
+            border: 1px solid #dbe6ff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+          }
+
+          .plano-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-weight: bold;
+            color: #004aad;
+            font-size: 1.2rem;
+          }
+          
+          .plano-info span {
+            display: block; /* Ensure spans are block elements for better alignment */
+          }
+          .plano-info .plano-nome {
+            font-size: 1.5rem;
+            font-weight: 700;
+          }
+          .plano-info .plano-valor {
+            font-size: 1.1rem;
+            font-weight: 600;
+          }
+
+
+          .contrato-form {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+          }
+
+          .dados-pessoais, .dados-empresa {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+
+          .input-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+          }
+          
+          .full-width {
+            grid-column: 1 / -1;
+          }
+
+          input, select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+          }
+
+          input:focus, select:focus {
+            border-color: #004aad;
+            box-shadow: 0 0 4px rgba(0, 74, 173, 0.3);
+            outline: none;
+          }
+          
+          input:disabled, select:disabled {
+            background-color: #f0f0f0;
+            cursor: not-allowed;
+          }
+
+
+          .texto-contrato {
+            height: 280px;
+            overflow-y: auto;
+            border: 1px solid #e0e0e0;
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 12px;
+            line-height: 1.5;
+            font-size: 0.95rem;
+            scroll-behavior: smooth;
+            color: #444;
+          }
+
+          .texto-contrato h3 {
+             font-size: 1.1rem;
+             color: #004aad;
+             margin-top: 15px;
+             margin-bottom: 5px;
+          }
+
+          .texto-contrato p, .texto-contrato li {
+             margin-bottom: 8px;
+          }
+
+          .texto-contrato::-webkit-scrollbar {
+            width: 8px;
+          }
+
+          .texto-contrato::-webkit-scrollbar-thumb {
+            background: #004aad;
+            border-radius: 10px;
+          }
+
+          .aceite {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+          
+          .aceite label {
+              color: #444;
+          }
+
+          .btn-submit {
+            margin-top: 15px;
+            background: #004aad;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease, opacity 0.2s ease;
+          }
+
+          .btn-submit:hover:not(:disabled) {
+            background: #003b91;
+          }
+          
+          .btn-submit:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+          }
+
+          /* Estilos para a mensagem de erro */
+          .error-message {
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #ffeaea;
+            border: 1px solid #ff0000;
+            color: #cc0000;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+          }

@@ -1,0 +1,136 @@
+.planos {
+  padding: 80px 10%;
+  background-color: #d6eaff; /* contraste com #f5f8ff */
+  text-align: center;
+}
+
+.planos h2 {
+  font-size: 2.5rem;
+  color: #005bb5;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.planos .subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 60px;
+}
+
+.planos-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plano-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.plano-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 35px rgba(0, 61, 145, 0.25);
+}
+
+.plano-card.destaque {
+  border: 2px solid #0a3d91;
+  transform: scale(1.05);
+}
+
+.plano-card.destaque::before {
+  content: "Mais Popular";
+  position: absolute;
+  top: -12px;
+  background-color: #0a3d91;
+  color: #fff;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  border-radius: 8px;
+}
+
+.plano-card h3 {
+  font-size: 1.5rem;
+  color: #0a3d91;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.plano-card .valor {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0a3d91;
+  margin-bottom: 5px;
+}
+
+.plano-card .periodo {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.plano-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.plano-card ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.plano-card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #0a3d91;
+}
+
+.plano-card button {
+  background-color: #0a3d91;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.plano-card button:hover {
+  background-color: #06265f;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 900px) {
+  .planos-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .planos h2 {
+    font-size: 2rem;
+  }
+
+  .planos .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+
+  .plano-card {
+    width: 90%;
+  }
+}

@@ -1,0 +1,155 @@
+/* App geral */
+.App {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.slogan {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Navegação */
+.nav-menu ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #0d6efd;
+}
+
+.btn-header {
+  background-color: #0d6efd;
+  color: #fff !important;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-header:hover {
+  background-color: #0056b3;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  color: #ffd700; /* destaque de palavra */
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+}
+
+.hero-cta a {
+  margin: 0 0.5rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero-cta .btn-primary {
+  background-color: #ffd700;
+  color: #0d6efd;
+}
+
+.hero-cta .btn-secondary {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.hero-cta a:hover {
+  opacity: 0.9;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    margin: 0.3rem 0;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
