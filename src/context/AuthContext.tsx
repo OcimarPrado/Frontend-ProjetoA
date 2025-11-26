@@ -1,67 +1,79 @@
-// src/context/AuthContext.tsx
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
-import React, { createContext, useContext, useState, type ReactNode } from "react";
-
-// 🔑 DEFINIÇÕES HARDCODED TEMPORÁRIAS
-const TEMP_ADMIN_EMAIL = 'admin@ocyan.com.br';
-const TEMP_ADMIN_PASSWORD = 'ocyan-tech-admin'; 
-const STORAGE_KEY = 'user'; // Use a chave que você já usa
-
-// Tipo do usuário armazenado
 interface User {
+  id: string;
   email: string;
 }
 
 interface AuthContextType {
   user: User | null;
-  // Modificado para retornar um boolean ou Promise<void> para indicar sucesso/falha
-  login: (email: string, password: string) => boolean; 
+  login: (email: string, password: string) => boolean;
   logout: () => void;
+  isAuthenticated: boolean;
 }
+
+// Credenciais de acesso beta (primeiras letras de cada membro)
+const VALID_CREDENTIALS = [
+  { email: 'admin@ocyan-tech.com.br', password: 'ocyan2025' },
+  { email: 'convite@ocyan-tech.com.br', password: 'convite2025' }
+];
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-export const AuthProvider = ({ children }: { children: ReactNode }) => {
-  const [user, setUser] = useState<User | null>(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    return saved ? JSON.parse(saved) : null;
-  });
+export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [user, setUser] = useState<User | null>(null);
 
-  // --- CORREÇÃO AQUI: ADICIONANDO A LÓGICA DE VALIDAÇÃO ---
-  const login = (email: string, password: string): boolean => {
-    
-    if (email === TEMP_ADMIN_EMAIL && password === TEMP_ADMIN_PASSWORD) {
-        // Sucesso
-        const fakeUser: User = { email };
-        setUser(fakeUser);
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(fakeUser));
-        console.log('✅ Login temporário bem-sucedido!');
-        return true; // Indica sucesso
-    } else {
-        // Falha
-        console.error('❌ Credenciais incorretas.');
-        // Opcional: Você pode querer limpar o estado, caso haja sujeira
-        return false; // Indica falha
+  // Restaurar sessão do localStorage
+  useEffect(() => {
+    const savedUser = localStorage.getItem('auth_user');
+    if (savedUser) {
+      try {
+        setUser(JSON.parse(savedUser));
+      } catch (error) {
+        localStorage.removeItem('auth_user');
+      }
     }
+  }, []);
+
+  const login = (email: string, password: string): boolean => {
+    const validUser = VALID_CREDENTIALS.find(
+      cred => cred.email === email && cred.password === password
+    );
+
+    if (validUser) {
+      const newUser: User = { 
+        id: Date.now().toString(), 
+        email: validUser.email 
+      };
+      setUser(newUser);
+      localStorage.setItem('auth_user', JSON.stringify(newUser));
+      return true;
+    }
+
+    return false;
   };
-  // --------------------------------------------------------
 
   const logout = () => {
     setUser(null);
-    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem('auth_user');
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout }}>
+    <AuthContext.Provider value={{ 
+      user, 
+      login, 
+      logout, 
+      isAuthenticated: !!user 
+    }}>
       {children}
     </AuthContext.Provider>
   );
 };
 
 export const useAuth = () => {
-  const ctx = useContext(AuthContext);
-  if (!ctx) {
-    throw new Error("useAuth deve ser usado dentro de AuthProvider");
+  const context = useContext(AuthContext);
+  if (!context) {
+    throw new Error('useAuth deve ser usado dentro de AuthProvider');
   }
-  return ctx;
+  return context;
 };
