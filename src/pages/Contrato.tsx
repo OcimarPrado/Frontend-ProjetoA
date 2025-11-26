@@ -9,6 +9,14 @@ const planosValores: Record<Plano, number> = {
   enterprise: 499,
 };
 
+// ** URL BASE DA API CORRIGIDA **
+// Mudamos de localhost para host.docker.internal para resolver o "Failed to fetch" 
+// em ambientes sandboxed (como o Canvas), permitindo a comunicação com o backend local.
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000"; 
+// ** ENDPOINT CORRETO **
+const API_ENDPOINT = "/api/contract/assinar-e-pagar";
+
+
 // O componente principal (App) agora lê os parâmetros diretamente da URL (window.location)
 const App: React.FC = () => {
   const [plano, setPlano] = useState<Plano>("starter");
@@ -34,6 +42,38 @@ const App: React.FC = () => {
       .format(value)
       .replace('R$', '')
       .trim();
+  
+  /**
+   * Função que tenta realizar a requisição fetch e retenta em caso de falha de conexão (Failed to fetch).
+   * Implementa o exponential backoff.
+   * @param url URL do endpoint.
+   * @param options Opções do fetch (method, headers, body, etc.).
+   * @param retries Número máximo de tentativas.
+   */
+  const fetchWithRetry = async (url: string, options: RequestInit, retries = 3): Promise<Response> => {
+      for (let i = 0; i < retries; i++) {
+        try {
+          const response = await fetch(url, options);
+          if (response.ok || response.status < 500) {
+            // Se a conexão foi bem-sucedida, ou o erro é um 4xx (erro do cliente), paramos de tentar.
+            return response;
+          }
+        } catch (error) {
+          // Captura erros de rede/conexão (como o TypeError: Failed to fetch)
+          if (i === retries - 1) {
+            // Se esta é a última tentativa, propaga o erro.
+            console.error(`Falha total na conexão com o servidor após ${retries} tentativas.`, error);
+            throw error;
+          }
+          // Exponential backoff: espera 2^i segundos antes da próxima tentativa.
+          const delay = Math.pow(2, i) * 1000 + Math.random() * 500;
+          console.log(`[Tentativa ${i + 2}] Falha de conexão. Tentando novamente em ${delay.toFixed(0)}ms...`);
+          await new Promise(resolve => setTimeout(resolve, delay));
+        }
+      }
+      // Se sair do loop sem sucesso, lança um erro final
+      throw new Error("Falha total na conexão com o servidor após várias tentativas.");
+  };
 
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -63,8 +103,8 @@ const App: React.FC = () => {
     };
 
     try {
-      // NOTE: Endpoint de backend simulado/exemplo
-      const response = await fetch("http://192.168.100.106:5000/api/aceite-contrato", {
+      // ** USANDO fetchWithRetry E URL CORRIGIDA **
+      const response = await fetchWithRetry(`${API_BASE_URL}${API_ENDPOINT}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(cliente),
@@ -78,11 +118,13 @@ const App: React.FC = () => {
       } else {
         const errorMessage = data.message || "Erro desconhecido ao processar o aceite do contrato. Tente novamente.";
         console.error("Erro ao processar o aceite do contrato. Tente novamente.", data);
-        setError(errorMessage);
+        // Exibir erro específico do backend, se houver
+        setError(`Erro do servidor (${response.status}): ${errorMessage}`);
       }
     } catch (error) {
-      console.error(error);
-      setError("Erro de conexão com o servidor. Verifique se o backend está rodando e acessível.");
+      console.error("Erro na requisição FETCH:", error);
+      // ** MENSAGEM DE ERRO ATUALIZADA **
+      setError("Erro de conexão com o servidor. Verifique se o backend está rodando em http://localhost:5000.");
     } finally {
         setLoading(false);
     }

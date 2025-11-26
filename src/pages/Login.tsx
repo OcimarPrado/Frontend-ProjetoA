@@ -1,6 +1,8 @@
-import React, { useState } from "react";
-import { useAuth } from "../context/AuthContext";
+// Componente Login.tsx (Ajuste)
+
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
+import { useState } from "react";
 
 const Login: React.FC = () => {
   const { login } = useAuth();
@@ -8,11 +10,18 @@ const Login: React.FC = () => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState(""); // Novo estado para erro
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    login(email, password);
-    navigate("/");
+    
+    const success = login(email, password); // Captura o resultado do login
+
+    if (success) {
+        navigate("/"); // Redireciona apenas se for bem-sucedido
+    } else {
+        setError("Email ou senha incorretos."); // Exibe a mensagem de erro
+    }
   };
 
   return (
@@ -20,23 +29,11 @@ const Login: React.FC = () => {
       <h1>Login</h1>
 
       <form onSubmit={handleSubmit}>
-        <input
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
-        />
-
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Senha"
-        />
-
+        {/* ... Seus inputs ... */}
+        
         <button type="submit">Entrar</button>
+        {error && <p style={{ color: 'red' }}>{error}</p>} {/* Exibe o erro */}
       </form>
     </div>
   );
 };
-
-export default Login;
