@@ -124,7 +124,7 @@ const App: React.FC = () => {
     } catch (error) {
       console.error("Erro na requisição FETCH:", error);
       // ** MENSAGEM DE ERRO ATUALIZADA **
-      setError("Erro de conexão com o servidor. Verifique se o backend está rodando em http://localhost:5000.");
+      setError("Erro de conexão com o servidor. Verifique se seu servidor está visível.");
     } finally {
         setLoading(false);
     }
