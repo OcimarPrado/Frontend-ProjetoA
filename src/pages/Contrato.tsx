@@ -12,7 +12,7 @@ const planosValores: Record<Plano, number> = {
 // ** URL BASE DA API CORRIGIDA **
 // Mudamos de localhost para host.docker.internal para resolver o "Failed to fetch" 
 // em ambientes sandboxed (como o Canvas), permitindo a comunicação com o backend local.
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000"; 
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://backend-projetoa-production.up.railway.app"; 
 // ** ENDPOINT CORRETO **
 const API_ENDPOINT = "/api/contract/assinar-e-pagar";
 
