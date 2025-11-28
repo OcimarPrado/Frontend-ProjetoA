@@ -5,6 +5,14 @@ import "../styles/Planos.css";
 
 const planos = [
   {
+    nome: "Teste",
+    valor: 1,
+    descricao: [
+      "Período de ajuste de produtos!"
+    ],
+    destaque: true,
+  },/*
+  {
     nome: "Starter",
     valor: 99,
     descricao: [
@@ -43,7 +51,7 @@ const planos = [
       "Suporte técnico dedicado via WhatsApp",
     ],
     destaque: false,
-  },
+  },*/
 ];
 
 const Planos: React.FC = () => {

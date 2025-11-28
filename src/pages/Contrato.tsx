@@ -1,24 +1,28 @@
 import React, { useEffect, useState } from "react";
 
 // Tipagem e Mapeamento de Planos
-type Plano = "starter" | "professional" | "enterprise";
+type Plano = "teste" | "starter" | "professional" | "enterprise";
 
 const planosValores: Record<Plano, number> = {
+  teste: 1,
   starter: 99,
   professional: 249,
   enterprise: 499,
 };
 
-// ** URL BASE DA API CORRIGIDA **
-// Mudamos de localhost para host.docker.internal para resolver o "Failed to fetch" 
-// em ambientes sandboxed (como o Canvas), permitindo a comunicação com o backend local.
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://backend-projetoa-production.up.railway.app"; 
+// ** URL BASE DA API AJUSTADA **
+// Usando diretamente a URL fallback para garantir a execução no ambiente do navegador,
+// eliminando a fonte dos warnings de variável de ambiente.
+const API_BASE_URL = "https://backend-projetoa-production.up.railway.app"; 
 // ** ENDPOINT CORRETO **
 const API_ENDPOINT = "/api/contract/assinar-e-pagar";
 
+// Função auxiliar para concatenar a URL completa fora do componente
+const API_URL_COMPLETA = `${API_BASE_URL}${API_ENDPOINT}`;
 
-// O componente principal (App) agora lê os parâmetros diretamente da URL (window.location)
-const App: React.FC = () => {
+
+// O componente principal (Contrato) agora lê os parâmetros diretamente da URL (window.location)
+const Contrato: React.FC = () => { // Renomeado de App para Contrato para clareza
   const [plano, setPlano] = useState<Plano>("starter");
   const [valorPlano, setValorPlano] = useState<number>(99);
   const [aceito, setAceito] = useState(false);
@@ -103,8 +107,8 @@ const App: React.FC = () => {
     };
 
     try {
-      // ** USANDO fetchWithRetry E URL CORRIGIDA **
-      const response = await fetchWithRetry(`${API_BASE_URL}${API_ENDPOINT}`, {
+      // ** USANDO API_URL_COMPLETA **
+      const response = await fetchWithRetry(API_URL_COMPLETA, { 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(cliente),
@@ -123,8 +127,8 @@ const App: React.FC = () => {
       }
     } catch (error) {
       console.error("Erro na requisição FETCH:", error);
-      // ** MENSAGEM DE ERRO ATUALIZADA **
-      setError("Erro de conexão com o servidor. Verifique se seu servidor está visível.");
+      // ** MENSAGEM DE ERRO AO USUÁRIO **
+      setError("Erro de conexão com o servidor ou problema de CORS. Por favor, verifique se o backend está online e configurado.");
     } finally {
         setLoading(false);
     }
@@ -586,4 +590,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Contrato; // Exportando como Contrato
