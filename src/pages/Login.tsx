@@ -1,29 +1,37 @@
 import React, { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+// Removendo referências a chamadas de API ou tratamento de erro de rede.
 
 const Login: React.FC = () => {
-  const { user, login } = useAuth();
+  // A função 'login' do useAuth DEVE ser síncrona ou assíncrona baseada
+  // em simulação para este componente funcionar sem depender do backend.
+  const { user, login } = useAuth(); 
   
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
+  // Função síncrona/simulada que usa apenas o AuthContext.
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
     setLoading(true);
 
-    // Simular delay de autenticação
+    // Simular delay de autenticação (mantido para UX)
     setTimeout(() => {
+      // 1. Chamada de login estritamente LOCAL
+      // A função 'login' no AuthContext deve conter a lógica de validação de credenciais,
+      // armazenamento local e atualização do estado 'user'.
       const success = login(email, password);
 
       if (!success) {
+        // Se a validação LOCAL falhar
         setError('Email ou senha incorretos. Entre em contato para obter acesso.');
       }
       setLoading(false);
-    }, 500);
+    }, 500); // 500ms de delay de simulação para melhor experiência do usuário (UX)
   };
 
   // Se já está autenticado, redireciona para home
