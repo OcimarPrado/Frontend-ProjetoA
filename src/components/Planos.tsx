@@ -87,9 +87,9 @@ const Planos: React.FC = () => {
                   <li key={idx}>{item}</li>
                 ))}
               </ul>
-              <button onClick={() => selecionarPlano(plano.nome, plano.valor)}>
+              {/*<button onClick={() => selecionarPlano(plano.nome, plano.valor)}>
                 Contratar {plano.nome}
-              </button>
+              </button>*/}
             </div>
           ))}
         </div>
