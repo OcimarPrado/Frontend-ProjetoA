@@ -367,16 +367,14 @@ const Contrato: React.FC = () => { // Renomeado de App para Contrato para clarez
             {/* CAMPO NICHO (usando a tag select para ser estilizada junto com input) */}
             <select name="nicho" required disabled={loading}>
               <option value="">Selecione o Nicho de Atuação</option>
-              <option value="varejo_ecommerce">Vendas e E-commerce</option>
+              <option value="delivery_food">Delivery / Food</option>
               <option value="servicos_profissionais">Serviços Profissionais</option>
-              <option value="saude_bemestar">Saúde e Bem-Estar</option>
-              <option value="educacao_treinamento">Educação e Treinamento</option>
-              <option value="imobiliario_construcao">Imobiliário e Construção</option>
-              <option value="automotivo">Setor Automotivo</option>
-              <option value="food_service">Alimentos e Bebidas</option>
-              <option value="tecnologia_saas">Tecnologia e SaaS</option>
-              <option value="outros">Outros/Diversos</option>
+              <option value="clinicas_saloes">Clínicas e Salões</option>
+              <option value="ecommerce_pequeno">E-commerce Pequeno</option>
+              <option value="freelancers_consultores">Freelancers / Consultores</option>
+              <option value="servicos_domesticos">Serviços Domésticos / Reparos</option>
             </select>
+
 
             <input type="tel" name="telefoneComercial" placeholder="Telefone Comercial" required disabled={loading} />
             <div className="full-width">
