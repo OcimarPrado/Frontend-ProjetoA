@@ -370,7 +370,7 @@ const Contrato: React.FC = () => { // Renomeado de App para Contrato para clarez
               <option value="delivery_food">Delivery / Food</option>
               <option value="servicos_profissionais">Serviços Profissionais</option>
               <option value="clinicas_saloes">Clínicas e Salões</option>
-              <option value="ecommerce_pequeno">E-commerce Pequeno</option>
+              <option value="ecommerce">E-commerce Pequeno</option>
               <option value="freelancers_consultores">Freelancers / Consultores</option>
               <option value="servicos_domesticos">Serviços Domésticos / Reparos</option>
             </select>
