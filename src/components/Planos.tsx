@@ -72,7 +72,7 @@ const Planos: React.FC = () => {
     <section className="planos" id="planos">
       <div className="container">
         <h2>Escolha seu Plano</h2>
-        <p className="subtitle">Planos ideais para qualquer negócio, do solo ao avançado</p>
+        <p className="subtitle">Planos ideais para qualquer negócio!</p>
         <div className="planos-container">
           {planos.map((plano) => (
             <div
