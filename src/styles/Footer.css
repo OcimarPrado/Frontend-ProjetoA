@@ -3,7 +3,7 @@
 .footer {
   background-color: #0b1221; /* azul escuro */
   color: #fff;
-  width: 100vw;      /* largura total da tela */
+  width: 100%;      /* largura total da tela */
   padding: 25px 10%;
   text-align: center;
   box-sizing: border-box;

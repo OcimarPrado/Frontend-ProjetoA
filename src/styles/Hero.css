@@ -1,7 +1,7 @@
 .hero {
   background: linear-gradient(135deg, #0b1221 0%, #101c38 100%);
   color: #fff;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh; /* garante altura total da tela */
   display: flex;
   justify-content: center;
