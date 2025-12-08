@@ -143,7 +143,7 @@ const Contrato: React.FC = () => { // Renomeado de App para Contrato para clarez
           @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
           .contrato-container {
-            max-width: 900px;
+            max-width: 100%;
             margin: 60px auto;
             background: #fff;
             border-radius: 20px;
