@@ -45,12 +45,12 @@
   margin-top: 6px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  animation: pulseGlow 3s infinite ease-in-out;
+  animation: pulseGlow 2s infinite ease-in-out;
 }
 
 @keyframes pulseGlow {
   0% { text-shadow: 0 0 4px rgba(0,170,255,0.4),0 0 8px rgba(0,170,255,0.2); color: #00aaff; }
-  50% { text-shadow: 0 0 10px rgba(0,200,255,0.8),0 0 20px rgba(0,200,255,0.4); color: #33ccff; }
+  50% { text-shadow: 0 0 10px rgba(2, 210, 252, 0.8),0 0 20px rgba(0,200,255,0.4); color: #33ccff; }
   100% { text-shadow: 0 0 4px rgba(0,170,255,0.4),0 0 8px rgba(0,170,255,0.2); color: #00aaff; }
 }
 

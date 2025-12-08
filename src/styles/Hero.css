@@ -1,10 +1,14 @@
 .hero {
   background: linear-gradient(135deg, #0b1221 0%, #101c38 100%);
   color: #fff;
-  padding: 6rem 2rem;
+  width: 100vw; /* largura total da tela */
+  height: 100%; /* altura total da tela */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0; /* remove o padding que limitava altura */
+  box-sizing: border-box;
+  margin-top: 80px;
 }
 
 .hero-inner {
@@ -13,7 +17,8 @@
   gap: 4rem;
   max-width: 1200px;
   width: 100%;
-  align-items: start;
+  align-items: center; /* centraliza verticalmente */
+  padding: 2rem; /* mantém espaçamento interno */
 }
 
 .hero h1 {

@@ -1,7 +1,8 @@
 .planos {
-  padding: 80px 10%;
-  background-color: #d6eaff; /* contraste com #f5f8ff */
+  padding: 80px 20px; /* ajuste das laterais para centralizar melhor */
+  background-color: #d6eaff;
   text-align: center;
+  width: 100%;
 }
 
 .planos h2 {
@@ -19,9 +20,11 @@
 
 .planos-container {
   display: flex;
-  gap: 30px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto; /* centraliza o container na tela */
 }
 
 .plano-card {
@@ -35,6 +38,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  text-align: center; /* centraliza conteúdo do card */
 }
 
 .plano-card:hover {
@@ -82,7 +86,7 @@
   list-style: none;
   padding: 0;
   margin: 0 0 20px 0;
-  text-align: left;
+  text-align: center; /* centraliza lista dentro do card */
 }
 
 .plano-card ul li {
