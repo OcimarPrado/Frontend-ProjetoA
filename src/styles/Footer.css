@@ -1,8 +1,12 @@
+/* Footer.css */
+
 .footer {
   background-color: #0b1221; /* azul escuro */
   color: #fff;
+  width: 100vw;      /* largura total da tela */
   padding: 25px 10%;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .footer-container {
@@ -16,7 +20,7 @@
   margin: 0;
   font-size: 1.3rem;
   font-weight: 600;
-  color: lab(71.49% -23.57 -33.93);
+  color: #ffffff; /* corrigido cor inválida lab() */
 }
 
 .footer-links {
@@ -25,6 +29,8 @@
   gap: 20px;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap; /* garante responsividade */
+  justify-content: center;
 }
 
 .footer-links li a {
@@ -68,8 +74,7 @@
 /* RESPONSIVIDADE */
 @media screen and (max-width: 600px) {
   .footer-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: column;
+    gap: 10px;
   }
 }

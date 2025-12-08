@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  padding: 20px 60px;
+  padding: 15px 20px; /* padding menor para celulares */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,7 @@
 }
 
 .logo-text {
-  font-size: 2.2rem;
+  font-size: 1.8rem; /* reduzido para celulares */
   font-weight: 800;
   color: #007bff;
   letter-spacing: 1px;
@@ -39,10 +39,10 @@
 }
 
 .slogan {
-  font-size: 1rem;
+  font-size: 0.85rem; /* reduzido para celulares */
   font-weight: 600;
   color: #00aaff;
-  margin-top: 6px;
+  margin-top: 4px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   animation: pulseGlow 2s infinite ease-in-out;
@@ -56,10 +56,10 @@
 
 /* MENU */
 .nav-menu {
-  display: flex;  /* Importante: sempre flex no desktop */
+  display: flex;  
   align-items: center;
   gap: 25px;
-  z-index: 1001; /* para ficar acima de outros elementos */
+  z-index: 1001; 
 }
 
 /* Botões */
@@ -76,7 +76,7 @@
 .btn-header {
   background-color: #00aaff;
   color: #fff;
-  padding: 10px 22px;
+  padding: 8px 18px; /* reduzido para celulares */
   border-radius: 8px;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -93,12 +93,12 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
-  gap: 5px;
+  gap: 4px;
 }
 
 .hamburger span {
   height: 3px;
-  width: 25px;
+  width: 22px;
   background: #007bff;
   border-radius: 2px;
   transition: all 0.3s ease;
@@ -110,6 +110,18 @@
 
 /* Mobile */
 @media (max-width: 900px) {
+  .header {
+    padding: 12px 15px;
+  }
+
+  .logo-text {
+    font-size: 1.6rem;
+  }
+
+  .slogan {
+    font-size: 0.8rem;
+  }
+
   .nav-menu {
     position: absolute;
     top: 100%;
@@ -120,14 +132,14 @@
     background-color: #fff;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.3s ease;
-    gap: 15px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    gap: 12px;
     padding: 0;
   }
 
   .nav-menu.active {
-    max-height: 500px; /* garante que apareça todo o menu */
-    padding: 20px 0;
+    max-height: 500px; 
+    padding: 15px 0;
   }
 
   .hamburger { display: flex; }
