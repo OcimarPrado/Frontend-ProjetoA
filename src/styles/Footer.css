@@ -3,10 +3,11 @@
 .footer {
   background-color: #0b1221; /* azul escuro */
   color: #fff;
-  width: 100%;      /* largura total da tela */
+  width: 120%;     /* largura total da tela */
   padding: 25px 10%;
   text-align: center;
   box-sizing: border-box;
+  margin-top: 0px;
 }
 
 .footer-container {
@@ -14,6 +15,8 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  margin-left: -150px;
+
 }
 
 .footer-container h2 {
@@ -69,6 +72,7 @@
   margin-top: 10px;
   font-size: 0.8rem;
   opacity: 0.8;
+  margin-left: -150px;
 }
 
 /* RESPONSIVIDADE */

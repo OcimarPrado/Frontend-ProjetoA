@@ -2,6 +2,8 @@
   padding: 80px 10%;
   background-color: #d6eaff; /* contraste com #f5f8ff */
   text-align: center;
+  width: 120%;
+  margin-left: -170px;
 }
 
 .planos h2 {

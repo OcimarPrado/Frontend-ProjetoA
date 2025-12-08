@@ -1,5 +1,5 @@
 .header {
-  width: 89%;
+  width: 120%;
   padding: 15px 20px; /* padding menor para celulares */
   display: flex;
   justify-content: center;
@@ -18,6 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: -250px;
 }
 
 /* LOGO + SLOGAN */

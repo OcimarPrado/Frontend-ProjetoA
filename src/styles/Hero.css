@@ -1,7 +1,7 @@
 .hero {
   background: linear-gradient(135deg, #0b1221 0%, #101c38 100%);
   color: #fff;
-  width: 100%;
+  width: 120%;
   min-height: 100vh; /* garante altura total da tela */
   display: flex;
   justify-content: center;
@@ -24,13 +24,14 @@
 }
 
 .hero h1 {
-  font-size: 2.8rem;
-  font-weight: 800;
+  font-size: 2.9rem;
+  font-weight:900;
   margin-bottom: 1.2rem;
   line-height: 1.2;
 }
 
 .hero h1 span {
+  margin-left: -100px;
   color: #00aaff;
   text-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
 }
@@ -40,6 +41,7 @@
   color: #cfd6e0;
   margin-bottom: 2rem;
   line-height: 1.6;
+  margin-left: -100px;
 }
 
 .hero-cta {
@@ -47,6 +49,7 @@
   gap: 1rem;
   flex-wrap: wrap; /* garante que os botões não saiam da tela */
   margin-bottom: 2rem;
+  margin-left: -100px;
 }
 
 .btn-primary,
@@ -202,5 +205,6 @@
 
   .hero-inner {
     padding: 1rem;
+  
   }
 }

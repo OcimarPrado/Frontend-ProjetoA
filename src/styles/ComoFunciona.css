@@ -5,7 +5,7 @@
   padding: 60px 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: #000000;
-  width: 100%;      /* largura total da tela */
+  width: 120%;      /* largura total da tela */
   min-height: 100vh; /* altura total da tela */
   box-sizing: border-box;
   display: flex;
@@ -18,6 +18,7 @@
   max-width: 1200px;
   width: 100%;
   text-align: center;
+  margin-left: -200px;
 }
 
 .como-funciona h2 {
