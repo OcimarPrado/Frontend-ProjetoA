@@ -1,107 +1,87 @@
 .footer {
-  background-color: #0b1221;
+  background: linear-gradient(135deg, #0b1221, #1a2940);
   color: #fff;
-  width: 100%;
-  padding: 40px 40px 25px 40px;
+  padding: 45px 20px 30px;
   text-align: center;
-  box-sizing: border-box;
-  margin-top: 0;
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  max-width: 1400px;
-  margin: 0 auto;
+  gap: 22px;
 }
 
 .footer-container h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #ffffff;
+  font-size: 1.7rem;
+  font-weight: 700;
 }
 
 .footer-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 28px;
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
-.footer-links li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.footer-links li a:hover,
-.footer-links li a:active {
-  color: #a0d8ff;
-  text-shadow: 0 0 8px #a0d8ff;
-}
-
-.footer-contact p {
-  margin: 5px 0;
-  font-size: 0.95rem;
-}
-
-.footer-contact a {
+.footer-links a {
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
+  font-size: 1rem;
   transition: 0.3s;
 }
 
-.footer-contact a:hover,
-.footer-contact a:active {
-  color: #a0d8ff;
-  text-shadow: 0 0 8px #a0d8ff;
+.footer-links a:hover {
+  color: #7ac7ff;
+  text-shadow: 0 0 6px #7ac7ff;
+}
+
+/* ÍCONES */
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social a svg {
+  width: 26px;
+  fill: #ffffff;
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover svg {
+  fill: #7ac7ff;
+  transform: scale(1.15);
+}
+
+/* CONTATO */
+.footer-contact a {
+  color: #7ac7ff;
+  font-weight: 500;
+}
+
+.footer-divider {
+  width: 80%;
+  margin: 10px auto;
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.2);
 }
 
 .footer-copy {
-  margin-top: 20px;
+  opacity: 0.75;
   font-size: 0.85rem;
-  opacity: 0.8;
+  margin-top: 10px;
 }
 
 /* RESPONSIVIDADE */
-@media screen and (max-width: 900px) {
-  .footer {
-    padding: 30px 20px 20px 20px;
-  }
-
-  .footer-container h2 {
-    font-size: 1.3rem;
-  }
-
-  .footer-links {
-    gap: 15px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .footer {
-    padding: 25px 15px 20px 15px;
-  }
-
+@media (max-width: 600px) {
   .footer-links {
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
   }
 
-  .footer-container h2 {
-    font-size: 1.2rem;
-  }
-
-  .footer-copy {
-    font-size: 0.8rem;
+  .footer-social {
+    gap: 15px;
   }
 }
