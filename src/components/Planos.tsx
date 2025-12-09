@@ -11,8 +11,8 @@ const planos = [
       "Período de ajuste de produtos!"
     ],
     destaque: true,
-  },/*
-  {
+  },
+  /*{
     nome: "Starter",
     valor: 99,
     descricao: [
@@ -82,11 +82,21 @@ const Planos: React.FC = () => {
               <h3>{plano.nome}</h3>
               <div className="valor">R$ {plano.valor}</div>
               <div className="periodo">por mês</div>
-              <ul>
-                {plano.descricao.map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
-              </ul>
+              
+              {/* 🟢 LÓGICA CORRIGIDA: Renderização Condicional da Descrição */}
+              {plano.descricao.length === 1 && plano.nome === "Teste" ? (
+                  // Renderiza a descrição do plano "Teste" como parágrafo simples (resolve o mobile)
+                  <p className="descricao-simples">{plano.descricao[0]}</p>
+              ) : (
+                  // Renderiza os demais planos (com múltiplos itens) como lista ul/li
+                  <ul>
+                      {plano.descricao.map((item, idx) => (
+                          <li key={idx}>{item}</li>
+                      ))}
+                  </ul>
+              )}
+              {/* Fim da Correção */}
+
               <button onClick={() => selecionarPlano(plano.nome, plano.valor)}>
                 Contratar {plano.nome}
               </button>
