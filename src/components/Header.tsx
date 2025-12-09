@@ -19,7 +19,7 @@ const Header: React.FC = () => {
           <Link to="inicio" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Início</Link>
           <Link to="como-funciona" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Como Funciona</Link>
           <Link to="planos" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Planos</Link>
-          <Link to="contato" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Contato</Link>
+          {/*<Link to="contato" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Contato</Link>*/}
           <Link to="planos" smooth={true} duration={500} className="btn-header" onClick={() => setMenuOpen(false)}>Começar Agora</Link>
         </nav>
 
