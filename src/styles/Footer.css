@@ -1,4 +1,7 @@
+/* COMPONENTE FOOTER */
 .footer {
+  /* Garante que o rodapé ocupe 100% da tela */
+  width: 100%; 
   background: linear-gradient(135deg, #0b1221, #1a2940);
   color: #fff;
   padding: 45px 20px 30px;
@@ -20,10 +23,13 @@
 .footer-links {
   list-style: none;
   display: flex;
+  /* Permite quebra de linha em telas pequenas */
+  flex-wrap: wrap; 
+  /* Centraliza os links no container */
+  justify-content: center;
   gap: 28px;
   padding: 0;
   margin: 0;
-  flex-wrap: wrap;
 }
 
 .footer-links a {
@@ -45,7 +51,8 @@
 }
 
 .footer-social a svg {
-  width: 26px;
+  /* Seu código já estava correto aqui, garantindo o tamanho */
+  width: 26px; 
   fill: #ffffff;
   transition: 0.3s ease;
 }
@@ -62,7 +69,7 @@
 }
 
 .footer-divider {
-  width: 80%;
+  width: 100%;
   margin: 10px auto;
   border: none;
   border-top: 1px solid rgba(255,255,255,0.2);
@@ -74,11 +81,13 @@
   margin-top: 10px;
 }
 
-/* RESPONSIVIDADE */
+/* RESPONSIVIDADE ESPECÍFICA DO FOOTER */
 @media (max-width: 600px) {
   .footer-links {
     flex-direction: column;
     gap: 12px;
+    /* Correção: centraliza os itens quando eles estão em coluna no mobile */
+    align-items: center; 
   }
 
   .footer-social {
