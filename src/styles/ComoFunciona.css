@@ -1,24 +1,21 @@
-/* ComoFunciona.css */
-
 .como-funciona {
   background-color: #ffffff;
   padding: 60px 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: #000000;
-  width: 120%;      /* largura total da tela */
-  min-height: 100vh; /* altura total da tela */
+  width: 100%;
+  min-height: 100vh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centraliza verticalmente */
-  align-items: center;     /* centraliza horizontalmente */
+  justify-content: center;
+  align-items: center;
 }
 
 .como-funciona .container {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
   text-align: center;
-  margin-left: -200px;
 }
 
 .como-funciona h2 {
@@ -84,6 +81,10 @@
 
 /* Celulares */
 @media (max-width: 600px) {
+  .como-funciona {
+    padding: 40px 15px;
+  }
+
   .steps {
     flex-direction: column;
     gap: 20px;
@@ -91,7 +92,8 @@
   }
 
   .step-card {
-    width: 90%;
+    width: 100%;
+    max-width: 350px;
     padding: 20px 15px;
   }
 

@@ -1,37 +1,35 @@
 .hero {
   background: linear-gradient(135deg, #0b1221 0%, #101c38 100%);
   color: #fff;
-  width: 120%;
-  min-height: 100vh; /* garante altura total da tela */
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 80px 0 0 0;
   box-sizing: border-box;
-  margin: 0; /* remove gap superior */
-  margin-top: 80px;
+  margin: 0;
 }
 
 .hero-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem; /* ajustado para ficar melhor em telas menores */
-  max-width: 1200px;
+  gap: 3rem;
+  max-width: 1400px;
   width: 100%;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 40px;
   box-sizing: border-box;
 }
 
 .hero h1 {
   font-size: 2.9rem;
-  font-weight:900;
+  font-weight: 900;
   margin-bottom: 1.2rem;
   line-height: 1.2;
 }
 
 .hero h1 span {
-  margin-left: -100px;
   color: #00aaff;
   text-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
 }
@@ -41,15 +39,13 @@
   color: #cfd6e0;
   margin-bottom: 2rem;
   line-height: 1.6;
-  margin-left: -100px;
 }
 
 .hero-cta {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap; /* garante que os botões não saiam da tela */
+  flex-wrap: wrap;
   margin-bottom: 2rem;
-  margin-left: -100px;
 }
 
 .btn-primary,
@@ -110,7 +106,7 @@
   padding: 1.8rem;
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  width: 90%;
+  width: 100%;
 }
 
 .info-box h3 {
@@ -163,8 +159,8 @@
 @media (max-width: 900px) {
   .hero-inner {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 1.5rem;
+    gap: 2rem;
+    padding: 2rem 20px;
   }
 
   .hero h1 {
@@ -181,14 +177,25 @@
     justify-content: center;
   }
 
+  .hero-features {
+    justify-content: center;
+  }
+
   .info-box {
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 100%;
-    padding: 1.5rem;
   }
 }
 
 @media (max-width: 500px) {
+  .hero {
+    padding: 70px 0 0 0;
+  }
+
+  .hero-inner {
+    padding: 1.5rem 15px;
+  }
+
   .hero h1 {
     font-size: 1.8rem;
   }
@@ -203,8 +210,11 @@
     padding: 0.8rem;
   }
 
-  .hero-inner {
-    padding: 1rem;
-  
+  .info-box {
+    padding: 1.5rem;
+  }
+
+  .info-box h3 {
+    font-size: 1.3rem;
   }
 }

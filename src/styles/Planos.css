@@ -1,9 +1,19 @@
 .planos {
-  padding: 80px 10%;
-  background-color: #d6eaff; /* contraste com #f5f8ff */
+  padding: 80px 40px;
+  background-color: #d6eaff;
   text-align: center;
-  width: 120%;
-  margin-left: -170px;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.planos .container {
+  max-width: 1400px;
+  width: 100%;
 }
 
 .planos h2 {
@@ -117,6 +127,10 @@
 
 /* RESPONSIVIDADE */
 @media screen and (max-width: 900px) {
+  .planos {
+    padding: 60px 20px;
+  }
+
   .planos-container {
     flex-direction: column;
     align-items: center;
@@ -133,6 +147,29 @@
   }
 
   .plano-card {
-    width: 90%;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .plano-card.destaque {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .planos {
+    padding: 40px 15px;
+  }
+
+  .planos h2 {
+    font-size: 1.8rem;
+  }
+
+  .planos .subtitle {
+    font-size: 1rem;
+  }
+
+  .plano-card {
+    padding: 25px 15px;
   }
 }
