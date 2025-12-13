@@ -1,75 +1,72 @@
-# React + TypeScript + Vite
+Frontend Projeto A – Projeto Próprio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação frontend web desenvolvida como projeto próprio, com foco em React, TypeScript e boas práticas de desenvolvimento frontend.  
+O projeto serve como base real de sistemas web, sites institucionais e dashboards administrativos.
 
-Currently, two official plugins are available:
+ Palavras-chave (ATS / SEO)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Frontend Developer, React Developer, TypeScript, Web Development, Single Page Application (SPA), Component-Based Architecture, Responsive Design, UI Development, JavaScript, HTML5, CSS3, Git
 
-## React Compiler
+ Objetivo do Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Consolidar conhecimentos em React e TypeScript
+- Aplicar componentização, tipagem forte e organização de código
+- Criar uma base escalável para aplicações web reais
+- Servir como projeto de portfólio profissional
 
-## Expanding the ESLint configuration
+ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Node.js
+- Vite
+- Git / GitHub
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+ Funcionalidades Implementadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Estrutura modular baseada em componentes
+- Organização por páginas, serviços e interfaces
+- Tipagem com TypeScript
+- Layout responsivo
+- Código preparado para integração com APIs REST
+- Base pronta para autenticação e expansão futura
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+ Estrutura do Projeto:
+src/ ├─ components/ ├─ pages/ ├─ services/ ├─ interfaces/ ├─ styles/ ├─ assets/ ├─ App.tsx └─ main.tsx
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+ Como Executar Localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+bash
+git clone https://github.com/OcimarPrado/Frontend-ProjetoA.git
+cd Frontend-ProjetoA
+npm install
+npm run dev
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# ocyan-tech-site
-# Frontend-ProjetoA
+Acesse:
+http://localhost:5173
+
+ Status
+ Projeto próprio em evolução contínua
+
+Próximas melhorias:
+Aprimoramento de UI/UX
+Integração com backend (API REST)
+Autenticação de usuários
+Deploy em produção
+Testes automatizados
+
+
+ Autor
+Ocimar Prado
+Frontend Developer | React | TypeScript
+
+GitHub: https://github.com/OcimarPrado
+LinkedIn: https://linkedin.com/in/onprado
+Email: onprado39@gmail.com
+
+ Licença
+
+Projeto próprio para fins profissionais e de portfólio.
