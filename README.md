@@ -1,72 +1,103 @@
-Frontend Projeto A – Projeto Próprio
+## Frontend Project A – Personal Project
 
-Aplicação frontend web desenvolvida como projeto próprio, com foco em React, TypeScript e boas práticas de desenvolvimento frontend.  
-O projeto serve como base real de sistemas web, sites institucionais e dashboards administrativos.
+Web frontend application developed as a personal project, focused on React, TypeScript, and frontend development best practices.
+The project serves as a real foundation for web systems, institutional websites, and administrative dashboards.
 
- Palavras-chave (ATS / SEO)
+**Keywords (ATS / SEO)**
 
 Frontend Developer, React Developer, TypeScript, Web Development, Single Page Application (SPA), Component-Based Architecture, Responsive Design, UI Development, JavaScript, HTML5, CSS3, Git
 
- Objetivo do Projeto
+## Project Objective
 
-- Consolidar conhecimentos em React e TypeScript
-- Aplicar componentização, tipagem forte e organização de código
-- Criar uma base escalável para aplicações web reais
-- Servir como projeto de portfólio profissional
+Consolidate knowledge in React and TypeScript
 
- Tecnologias Utilizadas
+Apply componentization, strong typing, and clean code organization
 
-- React
-- TypeScript
-- JavaScript (ES6+)
-- HTML5
-- CSS3
-- Node.js
-- Vite
-- Git / GitHub
+Create a scalable base for real-world web applications
 
- Funcionalidades Implementadas
+Serve as a professional portfolio project
 
-- Estrutura modular baseada em componentes
-- Organização por páginas, serviços e interfaces
-- Tipagem com TypeScript
-- Layout responsivo
-- Código preparado para integração com APIs REST
-- Base pronta para autenticação e expansão futura
+Technologies Used
 
- Estrutura do Projeto:
-src/ ├─ components/ ├─ pages/ ├─ services/ ├─ interfaces/ ├─ styles/ ├─ assets/ ├─ App.tsx └─ main.tsx
+React
 
- Como Executar Localmente
+TypeScript
 
-bash
+JavaScript (ES6+)
+
+HTML5
+
+CSS3
+
+Node.js
+
+Vite
+
+Git / GitHub
+
+Implemented Features
+
+Modular, component-based structure
+
+Organization by pages, services, and interfaces
+
+Strong typing with TypeScript
+
+Responsive layout
+
+Code prepared for REST API integration
+
+Base structure ready for authentication and future expansion
+
+## Project Structure
+src/
+ ├─ components/
+ ├─ pages/
+ ├─ services/
+ ├─ interfaces/
+ ├─ styles/
+ ├─ assets/
+ ├─ App.tsx
+ └─ main.tsx
+
+**How to Run Locally**
 git clone https://github.com/OcimarPrado/Frontend-ProjetoA.git
 cd Frontend-ProjetoA
 npm install
 npm run dev
 
-Acesse:
-http://localhost:5173
 
- Status
- Projeto próprio em evolução contínua
+Access: http://localhost:5173
 
-Próximas melhorias:
-Aprimoramento de UI/UX
-Integração com backend (API REST)
-Autenticação de usuários
-Deploy em produção
-Testes automatizados
+Project Status
 
+Personal project under continuous development.
 
- Autor
+Upcoming Improvements
+
+UI/UX enhancements
+
+Backend integration (REST API)
+
+User authentication
+
+Production deployment
+
+Automated tests
+
+## Author
+
 Ocimar Prado
+
+
 Frontend Developer | React | TypeScript
 
-GitHub: https://github.com/OcimarPrado
-LinkedIn: https://linkedin.com/in/onprado
-Email: onprado39@gmail.com
+## GitHub: https://github.com/OcimarPrado
 
- Licença
+## LinkedIn: https://linkedin.com/in/onprado
 
-Projeto próprio para fins profissionais e de portfólio.
+## Email: onprado39@gmail.com
+
+**License**
+
+Personal project for professional and portfolio purposes.
