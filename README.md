@@ -85,6 +85,13 @@ Production deployment
 
 Automated tests
 
+## Demonstração Visual / Visual Demo
+
+| Desktop Version | Mobile Experience |
+|---|---|
+| <img src="assets/ocyan-tech01.png" width="450" alt="Ocyan Tech Desktop"> | <img src="assets/1000056889.jpg" width="200" alt="Ocyan Tech Mobile"> |
+| <img src="assets/ocyan-tech02.png" width="450" alt="Ocyan Tech Dashboard"> | <img src="assets/1000056890.jpg" width="200" alt="Ocyan Tech Mobile App"> |
+
 ## Author
 
 Ocimar Prado
