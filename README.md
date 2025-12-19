@@ -87,10 +87,16 @@ Automated tests
 
 ## Demonstração Visual / Visual Demo
 
+## 📸 Demonstração Visual / Visual Demo
+
 | Desktop Version | Mobile Experience |
 |---|---|
-| <img src="assets/ocyan-tech01.png" width="450" alt="Ocyan Tech Desktop"> | <img src="assets/1000056889.jpg" width="200" alt="Ocyan Tech Mobile"> |
-| <img src="assets/ocyan-tech02.png" width="450" alt="Ocyan Tech Dashboard"> | <img src="assets/1000056890.jpg" width="200" alt="Ocyan Tech Mobile App"> |
+| <img src="assets/ocyan-tech01.png" width="450" alt="Ocyan Tech Desktop 1"> | |
+| <img src="assets/ocyan-tech02.png" width="450" alt="Ocyan Tech Desktop 2"> | |
+| <img src="assets/ocyan-tech03.png" width="450" alt="Ocyan Tech Desktop 3"> | |
+| <img src="assets/ocyan-tech04.png" width="450" alt="Ocyan Tech Desktop 4"> | |
+
+> 🔐 **Acesso Restrito:** Por motivos de segurança e por se tratar de um produto em produção, o ambiente de deploy é protegido por senha. As imagens acima servem como demonstração da interface e funcionalidades desenvolvidas.
 
 ## Author
 
