@@ -96,7 +96,7 @@ Automated tests
 | <img src="assets/ocyan-tech03.png" width="450" alt="Ocyan Tech Desktop 3"> | |
 | <img src="assets/ocyan-tech04.png" width="450" alt="Ocyan Tech Desktop 4"> | |
 
-> 🔐 **Acesso Restrito:** Por motivos de segurança e por se tratar de um produto em produção, o ambiente de deploy é protegido por senha. As imagens acima servem como demonstração da interface e funcionalidades desenvolvidas.
+> 🔐 **Restricted Access:** For security reasons and because this is a production-ready product, the deployment environment is password-protected. The images above serve as a demonstration of the interface and the features developed.
 
 ## Author
 
