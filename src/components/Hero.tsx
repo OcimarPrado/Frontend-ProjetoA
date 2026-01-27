@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
 
           <div className="hero-features">
             <div className="feature-badge">Sites institucionais e landing pages</div>
-            <div className="feature-badge">Sites institucionais e landing pages</div>
+            <div className="feature-badge">Wordpress ou código sob medida</div>
             <div className="feature-badge">Automação sob demanda</div>
           </div>
         </div>
