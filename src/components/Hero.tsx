@@ -13,12 +13,11 @@ const Hero: React.FC = () => {
           </h1>
 
           <p className="hero-description">
-            Ajudamos você a se conectar com seus clientes de forma inteligente e automatizada — aproximando pessoas, otimizando tempo e gerando resultados reais.
-          </p>
+            Criamos sites rápidos, modernos e prontos para vender.
+            Se precisar, automatizamos atendimento, agendamentos e processos.</p>
 
           <div className="hero-cta">
-            <a href="#planos" className="btn-primary">Ver Planos</a>
-            <a href="#como-funciona" className="btn-secondary">Como Funciona</a>
+            <a href="https://wa.me/5551986730107?text=Olá, acessei o site ocyan-tech e gostaria de saber mais sobre seus serviços." className="btn-primary">Ver Planos</a>
           </div>
 
           <div className="hero-features">
