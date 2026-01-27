@@ -5,6 +5,7 @@ import ComoFunciona from "../components/ComoFunciona";
 import Planos from "../components/Planos";
 import Footer from "../components/Footer";
 import WhatsAppFloat from "../components/WhatsAppFloat";
+import Servico from "../components/Servico";
 
 const Home: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
       <Header />
       <Hero />
       <ComoFunciona />
+      <Servico/>
       <Planos />
       <Footer />
       <WhatsAppFloat />
