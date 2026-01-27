@@ -1,78 +1,58 @@
 // src/components/Planos.tsx
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "../styles/Planos.css";
+
+const WHATSAPP_NUMBER = "5551986730107";
 
 const planos = [
   {
-    nome: "Teste",
-    valor: 1,
+    nome: "Site Profissional",
     descricao: [
-      "Período de ajuste de produtos!"
+      "Site institucional sob medida",
+      "Design profissional e responsivo",
+      "Foco em credibilidade e presença digital",
+      "Entrega rápida e personalizada",
     ],
-    destaque: true,
-  },
-  /*{
-    nome: "Starter",
-    valor: 99,
-    descricao: [
-      "WebChat básico para comunicação com clientes",
-      "1 atendente virtual pré-configurado (sem IA avançada)",
-      "Gerenciamento de perguntas e respostas via painel",
-      "Link personalizado para atendimento",
-      "Integração com Google Agenda",
-      "Suporte via WhatsApp",
-    ],
-    destaque: false,
-  },
-  {
-    nome: "Professional",
-    valor: 249,
-    descricao: [
-      "WebChat avançado com múltiplos fluxos",
-      "IA intermediária para respostas personalizadas",
-      "Treinamento da IA baseado no seu conteúdo",
-      "Painel com relatórios de interações",
-      "Integração com Google Agenda e Sheets",
-      "Suporte via WhatsApp prioritário",
-    ],
+    mensagem: "Olá! Tenho interesse no plano de Site Profissional e gostaria de entender como funciona.",
     destaque: true,
   },
   {
-    nome: "Enterprise",
-    valor: 499,
+    nome: "Site + Manutenção",
     descricao: [
-      "WebChat com IA avançada e integração via API",
-      "Atendentes virtuais ilimitados",
-      "Chat treinado com base em documentos e sites",
-      "Integração com CRM, WhatsApp Business API e redes sociais",
-      "Relatórios detalhados e dashboards personalizados",
-      "Personalização completa da interface",
-      "Suporte técnico dedicado via WhatsApp",
+      "Site profissional personalizado",
+      "Hospedagem inclusa",
+      "Manutenção mensal",
+      "Suporte técnico contínuo",
     ],
+    mensagem: "Olá! Tenho interesse no plano Site + Manutenção. Podemos conversar?",
     destaque: false,
-  },*/
+  },
+  {
+    nome: "Site + Automação",
+    descricao: [
+      "Site profissional",
+      "Integração com automação",
+      "Agendamentos e fluxos inteligentes",
+      "Projeto sob demanda",
+    ],
+    mensagem: "Olá! Quero saber mais sobre o plano Site + Automação.",
+    destaque: false,
+  },
 ];
 
 const Planos: React.FC = () => {
-  const navigate = useNavigate();
-
-  const selecionarPlano = (plano: string, valor: number) => {
-    // Salva plano no localStorage
-    localStorage.setItem(
-      "planoSelecionado",
-      JSON.stringify({ nome: plano, valor, timestamp: new Date().toISOString() })
-    );
-
-    // Navega para a página de contrato com query params
-    navigate(`/contrato?plano=${plano}&valor=${valor}`);
+  const gerarLinkWhats = (mensagem: string) => {
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensagem)}`;
   };
 
   return (
     <section className="planos" id="planos">
       <div className="container">
-        <h2>Escolha seu Plano</h2>
-        <p className="subtitle">Planos ideais para qualquer negócio!</p>
+        <h2>Planos de Serviço</h2>
+        <p className="subtitle">
+          Soluções claras, profissionais e adaptadas ao seu negócio
+        </p>
+
         <div className="planos-container">
           {planos.map((plano) => (
             <div
@@ -80,26 +60,21 @@ const Planos: React.FC = () => {
               className={`plano-card ${plano.destaque ? "destaque" : ""}`}
             >
               <h3>{plano.nome}</h3>
-              <div className="valor">R$ {plano.valor}</div>
-              <div className="periodo">por mês</div>
-              
-              {/* 🟢 LÓGICA CORRIGIDA: Renderização Condicional da Descrição */}
-              {plano.descricao.length === 1 && plano.nome === "Teste" ? (
-                  // Renderiza a descrição do plano "Teste" como parágrafo simples (resolve o mobile)
-                  <p className="descricao-simples">{plano.descricao[0]}</p>
-              ) : (
-                  // Renderiza os demais planos (com múltiplos itens) como lista ul/li
-                  <ul>
-                      {plano.descricao.map((item, idx) => (
-                          <li key={idx}>{item}</li>
-                      ))}
-                  </ul>
-              )}
-              {/* Fim da Correção */}
 
-              <button onClick={() => selecionarPlano(plano.nome, plano.valor)}>
-                Contratar {plano.nome}
-              </button>
+              <ul>
+                {plano.descricao.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
+              </ul>
+
+              <a
+                href={gerarLinkWhats(plano.mensagem)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-plano"
+              >
+                Falar no WhatsApp
+              </a>
             </div>
           ))}
         </div>
