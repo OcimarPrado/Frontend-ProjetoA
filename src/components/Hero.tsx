@@ -17,13 +17,13 @@ const Hero: React.FC = () => {
             Se precisar, automatizamos atendimento, agendamentos e processos.</p>
 
           <div className="hero-cta">
-            <a href="https://wa.me/5551986730107?text=Olá, acessei o site ocyan-tech e gostaria de saber mais sobre seus serviços." className="btn-primary">Ver Planos</a>
+            <a href="https://wa.me/5551986730107?text=Olá, acessei o site ocyan-tech e gostaria de saber mais sobre seus serviços." className="btn-primary" target="_blank" rel="noopener noreferrer">Saiba Mais</a>
           </div>
 
           <div className="hero-features">
-            <div className="feature-badge">Atendimento 24/7</div>
-            <div className="feature-badge">IA Treinada</div>
-            <div className="feature-badge">Configuração Rápida</div>
+            <div className="feature-badge">Sites institucionais e landing pages</div>
+            <div className="feature-badge">Sites institucionais e landing pages</div>
+            <div className="feature-badge">Automação sob demanda</div>
           </div>
         </div>
 
@@ -33,32 +33,32 @@ const Hero: React.FC = () => {
             <div className="info-step">
               <div className="step-number">1</div>
               <div className="step-content">
-                <strong>Cadastro rápido</strong>
-                <p>Acesse o painel e configure seu atendente virtual com informações do seu negócio.</p>
+                <strong>Análise do seu negócio</strong>
+                <p>Entendemos seu público, objetivo e tipo de serviço para definir a estrutura certa do site.</p>
               </div>
             </div>
 
             <div className="info-step">
               <div className="step-number">2</div>
               <div className="step-content">
-                <strong>Receba seu link</strong>
-                <p>Exemplo: ocyan-tech.com.br/seu-negocio</p>
+                <strong>Deisgn estratégico sob medida</strong>
+                <p>Desenvolvemos um visual profissional alinhado à identidade da marca, focado em clareza, confiança e conversão.</p>
               </div>
             </div>
 
             <div className="info-step">
               <div className="step-number">3</div>
               <div className="step-content">
-                <strong>Cliente acessa</strong>
-                <p>Seus clientes conversam com IA treinada especificamente para seu negócio.</p>
+                <strong>Desenvolvimento e publicação</strong>
+                <p>Executamos o desenvolvimento completo do site, com configuração técnica, publicação e testes finais.</p>
               </div>
             </div>
 
             <div className="info-step">
               <div className="step-number">4</div>
               <div className="step-content">
-                <strong>IA atende automaticamente</strong>
-                <p>Responde dúvidas, agenda horários e qualifica leads 24 horas por dia.</p>
+                <strong>Acompanhamento após entrega</strong>
+                <p>Oferecemos suporte inicial, orientações e ajutes necessários para garantir o pleno funcionamento do projeto.</p>
               </div>
             </div>
           </div>
