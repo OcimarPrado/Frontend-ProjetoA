@@ -14,7 +14,7 @@ const planos = [
       "Entrega rápida e personalizada",
     ],
     mensagem: "Olá! Tenho interesse no plano de Site Profissional e gostaria de entender como funciona.",
-    destaque: true,
+    destaque: false,
   },
   {
     nome: "Site + Manutenção",
@@ -25,7 +25,7 @@ const planos = [
       "Suporte técnico contínuo",
     ],
     mensagem: "Olá! Tenho interesse no plano Site + Manutenção. Podemos conversar?",
-    destaque: false,
+    destaque: true,
   },
   {
     nome: "Site + Automação",
