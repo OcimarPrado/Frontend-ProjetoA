@@ -17,11 +17,10 @@ const Header: React.FC = () => {
         {/* Menu de navegação */}
         <nav className={`nav-menu ${menuOpen ? "active" : ""}`}>
           <Link to="inicio" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Início</Link>
+          <Link to="como-funciona" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Sobre nós</Link>
           <Link to="servico" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Serviços</Link>
-          <Link to="como-funciona" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Como Funciona</Link>
           <Link to="contato" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Contato</Link>
-          <Link to="planos" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Planos</Link>
-          {/*<Link to="contato" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Contato</Link>*/}
+          <Link to="planos" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Planos</Link>          
           <Link to="planos" smooth={true} duration={500} className="btn-header" onClick={() => setMenuOpen(false)}>Quero meu site</Link>
         </nav>
 
