@@ -94,3 +94,11 @@
     gap: 15px;
   }
 }
+
+/* A imagem da logo em si */
+.footer-img-logo {
+  width: 250px; /* Ajuste esse valor até ficar do tamanho que você gosta */
+  height: auto; /* Mantém a proporção sem achatar */
+  object-fit: contain;
+  margin-bottom: 10px;
+}

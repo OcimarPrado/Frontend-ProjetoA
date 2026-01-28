@@ -6,48 +6,35 @@ interface FAQ {
   keywords: string[];
 }
 
-export const FAQ_BASE: FAQ[] = [
+export const FAQ_BASE = [
   {
-    question: "Planos e Preços",
-    response: "Temos planos Básico, Pro e Empresarial. Os preços variam de acordo com o volume de mensagens e a necessidade de integrações avançadas. Posso te enviar a tabela de preços detalhada por email.",
-    keywords: ["plano", "preço", "custo", "valor", "quanto custa"],
+    question: "O que está incluso no site?",
+    answer: "Desenvolvemos sites modernos e responsivos (celular, tablet e computador) com estrutura otimizada para SEO, páginas estratégicas para seus serviços e botões de agendamento integrados."
   },
   {
-    question: "Período de Teste Gratuito",
-    response: "Sim! Oferecemos um período de teste gratuito de 7 dias para que você possa experimentar todas as funcionalidades sem compromisso. Após esse período, você escolhe se deseja continuar.",
-    keywords: ["teste", "gratuito", "trial", "free", "demo"],
+    question: "Vocês fazem manutenção?",
+    answer: "Sim! Temos uma opção recomendada que inclui hospedagem, monitoramento técnico, atualizações de segurança, performance e ajustes técnicos contínuos para garantir que seu site nunca fique desatualizado."
   },
   {
-    question: "Cobra instalação/implementação?",
-    response: "A implementação básica é gratuita e guiada. Apenas projetos de integração complexa ou customizações profundas podem ter uma taxa de setup única, que é negociada à parte.",
-    keywords: ["instalação", "implementação", "setup", "cobrança", "taxa"],
+    question: "O serviço tem contrato?",
+    answer: "Com certeza. Todas as nossas opções são validadas legalmente mediante contrato assinado por ambas as partes, garantindo total segurança e profissionalismo na nossa parceria."
   },
   {
-    question: "Como funciona a integração?",
-    response: "Nossa API é robusta e fácil de integrar com as principais plataformas (CRM, ERP, WhatsApp, Telegram). Oferecemos documentação completa e suporte técnico para te ajudar no processo.",
-    keywords: ["integrar", "api", "conexão", "plataforma", "whatsapp"],
-  },
-  {
-    question: "Suporte Técnico",
-    response: "Oferecemos suporte técnico 24/7 para todos os clientes, garantindo que seu atendimento nunca pare. Para questões críticas, a prioridade de resposta é imediata.",
-    keywords: ["suporte", "problema", "ajuda", "assistência", "técnico"],
-  },
-  {
-    question: "Customização e Branding",
-    response: "Sim, o bot é totalmente customizável! Você pode ajustar a linguagem, o tom de voz e o branding visual para se adequar perfeitamente à sua marca.",
-    keywords: ["customização", "marca", "branding", "aparencia"],
-  },
+    question: "O que vocês NÃO fazem?",
+    answer: "Nosso foco é em desenvolvimento web profissional e estratégico. Não realizamos gestão de redes sociais (postagens diárias), edição de vídeos longos ou reparos em hardware/computadores."
+  }
 ];
 
-export const getBotResponse = (userInput: string): string => {
-  const lowerInput = userInput.toLowerCase();
-
-  for (const faq of FAQ_BASE) {
-    if (faq.keywords.some(keyword => lowerInput.includes(keyword))) {
-      return faq.response;
-    }
+export const getBotResponse = (query: string): string => {
+  const q = query.toLowerCase();
+  if (q.includes("plano") || q.includes("valor") || q.includes("preço")) {
+    return "Temos duas modalidades principais: o Desenvolvimento Único (focado na entrega do site pronto) e o Site + Manutenção (nossa parceria contínua com hospedagem inclusa). Qual dessas faz mais sentido para o seu momento atual?";
   }
-
-  // Resposta padrão
-  return 'Desculpe, não encontrei uma resposta direta para sua pergunta. Você pode tentar reformular, escolher uma opção abaixo, ou enviar um e-mail para nossa equipe.';
+  if (q.includes("seo")) {
+    return "O SEO é a organização técnica que fazemos no seu site para facilitar que ele seja encontrado pelo Google. Já entregamos o site preparado para isso!";
+  }
+  // Resposta padrão caso não encontre palavra-chave
+  const faq = FAQ_BASE.find(f => q.includes(f.question.toLowerCase()));
+  return faq ? faq.answer : "Essa é uma ótima pergunta! Nossa equipe técnica pode te dar mais detalhes sobre isso. Gostaria de prosseguir com seu interesse em algum de nossos serviços?";
 };
+  
