@@ -4,7 +4,7 @@ import "../styles/servico.css";
 
 const Servico: React.FC = () => {
   return (
-    <section className="servico">
+    <section className="servicos">
       <div className="container">
         <h1>Serviços</h1>
         <p className="subtitle">
