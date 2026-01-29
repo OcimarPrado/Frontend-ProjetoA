@@ -30,6 +30,7 @@ const Footer: React.FC = () => {
 
           {/* LINKS DE NAVEGAÇÃO COM ROLAGEM SUAVE */}
           <ul className="footer-links">
+<<<<<<< HEAD
             <li>
               <Link to="inicio" smooth={true} duration={500} offset={-80} className="footer-nav-item">Início</Link>
             </li>
@@ -42,6 +43,12 @@ const Footer: React.FC = () => {
             <li>
               <Link to="planos" smooth={true} duration={500} offset={-80} className="footer-nav-item">Planos</Link>
             </li>
+=======
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#como-funciona">Sobre Nós</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#planos">Planos</a></li>
+>>>>>>> 46d31041a86f2ca6a3b2369d76a869d8c9680537
             {/* Link de Contato que ativa o Bot */}
             <li>
               <span className="footer-nav-item" onClick={handleContactClick} style={{cursor: 'pointer'}}>
