@@ -33,7 +33,7 @@ const Header: React.FC = () => {
           <nav className={`nav-menu ${menuOpen ? "active" : ""}`}>
             <Link to="inicio" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Início</Link>
             <Link to="como-funciona" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Sobre nós</Link>
-            <Link to="servico" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Serviços</Link>
+            <Link to="servicos" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Serviços</Link>
             
             {/* 4. Alterado de <Link> para <span> ou <a> para disparar o Bot */}
             <span className="nav-button" onClick={handleContactClick} style={{cursor: 'pointer'}}>
