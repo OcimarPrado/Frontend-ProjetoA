@@ -76,9 +76,9 @@
 }
 
 /* Responsivo */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .servico {
-    padding: 60px 15px;
+    padding: 15px 15px;
   }
 
   .servico h1 {
@@ -89,3 +89,18 @@
     padding: 25px 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .servico {
+    padding: 120px 15px;
+  }
+
+  .servico h1 {
+    font-size: 2rem;
+  }
+
+  .servico-bloco {
+    padding: 25px 20px;
+  }
+}
+
