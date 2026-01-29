@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           <ul className="footer-links">
             <li><a href="#inicio">Início</a></li>
             <li><a href="#como-funciona">Sobre Nós</a></li>
-            <li><a href="#servico">Serviços</a></li>
+            <li><a href="#servicos">Serviços</a></li>
             <li><a href="#planos">Planos</a></li>
             {/* Link de Contato que ativa o Bot */}
             <li>
