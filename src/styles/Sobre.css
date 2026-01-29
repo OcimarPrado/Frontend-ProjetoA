@@ -1,0 +1,93 @@
+.sobre {
+  background-color: #f8fafc; /* Fundo leve para destacar os cards brancos */
+  padding: 100px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0b0f14;
+  width: 100%;
+  min-height: auto; /* Removido vh fixo para evitar espaços vazios gigantes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre .container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #007bff; /* Azul padrão da sua logo */
+}
+
+.sobre .subtitle {
+  font-size: 1.1rem;
+  color: #00aaff; /* Azul do seu slogan */
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Layout inteligente */
+  gap: 25px;
+  width: 100%;
+}
+
+.step-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 40px 25px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 123, 255, 0.1);
+  border-color: #38bdf8;
+}
+
+.step-card h3 {
+  font-size: 1.25rem;
+  color: #007bff;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.step-card p {
+  font-size: 0.95rem;
+  color: #475569; /* Cinza escuro para melhor leitura */
+  line-height: 1.6;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 992px) {
+  .steps {
+    padding: 0 20px; /* Corrigido o erro dos 120px */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre {
+    padding: 60px 15px;
+  }
+
+  .sobre h2 {
+    font-size: 1.8rem;
+  }
+
+  .steps {
+    grid-template-columns: 1fr; /* Coluna única no celular */
+  }
+}

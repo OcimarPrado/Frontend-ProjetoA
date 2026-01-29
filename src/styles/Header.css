@@ -64,21 +64,30 @@
   z-index: 1001; 
 }
 
-/* Botões */
+/* Botões de Link (Início, Sobre, Serviços, Planos e Contato) */
 .nav-button {
   cursor: pointer;
   padding: 8px 15px;
   border-radius: 8px;
   transition: all 0.3s ease;
   font-weight: 600;
+  color: #007bff; /* Mesma cor base dos outros links */
+  text-decoration: none;
+  display: inline-block;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
 }
 
 .nav-button:hover {
   background-color: #007bff;
-  color: #fff;
+  color: #ffffff !important; /* Letra branca no hover conforme solicitado */
   box-shadow: 0 4px 10px rgba(0,123,255,0.3);
+  transform: translateY(-2px);
 }
 
+/* Botão de Destaque (Quero meu site) */
 .btn-header {
   cursor: pointer;
   background-color: #00aaff;
@@ -87,6 +96,7 @@
   border-radius: 8px;
   font-weight: 600;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .btn-header:hover {
@@ -125,14 +135,6 @@
     padding: 0 10px;
   }
 
-  .logo-text {
-    font-size: 1.4rem;
-  }
-
-  .slogan {
-    font-size: 0.7rem;
-  }
-
   .nav-menu {
     position: absolute;
     top: 100%;
@@ -158,11 +160,6 @@
 }
 
 @media (max-width: 500px) {
-  .logo-text {
-    font-size: 1.2rem;
-  }
-
-  .slogan {
-    font-size: 0.65rem;
-  }
+  .logo-text { font-size: 1.2rem; }
+  .slogan { font-size: 0.65rem; }
 }

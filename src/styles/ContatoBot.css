@@ -1,220 +1,280 @@
-/* src/styles/ContatoBot.css */
+/* ============================================================================
+   OCYAN TECH – CONTATO BOT (FINAL)
+   ============================================================================ */
 
-/* === GERAL/OVERLAY === */
-.bot-modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(220, 220, 220, 0.4); 
-    backdrop-filter: blur(3px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; 
-    padding: 15px; 
+:root {
+  --primary: #0066ff;
+  --primary-hover: #0052cc;
+  --dark: #1a1a2e;
+  --light: #f8f9fa;
+  --border: #e5e7eb;
+  --success: #22c55e;
+  --bot-bg: #eef2f7;
+  --user-bg: linear-gradient(135deg, #667eea, #764ba2);
 }
+
+/* ============================================================================
+   MODAL
+   ============================================================================ */
+
+.bot-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn .3s ease;
+}
+
+.bot-modal-overlay.closing {
+  animation: fadeOut .3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1 }
+  to { opacity: 0 }
+}
+
+/* ============================================================================
+   WINDOW
+   ============================================================================ */
 
 .bot-window {
-    background-color: #ffffff;
-    color: #333;
-    padding: 0;
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.05); 
-    width: 100%;
-    max-width: 420px;
-    height: 80vh;
-    max-height: 600px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden; 
+  background: white;
+  width: 100%;
+  max-width: 480px;
+  height: 90vh;
+  max-height: 720px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideUp .4s ease;
 }
 
-/* === CABEÇALHO === */
+.bot-modal-overlay.closing .bot-window {
+  animation: slideDown .3s ease forwards;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px) scale(.95); opacity: 0 }
+  to { transform: translateY(0) scale(1); opacity: 1 }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(0) scale(1); opacity: 1 }
+  to { transform: translateY(40px) scale(.95); opacity: 0 }
+}
+
+/* ============================================================================
+   HEADER
+   ============================================================================ */
+
 .bot-header {
-    background: linear-gradient(135deg, #1a2940, #0b1221); 
-    color: #fff;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: 0; 
+  background: linear-gradient(135deg, #1a1a2e, #2d2d44);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
 }
 
-.bot-title-group {
-    display: flex;
-    align-items: center;
+.bot-status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--success);
+  animation: pulse 2s infinite;
 }
 
-.bot-icon-check {
-    font-size: 1.2rem;
-    color: #7ac7ff; 
-    margin-right: 10px;
-    font-weight: bold;
-    border: 2px solid #7ac7ff;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.bot-status-dot.typing {
+  background: #facc15;
 }
 
-.bot-title {
-    font-size: 1.15rem;
-    font-weight: 600;
-    margin: 0;
+@keyframes pulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(34,197,94,.6) }
+  50% { box-shadow: 0 0 0 8px rgba(34,197,94,0) }
 }
 
-.bot-close-button {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.7);
-    transition: color 0.2s;
+.bot-close-x {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.bot-close-button:hover {
-    color: #fff;
-}
+/* ============================================================================
+   CHAT
+   ============================================================================ */
 
-/* === HISTÓRICO DE MENSAGENS === */
 .bot-chat-history {
-    flex-grow: 1; 
-    padding: 15px 20px;
-    overflow-y: auto; 
-    background-color: #fcfcfc;
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  background: linear-gradient(#f8f9fa, #fff);
 }
+
+/* ============================================================================
+   MESSAGES
+   ============================================================================ */
 
 .message-bubble {
-    /* Usando 85% para dar mais espaço, como em sua segunda versão */
-    max-width: 85%; 
-    padding: 10px 15px;
-    border-radius: 18px;
-    margin-bottom: 10px;
-    line-height: 1.4;
-    font-size: 0.95rem;
-    /* 🟢 Adicionado: Sombra suave para destacar a bolha */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); 
+  max-width: 80%;
+  padding: .75rem 1rem;
+  border-radius: 14px;
+  animation: msgFade .25s ease;
+  line-height: 1.4;
 }
 
-/* Bolha do Bot */
-.message-bubble.bot {
-    background-color: #f0f0f5;
-    color: #333;
-    border-bottom-left-radius: 4px;
-    margin-right: auto;
-}
-
-/* Bolha do Usuário */
 .message-bubble.user {
-    background-color: #7ac7ff; /* Cor da Ocyan-Tech */
-    color: white;
-    margin-left: auto;
-    border-bottom-right-radius: 4px;
+  align-self: flex-end;
+  background: var(--user-bg);
+  color: white;
+  border-bottom-right-radius: 4px;
+  animation: slideRight .25s ease;
 }
 
-/* === DÚVIDAS COMUNS RÁPIDAS === */
-.bot-faq-quick-links {
-    padding: 10px 20px;
-    border-top: 1px solid #eee;
-    flex-shrink: 0;
+.message-bubble.bot {
+  align-self: flex-start;
+  background: var(--bot-bg);
+  color: #1e293b;
+  border-bottom-left-radius: 4px;
+  animation: slideLeft .25s ease;
 }
 
-.faq-title {
-    font-size: 0.85rem;
-    color: #666;
-    margin-bottom: 8px;
-    font-weight: 500;
+@keyframes slideRight {
+  from { transform: translateX(20px); opacity: 0 }
+  to { transform: translateX(0); opacity: 1 }
 }
 
-.faq-buttons-container {
-    display: flex;
-    gap: 8px;
-    overflow-x: auto; 
-    padding-bottom: 5px;
+@keyframes slideLeft {
+  from { transform: translateX(-20px); opacity: 0 }
+  to { transform: translateX(0); opacity: 1 }
 }
 
-.faq-buttons-container button {
-    flex-shrink: 0; 
-    background-color: #fff;
-    color: #1a2940;
-    border: 1px solid #ccc;
-    padding: 8px 12px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 0.8rem;
-    transition: background-color 0.2s;
+@keyframes msgFade {
+  from { opacity: 0 }
+  to { opacity: 1 }
 }
 
-.faq-buttons-container button:hover {
-    background-color: #e0e0e5;
-    border-color: #bbb;
+/* ============================================================================
+   TYPING
+   ============================================================================ */
+
+.typing-indicator {
+  display: flex;
+  gap: 6px;
 }
 
-/* === ÁREA DE INPUT === */
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  background: #6b7280;
+  border-radius: 50%;
+  animation: typing 1.2s infinite ease-in-out;
+}
+
+.typing-indicator span:nth-child(2){ animation-delay:.2s }
+.typing-indicator span:nth-child(3){ animation-delay:.4s }
+
+@keyframes typing {
+  0%,80%,100% { transform: translateY(0); opacity:.5 }
+  40% { transform: translateY(-8px); opacity:1 }
+}
+
+/* ============================================================================
+   CTA
+   ============================================================================ */
+
+.cta-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.pill-btn.gold {
+  padding: .9rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #1a1a1a;
+  animation: pulseBtn 1.5s infinite;
+}
+
+@keyframes pulseBtn {
+  0%,100% { transform: scale(1) }
+  50% { transform: scale(1.05) }
+}
+
+/* ============================================================================
+   FOOTER / INPUT
+   ============================================================================ */
+
+.bot-footer {
+  border-top: 1px solid var(--border);
+  padding: .75rem;
+  background: var(--light);
+}
+
+.faq-mini-chips {
+  display: flex;
+  gap: .5rem;
+  overflow-x: auto;
+  margin-bottom: .5rem;
+}
+
+.faq-mini-chips button {
+  padding: .4rem .8rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: white;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
 .bot-input-area {
-    display: flex;
-    padding: 10px 15px;
-    border-top: 1px solid #ddd;
-    flex-shrink: 0;
-    background-color: #fff;
+  display: flex;
+  gap: .5rem;
 }
 
 .bot-input-area input {
-    flex-grow: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    margin-right: 10px;
-    font-size: 0.9rem;
+  flex: 1;
+  padding: .6rem .8rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
 }
 
-/* === BOTÃO DE ENVIAR === */
-.send-button {
-    background: #1a2940; 
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: background-color 0.2s;
-    flex-shrink: 0;
+.bot-input-area button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: .6rem 1rem;
+  cursor: pointer;
 }
 
-.send-button:hover {
-    background: #0b1221;
-}
+/* ============================================================================
+   RESPONSIVE
+   ============================================================================ */
 
-/* 🔴 Desabilita o botão/input quando estiver em um estágio não permitido */
-.bot-input-area input:disabled {
-    background-color: #f7f7f7;
-    cursor: not-allowed;
-}
-.bot-input-area button:disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
-}
-
-/* === RODAPÉ DO WIDGET === */
-.bot-powered {
-    text-align: center;
-    font-size: 0.7rem;
-    color: #999;
-    padding: 8px;
-    background-color: #f0f0f5;
-    border-top: 1px solid #eee;
-    flex-shrink: 0;
-}
-
-/* === RESPONSIVIDADE PARA MOBILE === */
-@media (max-width: 450px) {
-    .bot-window {
-        width: 95%;
-        height: 90vh; 
-    }
+@media(max-width:640px){
+  .bot-window {
+    height: 100vh;
+    max-height: 100vh;
+    border-radius: 0;
+  }
 }

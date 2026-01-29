@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/ComoFunciona.css";
+import "../styles/Sobre.css";
 
 const steps = [
   {
@@ -24,9 +24,9 @@ const steps = [
   },
 ];
 
-const ComoFunciona: React.FC = () => {
+const Sobre: React.FC = () => {
   return (
-    <section className="como-funciona" id="como-funciona">
+    <section className="sobre" id="sobre">
       <div className="container">
         <h2>Nosso Método de Trabalho</h2>
         <p className="subtitle">
@@ -46,4 +46,4 @@ const ComoFunciona: React.FC = () => {
   );
 };
 
-export default ComoFunciona;
+export default Sobre;

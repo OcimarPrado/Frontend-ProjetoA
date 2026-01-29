@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import ComoFunciona from "../components/ComoFunciona";
+import Sobre from "../components/Sobre";
 import Planos from "../components/Planos";
 import Footer from "../components/Footer";
 import WhatsAppFloat from "../components/WhatsAppFloat";
@@ -12,7 +12,7 @@ const Home: React.FC = () => {
     <>
       <Header />
       <Hero />
-      <ComoFunciona />
+      <Sobre />
       <Servico/>
       <Planos />
       <Footer />

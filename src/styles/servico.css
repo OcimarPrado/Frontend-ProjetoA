@@ -78,7 +78,7 @@
 /* Responsivo */
 @media (max-width: 768px) {
   .servico {
-    padding: 60px 15px;
+    padding: 120px 15px;
   }
 
   .servico h1 {

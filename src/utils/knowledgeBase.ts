@@ -1,40 +1,53 @@
+
 // src/utils/knowledgeBase.ts
 
-interface FAQ {
+export interface FAQItem {
   question: string;
-  response: string;
+  answer: string;
   keywords: string[];
 }
 
-export const FAQ_BASE = [
+export const FAQ_BASE: FAQItem[] = [
   {
-    question: "O que está incluso no site?",
-    answer: "Desenvolvemos sites modernos e responsivos (celular, tablet e computador) com estrutura otimizada para SEO, páginas estratégicas para seus serviços e botões de agendamento integrados."
+    question: 'O que está incluso no site?',
+    answer:
+      'Site profissional, responsivo, SEO básico, páginas estratégicas e integração com WhatsApp.',
+    keywords: ['incluso', 'inclui', 'site']
   },
   {
-    question: "Vocês fazem manutenção?",
-    answer: "Sim! Temos uma opção recomendada que inclui hospedagem, monitoramento técnico, atualizações de segurança, performance e ajustes técnicos contínuos para garantir que seu site nunca fique desatualizado."
+    question: 'Vocês fazem manutenção?',
+    answer:
+      'Sim. Manutenção inclui hospedagem, atualizações, suporte técnico e monitoramento.',
+    keywords: ['manutenção', 'suporte']
   },
   {
-    question: "O serviço tem contrato?",
-    answer: "Com certeza. Todas as nossas opções são validadas legalmente mediante contrato assinado por ambas as partes, garantindo total segurança e profissionalismo na nossa parceria."
+    question: 'Vocês fazem automação?',
+    answer:
+      'Sim. Automatizamos WhatsApp, formulários, captação de leads e integrações.',
+    keywords: ['automação', 'automatizar', 'bot']
   },
   {
-    question: "O que vocês NÃO fazem?",
-    answer: "Nosso foco é em desenvolvimento web profissional e estratégico. Não realizamos gestão de redes sociais (postagens diárias), edição de vídeos longos ou reparos em hardware/computadores."
+    question: 'Quanto custa?',
+    answer:
+      'O valor depende do diagnóstico. Por isso fazemos algumas perguntas antes.',
+    keywords: ['preço', 'valor', 'custa']
   }
 ];
 
-export const getBotResponse = (query: string): string => {
-  const q = query.toLowerCase();
-  if (q.includes("plano") || q.includes("valor") || q.includes("preço")) {
-    return "Temos duas modalidades principais: o Desenvolvimento Único (focado na entrega do site pronto) e o Site + Manutenção (nossa parceria contínua com hospedagem inclusa). Qual dessas faz mais sentido para o seu momento atual?";
-  }
-  if (q.includes("seo")) {
-    return "O SEO é a organização técnica que fazemos no seu site para facilitar que ele seja encontrado pelo Google. Já entregamos o site preparado para isso!";
-  }
-  // Resposta padrão caso não encontre palavra-chave
-  const faq = FAQ_BASE.find(f => q.includes(f.question.toLowerCase()));
-  return faq ? faq.answer : "Essa é uma ótima pergunta! Nossa equipe técnica pode te dar mais detalhes sobre isso. Gostaria de prosseguir com seu interesse em algum de nossos serviços?";
+export const isQuestion = (msg: string): boolean => {
+  return (
+    msg.includes('?') ||
+    msg.startsWith('o que') ||
+    msg.startsWith('como') ||
+    msg.startsWith('quanto') ||
+    msg.startsWith('vocês')
+  );
 };
-  
+
+export const findFAQResponse = (msg: string): string | null => {
+  const lower = msg.toLowerCase();
+  const found = FAQ_BASE.find(f =>
+    f.keywords.some(k => lower.includes(k))
+  );
+  return found ? found.answer : null;
+};
