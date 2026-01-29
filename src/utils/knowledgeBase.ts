@@ -2,39 +2,69 @@
 
 interface FAQ {
   question: string;
-  response: string;
-  keywords: string[];
+  answer: string;
+  intent: "info" | "venda";
 }
 
-export const FAQ_BASE = [
+export const FAQ_BASE: FAQ[] = [
   {
-    question: "O que está incluso no site?",
-    answer: "Desenvolvemos sites modernos e responsivos (celular, tablet e computador) com estrutura otimizada para SEO, páginas estratégicas para seus serviços e botões de agendamento integrados."
+    question: "o que está incluso",
+    answer:
+      "Criamos sites modernos, rápidos e responsivos (celular, tablet e computador), com estrutura preparada para SEO, páginas estratégicas para seus serviços e botões de contato ou agendamento. Posso te explicar qual formato funciona melhor para o seu negócio.",
+    intent: "info",
   },
   {
-    question: "Vocês fazem manutenção?",
-    answer: "Sim! Temos uma opção recomendada que inclui hospedagem, monitoramento técnico, atualizações de segurança, performance e ajustes técnicos contínuos para garantir que seu site nunca fique desatualizado."
+    question: "manutenção",
+    answer:
+      "Sim. Temos um plano recomendado que inclui hospedagem, suporte técnico, atualizações de segurança, performance e ajustes contínuos. É a opção ideal para quem não quer se preocupar com parte técnica.",
+    intent: "venda",
   },
   {
-    question: "O serviço tem contrato?",
-    answer: "Com certeza. Todas as nossas opções são validadas legalmente mediante contrato assinado por ambas as partes, garantindo total segurança e profissionalismo na nossa parceria."
+    question: "contrato",
+    answer:
+      "Sim. Todo serviço é formalizado com contrato, garantindo segurança, clareza e profissionalismo para ambos os lados.",
+    intent: "info",
   },
   {
-    question: "O que vocês NÃO fazem?",
-    answer: "Nosso foco é em desenvolvimento web profissional e estratégico. Não realizamos gestão de redes sociais (postagens diárias), edição de vídeos longos ou reparos em hardware/computadores."
-  }
+    question: "não fazem",
+    answer:
+      "Não fazemos gestão de redes sociais ou edição de vídeos longos. Nosso foco é desenvolvimento web profissional e automações sob medida.",
+    intent: "info",
+  },
 ];
 
 export const getBotResponse = (query: string): string => {
   const q = query.toLowerCase();
-  if (q.includes("plano") || q.includes("valor") || q.includes("preço")) {
-    return "Temos duas modalidades principais: o Desenvolvimento Único (focado na entrega do site pronto) e o Site + Manutenção (nossa parceria contínua com hospedagem inclusa). Qual dessas faz mais sentido para o seu momento atual?";
+
+  // Preço / plano → fechamento
+  if (q.includes("preço") || q.includes("valor") || q.includes("plano")) {
+    return (
+      "Trabalhamos com duas opções principais: site sob medida com entrega única ou site com manutenção contínua (mais recomendado). Posso te indicar a melhor opção se me disser qual é o seu tipo de negócio."
+    );
   }
+
+  // Automação → upsell
+  if (q.includes("automação") || q.includes("sistema") || q.includes("processo")) {
+    return (
+      "Sim, também desenvolvemos automações sob medida para otimizar atendimento, agendamentos, formulários e processos internos. Quer me contar rapidamente o que você gostaria de automatizar?"
+    );
+  }
+
+  // SEO
   if (q.includes("seo")) {
-    return "O SEO é a organização técnica que fazemos no seu site para facilitar que ele seja encontrado pelo Google. Já entregamos o site preparado para isso!";
+    return (
+      "O site já é entregue preparado para SEO técnico. Isso ajuda seu negócio a ser encontrado no Google desde o início. Você já possui site ou esse seria o primeiro?"
+    );
   }
-  // Resposta padrão caso não encontre palavra-chave
-  const faq = FAQ_BASE.find(f => q.includes(f.question.toLowerCase()));
-  return faq ? faq.answer : "Essa é uma ótima pergunta! Nossa equipe técnica pode te dar mais detalhes sobre isso. Gostaria de prosseguir com seu interesse em algum de nossos serviços?";
+
+  // FAQ padrão
+  const faq = FAQ_BASE.find(f => q.includes(f.question));
+  if (faq) {
+    return `${faq.answer} Quer que eu te mostre a melhor opção para o seu caso?`;
+  }
+
+  // Lead fallback (captura)
+  return (
+    "Consigo te orientar certinho e indicar a melhor solução. Você já tem site ou está começando agora?"
+  );
 };
-  
