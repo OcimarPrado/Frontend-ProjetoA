@@ -1,110 +1,415 @@
+/* ============================================
+   SEÇÃO DE SERVIÇOS - VERSÃO PROFISSIONAL
+   ============================================ */
 
 .servico {
-  padding: 120px 20px;
-  background-color: #0b0f14;
+  padding: 120px 20px 80px;
+  background-color: #0d1620;
   color: #ffffff;
+  position: relative;
 }
 
 .servico .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
+/* ============================================
+   CABEÇALHO DA SEÇÃO
+   ============================================ */
+
 .servico h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  margin-bottom: 16px;
   text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.5px;
 }
 
 .servico .subtitle {
   text-align: center;
-  font-size: 1.1rem;
-  color: #b0b7c3;
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  color: #9ca3af;
   margin-bottom: 60px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  font-weight: 400;
 }
+
+/* ============================================
+   BLOCOS DE SERVIÇO
+   ============================================ */
 
 .servico-bloco {
-  background: #111827;
-  border: 1px solid #1f2937;
-  border-radius: 12px;
-  padding: 30px;
-  margin-bottom: 30px;
+  background: linear-gradient(135deg, #1a2332 0%, #0f1922 100%);
+  border: 1px solid rgba(56, 189, 248, 0.1);
+  border-radius: 16px;
+  padding: 45px 40px;
+  margin-bottom: 28px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
+
+/* Efeito de brilho sutil no hover */
+.servico-bloco::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(56, 189, 248, 0.05),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.servico-bloco:hover::before {
+  left: 100%;
+}
+
+.servico-bloco:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(56, 189, 248, 0.12);
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+/* ============================================
+   TÍTULOS DOS BLOCOS
+   ============================================ */
 
 .servico-bloco h2 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+  font-size: clamp(1.35rem, 3vw, 1.65rem);
+  margin-bottom: 20px;
   color: #38bdf8;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -0.3px;
 }
+
+/* ============================================
+   PARÁGRAFOS
+   ============================================ */
 
 .servico-bloco p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #d1d5db;
-  margin-bottom: 15px;
+  font-size: clamp(0.98rem, 2vw, 1.08rem);
+  line-height: 1.75;
+  color: #cbd5e1;
+  margin-bottom: 26px;
+  text-align: center;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
 }
 
+/* ============================================
+   LISTAS
+   ============================================ */
+
 .servico-bloco ul {
-  padding-left: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .servico-bloco ul li {
-  margin-bottom: 8px;
-  color: #e5e7eb;
-  list-style: disc;
+  color: #e2e8f0;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  line-height: 1.6;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 400;
 }
 
+.servico-bloco ul li::before {
+  content: "✓";
+  color: #38bdf8;
+  font-weight: 700;
+  font-size: 1.25em;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+}
+
+/* ============================================
+   BOTÃO CTA
+   ============================================ */
+
 .servico-cta {
-  margin-top: 60px;
+  margin-top: 70px;
   text-align: center;
+  padding-bottom: 0;
 }
 
 .servico-cta .btn-primary {
   display: inline-block;
-  padding: 14px 30px;
-  background-color: #38bdf8;
-  color: #0b0f14;
-  font-weight: 600;
-  border-radius: 8px;
+  padding: 18px 48px;
+  background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+  color: #0a1628;
+  font-weight: 700;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  border-radius: 12px;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 6px 25px rgba(56, 189, 248, 0.35);
+  text-transform: none;
+  letter-spacing: 0.3px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.servico-cta .btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.servico-cta .btn-primary:hover::before {
+  opacity: 1;
+}
+
+.servico-cta .btn-primary span {
+  position: relative;
+  z-index: 1;
 }
 
 .servico-cta .btn-primary:hover {
-  background-color: #0ea5e9;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 35px rgba(56, 189, 248, 0.5);
+}
+
+.servico-cta .btn-primary:active {
   transform: translateY(-2px);
 }
 
-/* Responsivo */
-@media (max-width: 900px) {
+/* ============================================
+   RESPONSIVIDADE - TABLET
+   ============================================ */
+
+@media (max-width: 1024px) {
   .servico {
-<<<<<<< HEAD
-    padding: 120px 15px;
-=======
-    padding: 15px 15px;
->>>>>>> 46d31041a86f2ca6a3b2369d76a869d8c9680537
+    padding: 80px 25px 70px;
   }
 
-  .servico h1 {
-    font-size: 2rem;
+  .servico .container {
+    max-width: 100%;
   }
 
   .servico-bloco {
-    padding: 25px 20px;
+    padding: 38px 32px;
   }
 }
+
+@media (max-width: 900px) {
+  .servico {
+    padding: 70px 20px 60px;
+  }
+
+  .servico .subtitle {
+    margin-bottom: 50px;
+  }
+
+  .servico-bloco {
+    padding: 35px 28px;
+    margin-bottom: 24px;
+  }
+
+  .servico-bloco h2 {
+    margin-bottom: 16px;
+  }
+
+  .servico-bloco p {
+    margin-bottom: 22px;
+  }
+
+  .servico-bloco ul {
+    gap: 12px;
+  }
+
+  .servico-cta {
+    margin-top: 60px;
+  }
+}
+
+/* ============================================
+   RESPONSIVIDADE - MOBILE
+   ============================================ */
 
 @media (max-width: 768px) {
   .servico {
-    padding: 120px 15px;
+    padding: 60px 18px 50px;
   }
 
   .servico h1 {
-    font-size: 2rem;
+    margin-bottom: 14px;
+  }
+
+  .servico .subtitle {
+    margin-bottom: 45px;
   }
 
   .servico-bloco {
-    padding: 25px 20px;
+    padding: 30px 24px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+  }
+
+  .servico-bloco h2 {
+    margin-bottom: 14px;
+  }
+
+  .servico-bloco p {
+    margin-bottom: 20px;
+  }
+
+  .servico-bloco ul {
+    gap: 11px;
+    max-width: 100%;
+  }
+
+  .servico-cta {
+    margin-top: 50px;
+  }
+
+  .servico-cta .btn-primary {
+    padding: 16px 38px;
+    width: auto;
+    max-width: 100%;
+    font-size: 1rem;
   }
 }
 
+@media (max-width: 480px) {
+  .servico {
+    padding: 50px 16px 40px;
+  }
+
+  .servico h1 {
+    margin-bottom: 12px;
+  }
+
+  .servico .subtitle {
+    margin-bottom: 40px;
+  }
+
+  .servico-bloco {
+    padding: 26px 20px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+  }
+
+  .servico-bloco h2 {
+    margin-bottom: 12px;
+  }
+
+  .servico-bloco p {
+    margin-bottom: 18px;
+  }
+
+  .servico-bloco ul {
+    gap: 10px;
+  }
+
+  .servico-bloco ul li {
+    gap: 8px;
+  }
+
+  .servico-cta {
+    margin-top: 45px;
+  }
+
+  .servico-cta .btn-primary {
+    padding: 15px 32px;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 10px;
+  }
+}
+
+/* ============================================
+   RESPONSIVIDADE - MOBILE PEQUENO
+   ============================================ */
+
+@media (max-width: 380px) {
+  .servico {
+    padding: 45px 15px 35px;
+  }
+
+  .servico-bloco {
+    padding: 24px 18px;
+  }
+
+  .servico-bloco ul li::before {
+    width: 20px;
+    height: 20px;
+    font-size: 1.15em;
+  }
+
+  .servico-cta .btn-primary {
+    padding: 14px 28px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ============================================
+   MELHORIAS DE ACESSIBILIDADE
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .servico-bloco,
+  .servico-cta .btn-primary {
+    transition: none;
+  }
+  
+  .servico-bloco::before {
+    display: none;
+  }
+}
+
+/* Melhor contraste para leitores de tela */
+.servico-bloco:focus-within {
+  outline: 2px solid #38bdf8;
+  outline-offset: 4px;
+}
+
+/* ============================================
+   PERFORMANCE - OTIMIZAÇÃO GPU
+   ============================================ */
+
+.servico-bloco,
+.servico-cta .btn-primary {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}

@@ -1,10 +1,9 @@
-
 import React from "react";
 import "../styles/servico.css";
 
 const Servico: React.FC = () => {
   return (
-    <section className="servicos">
+    <section className="servico">
       <div className="container">
         <h1>Serviços</h1>
         <p className="subtitle">
@@ -74,7 +73,7 @@ const Servico: React.FC = () => {
             rel="noopener noreferrer"
             className="btn-primary"
           >
-            Falar com a Ocyan-Tech
+            <span>Falar com a Ocyan-Tech</span>
           </a>
         </div>
       </div>
