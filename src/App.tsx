@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { useAuth } from './context/AuthContext';
+//import { useAuth } from './context/AuthContext';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import Contrato from './pages/Contrato';
 
 // Componente de Rota Protegida
-const ProtectedRoute: React.FC<{ children: React.ReactElement }> = ({ children }) => {
+/*const ProtectedRoute: React.FC<{ children: React.ReactElement }> = ({ children }) => {
   const { isAuthenticated } = useAuth();
   
   if (!isAuthenticated) {
@@ -14,6 +14,12 @@ const ProtectedRoute: React.FC<{ children: React.ReactElement }> = ({ children }
   
   return children;
 };
+*/
+
+const ProtectedRoute: React.FC<{ children: React.ReactElement }> = ({ children }) => {
+  return children;
+};
+
 
 function App() {
   return (
