@@ -1,44 +1,91 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "../styles/Sobre.css";
 
 const steps = [
+
   {
-    title: "Comunicação Clara",
-    description:
-      "Todo o processo é alinhado desde o início, com comunicação objetiva e sem termos técnicos desnecessários.",
+    title: "Comunicação Direta",
+    desc: "Conversamos de forma simples e objetiva. Você acompanha o projeto e entende exatamente o que está sendo feito."
   },
   {
-    title: "Processo Organizado",
-    description:
-      "Seguimos um método definido para evitar retrabalho, atrasos e decisões improvisadas durante o projeto.",
+    title: "Processo Simples",
+    desc: "Trabalho organizado, sem burocracia. Cada etapa existe para entregar um site funcional e eficiente."
   },
   {
-    title: "Prazos Definidos",
-    description:
-      "Cada etapa possui prazos claros, garantindo previsibilidade e segurança até a entrega final.",
+    title: "Prazos Realistas",
+    desc: "Definimos prazos possíveis e cumprimos o que foi combinado, sem promessas irreais."
   },
   {
-    title: "Tranquilidade Após a Entrega",
-    description:
-      "Mesmo após o projeto concluído, permanecemos disponíveis para suporte, ajustes e orientações.",
-  },
-];
+    title: "Entrega Responsável",
+    desc: "Após a entrega, realizamos ajustes pontuais conforme combinado em contrato."
+  }];
+
+
 
 const Sobre: React.FC = () => {
   return (
-    <section className="sobre" id="sobre">
+    <section className="sobre-section" id="sobre">
       <div className="container">
-        <h2>Nosso Método de Trabalho</h2>
-        <p className="subtitle">
-          Transparência, organização e prazos claros em todas as etapas do projeto.
-        </p>
+        
+        <header className="sobre-header-center">
+          <motion.span 
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="overline"
+          >
+            CONHEÇA A OCYAN-TECH
+          </motion.span>
+          
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+          >
+            Como Nossa <span>Empresa Trabalha</span>
+          </motion.h2>
 
-        <div className="steps">
+          <motion.p 
+            className="company-bio"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+          >
+            A Ocyan Tech ajuda empresas a transformar idéias e necessidades em soluções 
+            digitais que funcionam de verdade. Criamos sites e sistemas pensados para facilitar processos, 
+            melhorar a presença online e gerar resultados práticos no dia a dia do negócio.
+          </motion.p>
+          
+          <div className="accent-bar"></div>
+        </header>
+
+        <div className="steps-horizontal-wrapper">
           {steps.map((step, index) => (
-            <div key={index} className="step-card">
-              <h3>{`${index + 1}. ${step.title}`}</h3>
-              <p>{step.description}</p>
-            </div>
+            <motion.div
+              key={index}
+              className={`step-horizontal-card ${index % 2 === 0 ? "from-left" : "from-right"}`}
+              initial={{ 
+                opacity: 0, 
+                x: index % 2 === 0 ? -120 : 120 
+              }}
+              whileInView={{ 
+                opacity: 1, 
+                x: 0 
+              }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ 
+                type: "spring", 
+                stiffness: 60, 
+                damping: 18,
+                delay: 0.1 
+              }}
+            >
+              <div className="step-content-dark">
+                <div className="step-number-float">{index + 1}</div>
+                <h3>{step.title}</h3>
+                <p>{step.desc}</p>
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>

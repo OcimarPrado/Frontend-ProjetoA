@@ -24,7 +24,7 @@ const Header: React.FC = () => {
         <div className="header-container">
           <div className="logo-container">
             <div className="logo-text"><span>Ocyan</span>-Tech</div>
-            <div className="slogan">Sites profissionais que geram clientes para o seu negócio</div>
+            <div className="slogan">Sites inteligentes automatizando resultados!</div>
           </div>
 
           <nav className={`nav-menu ${menuOpen ? "active" : ""}`}>
