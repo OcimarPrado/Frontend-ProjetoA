@@ -1,4 +1,3 @@
-/* MANTENDO TODO O SEU CSS ORIGINAL ABAIXO */
 .header {
   width: 100%;
   padding: 15px 20px;
@@ -53,7 +52,7 @@
 
 @keyframes pulseGlow {
   0% { text-shadow: 0 0 4px rgba(0,170,255,0.4),0 0 8px rgba(0,170,255,0.2); color: #00aaff; }
-  50% { text-shadow: 0 0 10px rgba(2, 210, 252, 0.8),0 0 200px rgba(0,200,255,0.4); color: #33ccff; }
+  50% { text-shadow: 0 0 10px rgba(2, 210, 252, 0.8),0 0 20px rgba(0,200,255,0.4); color: #33ccff; }
   100% { text-shadow: 0 0 4px rgba(0,170,255,0.4),0 0 8px rgba(0,170,255,0.2); color: #00aaff; }
 }
 
@@ -65,36 +64,30 @@
   z-index: 1001; 
 }
 
+/* Botões de Link (Início, Sobre, Serviços, Planos e Contato) */
 .nav-button {
   cursor: pointer;
   padding: 8px 15px;
   border-radius: 8px;
   transition: all 0.3s ease;
   font-weight: 600;
-  color: #007bff;
+  color: #007bff; /* Mesma cor base dos outros links */
   text-decoration: none;
   display: inline-block;
   background: none;
   border: none;
   font-family: inherit;
   font-size: 1rem;
-  /* Melhora o toque no celular */
-  -webkit-tap-highlight-color: transparent;
 }
 
 .nav-button:hover {
   background-color: #007bff;
-  color: #ffffff !important;
+  color: #ffffff !important; /* Letra branca no hover conforme solicitado */
   box-shadow: 0 4px 10px rgba(0,123,255,0.3);
   transform: translateY(-2px);
 }
 
-/* Adicionando estado active para feedback visual no clique do celular */
-.nav-button:active {
-  transform: scale(0.95);
-  background-color: #0056b3;
-}
-
+/* Botão de Destaque (Quero meu site) */
 .btn-header {
   cursor: pointer;
   background-color: #00aaff;
@@ -104,17 +97,12 @@
   font-weight: 600;
   transition: all 0.3s ease;
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .btn-header:hover {
   background-color: #008ecc;
   box-shadow: 0 5px 15px rgba(0,170,255,0.4);
   transform: translateY(-2px);
-}
-
-.btn-header:active {
-  transform: scale(0.95);
 }
 
 /* HAMBURGUER */
@@ -157,37 +145,21 @@
     background-color: #fff;
     overflow: hidden;
     max-height: 0;
-    /* Adicionando opacidade para uma transição mais suave e visível */
-    opacity: 0;
-    visibility: hidden;
-    transition: max-height 0.4s ease, padding 0.3s ease, opacity 0.3s ease;
+    transition: max-height 0.3s ease, padding 0.3s ease;
     gap: 12px;
     padding: 0;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   }
 
   .nav-menu.active {
-    max-height: 600px; 
-    padding: 20px 0;
-    opacity: 1;
-    visibility: visible;
-  }
-
-  /* Garante que os itens do menu apareçam com uma leve animação de entrada */
-  .nav-menu.active .nav-button {
-    animation: fadeInMenu 0.4s ease forwards;
+    max-height: 500px; 
+    padding: 15px 0;
   }
 
   .hamburger { display: flex; }
 }
 
 @media (max-width: 500px) {
-  .logo-text { font-size: 1.4rem; } /* Aumentei um pouco para melhor leitura */
-  .slogan { font-size: 0.75rem; } /* Aumentei um pouco para a animação pulse aparecer melhor */
-}
-
-/* Nova animação para os itens do menu no celular */
-@keyframes fadeInMenu {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+  .logo-text { font-size: 1.2rem; }
+  .slogan { font-size: 0.65rem; }
 }
