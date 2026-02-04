@@ -47,9 +47,9 @@ const Sobre: React.FC = () => {
 
           <motion.p 
             className="company-bio"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
+            initial={{ opacity: 10 }}
+            whileInView={{ opacity: 100 }}
+            transition={{ delay: 0.1 }}
           >
             A Ocyan Tech ajuda empresas a transformar idéias e necessidades em soluções 
             digitais que funcionam de verdade. Criamos sites e sistemas pensados para facilitar processos, 
