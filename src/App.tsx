@@ -1,16 +1,32 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Home from './pages/Home';
-import Contrato from './pages/Contrato';
+// src/App.tsx
+import { useEffect } from 'react';
+import { observeElements } from './utils/scrollAnimations';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Sobre from './components/Sobre';
+import Servico from './components/Servico';
+import Planos from './components/Planos';
+import Footer from './components/Footer';
+import './App.css';
 
 function App() {
+  useEffect(() => {
+    const observer = observeElements();
+    
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contrato" element={<Contrato />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Header />
+      <Hero />
+      <Sobre />
+      <Servico />
+      <Planos />
+      <Footer />
+    </>
   );
 }
 

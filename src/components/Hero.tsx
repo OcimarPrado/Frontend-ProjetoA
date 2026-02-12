@@ -7,28 +7,37 @@ const Hero: React.FC = () => {
       <div className="hero-inner">
         <div className="hero-text">
           <h1>
-            <span className="highlight">Acelere</span> seu atendimento,{" "}
-            <span className="highlight">transforme</span> experiências e{" "}
-            <span className="highlight">converta</span> cada interação em resultados.
+            <span className="highlight">Criação de Sites</span> que 
+            <span className="highlight"> convertem</span> interações em <span className="highlight">resultados reais.</span>
           </h1>
 
           <p className="hero-description">
             Criamos sites rápidos, modernos e prontos para vender.
-            Se precisar, automatizamos atendimento, agendamentos e processos.</p>
+            Automatizamos atendimento, agendamentos e processos.
+          </p>
 
           <div className="hero-cta">
-            <a href="https://wa.me/5551986730107?text=Olá, acessei o site ocyan-tech e gostaria de saber mais sobre seus serviços." className="btn-primary" target="_blank" rel="noopener noreferrer">Saiba Mais</a>
+            <a 
+              href="https://wa.me/5551986730107?text=Olá, acessei o site ocyan-tech e gostaria de saber mais sobre seus serviços." 
+              className="btn-primary" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Saiba mais sobre nossos serviços de criação de sites no WhatsApp"
+            >
+              Saiba Mais
+            </a>
           </div>
 
           <div className="hero-features">
             <div className="feature-badge">Sites institucionais e landing pages</div>
-            <div className="feature-badge">Wordpress ou código sob medida</div>
+            <div className="feature-badge">WordPress ou código sob medida</div>
             <div className="feature-badge">Automação sob demanda</div>
           </div>
         </div>
 
         <div className="info-box">
-          <h3>Como Sua Empresa Será Atendida</h3>
+          {/* Ajustado para H2 para melhorar a hierarquia de SEO */}
+          <h2>Como Sua Empresa Será Atendida</h2>
           <div className="info-steps">
             <div className="info-step">
               <div className="step-number">1</div>
@@ -41,7 +50,7 @@ const Hero: React.FC = () => {
             <div className="info-step">
               <div className="step-number">2</div>
               <div className="step-content">
-                <strong>Deisgn estratégico sob medida</strong>
+                <strong>Design estratégico sob medida</strong>
                 <p>Desenvolvemos um visual profissional alinhado à identidade da marca, focado em clareza, confiança e conversão.</p>
               </div>
             </div>
@@ -58,7 +67,7 @@ const Hero: React.FC = () => {
               <div className="step-number">4</div>
               <div className="step-content">
                 <strong>Acompanhamento após entrega</strong>
-                <p>Oferecemos suporte inicial, orientações e ajutes necessários para garantir o pleno funcionamento do projeto.</p>
+                <p>Oferecemos suporte inicial, orientações e ajustes necessários para garantir o pleno funcionamento do projeto.</p>
               </div>
             </div>
           </div>
