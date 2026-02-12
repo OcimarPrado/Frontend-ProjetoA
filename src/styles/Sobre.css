@@ -110,7 +110,7 @@
   content: '';
   position: absolute;
   top: 50%;
-  width: 30px;
+  width: 0px;
   height: 2px;
   background: linear-gradient(90deg, transparent, #0066ff);
 }
