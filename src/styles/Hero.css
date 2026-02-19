@@ -1,10 +1,10 @@
 .hero {
   background: linear-gradient(160deg, #060e1f 0%, #0b1a35 60%, #0d2248 100%);
   color: #fff;
-  padding: 6rem 1.5rem 4rem;
+  padding: 4rem 1.5rem 4rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: justify;
   min-height: 100svh;
   position: relative;
   overflow: hidden;
