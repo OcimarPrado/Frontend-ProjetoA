@@ -7,67 +7,59 @@ const Hero: React.FC = () => {
       <div className="hero-inner">
         <div className="hero-text">
           <h1>
-            <span className="highlight">Criação de Sites</span> que 
-            <span className="highlight"> convertem</span> interações em <span className="highlight">resultados reais.</span>
+            <span className="highlight">Acelere</span> seu atendimento,{" "}
+            <span className="highlight">transforme</span> experiências e{" "}
+            <span className="highlight">converta</span> cada interação em resultados.
           </h1>
 
           <p className="hero-description">
-            Criamos sites rápidos, modernos e prontos para vender.
-            Automatizamos atendimento, agendamentos e processos.
+            Ajudamos você a se conectar com seus clientes de forma inteligente e automatizada — aproximando pessoas, otimizando tempo e gerando resultados reais.
           </p>
 
           <div className="hero-cta">
-            <a 
-              href="https://wa.me/5551986730107?text=Olá, acessei o site ocyan-tech e gostaria de saber mais sobre seus serviços." 
-              className="btn-primary" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="Saiba mais sobre nossos serviços de criação de sites no WhatsApp"
-            >
-              Saiba Mais
-            </a>
+            <a href="#planos" className="btn-primary">Ver Planos</a>
+            <a href="#como-funciona" className="btn-secondary">Como Funciona</a>
           </div>
 
           <div className="hero-features">
-            <div className="feature-badge">Sites institucionais e landing pages</div>
-            <div className="feature-badge">WordPress ou código sob medida</div>
-            <div className="feature-badge">Automação sob demanda</div>
+            <div className="feature-badge">Atendimento 24/7</div>
+            <div className="feature-badge">Qualificação de LEAD</div>
+            <div className="feature-badge">Configuração Rápida</div>
           </div>
         </div>
 
         <div className="info-box">
-          {/* Ajustado para H2 para melhorar a hierarquia de SEO */}
-          <h2>Como Sua Empresa Será Atendida</h2>
+          <h3>Como Sua Empresa Será Atendida</h3>
           <div className="info-steps">
             <div className="info-step">
               <div className="step-number">1</div>
               <div className="step-content">
-                <strong>Análise do seu negócio</strong>
-                <p>Entendemos seu público, objetivo e tipo de serviço para definir a estrutura certa do site.</p>
+                <strong>Cadastro rápido</strong>
+                <p>Acesse o painel e configure as informações básicas do seu negócio para personalizar o atendimento.</p>
               </div>
             </div>
 
             <div className="info-step">
               <div className="step-number">2</div>
               <div className="step-content">
-                <strong>Design estratégico sob medida</strong>
-                <p>Desenvolvemos um visual profissional alinhado à identidade da marca, focado em clareza, confiança e conversão.</p>
+                <strong>Receba seu link</strong>
+                <p>Exemplo: ocyan-tech.com.br/seu-negocio. Seu link já vem pronto para compartilhar com clientes.</p>
               </div>
             </div>
 
             <div className="info-step">
               <div className="step-number">3</div>
               <div className="step-content">
-                <strong>Desenvolvimento e publicação</strong>
-                <p>Executamos o desenvolvimento completo do site, com configuração técnica, publicação e testes finais.</p>
+                <strong>Cliente inicia conversa estruturada</strong>
+                <p>O cliente acessa o link e responde perguntas organizadas que ajudam a entender a demanda.</p>
               </div>
             </div>
 
             <div className="info-step">
               <div className="step-number">4</div>
               <div className="step-content">
-                <strong>Acompanhamento após entrega</strong>
-                <p>Oferecemos suporte inicial, orientações e ajustes necessários para garantir o pleno funcionamento do projeto.</p>
+                <strong>Organização automática do contato</strong>
+                <p>As respostas são registradas e encaminhadas para você já estruturadas, facilitando o atendimento e evitando perda de informações.</p>
               </div>
             </div>
           </div>

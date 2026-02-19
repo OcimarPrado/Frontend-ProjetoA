@@ -1,0 +1,268 @@
+/* ============================================
+   SEÇÃO COMO FUNCIONA (PREMIUM ELEMENTOR STYLE)
+   ============================================ */
+.como-funciona {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  padding: 50px 20px;
+  color: #0f172a;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow decorativo duplo */
+.como-funciona::before {
+  content: "";
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(56,189,248,0.12) 0%, transparent 70%);
+  top: -300px;
+  right: -250px;
+  z-index: 0;
+  animation: pulse 8s ease-in-out infinite;
+}
+
+.como-funciona::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(139,92,246,0.08) 0%, transparent 70%);
+  bottom: -200px;
+  left: -150px;
+  z-index: 0;
+  animation: pulse 8s ease-in-out infinite 4s;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+.como-funciona .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.como-funciona h2 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 50%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.como-funciona .subtitle {
+  font-size: 1.15rem;
+  color: #64748b;
+  margin-bottom: 60px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* ============================================
+   STEPS CONTAINER - TODOS EM UMA LINHA
+   ============================================ */
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* ============================================
+   CARD (ESTILO ELEMENTOR PREMIUM)
+   ============================================ */
+.step-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 50px 35px;
+  flex: 1;
+  max-width: 300px;
+  border: 1px solid #e2e8f0;
+  box-shadow:
+    0 4px 6px rgba(15, 23, 42, 0.03),
+    0 1px 3px rgba(15, 23, 42, 0.02);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efeito de borda animada no hover */
+.step-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #0ea5e9, #8b5cf6);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Glow interno sutil */
+.step-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(37,99,235,0.05) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.step-card:hover::before {
+  transform: scaleX(1);
+}
+
+.step-card:hover::after {
+  opacity: 1;
+}
+
+/* Hover elegante estilo Elementor */
+.step-card:hover {
+  transform: translateY(-12px);
+  box-shadow:
+    0 25px 50px rgba(37, 99, 235, 0.12),
+    0 10px 25px rgba(15, 23, 42, 0.08);
+  border-color: rgba(37, 99, 235, 0.2);
+}
+
+/* Ícone ou número do step */
+.step-card .step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 28px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.step-card:hover .step-number {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.35);
+}
+
+.step-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+  transition: color 0.3s ease;
+}
+
+.step-card:hover h3 {
+  color: #2563eb;
+}
+
+.step-card p {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+/* ============================================
+   VARIANTES DE COR PARA CARDS (OPCIONAL)
+   ============================================ */
+.step-card:nth-child(1) .step-number {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+}
+
+.step-card:nth-child(2) .step-number {
+  background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+}
+
+.step-card:nth-child(3) .step-number {
+  background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+}
+
+.step-card:nth-child(4) .step-number {
+  background: linear-gradient(135deg, #ec4899 0%, #f472b6 100%);
+}
+
+/* ============================================
+   RESPONSIVO
+   ============================================ */
+@media (max-width: 1200px) {
+  .step-card {
+    padding: 45px 30px;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .como-funciona {
+    padding: 100px 20px;
+  }
+  
+  .steps {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  
+  .step-card {
+    flex: 1 1 calc(50% - 15px);
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .como-funciona {
+    padding: 80px 20px;
+  }
+  
+  .steps {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .step-card {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  
+  .como-funciona h2 {
+    margin-bottom: 12px;
+  }
+  
+  .como-funciona .subtitle {
+    margin-bottom: 50px;
+    font-size: 1.05rem;
+  }
+}
+
+/* ============================================
+   ACESSIBILIDADE
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .step-card,
+  .step-number,
+  .como-funciona::before,
+  .como-funciona::after {
+    animation: none;
+    transition: none;
+  }
+}

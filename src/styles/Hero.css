@@ -1,713 +1,162 @@
-/* ============================================
-   HERO SECTION - OPTIMIZED FOR UX & SEO
-   ============================================ */
-
-/* ====================
-   BASE HERO STRUCTURE
-   ==================== */
 .hero {
-    background: linear-gradient(135deg, #0a1628 0%, #0d1f3f 50%, #0a1628 100%);
-    color: #fff;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 0 0 0;
-    box-sizing: border-box;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Efeito de fundo animado - OTIMIZADO */
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 20% 30%, rgba(0, 102, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(0, 170, 255, 0.08) 0%, transparent 50%);
-    pointer-events: none;
-    animation: pulseHero 12s ease-in-out infinite;
-    /* UX: Reduzido opacity para não distrair */
-    opacity: 0.4;
-}
-
-@keyframes pulseHero {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 0.6; }
-}
-
-/* Partículas flutuantes - PERFORMANCE OTIMIZADA */
-.hero::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background-image: 
-        radial-gradient(2px 2px at 25% 35%, rgba(0, 170, 255, 0.2), transparent),
-        radial-gradient(1px 1px at 75% 65%, rgba(0, 102, 255, 0.15), transparent),
-        radial-gradient(1px 1px at 50% 50%, rgba(255, 255, 255, 0.08), transparent);
-    background-size: 300px 300px, 200px 200px, 250px 250px;
-    animation: floatHeroParticles 40s linear infinite;
-    pointer-events: none;
-    opacity: 0.3;
-    /* PERFORMANCE: Forçar GPU acceleration */
-    transform: translateZ(0);
-    will-change: transform;
-}
-
-@keyframes floatHeroParticles {
-    0% { transform: translateY(0) rotate(0deg) translateZ(0); }
-    100% { transform: translateY(-100px) rotate(360deg) translateZ(0); }
+  background: linear-gradient(135deg, #0b1221 0%, #101c38 100%);
+  color: #fff;
+  padding: 10rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    max-width: 1400px;
-    width: 100%;
-    align-items: center;
-    padding: 2rem 40px;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  width: 100%;
+  align-items: start;
 }
 
-/* ====================
-   TEXTO DO HERO - SEO OPTIMIZED
-   ==================== */
-.hero-text {
-    opacity: 0;
-    animation: heroTextAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
-}
-
-@keyframes heroTextAppear {
-    0% {
-        opacity: 0;
-        transform: translateY(30px) scale(0.98);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-/* SEO: H1 otimizado para leitura e rastreamento */
 .hero h1 {
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    font-weight: 900;
-    margin-bottom: 1.5rem;
-    line-height: 1.3; /* UX: Melhor legibilidade */
-    letter-spacing: -1.5px;
-    color: #ffffff;
-    /* SEO: Garantir que o texto seja sempre legível */
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
 }
 
-.hero h1 .highlight {
-    background: linear-gradient(135deg, #0066ff 0%, #00aaff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    position: relative;
-    display: inline-block;
-    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); /* UX: Transição mais suave */
+.hero h1 span {
+  color: #00aaff;
+  text-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
 }
 
-.hero h1 .highlight::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(90deg, #0066ff, #00aaff);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-    border-radius: 10px;
-    opacity: 0;
-}
-
-/* UX: Hover mais sutil, não distrai */
-.hero h1:hover .highlight::after {
-    transform: scaleX(1);
-    opacity: 0.8;
-}
-
-.hero h1:hover .highlight {
-    text-shadow: 0 0 20px rgba(0, 170, 255, 0.4);
-    transform: translateY(-1px);
-}
-
-/* SEO: Descrição otimizada para snippet */
 .hero-description {
-    font-size: clamp(1.05rem, 2.5vw, 1.25rem);
-    color: #e2e8f0; /* UX: Melhor contraste */
-    margin-bottom: 2.5rem;
-    line-height: 1.8; /* UX: Melhor legibilidade */
-    font-weight: 400; /* UX: Peso mais legível */
-    max-width: 600px;
-    letter-spacing: 0.2px;
-    /* SEO: Garantir que o texto seja rastreável */
-    text-rendering: optimizeLegibility;
+  font-size: 1.2rem;
+  color: #cfd6e0;
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
-/* ====================
-   BOTÃO CTA - UX OPTIMIZED
-   ==================== */
 .hero-cta {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.9rem 1.8rem;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 18px 45px;
-    border-radius: 14px;
-    font-weight: 700; /* UX: Reduzido para melhor legibilidade */
-    font-size: 1.05rem;
-    text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    background: linear-gradient(135deg, #0066ff 0%, #00aaff 100%);
-    color: #ffffff;
-    box-shadow: 
-        0 8px 24px rgba(0, 102, 255, 0.35),
-        0 4px 10px rgba(0, 0, 0, 0.15),
-        inset 0 -2px 6px rgba(0, 0, 0, 0.1),
-        inset 0 2px 3px rgba(255, 255, 255, 0.25);
-    position: relative;
-    overflow: hidden;
-    letter-spacing: 0.3px;
-    /* UX: Cursor pointer explícito */
-    cursor: pointer;
-    /* A11Y: Foco visível para teclado */
-    outline-offset: 4px;
-    /* PERFORMANCE */
-    will-change: transform;
-    backface-visibility: hidden;
+  background: linear-gradient(90deg, #0066ff, #00aaff);
+  color: #fff;
 }
 
-/* A11Y: Estado de foco para navegação por teclado */
-.btn-primary:focus-visible {
-    outline: 3px solid #00aaff;
-    outline-offset: 4px;
-}
-
-.btn-primary::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #0052cc 0%, #0088dd 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-/* UX: Efeito de hover mais contido */
 .btn-primary:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: 
-        0 12px 32px rgba(0, 102, 255, 0.5),
-        0 6px 12px rgba(0, 0, 0, 0.2),
-        inset 0 -2px 8px rgba(0, 0, 0, 0.15),
-        inset 0 2px 4px rgba(255, 255, 255, 0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 102, 255, 0.5);
 }
 
-.btn-primary:hover::before {
-    opacity: 1;
+.btn-secondary {
+  border: 2px solid #00aaff;
+  color: #00aaff;
 }
 
-/* UX: Feedback tátil no clique */
-.btn-primary:active {
-    transform: translateY(-2px) scale(1);
-    transition-duration: 0.1s;
+.btn-secondary:hover {
+  background: #00aaff;
+  color: #fff;
 }
 
-/* ====================
-   BADGES - UX MELHORADO
-   ==================== */
 .hero-features {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
 }
 
 .feature-badge {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 50px;
-    padding: 12px 24px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #e2e8f0;
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    position: relative;
-    overflow: hidden;
-    cursor: default;
-    letter-spacing: 0.2px;
-    box-shadow: 
-        0 4px 12px rgba(0, 0, 0, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    /* PERFORMANCE */
-    will-change: transform;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  color: #a9b4c6;
+  transition: all 0.3s ease;
 }
 
-/* UX: Efeito de brilho mais sutil */
-.feature-badge::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.12), transparent);
-    transition: left 0.5s ease;
-}
-
-.feature-badge:hover::before {
-    left: 100%;
-}
-
-/* UX: Hover mais discreto */
 .feature-badge:hover {
-    background: linear-gradient(135deg, rgba(0, 102, 255, 0.15) 0%, rgba(0, 170, 255, 0.1) 100%);
-    color: #ffffff;
-    transform: translateY(-3px) scale(1.03);
-    box-shadow: 
-        0 6px 20px rgba(0, 102, 255, 0.25),
-        0 4px 10px rgba(0, 0, 0, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.15);
-    border-color: rgba(0, 170, 255, 0.3);
+  background: #00aaff;
+  color: #fff;
 }
 
-/* ====================
-   INFO BOX - UX & SEO OPTIMIZED
-   ==================== */
+/* Info Box (lado direito) */
 .info-box {
-    background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
-    color: #0b3c7d;
-    padding: 45px 40px;
-    border-radius: 28px;
-    box-shadow: 
-        0 20px 50px rgba(0, 0, 0, 0.12),
-        0 10px 25px rgba(0, 0, 0, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8);
-    width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    opacity: 0;
-    animation: infoBoxAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
-    position: relative;
-    overflow: hidden;
+  background: #fff;
+  color: #0b3c7d;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes infoBoxAppear {
-    0% {
-        opacity: 0;
-        transform: translateX(30px) scale(0.98);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0) scale(1);
-    }
-}
-
-.info-box::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(0, 102, 255, 0.04) 0%, transparent 70%);
-    pointer-events: none;
-}
-
-/* SEO: H3 otimizado */
 .info-box h3 {
-    font-size: clamp(1.4rem, 3vw, 1.8rem);
-    font-weight: 900;
-    margin-bottom: 2rem;
-    color: #0b3c7d;
-    text-align: center;
-    letter-spacing: -0.5px;
-    position: relative;
-    line-height: 1.3;
-}
-
-.info-box h3::after {
-    content: '';
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 4px;
-    background: linear-gradient(90deg, #0066ff, #00aaff);
-    border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #0b3c7d;
+  text-align: center;
 }
 
 .info-steps {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-/* UX: Steps mais responsivos ao hover */
 .info-step {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.2rem;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 16px;
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    border: 1px solid rgba(11, 60, 125, 0.08);
-    position: relative;
-    overflow: hidden;
-}
-
-.info-step::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(180deg, #0066ff, #00aaff);
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.info-step:hover::before {
-    transform: scaleY(1);
-}
-
-.info-step:hover {
-    transform: translateX(6px);
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 
-        0 6px 20px rgba(11, 60, 125, 0.08),
-        0 4px 10px rgba(0, 0, 0, 0.04);
-    border-color: rgba(0, 102, 255, 0.12);
+  display: flex;
+  align-items: start;
+  gap: 1rem;
 }
 
 .step-number {
-    background: linear-gradient(135deg, #0b3c7d 0%, #0d4a98 100%);
-    color: #fff;
-    font-weight: 800;
-    width: 48px;
-    height: 48px;
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    font-size: 1.3rem;
-    box-shadow: 
-        0 6px 18px rgba(11, 60, 125, 0.3),
-        inset 0 -2px 6px rgba(0, 0, 0, 0.15),
-        inset 0 2px 4px rgba(255, 255, 255, 0.2);
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    position: relative;
+  background: #0b3c7d;
+  color: #fff;
+  font-weight: 700;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-/* UX: Hover mais suave no número */
-.info-step:hover .step-number {
-    transform: scale(1.08) rotate(-3deg);
-    box-shadow: 
-        0 8px 24px rgba(11, 60, 125, 0.4),
-        inset 0 -2px 6px rgba(0, 0, 0, 0.2),
-        inset 0 2px 4px rgba(255, 255, 255, 0.25);
-}
-
-.step-content {
-    flex: 1;
-}
-
-/* SEO: Strong tags para destaque semântico */
 .step-content strong {
-    display: block;
-    font-size: clamp(1rem, 2vw, 1.15rem);
-    color: #0b3c7d;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-    letter-spacing: -0.2px;
-    transition: color 0.3s ease;
-    line-height: 1.4;
-}
-
-.info-step:hover .step-content strong {
-    color: #0066ff;
+  display: block;
+  font-size: 1rem;
+  color: #0b3c7d;
+  margin-bottom: 0.3rem;
 }
 
 .step-content p {
-    color: #64748b;
-    font-size: clamp(0.9rem, 2vw, 1rem);
-    margin: 0;
-    line-height: 1.7;
-    font-weight: 400;
-    transition: color 0.3s ease;
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0;
 }
 
-.info-step:hover .step-content p {
-    color: #475569;
-}
-
-/* ====================
-   RESPONSIVIDADE - TABLET
-   ==================== */
-@media (max-width: 1024px) {
-    .hero-inner {
-        gap: 3rem;
-        padding: 2rem 30px;
-    }
-
-    .info-box {
-        padding: 38px 32px;
-    }
-}
-
+/* Responsivo */
 @media (max-width: 900px) {
-    .hero-inner {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        padding: 2rem 20px;
-    }
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
 
-    .hero-text {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .info-box {
+    margin-top: 3rem;
+  }
 
-    .hero h1 {
-        text-align: center;
-    }
-
-    .hero-description {
-        text-align: center;
-        max-width: 100%;
-    }
-
-    .hero-cta {
-        justify-content: center;
-    }
-
-    .hero-features {
-        justify-content: center;
-    }
-
-    .info-box {
-        margin-top: 1rem;
-        width: 100%;
-    }
-}
-
-/* ====================
-   RESPONSIVIDADE - MOBILE
-   ==================== */
-@media (max-width: 768px) {
-    .hero {
-        padding: 70px 0 0 0;
-        /* UX: Reduzir altura mínima em mobile */
-        min-height: auto;
-    }
-
-    .hero-inner {
-        padding: 2rem 18px;
-        gap: 2.5rem;
-    }
-
-    .hero-description {
-        margin-bottom: 2rem;
-    }
-
-    .hero-cta {
-        margin-bottom: 2rem;
-    }
-
-    .info-box {
-        padding: 32px 26px;
-        border-radius: 24px;
-    }
-
-    .info-box h3 {
-        margin-bottom: 1.5rem;
-    }
-
-    .info-steps {
-        gap: 1.2rem;
-    }
-
-    .info-step {
-        padding: 16px;
-    }
-
-    .step-number {
-        width: 42px;
-        height: 42px;
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 500px) {
-    .hero {
-        padding: 60px 0 0 0;
-    }
-
-    .hero-inner {
-        padding: 1.5rem 15px;
-    }
-
-    .btn-primary {
-        width: 100%;
-        padding: 16px 35px;
-        font-size: 1rem;
-    }
-
-    .feature-badge {
-        font-size: 0.88rem;
-        padding: 10px 20px;
-    }
-
-    .info-box {
-        padding: 28px 22px;
-        border-radius: 20px;
-    }
-
-    .info-box h3 {
-        font-size: 1.3rem;
-    }
-
-    .info-step {
-        gap: 1rem;
-        padding: 14px;
-    }
-
-    .step-number {
-        width: 38px;
-        height: 38px;
-        font-size: 1.1rem;
-    }
-}
-
-/* ====================
-   ACESSIBILIDADE
-   ==================== */
-
-/* Respeitar preferências de movimento reduzido */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-
-/* Melhorar contraste em modo de alto contraste */
-@media (prefers-contrast: high) {
-    .hero h1,
-    .hero-description,
-    .feature-badge {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    }
-    
-    .btn-primary {
-        border: 2px solid #ffffff;
-    }
-}
-
-/* Modo escuro do sistema */
-@media (prefers-color-scheme: dark) {
-    /* Já está em dark mode, mas pode ajustar se necessário */
-}
-
-/* ====================
-   PERFORMANCE OTIMIZATIONS
-   ==================== */
-
-/* GPU Acceleration para elementos animados */
-.btn-primary,
-.feature-badge,
-.info-step,
-.step-number,
-.hero::before,
-.hero::after {
-    will-change: transform;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    transform: translateZ(0);
-}
-
-/* Anti-aliasing e renderização otimizada */
-.hero h1,
-.info-box h3,
-.step-content strong,
-.btn-primary {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
-
-/* ====================
-   SEO ENHANCEMENTS
-   ==================== */
-
-/* Garantir que conteúdo importante seja indexável */
-.hero-text,
-.info-box,
-.step-content {
-    /* Evitar text-indent negativo que esconde conteúdo */
-    text-indent: 0;
-}
-
-/* Schema markup support (usar em conjunto com HTML) */
-.info-step[itemscope] {
-    /* Suporte para structured data */
-}
-
-/* ====================
-   PRINT STYLES
-   ==================== */
-@media print {
-    .hero {
-        background: #ffffff;
-        color: #000000;
-        min-height: auto;
-    }
-    
-    .hero::before,
-    .hero::after {
-        display: none;
-    }
-    
-    .btn-primary {
-        border: 2px solid #0066ff;
-        box-shadow: none;
-    }
-    
-    .info-box {
-        box-shadow: none;
-        border: 1px solid #cccccc;
-    }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
 }

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "../styles/Header.css";
 import ContatoBot from "./ContatoBot";
+//import logo from "../assets/logo_ocyantech.png";
+
+
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,28 +26,95 @@ const Header: React.FC = () => {
       <header className="header">
         <div className="header-container">
           <div className="logo-container">
-            <div className="logo-text"><span>Ocyan</span>-Tech</div>
-            <div className="slogan">Sites inteligentes automatizando resultados!</div>
-          </div>
+            <div className="logo-text">
+              {/*<img src={logo} alt="" className="logo-img"/>*/}
+              <span>Ocyan</span>-Tech</div>
+              <div className="slogan">Atendimento Inteligente Automatizando Resultados</div>
+              </div>
+              <nav className={`nav-menu ${menuOpen ? "active" : ""}`}>
 
-          <nav className={`nav-menu ${menuOpen ? "active" : ""}`}>
-            <Link to="inicio" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Início</Link>
-            <Link to="sobre" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Sobre nós</Link>
-            <Link to="servico" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Serviços</Link>
-            {/* AJUSTADO: Classe específica para o botão azul */}
-            <span className="nav-button" onClick={handleContactClick}>
+            <Link
+              to="inicio"
+              smooth={true}
+              duration={500}
+              offset={-90}
+              className="nav-button"
+              onClick={() => setMenuOpen(false)}
+            >
+              Início
+            </Link>
+
+            <Link
+              to="sobre"
+              smooth={true}
+              duration={500}
+              offset={-90}
+              className="nav-button"
+              onClick={() => setMenuOpen(false)}
+            >
+              Sobre
+            </Link>
+            
+            <Link
+              to="como-funciona"
+              smooth={true}
+              duration={500}
+              offset={-90}
+              className="nav-button"
+              onClick={() => setMenuOpen(false)}
+            >
+              Como funciona
+            </Link>
+
+            <Link
+              to="solucao"
+              smooth={true}
+              duration={500}
+              offset={-90}
+              className="nav-button"
+              onClick={() => setMenuOpen(false)}
+            >
+              Serviço
+            </Link>
+
+            
+
+            <Link
+              to="planos"
+              smooth={true}
+              duration={500}
+              offset={-90}
+              className="nav-button"
+              onClick={() => setMenuOpen(false)}
+            >
+              Planos
+            </Link>
+
+            <span
+              className="nav-button"
+              onClick={handleContactClick}
+            >
               Contato
             </span>
 
-            <Link to="planos" smooth={true} duration={500} className="nav-button" onClick={() => setMenuOpen(false)}>Planos</Link>          
-            <Link to="planos" smooth={true} duration={500} className="btn-header" onClick={() => setMenuOpen(false)}>Quero meu site</Link>
+            <button
+              className="btn-header"
+              onClick={handleContactClick}
+            >
+              Solicitar proposta
+            </button>
+
           </nav>
 
-          <div className={`hamburger ${menuOpen ? "open" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
+          <div
+            className={`hamburger ${menuOpen ? "open" : ""}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
             <span></span>
             <span></span>
             <span></span>
           </div>
+
         </div>
       </header>
     </>

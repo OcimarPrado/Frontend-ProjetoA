@@ -1,56 +1,80 @@
 // src/components/Planos.tsx
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/Planos.css";
 
-const WHATSAPP_NUMBER = "5551986730107";
+interface Plano {
+  nome: string;
+  valor: number;
+  descricao: string[];
+  destaque: boolean;
+}
 
-const planos = [
+const planos: Plano[] = [
   {
-    nome: "Site Profissional",
+    nome: "Starter",
+    valor: 149,
     descricao: [
-      "Site institucional sob medida",
-      "Design profissional e responsivo",
-      "Foco em credibilidade e presença digital",
-      "Entrega rápida e personalizada",
+      "Website, garantindo sua presença online",
+      "WebChat básico para atendimento online",
+      "1 atendente virtual configurado",
+      "Respostas automáticas personalizáveis",
+      "Link exclusivo para atendimento",
+      "Integração com Google Agenda",
+      "Suporte via WhatsApp",
     ],
-    mensagem: "Olá! Tenho interesse no plano de Site Profissional e gostaria de entender como funciona.",
     destaque: false,
   },
   {
-    nome: "Site + Manutenção",
+    nome: "Professional",
+    valor: 299,
     descricao: [
-      "Site profissional personalizado",
-      "Hospedagem inclusa",
-      "Manutenção mensal",
-      "Suporte técnico contínuo",
+      "WebChat com múltiplos fluxos inteligentes",
+      "IA intermediária com respostas contextualizadas",
+      "Treinamento baseado no seu negócio",
+      "Relatórios de interações e desempenho",
+      "Integração com Google Agenda e Sheets",
+      "Suporte prioritário",
     ],
-    mensagem: "Olá! Tenho interesse no plano Site + Manutenção. Podemos conversar?",
     destaque: true,
   },
   {
-    nome: "Site + Automação",
+    nome: "Enterprise",
+    valor: 499,
     descricao: [
-      "Site profissional",
-      "Integração com automação",
-      "Agendamentos e fluxos inteligentes",
-      "Projeto sob demanda",
+      "WebChat com IA avançada e integração via API",
+      "Atendentes virtuais ilimitados",
+      "Treinamento com documentos e site da empresa",
+      "Integração com CRM e WhatsApp Business API",
+      "Dashboards personalizados",
+      "Customização completa da interface",
+      "Suporte técnico dedicado",
     ],
-    mensagem: "Olá! Quero saber mais sobre o plano Site + Automação.",
     destaque: false,
   },
 ];
 
 const Planos: React.FC = () => {
-  const gerarLinkWhats = (mensagem: string) => {
-    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensagem)}`;
+  const navigate = useNavigate();
+
+  const selecionarPlano = (plano: string, valor: number) => {
+    const dadosPlano = {
+      nome: plano,
+      valor,
+      timestamp: new Date().toISOString(),
+    };
+
+    localStorage.setItem("planoSelecionado", JSON.stringify(dadosPlano));
+
+    navigate(`/contrato?plano=${encodeURIComponent(plano)}&valor=${valor}`);
   };
 
   return (
     <section className="planos" id="planos">
       <div className="container">
-        <h2>Planos de Serviço</h2>
+        <h2>Planos de Automação Inteligente</h2>
         <p className="subtitle">
-          Soluções claras, profissionais e adaptadas ao seu negócio
+          Atendimento estruturado, inteligente e escalável para seu negócio
         </p>
 
         <div className="planos-container">
@@ -59,22 +83,31 @@ const Planos: React.FC = () => {
               key={plano.nome}
               className={`plano-card ${plano.destaque ? "destaque" : ""}`}
             >
+              {plano.destaque && (
+                <div className="badge-destaque">Mais Escolhido</div>
+              )}
+
               <h3>{plano.nome}</h3>
+
+              <div className="valor">
+                R$ {plano.valor}
+                <span className="periodo">/mês</span>
+              </div>
 
               <ul>
                 {plano.descricao.map((item, idx) => (
-                  <li key={idx}>{item}</li>
+                  <li key={idx}>
+                    <span className="check"></span> {item}
+                  </li>
                 ))}
               </ul>
 
-              <a
-                href={gerarLinkWhats(plano.mensagem)}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
                 className="btn-plano"
+                onClick={() => selecionarPlano(plano.nome, plano.valor)}
               >
-                Falar no WhatsApp
-              </a>
+                Contratar {plano.nome}
+              </button>
             </div>
           ))}
         </div>

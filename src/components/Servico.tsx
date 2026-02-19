@@ -4,50 +4,56 @@ import "../styles/Servico.css";
 const Servico: React.FC = () => {
   const servicos = [
     {
-      title: "Sites Profissionais",
-      desc: "Sites institucionais modernos e responsivos, focados em gerar credibilidade imediata.",
-      items: ["Design Exclusivo", "Foco em Conversão", "Mobile First"],
-      icon: "🌐",
-      ariaLabel: "Serviço de criação de sites profissionais"
-    },
-    {
-      title: "Hospedagem & Tech",
-      desc: "Cuidamos de toda a parte técnica para você focar apenas no seu negócio.",
-      items: ["Suporte Contínuo", "Segurança Ativa", "Manutenção Mensal"],
-      icon: "🛡️",
-      ariaLabel: "Serviço de hospedagem e manutenção técnica"
-    },
-    {
-      title: "Automação Essencial",
-      desc: "Automatizamos tarefas simples para organizar processos e reduzir trabalho manual.",
+      title: "Estrutura de Atendimento",
+      desc: "Organizamos o fluxo de entrada de contatos para evitar perda de leads e melhorar o controle comercial.",
       items: [
-        "Formulários com envio automático",
-        "Integração com WhatsApp ou e-mail",
-        "Organização de dados em planilhas"
+        "Formulários estruturados",
+        "Registro centralizado de contatos",
+        "Encaminhamento organizado"
+      ],
+      icon: "📊",
+      ariaLabel: "Serviço de estruturação de atendimento e organização de leads"
+    },
+    {
+      title: "Centralização de Leads",
+      desc: "Implementamos sistema simples para visualizar, classificar e acompanhar negociações.",
+      items: [
+        "Status de atendimento",
+        "Histórico de contatos",
+        "Controle de negociações"
+      ],
+      icon: "🗂️",
+      ariaLabel: "Serviço de centralização e organização de leads"
+    },
+    {
+      title: "Base para Automação",
+      desc: "Criamos a fundação técnica que permite evoluir para automações futuras com segurança.",
+      items: [
+        "Integração com WhatsApp",
+        "Estrutura preparada para IA",
+        "Processo escalável"
       ],
       icon: "⚙️",
-      ariaLabel: "Serviço de automação de processos e integrações"
+      ariaLabel: "Serviço de preparação para automação de processos"
     }
   ];
 
   return (
-    <section className="servicos-section" id="servico" aria-labelledby="servicos-title">
+    <section className="servicos-section" id="solucao" aria-labelledby="servicos-title">
       <div className="container">
         <header className="header-content">
-          <span className="top-badge">O QUE FAZEMOS</span>
-          <h2 id="servicos-title">Nossas Soluções Digitais</h2>
+          <span className="top-badge">O QUE ENTREGAMOS</span>
+          <h2 id="servicos-title">Estrutura Digital para Organização Comercial</h2>
           <p className="subtitle">
-            Presença digital profissional, inteligente e pronta para escalar seu negócio.
+            Sistemas enxutos para organizar atendimento, centralizar leads e criar base para crescimento.
           </p>
         </header>
 
-        {/* Alterado de div para ul para melhor semântica de lista de serviços */}
         <ul className="servicos-grid">
           {servicos.map((s, index) => (
-            <li 
-              className="servico-card" 
-              key={index} 
-              style={{ "--delay": `${index * 0.1}s` } as React.CSSProperties}
+            <li
+              className="servico-card"
+              key={index}
               aria-label={s.ariaLabel}
             >
               <div className="card-icon" aria-hidden="true">{s.icon}</div>
@@ -58,31 +64,19 @@ const Servico: React.FC = () => {
                   <li key={i}><span>{item}</span></li>
                 ))}
               </ul>
-              <div className="card-bg-effect"></div>
             </li>
           ))}
         </ul>
 
         <div className="servico-cta-area">
           <a
-            href="https://wa.me/5551986730107?text=Olá! Quero um orçamento para soluções digitais."
+            href="https://wa.me/5551986730107?text=Olá! Quero organizar meu atendimento e entender como funciona."
             className="btn-main"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Falar com a Ocyan-Tech sobre orçamento no WhatsApp"
+            aria-label="Falar com a Ocyan-Tech sobre organização de atendimento"
           >
-            Falar com a Ocyan-Tech
-            <svg 
-              width="20" 
-              height="20" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2" 
-              aria-hidden="true"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
+            Solicitar proposta
           </a>
         </div>
       </div>
