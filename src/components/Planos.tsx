@@ -12,6 +12,20 @@ interface Plano {
 
 const planos: Plano[] = [
   {
+    nome: "Teste",
+    valor: 1,
+    descricao: [
+      "Website, garantindo sua presença online",
+      "WebChat básico para atendimento online",
+      "1 atendente virtual configurado",
+      "Respostas automáticas personalizáveis",
+      "Link exclusivo para atendimento",
+      "Integração com Google Agenda",
+      "Suporte via WhatsApp",
+    ],
+    destaque: true,
+  },
+  /*{
     nome: "Starter",
     valor: 149,
     descricao: [
@@ -51,7 +65,7 @@ const planos: Plano[] = [
       "Suporte técnico dedicado",
     ],
     destaque: false,
-  },
+  },*/
 ];
 
 const Planos: React.FC = () => {
