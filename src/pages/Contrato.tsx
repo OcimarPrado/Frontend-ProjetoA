@@ -576,13 +576,13 @@ const Contrato: React.FC = () => { // Renomeado de App para Contrato para clarez
           </label>
         </div>
 
-        <button 
+      /*  <button 
           type="submit" 
           className="btn-submit"
           disabled={loading}
         >
           {loading ? "Processando e Gerando Pagamento..." : "Aceitar e Ir para Pagamento"}
-        </button>
+        </button>*/
       </form>
     </div>
   );
