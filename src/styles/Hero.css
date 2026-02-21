@@ -252,59 +252,81 @@
 }
 
 /* =====================
-   RESPONSIVO — MOBILE
+   RESPONSIVO — MOBILE (FINAL)
    ===================== */
 @media (max-width: 900px) {
   .hero {
-    padding: 7rem 0.8rem 3rem; /* Padding corrigido para o slogan aparecer */
+    /* Aumentado para 10rem para não tocar no header e reduzido lateral para 0.5rem */
+    padding: 10rem 0.5rem 4rem; 
     min-height: auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .hero-inner {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
-    text-align: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 100%; /* Ocupa toda a largura da tela */
+    margin: 0;
   }
 
   .hero-text {
-    width: 100%; /* Força o bloco de texto a ocupar a largura disponível */
-    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo internamente */
   }
 
   .hero h1 {
-    /* Aumentei levemente o clamp para o texto preencher melhor as laterais */
-    font-size: clamp(2rem, 8.5vw, 2.8rem); 
-    line-height: 1.1;
+    /* Clamp ajustado para preencher as laterais sem vácuos */
+    font-size: clamp(2.2rem, 9.5vw, 3rem); 
+    line-height: 1.15;
     text-align: center;
+    margin-top: 0; /* Garante que não suba mais que o padding do hero */
     margin-bottom: 1.5rem;
-    /* Remove qualquer margem lateral que possa estar limitando o texto */
-    max-width: 100%; 
+    width: 100%;
+    padding: 0 5px; /* Mínimo respiro lateral */
   }
 
   .hero-description {
     font-size: 1.1rem;
     text-align: center;
-    max-width: 100%; /* Libera a descrição também */
-    padding: 0 0.5rem; /* Apenas um toque de respiro */
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    margin-bottom: 2rem;
+    color: #9eb3cc;
   }
 
-  .hero-cta, .hero-features {
-    justify-content: center;
+  .hero-cta {
+    display: flex;
+    flex-direction: column; /* Botões empilhados no mobile aproveitam melhor o espaço */
+    align-items: center;
     width: 100%;
+    gap: 1rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 90%; /* Botões largos para preencher o visual premium */
+    max-width: 350px;
+    text-align: center;
+  }
+
+  .hero-features {
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 2rem;
   }
 }
 
-/* Ajuste fino para telas muito pequenas (iPhone SE, etc) */
+/* Ajuste específico para telas muito pequenas */
 @media (max-width: 480px) {
   .hero {
-    padding: 5rem 0.6rem 2.5rem;
+    padding-top: 11rem; /* Ainda mais espaço para o header em telas pequenas */
   }
 
   .hero h1 {
-    font-size: 2.2rem; /* Tamanho fixo ideal para aproveitar a largura */
-  }
-  
-  .btn-primary, .btn-secondary {
-    width: 90%; /* Botões quase largura total para preencher o visual */
+    font-size: 2.3rem; /* Tamanho ideal para preencher de borda a borda */
   }
 }
