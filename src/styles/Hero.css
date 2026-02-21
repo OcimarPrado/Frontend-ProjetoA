@@ -235,7 +235,7 @@
    ===================== */
 @media (max-width: 900px) {
   .hero {
-    padding: 24rem 1.25rem 3.5rem;
+    padding: 35rem 1.25rem 3.5rem;
     min-height: 100svh;
     align-items: flex-start;
   }
