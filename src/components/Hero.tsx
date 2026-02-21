@@ -20,15 +20,10 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="hero-cta">
-            <a href="#planos" className="btn-primary">
-              Ver Planos
-            </a>
-            <a href="#como-funciona" className="btn-secondary">
-              Como Funciona
-            </a>
+            <a href="#planos" className="btn-primary">Ver Planos</a>
+            <a href="#como-funciona" className="btn-secondary">Como Funciona</a>
           </div>
 
-          {/* Seção de Badges com Tooltip */}
           <div className="hero-features">
             <div 
               className="feature-badge" 
@@ -63,44 +58,28 @@ const Hero: React.FC = () => {
               <div className="step-number">1</div>
               <div className="step-content">
                 <strong>Cadastro rápido</strong>
-                <p>
-                  Acesse o painel e configure as informações básicas do seu
-                  negócio para personalizar o atendimento.
-                </p>
+                <p>Acesse o painel e configure as informações básicas do seu negócio.</p>
               </div>
             </div>
-
             <div className="info-step">
               <div className="step-number">2</div>
               <div className="step-content">
                 <strong>Receba seu link</strong>
-                <p>
-                  Exemplo: ocyan-tech.com.br/seu-negocio. Seu link já vem pronto
-                  para compartilhar com clientes.
-                </p>
+                <p>Seu link personalizado pronto para compartilhar com os clientes.</p>
               </div>
             </div>
-
             <div className="info-step">
               <div className="step-number">3</div>
               <div className="step-content">
-                <strong>Cliente inicia conversa estruturada</strong>
-                <p>
-                  O cliente acessa o link e responde perguntas organizadas que
-                  ajudam a entender a demanda.
-                </p>
+                <strong>Conversa estruturada</strong>
+                <p>O cliente responde perguntas organizadas que facilitam a demanda.</p>
               </div>
             </div>
-
             <div className="info-step">
               <div className="step-number">4</div>
               <div className="step-content">
-                <strong>Organização automática do contato</strong>
-                <p>
-                  As respostas são registradas e encaminhadas para você já
-                  estruturadas, facilitando o atendimento e evitando perda de
-                  informações.
-                </p>
+                <strong>Organização automática</strong>
+                <p>Receba os contatos já filtrados e prontos para o fechamento.</p>
               </div>
             </div>
           </div>
