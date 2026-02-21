@@ -15,13 +15,7 @@ const planos: Plano[] = [
     nome: "Teste",
     valor: 1,
     descricao: [
-      "Website, garantindo sua presença online",
-      "WebChat básico para atendimento online",
-      "1 atendente virtual configurado",
-      "Respostas automáticas personalizáveis",
-      "Link exclusivo para atendimento",
-      "Integração com Google Agenda",
-      "Suporte via WhatsApp",
+      "Período de ajustes de funcionalidades",
     ],
     destaque: true,
   },
@@ -97,9 +91,9 @@ const Planos: React.FC = () => {
               key={plano.nome}
               className={`plano-card ${plano.destaque ? "destaque" : ""}`}
             >
-              {plano.destaque && (
+              {/*plano.destaque && (
                 <div className="badge-destaque">Mais Escolhido</div>
-              )}
+              )*/}
 
               <h3>{plano.nome}</h3>
 

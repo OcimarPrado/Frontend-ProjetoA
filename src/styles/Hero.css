@@ -1,15 +1,15 @@
 .hero {
   background: linear-gradient(160deg, #060e1f 0%, #0b1a35 60%, #0d2248 100%);
   color: #fff;
-  padding: 2rem 1.5rem 2rem;
+  /* Aumentei o padding superior para não colidir com o menu fixo */
+  padding: 8rem 1.5rem 4rem; 
   display: flex;
   justify-content: center;
-  align-items: justify;
-  min-height: 100svh;
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  min-height: 100vh; /* Use vh para maior compatibilidade se svh falhar */
   position: relative;
   overflow: hidden;
 }
-
 /* Glow decorativo de fundo */
 .hero::before {
   content: '';
@@ -25,19 +25,20 @@
 
 .hero-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 0.8fr; /* Dá um pouco mais de espaço para o texto */
   gap: 4rem;
   max-width: 1200px;
   width: 100%;
-  align-items: start;
+  align-items: center; /* Alinha o texto e o card horizontalmente */
+  z-index: 1; /* Garante que fique acima de elementos de decoração */
 }
 
 .hero h1 {
-  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
   margin-bottom: 1.5rem;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  line-height: 1.;
+  text-align: left; /* Garante alinhamento à esquerda no desktop */
 }
 
 .hero h1 span {
@@ -118,11 +119,12 @@
 
 /* Info Box */
 .info-box {
-  background: #fff;
+  background: rgba(255, 255, 255, 1);
   color: #0b3c7d;
-  padding: 2.2rem;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  padding: 5.5rem;
+  border-radius: 24px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .info-box h3 {
@@ -178,7 +180,7 @@
    ===================== */
 @media (max-width: 900px) {
   .hero {
-    padding: 3rem 1.25rem 3.5rem;
+    padding: 8rem 1.25rem 3.5rem;
     min-height: 100svh;
     align-items: flex-start;
   }
