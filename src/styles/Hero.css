@@ -257,7 +257,7 @@
 @media (max-width: 900px) {
   .hero {
     /* Aumentado para 10rem para não tocar no header e reduzido lateral para 0.5rem */
-    padding: 10rem 0.5rem 4rem; 
+    padding: 7rem 0.5rem 4rem; 
     min-height: auto;
     display: flex;
     flex-direction: column;
@@ -280,7 +280,7 @@
 
   .hero h1 {
     /* Clamp ajustado para preencher as laterais sem vácuos */
-    font-size: clamp(2.2rem, 9.5vw, 3rem); 
+    font-size: clamp(2.2rem, .5vw, 3rem); 
     line-height: 1.15;
     text-align: center;
     margin-top: 0; /* Garante que não suba mais que o padding do hero */
