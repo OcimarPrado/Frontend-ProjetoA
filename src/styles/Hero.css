@@ -1,32 +1,24 @@
 .hero {
   background: linear-gradient(160deg, #060e1f 0%, #0b1a35 60%, #0d2248 100%);
   color: #fff;
-  /* Aumentei o padding superior para não colidir com o menu fixo */
-  padding: 8rem 1.5rem 4rem; 
+  padding: 8rem 1.5rem 4rem;
   display: flex;
   justify-content: center;
-  align-items: center; /* Centraliza verticalmente o conteúdo */
-  min-height: 100vh; /* Use vh para maior compatibilidade se svh falhar */
+  align-items: center;
+  min-height: 50vh;
   position: relative;
   overflow: hidden;
 }
-/* Glow decorativo de fundo */
+
 .hero::before {
   content: '';
   position: absolute;
-  top: -150px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 750px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(0, 140, 255, 0.12) 0%, transparent 70%);
-  pointer-events: none;
 }
 
 .hero-inner {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr; /* Dá um pouco mais de espaço para o texto */
-  gap: 4rem;
+  gap: 5rem;
   max-width: 1200px;
   width: 100%;
   align-items: center; /* Alinha o texto e o card horizontalmente */
@@ -34,9 +26,10 @@
 }
 
 .hero h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.5rem, 3vw, 1rem);
   font-weight: 800;
-  margin-bottom: 1.5rem;
+  margin-bottom:2.5rem;
+  margin-top: -50px;
   line-height: 1.;
   text-align: left; /* Garante alinhamento à esquerda no desktop */
 }
@@ -55,7 +48,7 @@
 
 .hero-cta {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
   margin-bottom: 2.5rem;
   flex-wrap: wrap;
 }
@@ -96,19 +89,81 @@
 
 .hero-features {
   display: flex;
-  gap: 0.6rem;
+  gap: 3rem;
   flex-wrap: wrap;
+}
+
+/* =====================
+   FEATURE BADGES COM TOOLTIP
+   ===================== */
+.hero-features {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .feature-badge {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 999px;
-  padding: 0.45rem 1.1rem;
+  padding: .6rem 1.2rem; /* Ajustado para formato pílula */
   font-size: 0.88rem;
   color: #8fa8bf;
   transition: all 0.3s ease;
-  cursor: default;
+  cursor: help; /* Indica que há uma informação extra */
+  position: relative; /* Necessário para o tooltip */
+}
+
+/* O "Card" explicativo que fica escondido */
+.feature-badge::after {
+  content: attr(data-tooltip); /* Pega o texto do HTML */
+  position: absolute;
+  bottom: 140%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: #0d2248; /* Cor interna do seu Hero */
+  color: #fff;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  width: 200px;
+  text-align: center;
+  line-height: 1.4;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 170, 255, 0.3);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 100;
+  white-space: normal; /* Permite quebra de linha no texto explicativo */
+}
+
+/* Triângulo do balão */
+.feature-badge::before {
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px 10px 10px;
+  border-style: solid;
+  border-color: rgba(0, 170, 255, 0.3) transparent transparent transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 101;
+}
+
+/* Mostrar ao passar o mouse ou focar (clique mobile) */
+.feature-badge:hover::after, 
+.feature-badge:focus::after,
+.feature-badge:hover::before,
+.feature-badge:focus::before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(180%);
 }
 
 .feature-badge:hover {
@@ -121,7 +176,7 @@
 .info-box {
   background: rgba(255, 255, 255, 1);
   color: #0b3c7d;
-  padding: 5.5rem;
+  padding: 3.5rem;
   border-radius: 24px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.1);

@@ -9,22 +9,50 @@ const Hero: React.FC = () => {
           <h1>
             <span className="highlight">Acelere</span> seu atendimento,{" "}
             <span className="highlight">transforme</span> experiências e{" "}
-            <span className="highlight">converta</span> cada interação em resultados.
+            <span className="highlight">converta</span> cada interação em
+            resultados.
           </h1>
 
           <p className="hero-description">
-            Ajudamos você a se conectar com seus clientes de forma inteligente e automatizada — aproximando pessoas, otimizando tempo e gerando resultados reais.
+            Ajudamos você a se conectar com seus clientes de forma inteligente e
+            automatizada — aproximando pessoas, otimizando tempo e gerando
+            resultados reais.
           </p>
 
           <div className="hero-cta">
-            <a href="#planos" className="btn-primary">Ver Planos</a>
-            <a href="#como-funciona" className="btn-secondary">Como Funciona</a>
+            <a href="#planos" className="btn-primary">
+              Ver Planos
+            </a>
+            <a href="#como-funciona" className="btn-secondary">
+              Como Funciona
+            </a>
           </div>
 
+          {/* Seção de Badges com Tooltip */}
           <div className="hero-features">
-            <div className="feature-badge">Atendimento 24/7</div>
-            <div className="feature-badge">Qualificação de LEAD</div>
-            <div className="feature-badge">Configuração Rápida</div>
+            <div 
+              className="feature-badge" 
+              tabIndex={0} 
+              data-tooltip="Sua empresa nunca dorme. Nosso sistema responde clientes instantaneamente a qualquer hora do dia ou da noite."
+            >
+              Atendimento 24/7
+            </div>
+
+            <div 
+              className="feature-badge" 
+              tabIndex={0} 
+              data-tooltip="Filtre curiosos e foque em quem realmente quer comprar através de perguntas estratégicas automatizadas."
+            >
+              Qualificação de LEAD
+            </div>
+
+            <div 
+              className="feature-badge" 
+              tabIndex={0} 
+              data-tooltip="Em menos de 10 minutos seu link está pronto para ser divulgado e começar a captar clientes."
+            >
+              Configuração Rápida
+            </div>
           </div>
         </div>
 
@@ -35,7 +63,10 @@ const Hero: React.FC = () => {
               <div className="step-number">1</div>
               <div className="step-content">
                 <strong>Cadastro rápido</strong>
-                <p>Acesse o painel e configure as informações básicas do seu negócio para personalizar o atendimento.</p>
+                <p>
+                  Acesse o painel e configure as informações básicas do seu
+                  negócio para personalizar o atendimento.
+                </p>
               </div>
             </div>
 
@@ -43,7 +74,10 @@ const Hero: React.FC = () => {
               <div className="step-number">2</div>
               <div className="step-content">
                 <strong>Receba seu link</strong>
-                <p>Exemplo: ocyan-tech.com.br/seu-negocio. Seu link já vem pronto para compartilhar com clientes.</p>
+                <p>
+                  Exemplo: ocyan-tech.com.br/seu-negocio. Seu link já vem pronto
+                  para compartilhar com clientes.
+                </p>
               </div>
             </div>
 
@@ -51,7 +85,10 @@ const Hero: React.FC = () => {
               <div className="step-number">3</div>
               <div className="step-content">
                 <strong>Cliente inicia conversa estruturada</strong>
-                <p>O cliente acessa o link e responde perguntas organizadas que ajudam a entender a demanda.</p>
+                <p>
+                  O cliente acessa o link e responde perguntas organizadas que
+                  ajudam a entender a demanda.
+                </p>
               </div>
             </div>
 
@@ -59,7 +96,11 @@ const Hero: React.FC = () => {
               <div className="step-number">4</div>
               <div className="step-content">
                 <strong>Organização automática do contato</strong>
-                <p>As respostas são registradas e encaminhadas para você já estruturadas, facilitando o atendimento e evitando perda de informações.</p>
+                <p>
+                  As respostas são registradas e encaminhadas para você já
+                  estruturadas, facilitando o atendimento e evitando perda de
+                  informações.
+                </p>
               </div>
             </div>
           </div>
