@@ -254,10 +254,10 @@
 /* =====================
    RESPONSIVO — MOBILE (FINAL)
    ===================== */
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .hero {
     /* Aumentado para 10rem para não tocar no header e reduzido lateral para 0.5rem */
-    padding: 7rem 0rem 4rem; 
+    padding: 7rem 0.2rem 4rem; 
     min-height: auto;
     display: flex;
     flex-direction: column;
