@@ -11,7 +11,7 @@
 
 .overline {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: .75rem;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -33,7 +33,7 @@
 }
 
 .sobre-container p {
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   line-height: 1.8;
   color: #475569;
   margin-bottom: 22px;
