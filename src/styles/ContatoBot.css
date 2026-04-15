@@ -630,3 +630,67 @@ input:focus-visible {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
 }
+
+/* ============================================================================
+   AVATAR (NOVO)
+   ============================================================================ */
+
+.bot-avatar {
+  width: 100px;
+  height: 100px;
+  min-width: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  border: 2px solid rgba(56, 189, 248, 0.5);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+
+.message-avatar {
+  width: 100px;
+  height: 100px;
+  min-width: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+/* ============================================================================
+   MESSAGE ROW (AJUSTADO)
+   ============================================================================ */
+
+.message-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.message-row.user {
+  justify-content: flex-end;
+}
+
+.message-row.bot .message-avatar {
+  align-self: flex-start;
+}
+
+/* ============================================================================
+   AJUSTE NAS BOLHAS (COMPATÍVEL COM AVATAR)
+   ============================================================================ */
+
+.message-bubble {
+  max-width: 75%;
+}
+
+/* ============================================================================
+   HEADER (AJUSTE VISUAL)
+   ============================================================================ */
+
+.bot-header-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

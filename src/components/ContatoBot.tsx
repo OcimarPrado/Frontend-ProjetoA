@@ -3,6 +3,7 @@ import { botEngine } from '../logic/botEngine';
 import { FAQ_BASE } from '../utils/knowledgeBase';
 import type { DiagnosticData } from '../types/diagnostic';
 import '../styles/ContatoBot.css';
+import avatar from '../../assets/assitente-ocyantech.jpeg';
 
 const WHATSAPP_NUMBER = '5551986730107';
 
@@ -39,7 +40,8 @@ const ContatoBot: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
       setMessages([
         {
           from: 'bot',
-          text: '👋 Olá! Sou o assistente da OCYAN-TECH.\n\nVou fazer um diagnóstico rápido para te ajudar a encontrar a solução perfeita para o seu negócio.\n\nPara começar, como posso te chamar?'
+          text:
+            '👋 Olá! Sou a SUH, assistente da OCYAN-TECH.\n\nVou fazer um diagnóstico rápido para te ajudar a encontrar a solução perfeita para o seu negócio.\n\nPara começar, como posso te chamar?'
         }
       ]);
       setDiagnostic({ etapa: 'inicio' });
@@ -60,7 +62,7 @@ const ContatoBot: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
 
     setTimeout(() => {
       const response = botEngine(text, diagnostic);
-      
+
       setMessages(prev => [...prev, { from: 'bot', text: response.reply }]);
       setDiagnostic(response.updatedData);
       setIsReady(response.isReady);
@@ -71,27 +73,32 @@ const ContatoBot: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
   };
 
   const generateWhatsAppLink = () => {
-    const { nome, empresa, nicho, estruturaAtual, estruturaAlmejada, problemas, urgencia, orcamento, servicoIndicado, score } = diagnostic;
+    const {
+      nome,
+      empresa,
+      nicho,
+      estruturaAtual,
+      estruturaAlmejada,
+      problemas,
+      urgencia,
+      orcamento,
+      servicoIndicado,
+      score
+    } = diagnostic;
 
-    const resumo = 
+    const resumo =
       `*🎯 LEAD QUALIFICADO - OCYAN-TECH*\n\n` +
       `*Score:* ${score}/100 ${score! >= 80 ? '🔥' : score! >= 60 ? '✨' : '👍'}\n\n` +
       `*INFORMAÇÕES DO LEAD:*\n` +
       `👤 Nome: ${nome}\n` +
       `🏢 Empresa: ${empresa}\n` +
       `📍 Nicho: ${nicho}\n\n` +
-      `*SITUAÇÃO ATUAL:*\n` +
-      `${estruturaAtual}\n\n` +
-      `*OBJETIVO:*\n` +
-      `${estruturaAlmejada}\n\n` +
-      `*PROBLEMAS IDENTIFICADOS:*\n` +
-      `${problemas?.map(p => `• ${p}`).join('\n')}\n\n` +
-      `*URGÊNCIA:*\n` +
-      `${urgencia}\n\n` +
-      `*ORÇAMENTO:*\n` +
-      `${orcamento}\n\n` +
-      `*💡 SOLUÇÃO RECOMENDADA:*\n` +
-      `${servicoIndicado}\n\n` +
+      `*SITUAÇÃO ATUAL:*\n${estruturaAtual}\n\n` +
+      `*OBJETIVO:*\n${estruturaAlmejada}\n\n` +
+      `*PROBLEMAS IDENTIFICADOS:*\n${problemas?.map(p => `• ${p}`).join('\n')}\n\n` +
+      `*URGÊNCIA:*\n${urgencia}\n\n` +
+      `*ORÇAMENTO:*\n${orcamento}\n\n` +
+      `*💡 SOLUÇÃO RECOMENDADA:*\n${servicoIndicado}\n\n` +
       `_Solicito proposta comercial detalhada._`;
 
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(resumo)}`;
@@ -108,16 +115,22 @@ const ContatoBot: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
       }}
     >
       <div className="bot-window" onClick={e => e.stopPropagation()}>
+        
+        {/* HEADER */}
         <div className="bot-header">
           <div className="bot-header-content">
+            {/*<img src={avatar} alt="Assistente Ocyan-Tech" className="bot-avatar" />*/}
+
             <div className={`bot-status-dot ${isTyping ? 'typing' : ''}`}></div>
+
             <div className="bot-header-text">
-              <span className="bot-header-title">Ocyan-Tech</span>
+              <span className="bot-header-title">Assistente Ocyan-Tech</span>
               <span className="bot-header-status">
                 {isTyping ? 'digitando...' : 'online'}
               </span>
             </div>
           </div>
+
           <button
             className="bot-close-x"
             onClick={() => {
@@ -129,27 +142,37 @@ const ContatoBot: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
           </button>
         </div>
 
+        {/* CHAT */}
         <div className="bot-chat-history" ref={scrollRef}>
           {messages.map((m, i) => (
-            <div key={i} className={`message-bubble ${m.from}`}>
-              {m.text.split('\n').map((line, idx) => (
-                <React.Fragment key={idx}>
-                  {line}
-                  {idx < m.text.split('\n').length - 1 && <br />}
-                </React.Fragment>
-              ))}
+            <div key={i} className={`message-row ${m.from}`}>
+              
+              {m.from === 'bot' && (
+                <img src={avatar} alt="bot" className="message-avatar" />
+              )}
+
+              <div className={`message-bubble ${m.from}`}>
+                {m.text.split('\n').map((line, idx) => (
+                  <React.Fragment key={idx}>
+                    {line}
+                    {idx < m.text.split('\n').length - 1 && <br />}
+                  </React.Fragment>
+                ))}
+              </div>
             </div>
           ))}
 
           {isTyping && (
-            <div className="message-bubble bot">
-              <div className="typing-indicator">
-                <span></span><span></span><span></span>
+            <div className="message-row bot">
+              <img src={avatar} alt="bot" className="message-avatar" />
+              <div className="message-bubble bot">
+                <div className="typing-indicator">
+                  <span></span><span></span><span></span>
+                </div>
               </div>
             </div>
           )}
 
-          {/* Opções de resposta rápida */}
           {quickOptions.length > 0 && !isTyping && (
             <div className="quick-options">
               {quickOptions.map((option, i) => (
@@ -164,7 +187,6 @@ const ContatoBot: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
             </div>
           )}
 
-          {/* CTA final */}
           {isReady && (
             <div className="cta-container">
               <a href={generateWhatsAppLink()} target="_blank" rel="noreferrer">
@@ -176,7 +198,7 @@ const ContatoBot: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
           )}
         </div>
 
-        {/* FAQs (só aparecem quando relevante) */}
+        {/* FAQ */}
         {showFAQ && !isReady && quickOptions.length === 0 && (
           <div className="faq-section">
             <p className="faq-title">Perguntas frequentes:</p>
@@ -190,7 +212,7 @@ const ContatoBot: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
           </div>
         )}
 
-        {/* Input area */}
+        {/* INPUT */}
         <form
           className="bot-input-area"
           onSubmit={e => {
