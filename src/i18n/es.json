@@ -1,0 +1,256 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "pricing": "Precios",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "cta": "Iniciar Proyecto"
+  },
+  "hero": {
+    "tag": "Agencia Digital",
+    "headline1": "Sitios web",
+    "headline2": " profesionales,",
+    "headline3": "hosting y mantenimiento.",
+    "sub": "Creamos, alojamos y mantenemos tu sitio web con tecnología profesional.",
+    "cta_primary": "Quiero mi sitio",
+    "cta_secondary": "Ver portafolio",
+    "stat_projects_num": "100%",
+    "stat_projects_label": "Ultra Rápido",
+    "stat_uptime_num": "99.9%",
+    "stat_uptime_label": "Uptime garantizado",
+    "stat_support_num": "24h",
+    "stat_support_label": "Tiempo de respuesta",
+    "device_url": "tusitio.com"
+  },
+  "services": {
+    "tag": "Lo que hacemos",
+    "title": "Todo lo que tu sitio",
+    "title_accent": "necesita",
+    "sub": "De cero al aire. Nos encargamos de cada etapa para que te concentres en lo que importa — tu empresa.",
+    "items": [
+      {
+        "number": "01",
+        "icon": "🖥️",
+        "name": "Creación de Sitios",
+        "desc": "Sitios profesionales, responsivos y optimizados para buscadores. Desarrollados con tecnología actual y foco en resultados.",
+        "features": [
+          "Diseño exclusivo y responsivo",
+          "Optimización para Google (SEO)",
+          "Integración con WhatsApp y redes sociales",
+          "Entrega en hasta 15 días hábiles"
+        ]
+      },
+      {
+        "number": "02",
+        "icon": "☁️",
+        "name": "Hosting Gestionado",
+        "desc": "Servidor configurado, SSL incluido, copias de seguridad automáticas y dominio gestionado. Sin conocimientos técnicos necesarios.",
+        "features": [
+          "Certificado SSL gratis",
+          "Copias de seguridad automáticas diarias",
+          "Dominio incluido",
+          "Monitoreo 24/7"
+        ]
+      },
+      {
+        "number": "03",
+        "icon": "🔧",
+        "name": "Mantenimiento & Soporte",
+        "desc": "Actualizaciones, correcciones y mejoras continuas. Tu sitio siempre funcionando, seguro y actualizado.",
+        "features": [
+          "Actualizaciones de contenido",
+          "Soporte vía WhatsApp",
+          "Informe mensual de visitas",
+          "Renovación automática de SSL"
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "tag": "Proyectos",
+    "title": "Trabajos",
+    "title_accent": "recientes",
+    "sub": "Tecnología real aplicada en proyectos que salieron al aire.",
+    "link": "Ver proyecto →",
+    "items": [
+      {
+        "icon": "🏪",
+        "tags": ["Sitio Web", "E-commerce"],
+        "title": "Sitio Institucional + Tienda",
+        "desc": "Sitio completo con catálogo de productos, integración WhatsApp y panel de gestión de contenido.",
+        "link": "#"
+      },
+      {
+        "icon": "🤖",
+        "tags": ["SaaS", "IA"],
+        "title": "OcyanBot",
+        "desc": "Chatbot con inteligencia artificial para atención automatizada. Integrado en múltiples canales con autenticación segura.",
+        "link": "https://github.com"
+      },
+      {
+        "icon": "⚙️",
+        "tags": ["Sistema", "Industria"],
+        "title": "Boldrini Simulator",
+        "desc": "Sistema experto industrial para prensa flangeadora. Codifica 3 años de conocimiento operativo en lógica computacional.",
+        "link": "https://github.com"
+      }
+    ]
+  },
+  "pricing": {
+    "tag": "Planes",
+    "title": "Sin sorpresas,",
+    "title_accent": " sin letra pequeña",
+    "sub": "Precio justo, entrega profesional y soporte real. Elige el plan ideal para tu negocio.",
+    "featured_badge": "Más popular",
+    "note_setup": "* Tarifa de creación cobrada una sola vez",
+    "cta": "Elegir plan",
+    "cta_custom": "Solicitar propuesta",
+    "plans": [
+      {
+        "name": "Starter",
+        "desc": "Ideal para quienes necesitan un sitio rápido, moderno y confiable sin cambios de contenido mensuales.",
+        "price": "99",
+        "period": "/mes",
+        "note": "Incluye creación, hosting, mantenimiento y 3 rondas de ajustes post entrega.*",
+        "featured": false,
+        "features": [
+          { "included": true,  "text": "Sitio de hasta 5 páginas" },
+          { "included": true,  "text": "Diseño responsivo (móvil)" },
+          { "included": true,  "text": "Dominio incluido" },
+          { "included": true,  "text": "SSL gratis + hosting" },
+          { "included": true,  "text": "Integración WhatsApp" },
+          { "included": false, "text": "Blog / área de noticias" },
+          { "included": false, "text": "Informe mensual" }
+        ]
+      },
+      {
+        "name": "Profesional",
+        "desc": "Para empresas que quieren presencia digital completa sin preocuparse por el mantenimiento y la estabilidad.",
+        "price": "249",
+        "period": "/mes",
+        "note": "Incluye creación, hosting, mantenimiento, 5 rondas de ajustes post entrega, soporte dedicado, contenido dinámico y panel de control dedicado.",
+        "featured": true,
+        "features": [
+          { "included": true, "text": "Sitio de hasta 10 páginas" },
+          { "included": true, "text": "Diseño responsivo (móvil)" },
+          { "included": true, "text": "SEO planificado para tráfico pago" },
+          { "included": true, "text": "Tráfico pago básico con indicadores de visita y conversión" },
+          { "included": true, "text": "Dominio incluido" },
+          { "included": true, "text": "SSL gratis + hosting" },
+          { "included": true, "text": "Integración WhatsApp + Redes" },
+          { "included": true, "text": "Blog / área de noticias" },
+          { "included": true, "text": "Informe mensual de visitas" }
+        ]
+      },
+      {
+        "name": "Personalizado",
+        "desc": "Sistemas, APIs, integraciones y soluciones a medida.",
+        "price": "?",
+        "period": "a consultar",
+        "note": "Presupuesto en hasta 24h",
+        "featured": false,
+        "features": [
+          { "included": true, "text": "E-commerce y tiendas online" },
+          { "included": true, "text": "Integraciones con ERPs y sistemas" },
+          { "included": true, "text": "APIs y backends personalizados" },
+          { "included": true, "text": "Dashboards y paneles de admin" },
+          { "included": true, "text": "Soporte prioritario" },
+          { "included": true, "text": "SLA definido en contrato" },
+          { "included": true, "text": "Capacitación del equipo" }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "tag": "Nosotros",
+    "title": "Tecnología de ",
+    "title_accent": "verdad",
+    "title2": ", entrega de verdad",
+    "text1": "Ocyan-Tech no es una tienda de plantillas. Somos desarrolladores que entienden de negocios — y construimos sitios que funcionan como herramienta, no como tarjeta de visita estática.",
+    "text2": "Con más de 22 años de experiencia técnica y formación en tecnología, combinamos rigor de ingeniería con visión comercial para entregar soluciones que generan resultados reales.",
+    "highlights": [
+      {
+        "icon": "⚡",
+        "title": "Entrega en 15 días hábiles",
+        "text": "Sin rodeos. Plazo definido, entregado a tiempo."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Código limpio, sitio seguro",
+        "text": "No usamos plantillas rotas. Cada proyecto se construye con cuidado."
+      },
+      {
+        "icon": "📱",
+        "title": "Soporte humano vía WhatsApp",
+        "text": "Hablas con quien construyó tu sitio. No con un chatbot de soporte."
+      }
+    ],
+    "cards": [
+      { "icon": "🏗️", "title": "22+ años técnicos",      "text": "Experiencia industrial y en desarrollo de software" },
+      { "icon": "🤝", "title": "Contrato transparente",   "text": "Alcance claro, precio fijo, sin sorpresas" },
+      { "icon": "📊", "title": "Enfoque en resultados",   "text": "Medimos el éxito por el crecimiento de tu negocio" }
+    ]
+  },
+  "contact": {
+    "tag": "Contacto",
+    "title": "Construyamos",
+    "title_accent": " algo juntos",
+    "sub": "Completa el formulario o escríbenos directamente por WhatsApp. Respondemos en hasta 24 horas.",
+    "methods": [
+      { "icon": "📱", "label": "WhatsApp",  "value": "+55 (51) 9 8673-0107" },
+      { "icon": "📧", "label": "E-mail",    "value": "onprado39@gmail.com" },
+      { "icon": "📍", "label": "Ubicación", "value": "Canoas, RS — Atendemos todo Brasil" }
+    ],
+    "form": {
+      "name_label": "Tu nombre",
+      "name_placeholder": "Juan García",
+      "email_label": "E-mail",
+      "email_placeholder": "juan@empresa.com",
+      "service_label": "Servicio de interés",
+      "service_placeholder": "Selecciona...",
+      "service_options": [
+        "Creación de sitio web",
+        "Hosting + Mantenimiento",
+        "Plan completo (creación + hosting)",
+        "Sistema o API personalizada",
+        "Otro"
+      ],
+      "message_label": "Cuéntanos sobre tu proyecto",
+      "message_placeholder": "Tengo un negocio de... necesito un sitio que...",
+      "submit": "Enviar mensaje",
+      "submitting": "Enviando...",
+      "success_title": "¡Mensaje enviado!",
+      "success_sub": "Te contactaremos en hasta 24 horas.",
+      "success_btn": "Enviar otro mensaje"
+    }
+  },
+  "cta_banner": {
+    "title": "¿Listo para tener un sitio",
+    "title_accent": " que trabaje por ti?",
+    "sub": "Habla con nosotros hoy. Presupuesto gratuito en hasta 24h.",
+    "cta_primary": "Solicitar presupuesto",
+    "cta_secondary": "Ver planes"
+  },
+  "footer": {
+    "brand_desc": "Creación, hosting y mantenimiento de sitios web con tecnología real y soporte humano. Canoas, RS, Brasil.",
+    "col_services": "Servicios",
+    "col_company": "Empresa",
+    "links_services": [
+      { "label": "Creación de Sitios",      "href": "#services" },
+      { "label": "Hosting",                 "href": "#services" },
+      { "label": "Mantenimiento",           "href": "#services" },
+      { "label": "Sistemas Personalizados", "href": "#pricing"  }
+    ],
+    "links_company": [
+      { "label": "Portafolio", "href": "#portfolio" },
+      { "label": "Precios",    "href": "#pricing"   },
+      { "label": "Nosotros",   "href": "#about"     },
+      { "label": "Contacto",   "href": "#contact"   }
+    ],
+    "copyright": "© {year} Ocyan-Tech. Hecho con",
+    "copyright_end": "en el sur de Brasil.",
+    "privacy": "Privacidad",
+    "terms": "Términos"
+  }
+}

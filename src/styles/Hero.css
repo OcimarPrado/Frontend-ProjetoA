@@ -1,646 +1,531 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap');
+/* =============================================
+   HERO — SaaS Dark | Identidade Ocyan-Tech
+   Paleta: Azul Marinho · Ciano · Branco
+   Fonte: DM Sans
+   ============================================= */
 
-/* ================================
-   VARIÁVEIS E RESET
-   ================================ */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&display=swap');
+
+/* ── TOKENS DE MARCA ── */
 :root {
-  --navy-deep:  #04091a;
-  --navy-mid:   #071228;
-  --navy-light: #0d1e3d;
-  --blue-core:  #0066ff;
-  --blue-bright:#00aaff;
-  --blue-glow:  rgba(0, 140, 255, 0.18);
-  --text-muted: #7a96b2;
-  --text-soft:  #a0bbd4;
-  --white:      #ffffff;
-  --font-head:  'Syne', sans-serif;
-  --font-body:  'DM Sans', sans-serif;
-  --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --brand-navy:    #04090f;
+  --brand-blue:    #0055e0;
+  --brand-cyan:    #00aaff;
+  --brand-cyan-lt: #38d4ff;
 }
 
-/* ================================
-   SEÇÃO HERO
-   ================================ */
+.hero *, .hero *::before, .hero *::after { box-sizing: border-box; }
+
+/* ── SHELL ── */
 .hero {
-  font-family: var(--font-body);
-  background: var(--navy-deep);
-  color: var(--white);
-  padding: 2rem 1.5rem 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100svh;
+  font-family: 'DM Sans', sans-serif;
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  padding: 6rem 2rem 5rem;
   overflow: hidden;
+  background: #04090f;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Grade sutil de fundo */
-.hero::after {
+/* Dot grid com toque ciano */
+.hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(0, 100, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 100, 255, 0.04) 1px, transparent 1px);
-  background-size: 48px 48px;
-  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+  background-image: radial-gradient(rgba(0, 170, 255, 0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 40%, transparent 100%);
   pointer-events: none;
-  z-index: 0;
 }
 
-/* ================================
-   ORBS ANIMADOS
-   ================================ */
+/* ── ORBS ── */
 .hero-orb {
   position: absolute;
   border-radius: 50%;
+  filter: blur(130px);
   pointer-events: none;
-  z-index: 0;
-  filter: blur(72px);
-  animation: orbFloat var(--dur, 12s) ease-in-out infinite alternate;
-  animation-delay: var(--delay, 0s);
+  animation: orbDrift 14s ease-in-out infinite;
 }
-
 .hero-orb--1 {
-  width: 520px;
-  height: 520px;
-  top: -160px;
-  left: -80px;
-  background: radial-gradient(circle, rgba(0, 100, 255, 0.22) 0%, transparent 70%);
-  --dur: 14s;
+  width: 560px; height: 560px;
+  background: radial-gradient(circle, rgba(0, 85, 224, 0.2), transparent 70%);
+  top: -160px; right: -120px;
 }
-
 .hero-orb--2 {
-  width: 380px;
-  height: 380px;
-  bottom: -100px;
-  right: -60px;
-  background: radial-gradient(circle, rgba(0, 180, 255, 0.16) 0%, transparent 70%);
-  --dur: 10s;
-  --delay: -4s;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(0, 170, 255, 0.13), transparent 70%);
+  bottom: -100px; left: -100px;
+  animation-delay: -7s;
 }
-
 .hero-orb--3 {
-  width: 200px;
-  height: 200px;
-  top: 40%;
-  left: 42%;
-  background: radial-gradient(circle, rgba(0, 60, 200, 0.12) 0%, transparent 70%);
-  --dur: 8s;
-  --delay: -2s;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(0, 40, 120, 0.15), transparent 70%);
+  top: 40%; left: 30%;
+  animation-delay: -3s;
+}
+@keyframes orbDrift {
+  0%, 100% { transform: translate(0, 0); }
+  50%       { transform: translate(24px, 32px); }
 }
 
-@keyframes orbFloat {
-  0%   { transform: translate(0, 0) scale(1); }
-  100% { transform: translate(20px, 30px) scale(1.06); }
-}
-
-/* ================================
-   INNER
-   ================================ */
+/* ── GRID ── */
 .hero-inner {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1fr 400px;
   gap: 5rem;
-  max-width: 1200px;
+  max-width: 1120px;
   width: 100%;
-  align-items: center;
-  position: relative;
   z-index: 1;
+  align-items: center;
 }
 
-/* ================================
-   EYEBROW BADGE
-   ================================ */
+/* ── LEFT ── */
+.hero-text { display: flex; flex-direction: column; }
+
+/* Eyebrow */
 .hero-eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  background: rgba(0, 100, 255, 0.12);
-  border: 1px solid rgba(0, 150, 255, 0.3);
-  border-radius: 999px;
-  padding: 0.35rem 1rem 0.35rem 0.6rem;
-  font-size: 0.82rem;
+  gap: 8px;
+  width: fit-content;
+  border: 1px solid rgba(0, 170, 255, 0.22);
+  background: rgba(0, 170, 255, 0.06);
+  border-radius: 100px;
+  padding: 5px 14px 5px 8px;
+  font-size: 0.75rem;
   font-weight: 500;
-  color: #60b8ff;
-  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.55);
   letter-spacing: 0.02em;
-  animation: fadeSlideUp 0.6s var(--ease-smooth) both;
-  animation-delay: 0.1s;
+  margin-bottom: 1.75rem;
 }
 
-.hero-eyebrow span.dot {
-  width: 6px;
-  height: 6px;
+.dot {
+  width: 20px; height: 20px;
   border-radius: 50%;
-  background: #00aaff;
-  box-shadow: 0 0 8px rgba(0, 170, 255, 0.8);
-  animation: pulse 2s ease-in-out infinite;
+  background: rgba(0, 170, 255, 0.15);
+  border: 1px solid rgba(0, 170, 255, 0.45);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
 }
-
-@keyframes pulse {
+.dot::after {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--brand-cyan);
+  box-shadow: 0 0 8px var(--brand-cyan);
+  animation: dotPulse 2.5s ease-in-out infinite;
+}
+@keyframes dotPulse {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.5; transform: scale(0.7); }
+  50%       { opacity: 0.3; transform: scale(0.75); }
 }
 
-/* ================================
-   HEADING
-   ================================ */
+/* H1 */
 .hero h1 {
-  font-family: var(--font-head);
-  font-size: clamp(2.6rem, 4.8vw, 4rem);
-  font-weight: 900;
-  margin-bottom: 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  font-weight: 800;
   line-height: 1.1;
-  letter-spacing: -0.03em;
-  animation: fadeSlideUp 0.6s var(--ease-smooth) both;
-  animation-delay: 0.2s;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-align: left; /* ← adicionar isso */
 }
 
+
+/* Cada linha do H1 como bloco independente */
+.hero h1 .h1-line {
+  display: block;
+}
+
+/* Highlight: azul → ciano (marca) */
 .hero h1 .highlight {
-  background: linear-gradient(120deg, #2e91ff 0%, #00cfff 60%, #0066ff 100%);
-  background-size: 200% auto;
+  background: linear-gradient(135deg, #60b8ff 0%, var(--brand-cyan) 55%, var(--brand-cyan-lt) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: gradientShift 4s linear infinite;
 }
 
-@keyframes gradientShift {
-  0%   { background-position: 0% center; }
-  100% { background-position: 200% center; }
-}
-
-/* ================================
-   DESCRIÇÃO
-   ================================ */
+/* Description */
 .hero-description {
-  font-size: clamp(1rem, 2vw, 1.15rem);
-  color: var(--text-soft);
-  margin-bottom: 2.5rem;
+  font-size: 1.05rem;
   line-height: 1.75;
-  max-width: 520px;
-  animation: fadeSlideUp 0.6s var(--ease-smooth) both;
-  animation-delay: 0.35s;
+  color: rgba(255, 255, 255, 0.42);
+  max-width: 480px;
+  margin-bottom: 2rem;
 }
 
-/* ================================
-   CTA BUTTONS
-   ================================ */
+/* ── CTAs ── */
 .hero-cta {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 2.5rem;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2.25rem;
   flex-wrap: wrap;
-  animation: fadeSlideUp 0.6s var(--ease-smooth) both;
-  animation-delay: 0.5s;
 }
 
-.btn-primary,
-.btn-secondary {
-  padding: 0.9rem 2rem;
-  border-radius: 14px;
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: transform 0.25s var(--ease-spring), box-shadow 0.25s ease;
-  letter-spacing: 0.01em;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Shine sweep */
-.btn-primary::before,
-.btn-secondary::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.18), transparent);
-  transform: skewX(-20deg);
-  transition: left 0.5s ease;
-}
-
-.btn-primary:hover::before,
-.btn-secondary:hover::before {
-  left: 150%;
-}
-
+/* Primário: ciano sólido com glow */
 .btn-primary {
-  background: linear-gradient(100deg, #0052e0 0%, #0099ff 100%);
-  color: #fff;
-  box-shadow: 0 4px 20px rgba(0, 100, 255, 0.38), 0 1px 0 rgba(255,255,255,0.1) inset;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.72rem 1.6rem;
+  background: var(--brand-cyan);
+  color: #000;
+  border-radius: 9px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 0 24px rgba(0, 170, 255, 0.3);
+  white-space: nowrap;
 }
-
 .btn-primary:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 10px 30px rgba(0, 100, 255, 0.55);
+  background: var(--brand-cyan-lt);
+  transform: translateY(-1px);
+  box-shadow: 0 0 36px rgba(0, 170, 255, 0.45);
 }
+.btn-primary .arrow { display: inline-block; transition: transform 0.2s; }
+.btn-primary:hover .arrow { transform: translateX(3px); }
 
+/* Secundário: outline ciano */
 .btn-secondary {
-  border: 1.5px solid rgba(0, 170, 255, 0.45);
-  color: #60c8ff;
-  background: rgba(0, 120, 255, 0.07);
-  backdrop-filter: blur(8px);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.72rem 1.6rem;
+  border: 1px solid rgba(0, 170, 255, 0.28);
+  background: rgba(0, 170, 255, 0.05);
+  color: rgba(255, 255, 255, 0.65);
+  border-radius: 9px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  white-space: nowrap;
 }
-
 .btn-secondary:hover {
-  transform: translateY(-3px) scale(1.02);
-  background: rgba(0, 170, 255, 0.14);
-  border-color: rgba(0, 200, 255, 0.7);
-  box-shadow: 0 0 20px rgba(0, 180, 255, 0.2);
-  color: #a0e4ff;
+  border-color: rgba(0, 170, 255, 0.55);
+  color: var(--brand-cyan);
+  background: rgba(0, 170, 255, 0.09);
 }
 
-/* ================================
-   FEATURE BADGES
-   ================================ */
+/* ── BADGES ── */
 .hero-features {
   display: flex;
-  gap: 0.55rem;
   flex-wrap: wrap;
-  animation: fadeSlideUp 0.6s var(--ease-smooth) both;
-  animation-delay: 0.65s;
+  gap: 0.5rem;
+  margin-bottom: 2.25rem;
 }
+
+.feature-container { position: relative; display: inline-block; }
 
 .feature-badge {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 999px;
-  padding: 0.4rem 1.1rem;
-  font-size: 0.82rem;
-  color: var(--text-muted);
-  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.38rem 0.9rem;
+  border: 1px solid rgba(0, 170, 255, 0.13);
+  background: rgba(0, 170, 255, 0.04);
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.45);
   cursor: default;
+  transition: all 0.2s;
+  font-family: 'DM Sans', sans-serif;
 }
-
-.feature-badge:hover {
-  background: rgba(0, 140, 255, 0.14);
+.feature-badge::before {
+  content: '';
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: rgba(0, 170, 255, 0.75);
+  flex-shrink: 0;
+}
+.feature-container:hover .feature-badge {
   border-color: rgba(0, 170, 255, 0.45);
-  color: #80d8ff;
-  transform: translateY(-1px);
+  color: rgba(255, 255, 255, 0.88);
+  background: rgba(0, 170, 255, 0.09);
 }
 
-/* ================================
-   STATS ROW
-   ================================ */
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  background: #07111f;
+  border: 1px solid rgba(0, 170, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 9px 13px;
+  border-radius: 9px;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  width: 190px;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
+  z-index: 20;
+  white-space: normal;
+  font-family: 'DM Sans', sans-serif;
+}
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%; left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: rgba(0, 170, 255, 0.2);
+}
+.feature-container:hover .tooltip,
+.feature-container:focus-within .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ── STATS ── */
 .hero-stats {
   display: flex;
   gap: 2rem;
-  margin-top: 2.5rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255,255,255,0.07);
-  animation: fadeSlideUp 0.6s var(--ease-smooth) both;
-  animation-delay: 0.75s;
+  border-top: 1px solid rgba(0, 170, 255, 0.1);
 }
-
-.stat-item {}
-
+.stat-item { display: flex; flex-direction: column; gap: 3px; }
 .stat-value {
-  font-family: var(--font-head);
-  font-size: 1.6rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.55rem;
   font-weight: 800;
   color: #fff;
-  display: block;
-  line-height: 1;
-  margin-bottom: 0.3rem;
+  letter-spacing: -0.03em;
 }
-
-.stat-value em {
-  font-style: normal;
-  color: #00aaff;
-}
-
+.stat-value em { font-style: normal; color: var(--brand-cyan); }
 .stat-label {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  letter-spacing: 0.04em;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.32);
+  font-weight: 500;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
 }
 
-/* ================================
-   INFO BOX — GLASSMORPHISM
-   ================================ */
+/* ── INFO BOX ── */
 .info-box {
-  background: rgba(255, 255, 255, 0.035);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 2.2rem;
-  border-radius: 24px;
-  box-shadow:
-    0 30px 80px rgba(0, 0, 0, 0.4),
-    0 0 0 1px rgba(0, 120, 255, 0.1) inset,
-    0 1px 0 rgba(255,255,255,0.08) inset;
-  animation: fadeSlideUp 0.7s var(--ease-smooth) both;
-  animation-delay: 0.4s;
+  background: rgba(0, 20, 55, 0.55);
+  border: 1px solid rgba(0, 170, 255, 0.14);
+  border-radius: 18px;
+  padding: 1.75rem;
+  backdrop-filter: blur(16px);
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 48px rgba(0, 85, 224, 0.1);
+  color: inherit;
 }
-
-/* Borda brilhante animada */
+/* shimmer ciano no topo */
 .info-box::before {
   content: '';
   position: absolute;
-  top: -1px; left: -1px; right: -1px; bottom: -1px;
-  border-radius: 25px;
-  background: conic-gradient(
-    from var(--angle, 0deg),
-    transparent 30%,
-    rgba(0, 170, 255, 0.35) 50%,
-    transparent 70%
-  );
-  z-index: -1;
-  animation: borderRotate 6s linear infinite;
-}
-
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
-
-@keyframes borderRotate {
-  to { --angle: 360deg; }
+  top: 0; left: 10%; right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 170, 255, 0.6), transparent);
 }
 
 .info-box-header {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1.75rem;
+  gap: 10px;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(0, 170, 255, 0.09);
 }
-
 .info-box-icon {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, #0055e0, #00aaff);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-size: 1.1rem;
+  width: 34px; height: 34px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, var(--brand-blue), var(--brand-cyan));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; flex-shrink: 0;
 }
-
 .info-box h3 {
-  font-family: var(--font-head);
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.72);
+  letter-spacing: -0.01em;
+  line-height: 1.3;
   margin: 0;
-  letter-spacing: -0.02em;
+  text-align: left;
 }
 
-.info-steps {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
+/* Steps */
+.info-steps { display: flex; flex-direction: column; gap: 0.5rem; }
 
 .info-step {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
-  position: relative;
-  padding-bottom: 1.25rem;
+  gap: 0.85rem;
+  padding: 0.85rem;
+  border-radius: 11px;
+  border: 1px solid transparent;
+  transition: all 0.2s;
 }
-
-/* Linha conectora */
-.info-step:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  left: 17px;
-  top: 36px;
-  width: 2px;
-  height: calc(100% - 36px + 0.25rem);
-  background: linear-gradient(to bottom, rgba(0,150,255,0.4), rgba(0,150,255,0.05));
-}
-
-.info-step:last-child {
-  padding-bottom: 0;
+.info-step:hover {
+  background: rgba(0, 170, 255, 0.05);
+  border-color: rgba(0, 170, 255, 0.13);
 }
 
 .step-number {
-  background: linear-gradient(135deg, #0055e0, #00aaff);
-  color: #fff;
-  font-family: var(--font-head);
-  font-weight: 700;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 28px; height: 28px;
   flex-shrink: 0;
-  font-size: 0.88rem;
-  box-shadow: 0 0 16px rgba(0, 130, 255, 0.4);
-  position: relative;
-  z-index: 1;
+  border-radius: 8px;
+  background: rgba(0, 170, 255, 0.1);
+  border: 1px solid rgba(0, 170, 255, 0.28);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--brand-cyan);
+  transition: all 0.2s;
+  box-shadow: none;
+}
+.info-step:hover .step-number {
+  background: rgba(0, 170, 255, 0.18);
+  border-color: rgba(0, 170, 255, 0.5);
 }
 
 .step-content strong {
   display: block;
-  font-size: 0.95rem;
-  color: rgba(255,255,255,0.9);
-  margin-bottom: 0.25rem;
-  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2px;
 }
-
 .step-content p {
-  color: var(--text-muted);
-  font-size: 0.86rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.3);
+  line-height: 1.5;
   margin: 0;
-  line-height: 1.55;
 }
 
-/* ================================
-   ANIMAÇÃO DE ENTRADA
-   ================================ */
-@keyframes fadeSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(22px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* ── RESPONSIVE ── */
+@media (max-width: 920px) {
+  .hero { padding: 7rem 1.5rem 4rem; align-items: flex-start; }
+  .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero-text { align-items: center; }
+  .hero h1 { font-size: clamp(1rem, 7vw, 0.8rem); text-align: center; }
+  .hero-description { text-align: center; max-width: 100%; }
+  .hero-eyebrow, .hero-cta, .hero-features, .hero-stats { justify-content: center; }
 }
 
-/* ================================
-   RESPONSIVO — TABLET
-   ================================ */
-@media (max-width: 960px) {
-  .hero {
-    padding: 3rem 1.25rem 4rem;
-    align-items: flex-start;
-  }
-
-  .hero-inner {
-    grid-template-columns: 1fr;
-    gap: 3.5rem;
-  }
-
-  .hero h1 {
-    font-size: clamp(2.4rem, 8.5vw, 3.2rem);
-    text-align: center;
-  }
-
-  .hero-eyebrow {
-    display: flex;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-description {
-    text-align: center;
-    max-width: 100%;
-  }
-
-  .hero-cta {
-    justify-content: center;
-  }
-
-  .hero-features {
-    justify-content: center;
-  }
-
-  .hero-stats {
-    justify-content: center;
-  }
-}
-
-/* ================================
-   RESPONSIVO — MOBILE (AJUSTADO)
-   ================================ */
-@media (max-width: 540px) {
-  .hero {
-    /* Aumenta o respiro no topo para o header fixo */
+/* ── RESPONSIVE MOBILE ── */
+@media (max-width: 480px) {
+  .hero { 
     padding: 6rem 1rem 3rem; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
-  .hero h1 {
-    /* Ajuste para evitar quebras excessivas de linha */
-    font-size: clamp(1.8rem, 9vw, 2.4rem);
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.03em;
+  .hero h1 { 
+    /* Reduzimos levemente o tamanho para não quebrar palavras longas */
+    font-size: 1.75rem; 
+    /* Aumentamos o espaçamento entre as linhas (o "respiro") */
+    line-height: 1.35; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Espaço extra entre cada frase do H1 */
+  }
+
+  .h1-line {
+    display: block;
   }
 
   .hero-description {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     line-height: 1.6;
-    margin-bottom: 2rem;
-    padding: 0 0.5rem; /* Evita que o texto encoste nas bordas */
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.6); /* Suaviza um pouco para destacar o H1 */
   }
 
   .hero-cta {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: column; /* Botões um em cima do outro no celular */
     width: 100%;
-    align-items: center;
+    gap: 12px;
   }
 
-  .btn-primary,
-  .btn-secondary {
-    width: 100%;
-    max-width: 280px; /* Tamanho confortável para o polegar */
-    padding: 1rem;
-    display: flex;
+  .btn-primary, .btn-secondary { 
+    width: 100%; 
+    justify-content: center; 
+    padding: 14px; /* Botão mais fácil de tocar */
+  }
+}
+
+
+.lang-switcher {
+  display: flex;
+  gap: 8px;
+  margin: 0 15px;
+  align-items: center;
+}
+
+.lang-switcher button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.lang-switcher button:hover, 
+.lang-switcher button.active-lang {
+  border-color: #00e5ff; /* Cor Cyan da Ocyan-Tech */
+  color: #00e5ff;
+  background: rgba(0, 229, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .lang-switcher {
+    margin: 20px 0;
     justify-content: center;
-    margin: 0;
   }
+}
 
-  .info-box {
-    padding: 1.5rem 1rem;
-    margin-top: 2rem;
-    width: 100%;
-  }
+/* ... seu código anterior ... */
 
-  /* Ajuste para as estatísticas não ficarem apertadas */
-  .hero-stats {
-    flex-wrap: wrap;
-    gap: 1rem;
+.lang-switcher {
+  display: flex;
+  gap: 8px;
+  margin: 0 15px;
+  align-items: center;
+}
+
+.lang-switcher button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.lang-switcher button:hover,
+.lang-switcher button.active-lang {
+  border-color: #00e5ff;
+  color: #00e5ff;
+  background: rgba(0, 229, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .lang-switcher {
+    margin: 20px 0;
     justify-content: center;
   }
-}
-
-
-/* Container que agrupa a tag e o balão */
-.feature-container {
-  position: relative;
-  display: inline-block;
-}
-
-/* O Balão Flutuante (Tooltip) */
-.tooltip {
-  /* Escondido por padrão */
-  visibility: hidden;
-  opacity: 0;
-  
-  /* Posicionamento */
-  position: absolute;
-  bottom: 140%; /* Aparece acima da tag */
-  left: 50%;
-  transform: translateX(-50%) translateY(10px);
-  
-  /* Visual do Balão */
-  width: 200px;
-  background-color: #0a0f1a;
-  color: #ffffff;
-  text-align: center;
-  padding: 12px;
-  border-radius: 8px;
-  font-size: 0.8rem;
-  line-height: 1.4;
-  z-index: 100;
-  
-  /* Borda sutil e sombra para destaque */
-  border: 1px solid rgba(0, 170, 255, 0.3);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-  
-  /* Animação suave */
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  pointer-events: none; /* Evita que o balão atrapalhe o clique na tag */
-}
-
-/* Triângulo (setinha) na parte inferior do balão */
-.tooltip::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -6px;
-  border-width: 6px;
-  border-style: solid;
-  border-color: rgba(0, 170, 255, 0.3) transparent transparent transparent;
-}
-
-/* Interação: Mostrar ao passar o mouse ou clicar (focus) */
-.feature-container:hover .tooltip,
-.feature-container:focus .tooltip,
-.feature-container:focus-within .tooltip {
-  visibility: visible;
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}
-
-/* Ajuste na Badge para indicar interatividade */
-.feature-badge {
-  cursor: help;
-  transition: background 0.3s ease, border-color 0.3s ease;
-}
-
-.feature-badge:hover {
-  background: rgba(0, 170, 255, 0.1);
-  border-color: #00aaff;
 }

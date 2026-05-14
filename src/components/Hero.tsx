@@ -1,119 +1,104 @@
-import React from "react";
-import "../styles/Hero.css";
+import { useTranslation } from 'react-i18next';
 
-const Hero: React.FC = () => {
+// ── TROQUE pelo caminho da sua screenshot ──────────────────────
+// Coloque a imagem em: public/screenshot.png  (ou .jpg/.webp)
+// e ajuste o src abaixo:
+const SITE_SCREENSHOT = '/screenshot.png';
+// ──────────────────────────────────────────────────────────────
+
+export default function Hero() {
+  const { t } = useTranslation();
+
+  const scrollTo = (id: string) =>
+    document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
+
   return (
-    <section className="hero" id="inicio">
-      {/* Orbs de fundo animados */}
-      <div className="hero-orb hero-orb--1" aria-hidden="true" />
-      <div className="hero-orb hero-orb--2" aria-hidden="true" />
-      <div className="hero-orb hero-orb--3" aria-hidden="true" />
+    <section className="hero" id="hero">
+      {/* Fundo decorativo */}
+      <div className="hero-bg">
+        <div className="hero-grid" />
+        <div className="hero-glow" />
+        <div className="hero-glow-2" />
+      </div>
 
       <div className="hero-inner">
-        {/* ===== COLUNA ESQUERDA ===== */}
-        <div className="hero-text">
-          {/* Eyebrow badge */}
-          <div className="hero-eyebrow">
-            <span className="dot" />
-            Automação inteligente para negócios
-          </div>
+        {/* Conteúdo principal */}
+        <div className="hero-content">
+          <div className="tag">✦ {t('hero.tag')}</div>
 
-          {/* Heading */}
-          <h1>
-            <span className="highlight">Acelere</span> seu atendimento,{" "}
-            <span className="highlight">transforme</span> experiências e{" "}
-            <span className="highlight">converta</span> cada interação em resultados.
+          <h1 className="hero-headline">
+            {t('hero.headline1')}{' '}
+            <span className="teal">{t('hero.headline2')}</span>
+            <span className="line-break">{t('hero.headline3')}</span>
           </h1>
 
-          {/* Descrição */}
-          <p className="hero-description">
-            Conecte sua empresa com clientes de forma inteligente e automatizada
-            — aproximando pessoas, otimizando tempo e gerando receita real.
-          </p>
+          <p className="hero-sub">{t('hero.sub')}</p>
 
-          {/* CTAs */}
-          <div className="hero-cta">
-            <a href="#planos" className="btn-primary">Ver Planos</a>
-            <a href="#como-funciona" className="btn-secondary">Como Funciona</a>
-          </div>
-
-          {/* Feature badges com Tooltips */}
-          <div className="hero-features">
-            <div className="feature-container" tabIndex={0}>
-              <div className="feature-badge">Atendimento 24/7</div>
-              <div className="tooltip">Sua empresa nunca dorme. Respostas instantâneas em qualquer horário.</div>
-            </div>
-
-            <div className="feature-container" tabIndex={0}>
-              <div className="feature-badge">Qualificação de Lead</div>
-              <div className="tooltip">Filtre curiosos e foque apenas em clientes com real potencial de compra.</div>
-            </div>
-
-            <div className="feature-container" tabIndex={0}>
-              <div className="feature-badge">Configuração Rápida</div>
-              <div className="tooltip">Implementação ágil para você começar a vender mais em poucos dias.</div>
-            </div>
-
-            <div className="feature-container" tabIndex={0}>
-              <div className="feature-badge">Multi-canal</div>
-              <div className="tooltip">Atenda via Web, WhatsApp e Instagram de forma centralizada.</div>
-            </div>
+          <div className="hero-actions">
+            <button className="btn-primary" onClick={() => scrollTo('#contact')}>
+              {t('hero.cta_primary')} →
+            </button>
+            <button className="btn-outline" onClick={() => scrollTo('#portfolio')}>
+              {t('hero.cta_secondary')}
+            </button>
           </div>
 
           {/* Stats */}
           <div className="hero-stats">
-            <div className="stat-item">
-              <span className="stat-value">+<em>200</em></span>
-              <span className="stat-label">Empresas atendidas</span>
+            <div className="hero-stat">
+              <span className="hero-stat-num">{t('hero.stat_projects_num')}</span>
+              <span className="hero-stat-label">{t('hero.stat_projects_label')}</span>
             </div>
-            <div className="stat-item">
-              <span className="stat-value"><em>98</em>%</span>
-              <span className="stat-label">Satisfação dos clientes</span>
+            <div className="hero-stat">
+              <span className="hero-stat-num">
+                <span className="teal">{t('hero.stat_uptime_num')}</span>
+              </span>
+              <span className="hero-stat-label">{t('hero.stat_uptime_label')}</span>
             </div>
-            <div className="stat-item">
-              <span className="stat-value"><em>3x</em></span>
-              <span className="stat-label">Mais conversões</span>
+            <div className="hero-stat">
+              <span className="hero-stat-num">{t('hero.stat_support_num')}</span>
+              <span className="hero-stat-label">{t('hero.stat_support_label')}</span>
             </div>
           </div>
         </div>
 
-        {/* ===== COLUNA DIREITA — INFO BOX ===== */}
-        <div className="info-box">
-          <div className="info-box-header">
-            <div className="info-box-icon" aria-hidden="true">⚡</div>
-            <h3>Como Sua Empresa Será Atendida</h3>
-          </div>
+        {/* Visual mockup com screenshot real */}
+        <div className="hero-visual">
+          <div className="device-mockup">
+            <div className="device-frame">
+              {/* Header do browser */}
+              <div className="device-header">
+                <div className="device-dots">
+                  <span /><span /><span />
+                </div>
+                <div className="device-url">
+                  <span className="lock">🔒</span>
+                  {t('hero.device_url')}
+                </div>
+              </div>
 
-          <div className="info-steps">
-            <div className="info-step">
-              <div className="step-number">1</div>
-              <div className="step-content">
-                <strong>Cadastro rápido</strong>
-                <p>Acesse o painel e configure as informações básicas do seu negócio.</p>
+              {/* Screenshot real */}
+              <div className="device-screenshot">
+                <img
+                  src={SITE_SCREENSHOT}
+                  alt="Site example"
+                  className="device-screenshot-img"
+                  onError={(e) => {
+                    // Fallback: mostra placeholder se imagem não encontrada
+                    (e.target as HTMLImageElement).style.display = 'none';
+                    const parent = (e.target as HTMLImageElement).parentElement;
+                    if (parent) parent.classList.add('device-screenshot-fallback');
+                  }}
+                />
               </div>
             </div>
 
-            <div className="info-step">
-              <div className="step-number">2</div>
-              <div className="step-content">
-                <strong>Receba seu link</strong>
-                <p>ocyan-tech.com.br/seu-negocio pronto para compartilhar.</p>
-              </div>
-            </div>
-
-            <div className="info-step">
-              <div className="step-number">3</div>
-              <div className="step-content">
-                <strong>Conversa estruturada</strong>
-                <p>O cliente responde perguntas organizadas que facilitam a venda.</p>
-              </div>
-            </div>
-
-            <div className="info-step">
-              <div className="step-number">4</div>
-              <div className="step-content">
-                <strong>Gestão agilizada</strong>
-                <p>As respostas chegam estruturadas para você fechar o negócio rápido.</p>
+            {/* Badge flutuante */}
+            <div className="device-badge">
+              <div className="device-badge-icon">✅</div>
+              <div className="device-badge-text">
+                <strong>Site no ar!</strong>
+                <span>SSL · Backup · 99.9% uptime</span>
               </div>
             </div>
           </div>
@@ -121,6 +106,4 @@ const Hero: React.FC = () => {
       </div>
     </section>
   );
-};
-
-export default Hero;
+}

@@ -1,76 +1,106 @@
-import React, { useState } from "react";
-import { Link } from "react-scroll"; // Importado para navegação suave
-import "../styles/Footer.css";
-import ContatoBot from "./ContatoBot"; 
-import logo from "../assets/logo_ocyantech.png"; 
+import { useTranslation } from 'react-i18next';
 
-const Footer: React.FC = () => {
-  const [isBotOpen, setIsBotOpen] = useState(false);
+interface NavLink {
+  label: string;
+  href: string;
+}
 
-  const handleContactClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setIsBotOpen(true);
-  };
-  
-  const handleCloseBot = () => {
-    setIsBotOpen(false);
-  };
+export default function Footer() {
+  const { t } = useTranslation();
+
+  const servicesLinks = t('footer.links_services', { returnObjects: true }) as NavLink[];
+  const companyLinks  = t('footer.links_company',  { returnObjects: true }) as NavLink[];
+
+  const year = new Date().getFullYear();
+
+  const scrollTo = (href: string) =>
+    document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-    <>
-      <ContatoBot isOpen={isBotOpen} onClose={handleCloseBot} />
-
-      <footer className="footer">
-        <div className="footer-container">
-          
-          {/* LOGO DO SITE */}
-          <div className="footer-logo">
-            <img src={logo} alt="Ocyan Tech Logo" className="footer-img-logo" />
+    <footer className="footer">
+      <div className="footer-inner">
+        {/* Brand */}
+        <div className="footer-brand">
+          <div className="footer-brand-name">
+            {"OC"}<span className="accent">{"YAN"}</span>{"-TECH"}
           </div>
-
-          {/* LINKS DE NAVEGAÇÃO COM ROLAGEM SUAVE */}
-          <ul className="footer-links">
-
-            <li>
-              <Link to="inicio" smooth={true} duration={500} offset={-80} className="footer-nav-item">Início</Link>
-            </li>
-            <li>
-              <Link to="sobre" smooth={true} duration={500} offset={-80} className="footer-nav-item">Sobre Nós</Link>
-            </li>
-            <li>
-              <Link to="servico" smooth={true} duration={500} offset={-80} className="footer-nav-item">Serviços</Link>
-            </li>
-            <li>
-              <Link to="planos" smooth={true} duration={500} offset={-80} className="footer-nav-item">Planos</Link>
-            </li>
-
-            {/* Link de Contato que ativa o Bot */}
-            <li>
-              <span className="footer-nav-item" onClick={handleContactClick} style={{cursor: 'pointer'}}>
-                Contato
-              </span>
-            </li>
-          </ul>
-
+          <p className="footer-brand-desc">{t('footer.brand_desc')}</p>
           <div className="footer-social">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm6.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/></svg>
+            <a
+              href="https://github.com/OcimarPrado"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              {/* GitHub icon via unicode */}
+              ⌥
             </a>
-          </div>
-
-          <div className="footer-contact">
-            <p>Email: <a href="mailto:contato@ocyan-tech.com.br">contato@ocyan-tech.com.br</a></p>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              in
+            </a>
+            <a
+              href="https://wa.me/5551999999999"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              ✆
+            </a>
           </div>
         </div>
 
-        <hr className="footer-divider" />
+        {/* Serviços */}
+        <div className="footer-col">
+          <div className="footer-col-title">{t('footer.col_services')}</div>
+          <ul>
+            {servicesLinks.map((l) => (
+              <li key={l.label}>
+                <a
+                  href={l.href}
+                  onClick={(e) => { e.preventDefault(); scrollTo(l.href); }}
+                >
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
+        {/* Empresa */}
+        <div className="footer-col">
+          <div className="footer-col-title">{t('footer.col_company')}</div>
+          <ul>
+            {companyLinks.map((l) => (
+              <li key={l.label}>
+                <a
+                  href={l.href}
+                  onClick={(e) => { e.preventDefault(); scrollTo(l.href); }}
+                >
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="footer-bottom">
         <p className="footer-copy">
-          © {new Date().getFullYear()} Ocyan-Tech. Todos os direitos reservados.
+          {t('footer.copyright').replace('{year}', String(year))}{' '}
+          <span>♥</span>{' '}
+          {t('footer.copyright_end')}
         </p>
-      </footer>
-    </>
+        <div className="footer-legal">
+          <a href="#">{t('footer.privacy')}</a>
+          <a href="#">{t('footer.terms')}</a>
+        </div>
+      </div>
+    </footer>
   );
-};
-
-export default Footer;
+}

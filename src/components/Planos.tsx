@@ -1,126 +1,82 @@
-// src/components/Planos.tsx
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import "../styles/Planos.css";
+import { useTranslation } from 'react-i18next';
 
-interface Plano {
-  nome: string;
-  valor: number;
-  descricao: string[];
-  destaque: boolean;
+interface PlanFeature {
+  included: boolean;
+  text: string;
 }
 
-const planos: Plano[] = [
-  {
-    nome: "Teste",
-    valor: 1,
-    descricao: [
-      "Website, garantindo sua presença online",
-      "WebChat básico para atendimento online",
-      "1 atendente virtual configurado",
-      "Respostas automáticas personalizáveis",
-      "Link exclusivo para atendimento",
-      "Integração com Google Agenda",
-      "Suporte via WhatsApp",
-    ],
-    destaque: true,
-  },
-  /*{
-    nome: "Starter",
-    valor: 149,
-    descricao: [
-      "Website, garantindo sua presença online",
-      "WebChat básico para atendimento online",
-      "1 atendente virtual configurado",
-      "Respostas automáticas personalizáveis",
-      "Link exclusivo para atendimento",
-      "Integração com Google Agenda",
-      "Suporte via WhatsApp",
-    ],
-    destaque: false,
-  },
-  {
-    nome: "Professional",
-    valor: 299,
-    descricao: [
-      "WebChat com múltiplos fluxos inteligentes",
-      "IA intermediária com respostas contextualizadas",
-      "Treinamento baseado no seu negócio",
-      "Relatórios de interações e desempenho",
-      "Integração com Google Agenda e Sheets",
-      "Suporte prioritário",
-    ],
-    destaque: true,
-  },
-  {
-    nome: "Enterprise",
-    valor: 499,
-    descricao: [
-      "WebChat com IA avançada e integração via API",
-      "Atendentes virtuais ilimitados",
-      "Treinamento com documentos e site da empresa",
-      "Integração com CRM e WhatsApp Business API",
-      "Dashboards personalizados",
-      "Customização completa da interface",
-      "Suporte técnico dedicado",
-    ],
-    destaque: false,
-  },*/
-];
+interface Plan {
+  name: string;
+  desc: string;
+  price: string;
+  period: string;
+  note: string;
+  featured: boolean;
+  features: PlanFeature[];
+}
 
-const Planos: React.FC = () => {
-  const navigate = useNavigate();
+export default function Pricing() {
+  const { t } = useTranslation();
+  const plans = t('pricing.plans', { returnObjects: true }) as Plan[];
 
-  const selecionarPlano = (plano: string, valor: number) => {
-    const dadosPlano = {
-      nome: plano,
-      valor,
-      timestamp: new Date().toISOString(),
-    };
-
-    localStorage.setItem("planoSelecionado", JSON.stringify(dadosPlano));
-
-    navigate(`/contrato?plano=${encodeURIComponent(plano)}&valor=${valor}`);
-  };
+  const scrollToContact = () =>
+    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-    <section className="planos" id="planos">
+    <section className="pricing" id="pricing">
       <div className="container">
-        <h2>Planos de Automação Inteligente</h2>
-        <p className="subtitle">
-          Atendimento estruturado, inteligente e escalável para seu negócio
-        </p>
+        <div className="section-header">
+          <div className="tag">◈ {t('pricing.tag')}</div>
+          <h2 className="section-title">
+            {t('pricing.title')}
+            <span>{t('pricing.title_accent')}</span>
+          </h2>
+          <p className="section-sub">{t('pricing.sub')}</p>
+        </div>
 
-        <div className="planos-container">
-          {planos.map((plano) => (
+        <div className="pricing-grid">
+          {plans.map((plan) => (
             <div
-              key={plano.nome}
-              className={`plano-card ${plano.destaque ? "destaque" : ""}`}
+              key={plan.name}
+              className={`pricing-card${plan.featured ? ' featured' : ''}`}
             >
-              {plano.destaque && (
-                <div className="badge-destaque">Mais Escolhido</div>
+              {plan.featured && (
+                <div className="pricing-badge">{t('pricing.featured_badge')}</div>
               )}
 
-              <h3>{plano.nome}</h3>
-
-              <div className="valor">
-                R$ {plano.valor}
-                <span className="periodo">/mês</span>
+              <div className="pricing-plan">
+                <div className="pricing-plan-name">{plan.name}</div>
+                <div className="pricing-plan-desc">{plan.desc}</div>
               </div>
 
-              <ul>
-                {plano.descricao.map((item, idx) => (
-                  <li key={idx}>
-                    <span className="check"></span> {item}
+              <div className="pricing-price">
+                <div className="pricing-amount">
+                  {plan.price !== '?' && (
+                    <span className="pricing-currency">R$</span>
+                  )}
+                  <span className="pricing-value">{plan.price}</span>
+                  <span className="pricing-period">{plan.period}</span>
+                </div>
+                <div className="pricing-note">{plan.note}</div>
+              </div>
+
+              <ul className="pricing-features">
+                {plan.features.map((f) => (
+                  <li key={f.text}>
+                    {f.included
+                      ? <span className="check">✓</span>
+                      : <span className="x">✕</span>
+                    }
+                    <span style={{ opacity: f.included ? 1 : 0.4 }}>{f.text}</span>
                   </li>
                 ))}
               </ul>
 
               <button
-                className="btn-plano"
-                onClick={() => selecionarPlano(plano.nome, plano.valor)}
+                onClick={scrollToContact}
+                className={`pricing-cta ${plan.featured ? 'btn-primary' : 'btn-outline'}`}
               >
-                Contratar {plano.nome}
+                {plan.price === '?' ? t('pricing.cta_custom') : t('pricing.cta')}
               </button>
             </div>
           ))}
@@ -128,6 +84,4 @@ const Planos: React.FC = () => {
       </div>
     </section>
   );
-};
-
-export default Planos;
+}

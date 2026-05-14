@@ -1,46 +1,32 @@
 // src/App.tsx
-import { useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
-import { observeElements } from "./utils/scrollAnimations";
+import './i18n/i18n.ts';
+import './index.css';
 
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Sobre from "./components/Sobre";
-import Servico from "./components/Servico";
-import Planos from "./components/Planos";
-import Footer from "./components/Footer";
-import ComoFunciona from "./components/ComoFunciona";
+import Navbar    from './components/Navbar';
+import Hero      from './components/Hero';
+import Services  from './components/Servico';
+import Portfolio from './components/Portifolio';
+import Pricing   from './components/Planos';
+import About     from './components/Sobre';
+import CtaBanner from './components/CtaBanner';
+import Contact   from './components/Contact';
+import Footer    from './components/Footer';
 
-import Contrato from "./pages/Contrato";
-
-import "./App.css";
-
-function Home() {
-  useEffect(() => {
-    const observer = observeElements();
-    return () => observer.disconnect();
-  }, []);
-
+export default function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <Sobre />
-      <ComoFunciona />
-      <Servico />
-      <Planos />
+      <Navbar />
+      <main>
+        <Hero />
+        <Services />
+        <Portfolio />
+        <Pricing />
+        <About />
+        <CtaBanner />
+        <Contact />
+      </main>
       <Footer />
     </>
   );
 }
 
-function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/contrato" element={<Contrato />} />
-    </Routes>
-  );
-}
-
-export default App;

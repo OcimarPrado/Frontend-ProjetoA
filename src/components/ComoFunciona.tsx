@@ -1,22 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next"; // Agora o Vite vai achar esse import
 import "../styles/ComoFunciona.css";
+
 
 const steps = [
   {
-    title: "📦 Escolha seu Plano",
-    description: "Selecione o plano ideal para seu negócio, com funcionalidades adaptadas a sua necessidade.",
+    title: "Nós Ouvimos Você",
+    description: "Através de reuniões planejadas, entendemos sua necessidade e como nossos serviços podem atender á sua demanda.",
   },
   {
-    title: "⚙️ Configure o Atendimento",
-    description: "Personalize seu fluxo de atendimento de forma rápida e intuitiva, sem precisar de programação.",
+    title: "Planejamento Estratégico",
+    description: "Com clareza dos objetivos, planejamos as etapas de produção e entregas parcias para feedback e ajustes.",
   },
   {
-    title: "🎯 Centralize e Organize Seus Leads ",
-    description: "Atenda seus clientes a qualquer hora! Com o link ocyan-tech/sua_empresa, pedidos, agendamentos e atendimento acontecem automaticamente, 24/7.",
+    title: "Comunicação Ativa",
+    description: "Mantemos uma linha de comunicação aberta e ativa durante todo o processo, maximizando resultados e minimizando a necessidade de ajustes pós entrega.",
   },
   {
-    title: "📊 Acompanhe Resultados",
-    description: "Visualize relatórios e dashboards detalhados para tomar decisões rápidas e inteligentes.",
+    title: "Pós entrega",
+    description: "Fornecemos treinamento e acompanhamento para equipes, dando suporte contínuo e programado após entrega do Software, API ou site.",
   },
 ];
 
@@ -25,9 +28,9 @@ const ComoFunciona: React.FC = () => {
   return (
     <section className="como-funciona" id="como-funciona">
       <div className="container">
-        <h2>Como Funciona</h2>
+        <h2>Como trabalhamos na Ocyan-Tech?</h2>
         <p className="subtitle">
-          Um processo simples e eficiente para automatizar seu atendimento e vendas
+          Um processo simples e eficiente para ajudar sua empresa a crescer.
         </p>
         <div className="steps">
           {steps.map((step, index) => (

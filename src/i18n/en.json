@@ -1,41 +1,256 @@
 {
-  "header": {
-    "logo": "Ocyan-Tech",
-    "slogan": "Intelligent Service Automating Results",
-    "menu": {
-      "inicio": "Home",
-      "comoFunciona": "How It Works",
-      "planos": "Plans",
-      "contato": "Contact",
-      "comecarAgora": "Get Started"
-    }
+  "nav": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Start Project"
   },
   "hero": {
-    "title": "Accelerate your service, transform experiences, and convert every interaction into results.",
-    "description": "We help you connect with your clients intelligently and automatically — saving time, enhancing relationships, and generating real results.",
-    "features": ["24/7 Service", "Trained AI", "Quick Setup"],
-    "infoTitle": "How Your Business Will Be Served",
-    "steps": [
+    "tag": "Digital Agency",
+    "headline1": "Professional",
+    "headline2": " websites,",
+    "headline3": "hosting and maintenance.",
+    "sub": "We build, host and maintain your website with professional technology.",
+    "cta_primary": "Get my website",
+    "cta_secondary": "View portfolio",
+    "stat_projects_num": "100%",
+    "stat_projects_label": "Ultra Fast",
+    "stat_uptime_num": "99.9%",
+    "stat_uptime_label": "Uptime guaranteed",
+    "stat_support_num": "24h",
+    "stat_support_label": "Response time",
+    "device_url": "yourwebsite.com"
+  },
+  "services": {
+    "tag": "What we do",
+    "title": "Everything your website",
+    "title_accent": "needs",
+    "sub": "From zero to live. We handle every step so you can focus on what matters — your business.",
+    "items": [
       {
-        "number": "1",
-        "title": "Quick Registration",
-        "description": "Access the dashboard and set up your virtual assistant with your business information."
+        "number": "01",
+        "icon": "🖥️",
+        "name": "Website Creation",
+        "desc": "Professional, responsive and SEO-optimized websites. Built with current technology and a focus on results.",
+        "features": [
+          "Exclusive responsive design",
+          "Google optimization (SEO)",
+          "WhatsApp & social media integration",
+          "Delivery within 15 business days"
+        ]
       },
       {
-        "number": "2",
-        "title": "Receive Your Link",
-        "description": "Example: ocyan-tech.com.br/your-business"
+        "number": "02",
+        "icon": "☁️",
+        "name": "Managed Hosting",
+        "desc": "Configured server, SSL included, automatic backups and managed domain. No technical knowledge needed.",
+        "features": [
+          "Free SSL certificate",
+          "Daily automatic backups",
+          "Domain included",
+          "24/7 monitoring"
+        ]
       },
       {
-        "number": "3",
-        "title": "Client Access",
-        "description": "Your clients interact with AI trained specifically for your business."
-      },
-      {
-        "number": "4",
-        "title": "Automatic AI Assistance",
-        "description": "Answers questions, schedules appointments, and qualifies leads 24/7."
+        "number": "03",
+        "icon": "🔧",
+        "name": "Maintenance & Support",
+        "desc": "Continuous updates, fixes and improvements. Your site always running, secure and up to date.",
+        "features": [
+          "Content updates",
+          "WhatsApp support",
+          "Monthly traffic report",
+          "Automatic SSL renewal"
+        ]
       }
     ]
+  },
+  "portfolio": {
+    "tag": "Work",
+    "title": "Recent",
+    "title_accent": "projects",
+    "sub": "Real technology applied to projects that went live.",
+    "link": "View project →",
+    "items": [
+      {
+        "icon": "🏪",
+        "tags": ["Website", "E-commerce"],
+        "title": "Institutional Site + Store",
+        "desc": "Full website with product catalog, WhatsApp integration and content management panel.",
+        "link": "#"
+      },
+      {
+        "icon": "🤖",
+        "tags": ["SaaS", "AI"],
+        "title": "OcyanBot",
+        "desc": "AI-powered chatbot for automated customer service. Integrated across multiple channels with secure authentication.",
+        "link": "https://github.com"
+      },
+      {
+        "icon": "⚙️",
+        "tags": ["System", "Industry"],
+        "title": "Boldrini Simulator",
+        "desc": "Industrial expert system for a flanging press. Encodes 3 years of operational knowledge into computational logic.",
+        "link": "https://github.com"
+      }
+    ]
+  },
+  "pricing": {
+    "tag": "Plans",
+    "title": "No surprises,",
+    "title_accent": " no fine print",
+    "sub": "Fair pricing, professional delivery and real support. Choose the right plan for your business.",
+    "featured_badge": "Most popular",
+    "note_setup": "* Setup fee charged only once",
+    "cta": "Choose plan",
+    "cta_custom": "Request a quote",
+    "plans": [
+      {
+        "name": "Starter",
+        "desc": "Ideal for those who need a fast, modern and reliable website without monthly content changes.",
+        "price": "99",
+        "period": "/mo",
+        "note": "Includes creation, hosting, maintenance and 3 rounds of post-delivery adjustments.*",
+        "featured": false,
+        "features": [
+          { "included": true,  "text": "Up to 5-page website" },
+          { "included": true,  "text": "Responsive design (mobile)" },
+          { "included": true,  "text": "Domain included" },
+          { "included": true,  "text": "Free SSL + hosting" },
+          { "included": true,  "text": "WhatsApp integration" },
+          { "included": false, "text": "Blog / news section" },
+          { "included": false, "text": "Monthly report" }
+        ]
+      },
+      {
+        "name": "Professional",
+        "desc": "For businesses that want a complete digital presence without worrying about maintenance and stability.",
+        "price": "249",
+        "period": "/mo",
+        "note": "Includes creation, hosting, maintenance, 5 post-delivery adjustment rounds, dedicated support, dynamic content and dedicated control panel.",
+        "featured": true,
+        "features": [
+          { "included": true, "text": "Up to 10-page website" },
+          { "included": true, "text": "Responsive design (mobile)" },
+          { "included": true, "text": "SEO planned for paid traffic" },
+          { "included": true, "text": "Basic paid traffic with visit and conversion indicators" },
+          { "included": true, "text": "Domain included" },
+          { "included": true, "text": "Free SSL + hosting" },
+          { "included": true, "text": "WhatsApp + social integration" },
+          { "included": true, "text": "Blog / news section" },
+          { "included": true, "text": "Monthly traffic report" }
+        ]
+      },
+      {
+        "name": "Custom",
+        "desc": "Systems, APIs, integrations and tailor-made solutions.",
+        "price": "?",
+        "period": "on request",
+        "note": "Quote within 24h",
+        "featured": false,
+        "features": [
+          { "included": true, "text": "E-commerce and online stores" },
+          { "included": true, "text": "ERP and system integrations" },
+          { "included": true, "text": "Custom APIs and backends" },
+          { "included": true, "text": "Dashboards and admin panels" },
+          { "included": true, "text": "Priority support" },
+          { "included": true, "text": "Contract-defined SLA" },
+          { "included": true, "text": "Team training" }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "tag": "About us",
+    "title": "Real ",
+    "title_accent": "technology",
+    "title2": ", real delivery",
+    "text1": "Ocyan-Tech is not a template store. We are developers who understand business — and we build websites that work as a tool, not as a static business card.",
+    "text2": "With over 22 years of technical experience and a technology degree, we combine engineering rigor with business vision to deliver solutions that generate real results.",
+    "highlights": [
+      {
+        "icon": "⚡",
+        "title": "Delivery in 15 business days",
+        "text": "No stalling. Deadline set, deadline met."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Clean code, secure site",
+        "text": "We don't use broken templates. Every project is built with care."
+      },
+      {
+        "icon": "📱",
+        "title": "Human support via WhatsApp",
+        "text": "You talk to the person who built your site. Not a support chatbot."
+      }
+    ],
+    "cards": [
+      { "icon": "🏗️", "title": "22+ technical years",   "text": "Industrial and software development experience" },
+      { "icon": "🤝", "title": "Transparent contract",   "text": "Clear scope, fixed price, no surprises" },
+      { "icon": "📊", "title": "Results-focused",        "text": "We measure success by your business growth" }
+    ]
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Let's build",
+    "title_accent": " something together",
+    "sub": "Fill the form or reach us directly on WhatsApp. We respond within 24 hours.",
+    "methods": [
+      { "icon": "📱", "label": "WhatsApp",  "value": "+55 (51) 9 8673-0107" },
+      { "icon": "📧", "label": "Email",     "value": "onprado39@gmail.com" },
+      { "icon": "📍", "label": "Location",  "value": "Canoas, RS — We serve all of Brazil" }
+    ],
+    "form": {
+      "name_label": "Your name",
+      "name_placeholder": "John Smith",
+      "email_label": "Email",
+      "email_placeholder": "john@company.com",
+      "service_label": "Service of interest",
+      "service_placeholder": "Select...",
+      "service_options": [
+        "Website creation",
+        "Hosting + Maintenance",
+        "Full plan (creation + hosting)",
+        "Custom system or API",
+        "Other"
+      ],
+      "message_label": "Tell us about your project",
+      "message_placeholder": "I have a business... I need a website that...",
+      "submit": "Send message",
+      "submitting": "Sending...",
+      "success_title": "Message sent!",
+      "success_sub": "We'll get back to you within 24 hours.",
+      "success_btn": "Send another message"
+    }
+  },
+  "cta_banner": {
+    "title": "Ready for a website",
+    "title_accent": " that works for you?",
+    "sub": "Talk to us today. Free quote within 24h.",
+    "cta_primary": "Request a quote",
+    "cta_secondary": "View plans"
+  },
+  "footer": {
+    "brand_desc": "Website creation, hosting and maintenance with real technology and human support. Canoas, RS, Brazil.",
+    "col_services": "Services",
+    "col_company": "Company",
+    "links_services": [
+      { "label": "Website Creation", "href": "#services" },
+      { "label": "Hosting",         "href": "#services" },
+      { "label": "Maintenance",     "href": "#services" },
+      { "label": "Custom Systems",  "href": "#pricing"  }
+    ],
+    "links_company": [
+      { "label": "Portfolio", "href": "#portfolio" },
+      { "label": "Pricing",   "href": "#pricing"   },
+      { "label": "About us",  "href": "#about"     },
+      { "label": "Contact",   "href": "#contact"   }
+    ],
+    "copyright": "© {year} Ocyan-Tech. Made with",
+    "copyright_end": "in southern Brazil.",
+    "privacy": "Privacy",
+    "terms": "Terms"
   }
 }

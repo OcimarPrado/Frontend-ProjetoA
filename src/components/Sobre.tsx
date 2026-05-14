@@ -1,34 +1,68 @@
-import React from "react";
-import "../styles/Sobre.css";
+import { useTranslation } from 'react-i18next';
 
-const Sobre: React.FC = () => {
+interface Highlight {
+  icon: string;
+  title: string;
+  text: string;
+}
+
+interface Card {
+  icon: string;
+  title: string;
+  text: string;
+}
+
+export default function About() {
+  const { t } = useTranslation();
+  const highlights = t('about.highlights', { returnObjects: true }) as Highlight[];
+  const cards      = t('about.cards',      { returnObjects: true }) as Card[];
+
   return (
-    <section className="sobre-section" id="sobre">
-      <div className="sobre-container">
-        <span className="overline">SOBRE A OCYAN-TECH</span>
+    <section className="about" id="about">
+      <div className="container">
+        <div className="about-inner">
+          {/* Grid de cards visuais */}
+          <div className="about-visual">
+            {cards.map((card, i) => (
+              <div
+                key={card.title}
+                className={`about-card${i === 3 ? ' span-2' : ''}`}
+              >
+                <div className="about-card-icon">{card.icon}</div>
+                <div className="about-card-title">{card.title}</div>
+                <div className="about-card-text">{card.text}</div>
+              </div>
+            ))}
+          </div>
 
-        <h2>
-          Estrutura Digital para <span>Organização e Crescimento</span>
-        </h2>
+          {/* Conteúdo textual */}
+          <div className="about-content">
+            <div>
+              <div className="tag">◈ {t('about.tag')}</div>
+              <h2 className="section-title">
+                {t('about.title')}
+                <span>{t('about.title_accent')}</span>
+                {t('about.title2')}
+              </h2>
+            </div>
 
-        <p>
-          A Ocyan-Tech desenvolve sistemas e estruturas digitais voltadas para organização de atendimento e controle comercial.
-          Nosso foco é criar bases sólidas para que empresas não percam contatos, tenham clareza nos processos e mantenham controle sobre negociações.
-        </p>
+            <p className="about-text">{t('about.text1')}</p>
+            <p className="about-text">{t('about.text2')}</p>
 
-        <p>
-          Trabalhamos com soluções enxutas e objetivas. Cada funcionalidade implementada existe para resolver um problema real do negócio,
-          seja na captação de leads, no registro de informações ou na organização do fluxo de atendimento.
-        </p>
-
-        <p>
-          Não vendemos apenas presença online. Construímos estrutura.
-          Uma base técnica bem definida permite evoluir, automatizar e escalar com segurança.
-        </p>
+            <div className="about-highlights">
+              {highlights.map((h) => (
+                <div className="about-highlight" key={h.title}>
+                  <span className="about-highlight-icon">{h.icon}</span>
+                  <div className="about-highlight-content">
+                    <span className="about-highlight-title">{h.title}</span>
+                    <span className="about-highlight-text">{h.text}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
-};
-
-export default Sobre;
-
+}

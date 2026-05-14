@@ -1,37 +1,25 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
-// Traduções
-const resources = {
-  en: {
-    translation: {
-      heroTitle: "Connect with your customers efficiently",
-      heroSubtitle: "Complete AI-powered automated support platform for solo entrepreneurs.",
-      heroCtaPlans: "See Plans",
-      heroCtaHow: "How It Works",
-      heroFeatures: ["24/7 Support", "Trained AI", "Fast Setup"]
-    }
-  },
-  pt: {
-    translation: {
-      heroTitle: "Conecte-se com seus clientes de forma eficiente",
-      heroSubtitle: "Plataforma completa de atendimento automatizado por IA para quem trabalha sozinho.",
-      heroCtaPlans: "Ver Planos",
-      heroCtaHow: "Como Funciona",
-      heroFeatures: ["Atendimento 24/7", "IA Treinada", "Configuração Rápida"]
-    }
-  }
-};
+import pt from './pt.json';
+import en from './en.json';
+import es from './es.json';
 
 i18n
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    resources,
-    lng: "pt", // idioma padrão
-    fallbackLng: "pt",
+    resources: {
+      pt: { translation: { ...pt } },
+      en: { translation: { ...en } },
+      es: { translation: { ...es } },
+    },
+    fallbackLng: 'pt',
+    lng: 'pt',
     interpolation: {
-      escapeValue: false
-    }
+      escapeValue: false,
+    },
   });
 
 export default i18n;
