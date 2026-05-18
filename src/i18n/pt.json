@@ -76,16 +76,16 @@
     "link": "Ver projeto →",
     "items": [
       {
-        "images": [
-          {"src":"/public/mulhergauchatour.png"},
-          {"src":"/public/mffconsultoria.png"},
-          {"src":"/public/geomicro.png"}
-        ],
         "icon": "🏪",
         "tags": ["Site"],
         "title": "Site Institucional",
         "desc": "Alguns exemplos de clientes atendidos em parceria com a agência prósite.poa.br .",
-        "link": "#"
+        "link": "#",
+        "images": [
+          { "src": "./mulhergauchatour.png", "label": "Mulher Gaúcha Tour" },
+          { "src": "./mffconsultoria.png",   "label": "MFF Consultoria"   },
+          { "src": "/geomicro.png",         "label": "GeoMicro"          }
+        ]
       },
       {
         "icon": "🤖",
@@ -114,15 +114,15 @@
     "cta_custom": "Solicitar proposta",
     "plans": [
       {
-        "name": "starter",
+        "name": "Starter",
         "desc": "Ideal para quem precisa de um site rápido, moderno, confiável e não tem necessidade de fazer mudanças no conteúdo mensalmente.",
         "price": "99",
         "period": "/mês",
         "note": "Preço Promocional 12 x de R$ 99 - aproveite hoje mesmo*",
         "featured": true,
         "features": [
-          { "included": true,  "text": "3(três) rodadas de ajustes após entrega."},
-          { "included": true,  "text": "Inclui criação, hospedagem, manutenção de site"},
+          { "included": true,  "text": "3(três) rodadas de ajustes após entrega." },
+          { "included": true,  "text": "Inclui criação, hospedagem, manutenção de site" },
           { "included": true,  "text": "Site ONEPAGE - Página Única contendo: header + hero + sobre + serviços + contato + footer" },
           { "included": true,  "text": "Design responsivo (mobile)" },
           { "included": true,  "text": "Domínio .com.br incluso" },
@@ -137,15 +137,15 @@
         "desc": "Para empresas que querem presença digital completa, sem se preocupar com manutenção e estabilidade.",
         "price": "249",
         "period": "/mês",
-        "note": "R$ 1500 de criação do Site sendo R$ 300 no ato da aquisição do serviço e R$ 1200 na entrega. Para Pagamento á vista (pix, débito e dinheiro) 10% de desconto.*",
+        "note": "R$ 1500 de criação do Site sendo R$ 300 no ato da aquisição do serviço e R$ 1200 na entrega. Para Pagamento à vista (pix, débito e dinheiro) 10% de desconto.*",
         "featured": false,
         "features": [
-          { "included": true, "text": "Inclui criação, hospedagem, manutenção de site"},
-          { "included": true, "text": "5(cinco) rodadas de ajustes após entrega e suporte dedicado"},
-          { "included": true, "text": "Conteúdo dinâmico, painel de cliente e treinamento de edição de conteúdos"},
+          { "included": true, "text": "Inclui criação, hospedagem, manutenção de site" },
+          { "included": true, "text": "5(cinco) rodadas de ajustes após entrega e suporte dedicado" },
+          { "included": true, "text": "Conteúdo dinâmico, painel de cliente e treinamento de edição de conteúdos" },
           { "included": true, "text": "Site com até 10 páginas" },
           { "included": true, "text": "Design responsivo (mobile)" },
-	        { "included": true, "text": "SEO planejado para tráfego pago" },
+          { "included": true, "text": "SEO planejado para tráfego pago" },
           { "included": true, "text": "Tráfego pago básico com indicadores de visita e conversão" },
           { "included": true, "text": "Domínio .com.br incluso" },
           { "included": true, "text": "Integração WhatsApp + Redes" },
@@ -180,21 +180,9 @@
     "text1": "A Ocyan-Tech não é uma loja de templates. Somos desenvolvedores que entendem negócio — e construímos sites que funcionam como ferramenta, não como cartão de visita estático.",
     "text2": "Com mais de 22 anos de experiência técnica e formação em tecnologia, unimos rigor de engenharia com visão comercial para entregar soluções que geram resultado real.",
     "highlights": [
-      {
-        "icon": "⚡",
-        "title": "Entrega em 15 dias úteis",
-        "text": "Sem enrolação. Prazo definido, entregue no prazo."
-      },
-      {
-        "icon": "🛡️",
-        "title": "Código limpo, site seguro",
-        "text": "Não usamos templates quebrados. Cada projeto é construído com atenção."
-      },
-      {
-        "icon": "📱",
-        "title": "Suporte humano via WhatsApp",
-        "text": "Você fala com quem fez o site. Não com um chatbot de suporte."
-      }
+      { "icon": "⚡", "title": "Entrega em 15 dias úteis",      "text": "Sem enrolação. Prazo definido, entregue no prazo." },
+      { "icon": "🛡️", "title": "Código limpo, site seguro",     "text": "Não usamos templates quebrados. Cada projeto é construído com atenção." },
+      { "icon": "📱", "title": "Suporte humano via WhatsApp",   "text": "Você fala com quem fez o site. Não com um chatbot de suporte." }
     ],
     "cards": [
       { "icon": "🏗️", "title": "22+ anos técnicos",    "text": "Experiência industrial e em desenvolvimento de software" },
@@ -209,8 +197,8 @@
     "title_accent": " algo juntos",
     "sub": "Preencha o formulário ou nos chame direto no WhatsApp. Respondemos em até 24 horas.",
     "methods": [
-      { "icon": "📱", "label": "WhatsApp", "value": "+55 (51) 9 8673-0107" },
-      { "icon": "📧", "label": "E-mail",   "value": "onprado39@gmail.com" },
+      { "icon": "📱", "label": "WhatsApp",    "value": "+55 (51) 9 8673-0107" },
+      { "icon": "📧", "label": "E-mail",      "value": "onprado39@gmail.com" },
       { "icon": "📍", "label": "Localização", "value": "Canoas, RS — Atendemos todo o Brasil" }
     ],
     "form": {
@@ -248,16 +236,16 @@
     "col_services": "Serviços",
     "col_company": "Empresa",
     "links_services": [
-      { "label": "Criação de Sites",     "href": "#services" },
-      { "label": "Hospedagem",           "href": "#services" },
-      { "label": "Manutenção",           "href": "#services" },
-      { "label": "Sistemas Personalizados", "href": "#pricing" }
+      { "label": "Criação de Sites",        "href": "#services" },
+      { "label": "Hospedagem",              "href": "#services" },
+      { "label": "Manutenção",              "href": "#services" },
+      { "label": "Sistemas Personalizados", "href": "#pricing"  }
     ],
     "links_company": [
-      { "label": "Portfólio",    "href": "#portfolio" },
-      { "label": "Preços",       "href": "#pricing" },
-      { "label": "Sobre nós",    "href": "#about" },
-      { "label": "Contato",      "href": "#contact" }
+      { "label": "Portfólio", "href": "#portfolio" },
+      { "label": "Preços",    "href": "#pricing"   },
+      { "label": "Sobre nós", "href": "#about"     },
+      { "label": "Contato",   "href": "#contact"   }
     ],
     "copyright": "© {year} Ocyan-Tech. Feito por",
     "copyright_end": " Canoas - Brasil.",
