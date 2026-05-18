@@ -8,37 +8,37 @@
     "cta": "Start Project"
   },
   "hero": {
-    "tag": "Digital Agency",
+    "tag": "Digital Presence Specialists",
     "headline1": "Professional",
-    "headline2": " websites,",
-    "headline3": "hosting and maintenance.",
-    "sub": "We build, host and maintain your website with professional technology.",
-    "cta_primary": "Get my website",
-    "cta_secondary": "View portfolio",
-    "stat_projects_num": "100%",
-    "stat_projects_label": "Ultra Fast",
-    "stat_uptime_num": "99.9%",
-    "stat_uptime_label": "Uptime guaranteed",
-    "stat_support_num": "24h",
-    "stat_support_label": "Response time",
-    "device_url": "https://site-psicologia-three.vercel.app/",
-    "badge_title": "Site is live!"
+    "headline2": "Website Development",
+    "headline3": "and Business Automation.",
+    "sub": "We build high-performance websites, intelligent chatbots, and automations that turn visitors into customers.",
+    "cta_primary": "Start my project",
+    "cta_secondary": "View success stories",
+    "stat_projects_num": "Top 1%",
+    "stat_projects_label": "SEO Performance",
+    "stat_uptime_num": "100%",
+    "stat_uptime_label": "Conversion Focus",
+    "stat_support_num": "API",
+    "stat_support_label": "Ready Integrations",
+    "device_url": "ocyan-tech.com.br",
+    "badge_title": "Cutting-Edge Technology"
   },
   "services": {
     "tag": "What we do",
     "title": "Everything your website",
     "title_accent": "needs",
-    "sub": "From zero to live. We handle every step so you can focus on what matters — your business.",
+    "sub": "From idea to launch. We handle every step so you can focus on what matters — your business.",
     "items": [
       {
         "number": "01",
         "icon": "🖥️",
-        "name": "Website Creation",
-        "desc": "Professional, responsive and SEO-optimized websites. Built with current technology and a focus on results.",
+        "name": "Website Development",
+        "desc": "Professional, responsive, and SEO-optimized websites. Built with modern technology and focused on results.",
         "features": [
           "Exclusive responsive design",
           "Google optimization (SEO)",
-          "WhatsApp & social media integration",
+          "WhatsApp and social media integration",
           "Delivery within 15 business days"
         ]
       },
@@ -46,11 +46,11 @@
         "number": "02",
         "icon": "☁️",
         "name": "Managed Hosting",
-        "desc": "Configured server, SSL included, automatic backups and managed domain. No technical knowledge needed.",
+        "desc": "Configured server, SSL included, automatic backups, and domain management. No technical knowledge required.",
         "features": [
           "Free SSL certificate",
           "Daily automatic backups",
-          "Domain included",
+          ".com.br domain included",
           "24/7 monitoring"
         ]
       },
@@ -58,42 +58,47 @@
         "number": "03",
         "icon": "🔧",
         "name": "Maintenance & Support",
-        "desc": "Continuous updates, fixes and improvements. Your site always running, secure and up to date.",
+        "desc": "Continuous updates, fixes, and improvements. Your website always secure, updated, and running smoothly.",
         "features": [
           "Content updates",
           "WhatsApp support",
-          "Monthly traffic report",
+          "Monthly traffic reports",
           "Automatic SSL renewal"
         ]
       }
     ]
   },
   "portfolio": {
-    "tag": "Work",
+    "tag": "Projects",
     "title": "Recent",
-    "title_accent": "projects",
-    "sub": "Real technology applied to projects that went live.",
+    "title_accent": "work",
+    "sub": "Real technology applied to live projects.",
     "link": "View project →",
     "items": [
       {
         "icon": "🏪",
-        "tags": ["Website", "E-commerce"],
-        "title": "Institutional Site + Store",
-        "desc": "Full website with product catalog, WhatsApp integration and content management panel.",
-        "link": "#"
+        "tags": ["Website"],
+        "title": "Corporate Website",
+        "desc": "Some examples of clients served in partnership with the agency prósite.poa.br.",
+        "link": "#",
+        "images": [
+          { "src": "./mulhergauchatour.png", "label": "Mulher Gaúcha Tour" },
+          { "src": "./mffconsultoria.png", "label": "MFF Consultoria" },
+          { "src": "/geomicro.png", "label": "GeoMicro" }
+        ]
       },
       {
         "icon": "🤖",
         "tags": ["SaaS", "AI"],
-        "title": "OcyanBot",
-        "desc": "AI-powered chatbot for automated customer service. Integrated across multiple channels with secure authentication.",
+        "title": "ChatBot",
+        "desc": "AI-powered chatbot for automated customer service. Integrated with multiple channels and secure authentication.",
         "link": "https://assistente-inteligente-production.up.railway.app/"
       },
       {
         "icon": "⚙️",
         "tags": ["System", "Industry"],
         "title": "Boldrini Simulator",
-        "desc": "Industrial expert system for a flanging press. Encodes 3 years of operational knowledge into computational logic.",
+        "desc": "Industrial expert system for flange press operations. Encodes 3 years of operational knowledge into computational logic.",
         "link": "https://github.com"
       }
     ]
@@ -101,55 +106,59 @@
   "pricing": {
     "tag": "Plans",
     "title": "No surprises,",
-    "title_accent": " no fine print",
-    "sub": "Fair pricing, professional delivery and real support. Choose the right plan for your business.",
+    "title_accent": " no hidden fees",
+    "sub": "Fair pricing, professional delivery, and real support. Choose the ideal plan for your business.",
     "featured_badge": "Most popular",
-    "note_setup": "* Setup fee charged only once",
+    "note_setup": "* One-time setup fee",
     "cta": "Choose plan",
-    "cta_custom": "Request a quote",
+    "cta_custom": "Request proposal",
     "plans": [
       {
         "name": "Starter",
-        "desc": "Ideal for those who need a fast, modern and reliable website without monthly content changes.",
+        "desc": "Ideal for businesses that need a fast, modern, and reliable website without frequent content updates.",
         "price": "99",
-        "period": "/mo",
-        "note": "Includes creation, hosting, maintenance and 3 rounds of post-delivery adjustments.*",
-        "featured": false,
+        "period": "/month",
+        "note": "Promotional price: 12 installments of R$99 — limited offer*",
+        "featured": true,
         "features": [
-          { "included": true,  "text": "Up to 5-page website" },
-          { "included": true,  "text": "Responsive design (mobile)" },
-          { "included": true,  "text": "Domain included" },
-          { "included": true,  "text": "Free SSL + hosting" },
-          { "included": true,  "text": "WhatsApp integration" },
-          { "included": false, "text": "Blog / news section" },
-          { "included": false, "text": "Monthly report" }
+          { "included": true, "text": "3 rounds of revisions after delivery." },
+          { "included": true, "text": "Includes website creation, hosting, and maintenance" },
+          { "included": true, "text": "One-page website including: header + hero + about + services + contact + footer" },
+          { "included": true, "text": "Responsive mobile design" },
+          { "included": true, "text": ".com.br domain included" },
+          { "included": true, "text": "Basic SEO" },
+          { "included": true, "text": "WhatsApp CTA integration" },
+          { "included": false, "text": "Blog / news area" },
+          { "included": false, "text": "Monthly reports" }
         ]
       },
       {
         "name": "Professional",
-        "desc": "For businesses that want a complete digital presence without worrying about maintenance and stability.",
+        "desc": "For companies seeking a complete digital presence without worrying about maintenance or stability.",
         "price": "249",
-        "period": "/mo",
-        "note": "Includes creation, hosting, maintenance, 5 post-delivery adjustment rounds, dedicated support, dynamic content and dedicated control panel.",
-        "featured": true,
+        "period": "/month",
+        "note": "Website creation fee: R$1500, with R$300 upfront and R$1200 upon delivery. 10% discount for upfront payment via PIX, debit, or cash.*",
+        "featured": false,
         "features": [
-          { "included": true, "text": "Up to 10-page website" },
-          { "included": true, "text": "Responsive design (mobile)" },
-          { "included": true, "text": "SEO planned for paid traffic" },
-          { "included": true, "text": "Basic paid traffic with visit and conversion indicators" },
-          { "included": true, "text": "Domain included" },
-          { "included": true, "text": "Free SSL + hosting" },
-          { "included": true, "text": "WhatsApp + social integration" },
-          { "included": true, "text": "Blog / news section" },
-          { "included": true, "text": "Monthly traffic report" }
+          { "included": true, "text": "Includes website creation, hosting, and maintenance" },
+          { "included": true, "text": "5 rounds of revisions after delivery and dedicated support" },
+          { "included": true, "text": "Dynamic content, client dashboard, and content editing training" },
+          { "included": true, "text": "Website with up to 10 pages" },
+          { "included": true, "text": "Responsive mobile design" },
+          { "included": true, "text": "SEO strategy for paid traffic" },
+          { "included": true, "text": "Basic paid traffic management with conversion indicators" },
+          { "included": true, "text": ".com.br domain included" },
+          { "included": true, "text": "WhatsApp + social media integration" },
+          { "included": true, "text": "Blog / news area" },
+          { "included": true, "text": "Monthly traffic reports" }
         ]
       },
       {
         "name": "Custom",
-        "desc": "Systems, APIs, integrations and tailor-made solutions.",
+        "desc": "Custom systems, APIs, integrations, and tailored solutions.",
         "price": "?",
-        "period": "on request",
-        "note": "Quote within 24h",
+        "period": "upon request",
+        "note": "Quotation within 24h",
         "featured": false,
         "features": [
           { "included": true, "text": "E-commerce and online stores" },
@@ -163,53 +172,99 @@
       }
     ]
   },
+
+
   "about": {
-    "tag": "About us",
-    "title": "Real ",
-    "title_accent": "technology",
-    "title2": ", real delivery",
-    "text1": "Ocyan-Tech is not a template store. We are developers who understand business — and we build websites that work as a tool, not as a static business card.",
-    "text2": "With over 22 years of technical experience and a technology degree, we combine engineering rigor with business vision to deliver solutions that generate real results.",
-    "highlights": [
-      {
-        "icon": "⚡",
-        "title": "Delivery in 15 business days",
-        "text": "No stalling. Deadline set, deadline met."
-      },
-      {
-        "icon": "🛡️",
-        "title": "Clean code, secure site",
-        "text": "We don't use broken templates. Every project is built with care."
-      },
-      {
-        "icon": "📱",
-        "title": "Human support via WhatsApp",
-        "text": "You talk to the person who built your site. Not a support chatbot."
-      }
-    ],
-    "cards": [
-      { "icon": "🏗️", "title": "22+ technical years",   "text": "Industrial and software development experience" },
-      { "icon": "🤝", "title": "Transparent contract",   "text": "Clear scope, fixed price, no surprises" },
-      { "icon": "📊", "title": "Results-focused",        "text": "We measure success by your business growth" }
-    ]
+  "tag": "About us",
+
+  "title": "Real tecnology,",
+  "title_accent": " solutions that drive results",
+  "title2": "",
+
+  "text1": "Ocyan-Tech develops professional websites, web systems, and intelligent automations focused on performance, conversion, and digital presence. We do not just deliver beautiful pages — we create tools that help businesses grow online.",
+
+  "text2": "We combine technical expertise, strategic vision, and modern development to build fast, secure, and scalable solutions. Every project is designed with usability, SEO, visual identity, and business results in mind.",
+
+  "highlights": [
+    {
+      "icon": "⚡",
+      "title": "Fast and organized delivery",
+      "text": "Projects with defined timelines, clear communication, and agile development."
+    },
+
+    {
+      "icon": "🛡️",
+      "title": "Clean code and professional structure",
+      "text": "Websites built with modern technologies focused on security, performance, and stability."
+    },
+
+    {
+      "icon": "📱",
+      "title": "Human support and real follow-up",
+      "text": "Direct WhatsApp support throughout every stage of the project."
+    }
+  ],
+
+  "cards": [
+    {
+      "icon": "🏗️",
+      "title": "22+ years of technical experience",
+      "text": "Industrial experience, operational logic, and applied software development."
+    },
+
+    {
+      "icon": "🚀",
+      "title": "Real projects in production",
+      "text": "Websites, systems, and digital solutions running in real environments."
+    },
+
+    {
+      "icon": "🤝",
+      "title": "Transparent process",
+      "text": "Aligned scope, objective communication, and continuous follow-up."
+    },
+
+    {
+      "icon": "📊",
+      "title": "Growth-focused",
+      "text": "Every solution is built with visibility, conversion, and digital authority in mind."
+    }
+  ]
   },
+
   "contact": {
     "tag": "Contact",
     "title": "Let's build",
-    "title_accent": " something together",
-    "sub": "Fill the form or reach us directly on WhatsApp. We respond within 24 hours.",
+    "title_accent": "something together",
+    "sub": "Fill out the form or contact us directly on WhatsApp. We reply within 24 hours.",
     "methods": [
-      { "icon": "📱", "label": "WhatsApp",  "value": "+55 (51) 9 8673-0107" },
-      { "icon": "📧", "label": "Email",     "value": "onprado39@gmail.com" },
-      { "icon": "📍", "label": "Location",  "value": "Canoas, RS — We serve all of Brazil" }
+      {
+        "icon": "📱",
+        "label": "WhatsApp",
+        "value": "+55 (51) 9 8673-0107"
+      },
+      {
+        "icon": "📧",
+        "label": "E-mail",
+        "value": "onprado39@gmail.com"
+      },
+      {
+        "icon": "📍",
+        "label": "Location",
+        "value": "Canoas, RS — Serving all of Brazil"
+      }
     ],
+
     "form": {
       "name_label": "Your name",
-      "name_placeholder": "John Smith",
-      "email_label": "Email",
+      "name_placeholder": "John Doe",
+
+      "email_label": "E-mail",
       "email_placeholder": "john@company.com",
+
       "service_label": "Service of interest",
       "service_placeholder": "Select...",
+
       "service_options": [
         "Website creation",
         "Hosting + Maintenance",
@@ -217,40 +272,74 @@
         "Custom system or API",
         "Other"
       ],
-      "message_label": "Tell us about your project",
-      "message_placeholder": "I have a business... I need a website that...",
+
+      "message_label": "Tell us a bit about your project",
+      "message_placeholder": "I have a business that... I need a website that...",
+
       "submit": "Send message",
       "submitting": "Sending...",
+
       "success_title": "Message sent!",
-      "success_sub": "We'll get back to you within 24 hours.",
+      "success_sub": "We will contact you within 24 hours.",
       "success_btn": "Send another message"
     }
   },
+
   "cta_banner": {
-    "title": "Ready for a website",
-    "title_accent": " that works for you?",
-    "sub": "Talk to us today. Free quote within 24h.",
+    "title": "Ready to have a website",
+    "title_accent": "that works for you?",
+    "sub": "Talk to us today. Free quote within 24 hours.",
     "cta_primary": "Request a quote",
     "cta_secondary": "View plans"
   },
+
   "footer": {
-    "brand_desc": "Website creation, hosting and maintenance with real technology and human support. Canoas, RS, Brazil.",
+    "brand_desc": "Website creation, hosting, and maintenance with real technology and human support. Canoas, RS.",
+
     "col_services": "Services",
     "col_company": "Company",
+
     "links_services": [
-      { "label": "Website Creation", "href": "#services" },
-      { "label": "Hosting",         "href": "#services" },
-      { "label": "Maintenance",     "href": "#services" },
-      { "label": "Custom Systems",  "href": "#pricing"  }
+      {
+        "label": "Website Development",
+        "href": "#services"
+      },
+      {
+        "label": "Hosting",
+        "href": "#services"
+      },
+      {
+        "label": "Maintenance",
+        "href": "#services"
+      },
+      {
+        "label": "Custom Systems",
+        "href": "#pricing"
+      }
     ],
+
     "links_company": [
-      { "label": "Portfolio", "href": "#portfolio" },
-      { "label": "Pricing",   "href": "#pricing"   },
-      { "label": "About us",  "href": "#about"     },
-      { "label": "Contact",   "href": "#contact"   }
+      {
+        "label": "Portfolio",
+        "href": "#portfolio"
+      },
+      {
+        "label": "Pricing",
+        "href": "#pricing"
+      },
+      {
+        "label": "About us",
+        "href": "#about"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
     ],
-    "copyright": "© {year} Ocyan-Tech. Made with",
-    "copyright_end": "in southern Brazil.",
+
+    "copyright": "© {year} Ocyan-Tech. Made by",
+    "copyright_end": " Canoas - Brazil.",
+
     "privacy": "Privacy",
     "terms": "Terms"
   }

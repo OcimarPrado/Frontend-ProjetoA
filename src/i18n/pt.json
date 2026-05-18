@@ -28,7 +28,7 @@
     "tag": "O que fazemos",
     "title": "Tudo que seu site",
     "title_accent": "precisa",
-    "sub": "Do zero ao ar. Cuidamos de cada etapa para que você foque no que importa sua empresa.",
+    "sub": "Do zero ao ar. Cuidamos de cada etapa para que você foque no que importa - Sua Empresa.",
     "items": [
       {
         "number": "01",
@@ -173,23 +173,62 @@
     ]
   },
   "about": {
-    "tag": "Sobre nós",
-    "title": "Tecnologia de ",
-    "title_accent": "verdade",
-    "title2": ", entrega de verdade",
-    "text1": "A Ocyan-Tech não é uma loja de templates. Somos desenvolvedores que entendem negócio — e construímos sites que funcionam como ferramenta, não como cartão de visita estático.",
-    "text2": "Com mais de 22 anos de experiência técnica e formação em tecnologia, unimos rigor de engenharia com visão comercial para entregar soluções que geram resultado real.",
-    "highlights": [
-      { "icon": "⚡", "title": "Entrega em 15 dias úteis",      "text": "Sem enrolação. Prazo definido, entregue no prazo." },
-      { "icon": "🛡️", "title": "Código limpo, site seguro",     "text": "Não usamos templates quebrados. Cada projeto é construído com atenção." },
-      { "icon": "📱", "title": "Suporte humano via WhatsApp",   "text": "Você fala com quem fez o site. Não com um chatbot de suporte." }
-    ],
-    "cards": [
-      { "icon": "🏗️", "title": "22+ anos técnicos",    "text": "Experiência industrial e em desenvolvimento de software" },
-      { "icon": "🚀", "title": "Sites em produção",     "text": "Projetos reais rodando, não portfólio de estudo" },
-      { "icon": "🤝", "title": "Contrato transparente", "text": "Escopo claro, preço fixo, sem surpresas" },
-      { "icon": "📊", "title": "Foco em resultado",     "text": "Medimos sucesso pelo crescimento do seu negócio" }
-    ]
+  "tag": "Sobre nós",
+
+  "title": "Tecnologia de verdade,",
+  "title_accent": " soluções que geram resultados",
+  "title2": "",
+
+  "text1": "A Ocyan-Tech desenvolve sites profissionais, sistemas web e automações inteligentes com foco em performance, conversão e presença digital. Não entregamos apenas páginas bonitas — criamos ferramentas que ajudam empresas a crescer no ambiente digital.",
+
+  "text2": "Unimos experiência técnica, visão estratégica e desenvolvimento moderno para construir soluções rápidas, seguras e preparadas para escalar. Cada projeto é desenvolvido com foco em usabilidade, SEO, identidade visual e resultado comercial.",
+
+  "highlights": [
+    {
+      "icon": "⚡",
+      "title": "Entrega rápida e organizada",
+      "text": "Projetos com cronograma definido, comunicação clara e desenvolvimento ágil."
+    },
+
+    {
+      "icon": "🛡️",
+      "title": "Código limpo e estrutura profissional",
+      "text": "Sites desenvolvidos com tecnologias modernas, foco em segurança, performance e estabilidade."
+    },
+
+    {
+      "icon": "📱",
+      "title": "Suporte humano e acompanhamento real",
+      "text": "Atendimento direto via WhatsApp durante todas as etapas do projeto."
+    }
+  ],
+
+  "cards": [
+    {
+      "icon": "🏗️",
+      "title": "22+ anos de experiência técnica",
+      "text": "Experiência industrial, lógica operacional e desenvolvimento de software aplicado."
+    },
+
+    {
+      "icon": "🚀",
+      "title": "Projetos reais em produção",
+      "text": "Sites, sistemas e soluções digitais funcionando em ambiente real."
+    },
+
+    {
+      "icon": "🤝",
+      "title": "Processo transparente",
+      "text": "Escopo alinhado, comunicação objetiva e acompanhamento contínuo."
+    },
+
+    {
+      "icon": "📊",
+      "title": "Foco em crescimento",
+      "text": "Cada solução é construída pensando em visibilidade, conversão e autoridade digital."
+    }
+  ]
+
   },
   "contact": {
     "tag": "Contato",

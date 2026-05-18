@@ -3,38 +3,52 @@
     "services": "Servicios",
     "portfolio": "Portafolio",
     "pricing": "Precios",
-    "about": "Nosotros",
+    "about": "Sobre nosotros",
     "contact": "Contacto",
     "cta": "Iniciar Proyecto"
   },
+
   "hero": {
-    "tag": "Agencia Digital",
-    "headline1": "Sitios web",
-    "headline2": " profesionales,",
-    "headline3": "hosting y mantenimiento.",
-    "sub": "Creamos, alojamos y mantenemos tu sitio web con tecnología profesional.",
-    "cta_primary": "Quiero mi sitio",
-    "cta_secondary": "Ver portafolio",
-    "stat_projects_num": "100%",
-    "stat_projects_label": "Ultra Rápido",
-    "stat_uptime_num": "99.9%",
-    "stat_uptime_label": "Uptime garantizado",
-    "stat_support_num": "24h",
-    "stat_support_label": "Tiempo de respuesta",
-    "device_url": "https://site-psicologia-three.vercel.app/",
-    "badge_title": "¡Sitio en línea!"
+    "tag": "Especialistas en Presencia Digital",
+    "headline1": "Creación de Sitios Web",
+    "headline2": "Profesionales",
+    "headline3": "y Automatización de Negocios.",
+    "sub": "Desarrollamos sitios web de alto rendimiento, chatbots inteligentes y automatizaciones que transforman visitantes en clientes.",
+    "cta_primary": "Comenzar mi proyecto",
+    "cta_secondary": "Ver casos de éxito",
+
+    "stat_projects_num": "Top 1%",
+    "stat_projects_label": "Rendimiento SEO",
+
+    "stat_uptime_num": "100%",
+    "stat_uptime_label": "Enfoque en Conversión",
+
+    "stat_support_num": "API",
+    "stat_support_label": "Integraciones Listas",
+
+    "device_url": "ocyan-tech.com.br",
+
+    "badge_title": "Tecnología de Punta"
   },
+
   "services": {
-    "tag": "Lo que hacemos",
+    "tag": "Qué hacemos",
+
     "title": "Todo lo que tu sitio",
     "title_accent": "necesita",
-    "sub": "De cero al aire. Nos encargamos de cada etapa para que te concentres en lo que importa — tu empresa.",
+
+    "sub": "Desde cero hasta el lanzamiento. Nos encargamos de cada etapa para que te enfoques en lo que importa: tu empresa.",
+
     "items": [
       {
         "number": "01",
+
         "icon": "🖥️",
-        "name": "Creación de Sitios",
-        "desc": "Sitios profesionales, responsivos y optimizados para buscadores. Desarrollados con tecnología actual y foco en resultados.",
+
+        "name": "Creación de Sitios Web",
+
+        "desc": "Sitios profesionales, responsivos y optimizados para buscadores. Desarrollados con tecnología moderna y enfocados en resultados.",
+
         "features": [
           "Diseño exclusivo y responsivo",
           "Optimización para Google (SEO)",
@@ -42,174 +56,404 @@
           "Entrega en hasta 15 días hábiles"
         ]
       },
+
       {
         "number": "02",
+
         "icon": "☁️",
+
         "name": "Hosting Gestionado",
-        "desc": "Servidor configurado, SSL incluido, copias de seguridad automáticas y dominio gestionado. Sin conocimientos técnicos necesarios.",
+
+        "desc": "Servidor configurado, SSL incluido, copias de seguridad automáticas y dominio administrado. No necesitas saber nada de tecnología.",
+
         "features": [
-          "Certificado SSL gratis",
-          "Copias de seguridad automáticas diarias",
-          "Dominio incluido",
+          "SSL gratis",
+          "Backups automáticos diarios",
+          "Dominio .com.br incluido",
           "Monitoreo 24/7"
         ]
       },
+
       {
         "number": "03",
+
         "icon": "🔧",
-        "name": "Mantenimiento & Soporte",
-        "desc": "Actualizaciones, correcciones y mejoras continuas. Tu sitio siempre funcionando, seguro y actualizado.",
+
+        "name": "Mantenimiento y Soporte",
+
+        "desc": "Actualizaciones, correcciones y mejoras continuas. Tu sitio siempre seguro, actualizado y funcionando.",
+
         "features": [
           "Actualizaciones de contenido",
           "Soporte vía WhatsApp",
-          "Informe mensual de visitas",
+          "Informe mensual de accesos",
           "Renovación automática de SSL"
         ]
       }
     ]
   },
+
   "portfolio": {
     "tag": "Proyectos",
+
     "title": "Trabajos",
     "title_accent": "recientes",
-    "sub": "Tecnología real aplicada en proyectos que salieron al aire.",
+
+    "sub": "Tecnología real aplicada en proyectos publicados.",
+
     "link": "Ver proyecto →",
+
     "items": [
       {
         "icon": "🏪",
-        "tags": ["Sitio Web", "E-commerce"],
-        "title": "Sitio Institucional + Tienda",
-        "desc": "Sitio completo con catálogo de productos, integración WhatsApp y panel de gestión de contenido.",
-        "link": "#"
+
+        "tags": ["Sitio"],
+
+        "title": "Sitio Institucional",
+
+        "desc": "Algunos ejemplos de clientes atendidos en asociación con la agencia prósite.poa.br .",
+
+        "link": "#",
+
+        "images": [
+          {
+            "src": "./mulhergauchatour.png",
+            "label": "Mulher Gaúcha Tour"
+          },
+
+          {
+            "src": "./mffconsultoria.png",
+            "label": "MFF Consultoria"
+          },
+
+          {
+            "src": "/geomicro.png",
+            "label": "GeoMicro"
+          }
+        ]
       },
+
       {
         "icon": "🤖",
+
         "tags": ["SaaS", "IA"],
-        "title": "OcyanBot",
-        "desc": "Chatbot con inteligencia artificial para atención automatizada. Integrado en múltiples canales con autenticación segura.",
+
+        "title": "ChatBot",
+
+        "desc": "Chatbot con inteligencia artificial para atención automatizada. Integrado con múltiples canales y autenticación segura.",
+
         "link": "https://assistente-inteligente-production.up.railway.app/"
       },
+
       {
         "icon": "⚙️",
+
         "tags": ["Sistema", "Industria"],
-        "title": "Boldrini Simulator",
-        "desc": "Sistema experto industrial para prensa flangeadora. Codifica 3 años de conocimiento operativo en lógica computacional.",
+
+        "title": "Simulador Boldrini",
+
+        "desc": "Sistema especialista industrial para prensa rebordeadora. Codifica 3 años de conocimiento operativo en lógica computacional.",
+
         "link": "https://github.com"
       }
     ]
   },
+
   "pricing": {
     "tag": "Planes",
+
     "title": "Sin sorpresas,",
-    "title_accent": " sin letra pequeña",
+    "title_accent": " sin letras pequeñas",
+
     "sub": "Precio justo, entrega profesional y soporte real. Elige el plan ideal para tu negocio.",
+
     "featured_badge": "Más popular",
+
     "note_setup": "* Tarifa de creación cobrada una sola vez",
+
     "cta": "Elegir plan",
+
     "cta_custom": "Solicitar propuesta",
+
     "plans": [
       {
         "name": "Starter",
-        "desc": "Ideal para quienes necesitan un sitio rápido, moderno y confiable sin cambios de contenido mensuales.",
+
+        "desc": "Ideal para quienes necesitan un sitio rápido, moderno y confiable sin necesidad de cambios frecuentes en el contenido.",
+
         "price": "99",
+
         "period": "/mes",
-        "note": "Incluye creación, hosting, mantenimiento y 3 rondas de ajustes post entrega.*",
-        "featured": false,
+
+        "note": "Precio promocional: 12 cuotas de R$99 — aprovecha hoy mismo*",
+
+        "featured": true,
+
         "features": [
-          { "included": true,  "text": "Sitio de hasta 5 páginas" },
-          { "included": true,  "text": "Diseño responsivo (móvil)" },
-          { "included": true,  "text": "Dominio incluido" },
-          { "included": true,  "text": "SSL gratis + hosting" },
-          { "included": true,  "text": "Integración WhatsApp" },
-          { "included": false, "text": "Blog / área de noticias" },
-          { "included": false, "text": "Informe mensual" }
+          {
+            "included": true,
+            "text": "3 rondas de ajustes después de la entrega."
+          },
+
+          {
+            "included": true,
+            "text": "Incluye creación, hosting y mantenimiento del sitio"
+          },
+
+          {
+            "included": true,
+            "text": "Sitio ONEPAGE — Página única con: header + hero + sobre + servicios + contacto + footer"
+          },
+
+          {
+            "included": true,
+            "text": "Diseño responsivo (mobile)"
+          },
+
+          {
+            "included": true,
+            "text": "Dominio .com.br incluido"
+          },
+
+          {
+            "included": true,
+            "text": "SEO básico"
+          },
+
+          {
+            "included": true,
+            "text": "CTA para WhatsApp"
+          },
+
+          {
+            "included": false,
+            "text": "Blog / área de noticias"
+          },
+
+          {
+            "included": false,
+            "text": "Informe mensual"
+          }
         ]
       },
+
       {
         "name": "Profesional",
-        "desc": "Para empresas que quieren presencia digital completa sin preocuparse por el mantenimiento y la estabilidad.",
+
+        "desc": "Para empresas que desean una presencia digital completa sin preocuparse por mantenimiento o estabilidad.",
+
         "price": "249",
+
         "period": "/mes",
-        "note": "Incluye creación, hosting, mantenimiento, 5 rondas de ajustes post entrega, soporte dedicado, contenido dinámico y panel de control dedicado.",
-        "featured": true,
+
+        "note": "R$1500 de creación del sitio, siendo R$300 al contratar el servicio y R$1200 en la entrega. Para pagos al contado (pix, débito o efectivo) 10% de descuento.*",
+
+        "featured": false,
+
         "features": [
-          { "included": true, "text": "Sitio de hasta 10 páginas" },
-          { "included": true, "text": "Diseño responsivo (móvil)" },
-          { "included": true, "text": "SEO planificado para tráfico pago" },
-          { "included": true, "text": "Tráfico pago básico con indicadores de visita y conversión" },
-          { "included": true, "text": "Dominio incluido" },
-          { "included": true, "text": "SSL gratis + hosting" },
-          { "included": true, "text": "Integración WhatsApp + Redes" },
-          { "included": true, "text": "Blog / área de noticias" },
-          { "included": true, "text": "Informe mensual de visitas" }
+          {
+            "included": true,
+            "text": "Incluye creación, hosting y mantenimiento"
+          },
+
+          {
+            "included": true,
+            "text": "5 rondas de ajustes después de la entrega y soporte dedicado"
+          },
+
+          {
+            "included": true,
+            "text": "Contenido dinámico, panel del cliente y capacitación para edición de contenido"
+          },
+
+          {
+            "included": true,
+            "text": "Sitio web de hasta 10 páginas"
+          },
+
+          {
+            "included": true,
+            "text": "Diseño responsivo (mobile)"
+          },
+
+          {
+            "included": true,
+            "text": "SEO orientado a tráfico pago"
+          },
+
+          {
+            "included": true,
+            "text": "Tráfico pago básico con métricas de visitas y conversión"
+          },
+
+          {
+            "included": true,
+            "text": "Dominio .com.br incluido"
+          },
+
+          {
+            "included": true,
+            "text": "Integración WhatsApp + Redes Sociales"
+          },
+
+          {
+            "included": true,
+            "text": "Blog / área de noticias"
+          },
+
+          {
+            "included": true,
+            "text": "Informe mensual de accesos"
+          }
         ]
       },
+
       {
         "name": "Personalizado",
+
         "desc": "Sistemas, APIs, integraciones y soluciones a medida.",
+
         "price": "?",
-        "period": "a consultar",
+
+        "period": "bajo consulta",
+
         "note": "Presupuesto en hasta 24h",
+
         "featured": false,
+
         "features": [
-          { "included": true, "text": "E-commerce y tiendas online" },
-          { "included": true, "text": "Integraciones con ERPs y sistemas" },
-          { "included": true, "text": "APIs y backends personalizados" },
-          { "included": true, "text": "Dashboards y paneles de admin" },
-          { "included": true, "text": "Soporte prioritario" },
-          { "included": true, "text": "SLA definido en contrato" },
-          { "included": true, "text": "Capacitación del equipo" }
+          {
+            "included": true,
+            "text": "E-commerce y tiendas virtuales"
+          },
+
+          {
+            "included": true,
+            "text": "Integraciones con ERPs y sistemas"
+          },
+
+          {
+            "included": true,
+            "text": "APIs y backends personalizados"
+          },
+
+          {
+            "included": true,
+            "text": "Dashboards y paneles administrativos"
+          },
+
+          {
+            "included": true,
+            "text": "Soporte prioritario"
+          },
+
+          {
+            "included": true,
+            "text": "SLA definido en contrato"
+          },
+
+          {
+            "included": true,
+            "text": "Capacitación del equipo"
+          }
         ]
       }
     ]
   },
   "about": {
-    "tag": "Nosotros",
-    "title": "Tecnología de ",
-    "title_accent": "verdad",
-    "title2": ", entrega de verdad",
-    "text1": "Ocyan-Tech no es una tienda de plantillas. Somos desarrolladores que entienden de negocios — y construimos sitios que funcionan como herramienta, no como tarjeta de visita estática.",
-    "text2": "Con más de 22 años de experiencia técnica y formación en tecnología, combinamos rigor de ingeniería con visión comercial para entregar soluciones que generan resultados reales.",
-    "highlights": [
-      {
-        "icon": "⚡",
-        "title": "Entrega en 15 días hábiles",
-        "text": "Sin rodeos. Plazo definido, entregado a tiempo."
-      },
-      {
-        "icon": "🛡️",
-        "title": "Código limpio, sitio seguro",
-        "text": "No usamos plantillas rotas. Cada proyecto se construye con cuidado."
-      },
-      {
-        "icon": "📱",
-        "title": "Soporte humano vía WhatsApp",
-        "text": "Hablas con quien construyó tu sitio. No con un chatbot de soporte."
-      }
-    ],
-    "cards": [
-      { "icon": "🏗️", "title": "22+ años técnicos",      "text": "Experiencia industrial y en desarrollo de software" },
-      { "icon": "🤝", "title": "Contrato transparente",   "text": "Alcance claro, precio fijo, sin sorpresas" },
-      { "icon": "📊", "title": "Enfoque en resultados",   "text": "Medimos el éxito por el crecimiento de tu negocio" }
-    ]
+  "tag": "Sobre nosotros",
+
+  "title": "Tecnología real",
+  "title_accent": " soluciones que generan resultados",
+  "title2": "",
+
+  "text1": "Ocyan-Tech desarrolla sitios web profesionales, sistemas web y automatizaciones inteligentes enfocadas en rendimiento, conversión y presencia digital. No entregamos solo páginas bonitas — creamos herramientas que ayudan a las empresas a crecer en el entorno digital.",
+
+  "text2": "Combinamos experiencia técnica, visión estratégica y desarrollo moderno para construir soluciones rápidas, seguras y escalables. Cada proyecto se desarrolla pensando en usabilidad, SEO, identidad visual y resultados comerciales.",
+
+  "highlights": [
+    {
+      "icon": "⚡",
+      "title": "Entrega rápida y organizada",
+      "text": "Proyectos con cronograma definido, comunicación clara y desarrollo ágil."
+    },
+
+    {
+      "icon": "🛡️",
+      "title": "Código limpio y estructura profesional",
+      "text": "Sitios desarrollados con tecnologías modernas, enfocados en seguridad, rendimiento y estabilidad."
+    },
+
+    {
+      "icon": "📱",
+      "title": "Soporte humano y acompañamiento real",
+      "text": "Atención directa vía WhatsApp durante todas las etapas del proyecto."
+    }
+  ],
+
+  "cards": [
+    {
+      "icon": "🏗️",
+      "title": "22+ años de experiencia técnica",
+      "text": "Experiencia industrial, lógica operacional y desarrollo de software aplicado."
+    },
+
+    {
+      "icon": "🚀",
+      "title": "Proyectos reales en producción",
+      "text": "Sitios web, sistemas y soluciones digitales funcionando en entornos reales."
+    },
+
+    {
+      "icon": "🤝",
+      "title": "Proceso transparente",
+      "text": "Alcance alineado, comunicación objetiva y seguimiento continuo."
+    },
+
+    {
+      "icon": "📊",
+      "title": "Enfoque en crecimiento",
+      "text": "Cada solución se construye pensando en visibilidad, conversión y autoridad digital."
+    }
+  ]
+
   },
+
   "contact": {
     "tag": "Contacto",
     "title": "Construyamos",
-    "title_accent": " algo juntos",
-    "sub": "Completa el formulario o escríbenos directamente por WhatsApp. Respondemos en hasta 24 horas.",
+    "title_accent": "algo juntos",
+
+    "sub": "Completa el formulario o contáctanos directamente por WhatsApp. Respondemos en hasta 24 horas.",
+
     "methods": [
-      { "icon": "📱", "label": "WhatsApp",  "value": "+55 (51) 9 8673-0107" },
-      { "icon": "📧", "label": "E-mail",    "value": "onprado39@gmail.com" },
-      { "icon": "📍", "label": "Ubicación", "value": "Canoas, RS — Atendemos todo Brasil" }
+      {
+        "icon": "📱",
+        "label": "WhatsApp",
+        "value": "+55 (51) 9 8673-0107"
+      },
+      {
+        "icon": "📧",
+        "label": "Correo",
+        "value": "onprado39@gmail.com"
+      },
+      {
+        "icon": "📍",
+        "label": "Ubicación",
+        "value": "Canoas, RS — Atendemos todo Brasil"
+      }
     ],
+
     "form": {
       "name_label": "Tu nombre",
-      "name_placeholder": "Juan García",
-      "email_label": "E-mail",
+      "name_placeholder": "Juan Pérez",
+
+      "email_label": "Correo electrónico",
       "email_placeholder": "juan@empresa.com",
+
       "service_label": "Servicio de interés",
       "service_placeholder": "Selecciona...",
+
       "service_options": [
         "Creación de sitio web",
         "Hosting + Mantenimiento",
@@ -217,40 +461,76 @@
         "Sistema o API personalizada",
         "Otro"
       ],
-      "message_label": "Cuéntanos sobre tu proyecto",
-      "message_placeholder": "Tengo un negocio de... necesito un sitio que...",
+
+      "message_label": "Cuéntanos un poco sobre tu proyecto",
+      "message_placeholder": "Tengo un negocio de... necesito un sitio web que...",
+
       "submit": "Enviar mensaje",
       "submitting": "Enviando...",
+
       "success_title": "¡Mensaje enviado!",
-      "success_sub": "Te contactaremos en hasta 24 horas.",
+      "success_sub": "Nos pondremos en contacto dentro de 24 horas.",
       "success_btn": "Enviar otro mensaje"
     }
   },
+
   "cta_banner": {
-    "title": "¿Listo para tener un sitio",
-    "title_accent": " que trabaje por ti?",
-    "sub": "Habla con nosotros hoy. Presupuesto gratuito en hasta 24h.",
+    "title": "¿Listo para tener un sitio web",
+    "title_accent": "que trabaje para ti?",
+
+    "sub": "Habla con nosotros hoy mismo. Presupuesto gratuito en hasta 24 horas.",
+
     "cta_primary": "Solicitar presupuesto",
     "cta_secondary": "Ver planes"
   },
+
   "footer": {
-    "brand_desc": "Creación, hosting y mantenimiento de sitios web con tecnología real y soporte humano. Canoas, RS, Brasil.",
+    "brand_desc": "Creación, hosting y mantenimiento de sitios web con tecnología real y soporte humano. Canoas, RS.",
+
     "col_services": "Servicios",
     "col_company": "Empresa",
+
     "links_services": [
-      { "label": "Creación de Sitios",      "href": "#services" },
-      { "label": "Hosting",                 "href": "#services" },
-      { "label": "Mantenimiento",           "href": "#services" },
-      { "label": "Sistemas Personalizados", "href": "#pricing"  }
+      {
+        "label": "Creación de Sitios Web",
+        "href": "#services"
+      },
+      {
+        "label": "Hosting",
+        "href": "#services"
+      },
+      {
+        "label": "Mantenimiento",
+        "href": "#services"
+      },
+      {
+        "label": "Sistemas Personalizados",
+        "href": "#pricing"
+      }
     ],
+
     "links_company": [
-      { "label": "Portafolio", "href": "#portfolio" },
-      { "label": "Precios",    "href": "#pricing"   },
-      { "label": "Nosotros",   "href": "#about"     },
-      { "label": "Contacto",   "href": "#contact"   }
+      {
+        "label": "Portafolio",
+        "href": "#portfolio"
+      },
+      {
+        "label": "Precios",
+        "href": "#pricing"
+      },
+      {
+        "label": "Sobre nosotros",
+        "href": "#about"
+      },
+      {
+        "label": "Contacto",
+        "href": "#contact"
+      }
     ],
-    "copyright": "© {year} Ocyan-Tech. Hecho con",
-    "copyright_end": "en el sur de Brasil.",
+
+    "copyright": "© {year} Ocyan-Tech. Hecho por",
+    "copyright_end": " Canoas - Brasil.",
+
     "privacy": "Privacidad",
     "terms": "Términos"
   }
