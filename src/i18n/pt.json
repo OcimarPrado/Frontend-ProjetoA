@@ -7,22 +7,22 @@
     "contact": "Contato",
     "cta": "Iniciar Projeto"
   },
-  "hero": {
-    "tag": "Agência Digital",
-    "headline1": "Sites ",
-    "headline2": "profissionais,",
-    "headline3": "hospedagem e manutenção.",
-    "sub": "Criamos, hospedamos e mantemos o seu site com tecnologia profissional.",
-    "cta_primary": "Quero meu site",
-    "cta_secondary": "Ver portfólio",
-    "stat_projects_num": "100%",
-    "stat_projects_label": "Ultra Rápido",
-    "stat_uptime_num": "99.9%",
-    "stat_uptime_label": "Uptime garantido",
-    "stat_support_num": "24h",
-    "stat_support_label": "Tempo de resposta",
-    "device_url": "https://site-psicologia-three.vercel.app/",
-    "badge_title": "Site no ar!"
+ "hero": {
+    "tag": "Especialistas em Presença Digital",
+    "headline1": "Criação de Sites ",
+    "headline2": "Profissionais",
+    "headline3": "e Automação de Negócios.",
+    "sub": "Desenvolvemos sites de alta performance, chatbots inteligentes e automações que transformam visitantes em clientes.",
+    "cta_primary": "Começar meu projeto",
+    "cta_secondary": "Ver cases de sucesso",
+    "stat_projects_num": "Top 1%",
+    "stat_projects_label": "Performance SEO",
+    "stat_uptime_num": "100%",
+    "stat_uptime_label": "Foco em Conversão",
+    "stat_support_num": "API",
+    "stat_support_label": "Integrações Prontas",
+    "device_url": "ocyan-tech.com.br",
+    "badge_title": "Tecnologia de Ponta"
   },
   "services": {
     "tag": "O que fazemos",
