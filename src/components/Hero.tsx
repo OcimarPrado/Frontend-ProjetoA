@@ -110,7 +110,7 @@ export default function Hero() {
               <div className="device-badge-icon">✅</div>
               <div className="device-badge-text">
                 <strong>{t('hero.badge_title') || 'Site no ar!'}</strong>
-                <span>SSL · Backup · 99.9% uptime</span>
+                <span>Clique e veja o site modelo.</span>
               </div>
             </a>
           </div>

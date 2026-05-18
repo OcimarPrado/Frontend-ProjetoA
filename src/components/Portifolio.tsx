@@ -1,7 +1,19 @@
 import { useTranslation } from 'react-i18next';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
+
+interface PortfolioImage {
+  src: string;
+  label: string;
+}
 
 interface PortfolioItem {
   icon: string;
+  images?: PortfolioImage[];
   tags: string[];
   title: string;
   desc: string;
@@ -29,8 +41,36 @@ export default function Portfolio() {
             <div className="portfolio-card" key={item.title}>
               <div className="portfolio-thumb">
                 <div className="portfolio-thumb-bg" />
-                <div className="portfolio-thumb-icon">{item.icon}</div>
+
+                {item.images && item.images.length > 0 ? (
+                  <Swiper
+                    modules={[Autoplay, Pagination, EffectFade]}
+                    effect="fade"
+                    loop={true}
+                    autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    pagination={{ clickable: true }}
+                    className="portfolio-swiper"
+                  >
+                    {item.images.map((img, idx) => (
+                      <SwiperSlide key={idx}>
+                        <div className="portfolio-slide-wrapper">
+                          <img
+                            src={img.src}
+                            alt={img.label}
+                            className="portfolio-slide-img"
+                          />
+                          <div className="portfolio-slide-label">
+                            <span>{img.label}</span>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                ) : (
+                  <div className="portfolio-thumb-icon">{item.icon}</div>
+                )}
               </div>
+
               <div className="portfolio-body">
                 <div className="portfolio-tags">
                   {item.tags.map((tag) => (

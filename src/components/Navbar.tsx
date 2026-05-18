@@ -1,6 +1,50 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
+const Logo = () => (
+  <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+    <span style={{ letterSpacing: '-0.02em' }}>
+      OC<span style={{ color: 'var(--teal)' }}>YAN</span>
+    </span>
+    <span className="logo-badge">tech</span>
+  </span>
+);
+
+type LangToggleProps = {
+  mobile?: boolean;
+  currentLang: string;
+  switchLang: (lang: string) => void;
+};
+
+const LangToggle = ({ mobile = false, currentLang, switchLang }: LangToggleProps) => (
+  <div
+    className={mobile ? undefined : 'lang-toggle'}
+    style={mobile ? { display: 'flex', gap: '0.5rem', marginTop: '0.5rem' } : undefined}
+  >
+    {(['pt', 'en', 'es'] as const).map((lang) => (
+      <button
+        key={lang}
+        className={`lang-btn${currentLang === lang ? ' active' : ''}`}
+        onClick={() => switchLang(lang)}
+        style={
+          mobile
+            ? {
+                padding: '0.4rem 0.8rem',
+                borderRadius: '6px',
+                border: '1px solid var(--border-soft)',
+                cursor: 'pointer',
+                fontFamily: 'var(--font-mono)',
+                fontSize: '0.7rem',
+              }
+            : undefined
+        }
+      >
+        {lang.toUpperCase()}
+      </button>
+    ))}
+  </div>
+);
+
 export default function Navbar() {
   const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
@@ -36,28 +80,6 @@ export default function Navbar() {
     document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const Logo = () => (
-    <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-      <span style={{ letterSpacing: '-0.02em' }}>OC<span style={{ color: 'var(--teal)' }}>YAN</span></span>
-      <span className="logo-badge">tech</span>
-    </span>
-  );
-
-  const LangToggle = ({ mobile = false }: { mobile?: boolean }) => (
-    <div className={mobile ? undefined : 'lang-toggle'} style={mobile ? { display: 'flex', gap: '0.5rem', marginTop: '0.5rem' } : undefined}>
-      {(['pt', 'en', 'es'] as const).map((lang) => (
-        <button
-          key={lang}
-          className={`lang-btn${currentLang === lang ? ' active' : ''}`}
-          onClick={() => switchLang(lang)}
-          style={mobile ? { padding: '0.4rem 0.8rem', borderRadius: '6px', border: '1px solid var(--border-soft)', cursor: 'pointer', fontFamily: 'var(--font-mono)', fontSize: '0.7rem' } : undefined}
-        >
-          {lang.toUpperCase()}
-        </button>
-      ))}
-    </div>
-  );
-
   return (
     <>
       <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
@@ -81,7 +103,7 @@ export default function Navbar() {
           </ul>
 
           <div className="navbar-actions">
-            <LangToggle />
+            <LangToggle currentLang={currentLang} switchLang={switchLang} />
             <a
               href="#contact"
               className="btn-primary navbar-cta"
@@ -102,7 +124,7 @@ export default function Navbar() {
             {t(l.key)}
           </a>
         ))}
-        <LangToggle mobile />
+        <LangToggle mobile currentLang={currentLang} switchLang={switchLang} />
       </div>
     </>
   );

@@ -76,10 +76,15 @@
     "link": "Ver projeto →",
     "items": [
       {
+        "images": [
+          {"src":"/public/mulhergauchatour.png"},
+          {"src":"/public/mffconsultoria.png"},
+          {"src":"/public/geomicro.png"}
+        ],
         "icon": "🏪",
-        "tags": ["Site", "Auto-Peças"],
-        "title": "Site Institucional + Loja",
-        "desc": "Site completo com catálogo de produtos, integração WhatsApp para um melhor atendimento.",
+        "tags": ["Site"],
+        "title": "Site Institucional",
+        "desc": "Alguns exemplos de clientes atendidos em parceria com a agência prósite.poa.br .",
         "link": "#"
       },
       {
