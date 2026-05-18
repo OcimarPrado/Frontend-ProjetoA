@@ -93,14 +93,26 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Badge flutuante */}
-            <div className="device-badge">
+            {/* Badge flutuante - Transformada em LINK */}
+            <a 
+              href="https://site-psicologia-three.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="device-badge"
+              style={{ 
+                textDecoration: 'none', 
+                cursor: 'pointer',
+                transition: 'transform 0.3s ease'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+              onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            >
               <div className="device-badge-icon">✅</div>
               <div className="device-badge-text">
-                <strong>Site no ar!</strong>
+                <strong>{t('hero.badge_title') || 'Site no ar!'}</strong>
                 <span>SSL · Backup · 99.9% uptime</span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

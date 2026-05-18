@@ -21,7 +21,8 @@
     "stat_uptime_label": "Uptime garantido",
     "stat_support_num": "24h",
     "stat_support_label": "Tempo de resposta",
-    "device_url": "seusite.com.br"
+    "device_url": "https://site-psicologia-three.vercel.app/",
+    "badge_title": "Site no ar!"
   },
   "services": {
     "tag": "O que fazemos",
