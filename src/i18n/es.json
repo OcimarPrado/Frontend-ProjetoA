@@ -87,7 +87,7 @@
         "tags": ["SaaS", "IA"],
         "title": "OcyanBot",
         "desc": "Chatbot con inteligencia artificial para atención automatizada. Integrado en múltiples canales con autenticación segura.",
-        "link": "https://github.com"
+        "link": "https://assistente-inteligente-production.up.railway.app/"
       },
       {
         "icon": "⚙️",
