@@ -76,22 +76,22 @@
     "items": [
       {
         "icon": "🏪",
-        "tags": ["Site", "E-commerce"],
+        "tags": ["Site", "Auto-Peças"],
         "title": "Site Institucional + Loja",
-        "desc": "Site completo com catálogo de produtos, integração WhatsApp e painel de gerenciamento de conteúdo.",
+        "desc": "Site completo com catálogo de produtos, integração WhatsApp para um melhor atendimento.",
         "link": "#"
       },
       {
         "icon": "🤖",
         "tags": ["SaaS", "IA"],
-        "title": "OcyanBot",
+        "title": "ChatBot",
         "desc": "Chatbot com inteligência artificial para atendimento automatizado. Integrado a múltiplos canais com autenticação segura.",
         "link": "https://github.com"
       },
       {
         "icon": "⚙️",
         "tags": ["Sistema", "Indústria"],
-        "title": "Boldrini Simulator",
+        "title": "Boldrini Simulador",
         "desc": "Sistema especialista industrial para prensa flangeadora. Encoda 3 anos de conhecimento operacional em lógica computacional.",
         "link": "https://github.com"
       }
@@ -109,17 +109,19 @@
     "plans": [
       {
         "name": "starter",
-        "desc": "Ideal para quem precisa de um site rápido, moderno e confiável e não tem necessidade de fazer mudanças no conteúdo mensalmente.",
+        "desc": "Ideal para quem precisa de um site rápido, moderno, confiável e não tem necessidade de fazer mudanças no conteúdo mensalmente.",
         "price": "99",
         "period": "/mês",
-        "note": "Inclui criação, hospedagem, manutenção e 3 rodadas de ajustes pós entrega.*",
-        "featured": false,
+        "note": "Preço Promocional 12 x de R$ 99 - aproveite hoje mesmo*",
+        "featured": true,
         "features": [
-          { "included": true,  "text": "Site com até 5 páginas" },
+          { "included": true,  "text": "3(três) rodadas de ajustes após entrega."},
+          { "included": true,  "text": "Inclui criação, hospedagem, manutenção de site"},
+          { "included": true,  "text": "Site ONEPAGE - Página Única contendo: header + hero + sobre + serviços + contato + footer" },
           { "included": true,  "text": "Design responsivo (mobile)" },
           { "included": true,  "text": "Domínio .com.br incluso" },
-          { "included": true,  "text": "SSL grátis + hospedagem" },
-          { "included": true,  "text": "Integração WhatsApp" },
+          { "included": true,  "text": "SEO básico" },
+          { "included": true,  "text": "CTA para WhatsApp" },
           { "included": false, "text": "Blog / área de notícias" },
           { "included": false, "text": "Relatório mensal" }
         ]
@@ -129,16 +131,17 @@
         "desc": "Para empresas que querem presença digital completa, sem se preocupar com manutenção e estabilidade.",
         "price": "249",
         "period": "/mês",
-        "note": "R$ 1500 de criação sendo R$ 300 no ato da aquisição do serviço e R$ 1200 na entrega com 10% de desconto para pagamento á vista no pix, débito ou dinheiro*",
-        "note": "Inclui criação, hospedagem, manutenção, 5 rodadas de ajustes pós entrega, suporte dedicado, conteúdo dinâmico, painel de controle dedicado, treinamento de edição de conteúdos.",
-        "featured": true,
+        "note": "R$ 1500 de criação do Site sendo R$ 300 no ato da aquisição do serviço e R$ 1200 na entrega. Para Pagamento á vista (pix, débito e dinheiro) 10% de desconto.*",
+        "featured": false,
         "features": [
+          { "included": true, "text": "Inclui criação, hospedagem, manutenção de site"},
+          { "included": true, "text": "5(cinco) rodadas de ajustes após entrega e suporte dedicado"},
+          { "included": true, "text": "Conteúdo dinâmico, painel de cliente e treinamento de edição de conteúdos"},
           { "included": true, "text": "Site com até 10 páginas" },
           { "included": true, "text": "Design responsivo (mobile)" },
-	  { "included": true, "text": "SEO planejado para tráfego pago" },
+	        { "included": true, "text": "SEO planejado para tráfego pago" },
           { "included": true, "text": "Tráfego pago básico com indicadores de visita e conversão" },
           { "included": true, "text": "Domínio .com.br incluso" },
-          { "included": true, "text": "SSL grátis + hospedagem" },
           { "included": true, "text": "Integração WhatsApp + Redes" },
           { "included": true, "text": "Blog / área de notícias" },
           { "included": true, "text": "Relatório mensal de acesso" }
@@ -250,8 +253,8 @@
       { "label": "Sobre nós",    "href": "#about" },
       { "label": "Contato",      "href": "#contact" }
     ],
-    "copyright": "© {year} Ocyan-Tech. Feito com",
-    "copyright_end": "no Sul do Brasil.",
+    "copyright": "© {year} Ocyan-Tech. Feito por",
+    "copyright_end": " Canoas - Brasil.",
     "privacy": "Privacidade",
     "terms": "Termos"
   }

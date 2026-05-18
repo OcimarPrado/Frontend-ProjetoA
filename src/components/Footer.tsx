@@ -44,7 +44,7 @@ export default function Footer() {
               in
             </a>
             <a
-              href="https://wa.me/5551999999999"
+              href="https://wa.me/5551986730108"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
@@ -93,7 +93,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <p className="footer-copy">
           {t('footer.copyright').replace('{year}', String(year))}{' '}
-          <span>♥</span>{' '}
+          <span>OCYAN-TECH</span>{' '}
           {t('footer.copyright_end')}
         </p>
         <div className="footer-legal">
