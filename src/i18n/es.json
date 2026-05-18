@@ -21,7 +21,8 @@
     "stat_uptime_label": "Uptime garantizado",
     "stat_support_num": "24h",
     "stat_support_label": "Tiempo de respuesta",
-    "device_url": "tusitio.com"
+    "device_url": "https://site-psicologia-three.vercel.app/",
+    "badge_title": "¡Sitio en línea!"
   },
   "services": {
     "tag": "Lo que hacemos",
