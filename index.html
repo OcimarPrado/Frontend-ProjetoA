@@ -1,15 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+    <!-- ================= META BASE ================= -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Ocyan Tech | Criação de Sites Profissionais e Automação de Negócios</title>
-    <meta name="description" content="Desenvolvemos sites de alta performance, automações de processos e chatbots inteligentes para empresas. Transforme sua operação digital com a Ocyan Tech." />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>
+      Ocyan Tech | Criação de Sites Profissionais e Automação de Negócios
+    </title>
+
+    <meta
+      name="description"
+      content="Desenvolvemos sites de alta performance, automações inteligentes e soluções digitais para empresas. Transforme sua presença online com a Ocyan Tech."
+    />
+
+    <meta
+      name="keywords"
+      content="criação de sites, desenvolvimento web, automação de negócios, chatbot, landing page, sites profissionais, SEO, Canoas, agência digital"
+    />
+
+    <meta name="author" content="Ocyan Tech" />
 
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://ocyan-tech.com.br/" />
 
+    <link
+      rel="canonical"
+      href="https://ocyan-tech.com.br/"
+    />
+
+    <!-- ================= FAVICON ================= -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon.png"
+    />
+
+    <!-- ================= OPEN GRAPH ================= -->
+    <meta property="og:type" content="website" />
+
+    <meta
+      property="og:url"
+      content="https://ocyan-tech.com.br/"
+    />
+
+    <meta
+      property="og:title"
+      content="Ocyan Tech | Criação de Sites e Projetos de Automação"
+    />
+
+    <meta
+      property="og:description"
+      content="Sites profissionais, automações inteligentes e soluções digitais para empresas."
+    />
+
+    <meta
+      property="og:image"
+      content="https://ocyan-tech.com.br/og-image.jpg"
+    />
+
+    <meta
+      property="og:site_name"
+      content="Ocyan Tech"
+    />
+
+    <meta
+      property="og:locale"
+      content="pt_BR"
+    />
+
+    <!-- ================= TWITTER CARD ================= -->
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+
+    <meta
+      name="twitter:title"
+      content="Ocyan Tech | Criação de Sites e Projetos de Automação"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Sites profissionais, automações inteligentes e soluções digitais para empresas."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://ocyan-tech.com.br/og-image.jpg"
+    />
+
+    <!-- ================= SEO STRUCTURED DATA ================= -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -17,31 +101,60 @@
         "name": "Ocyan Tech",
         "url": "https://ocyan-tech.com.br",
         "logo": "https://ocyan-tech.com.br/favicon.png",
+
+        "description": "Criação de sites profissionais, automações inteligentes e desenvolvimento de soluções digitais para empresas.",
+
         "serviceType": [
-        "Criação de sites profissionais",
-        "Automação de processos",
-        "Desenvolvimento de Chatbots"
+          "Criação de sites profissionais",
+          "Automação de processos",
+          "Desenvolvimento de chatbots",
+          "Landing Pages",
+          "Sistemas Web"
         ],
+
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Canoas",
           "addressRegion": "RS",
           "addressCountry": "BR"
-        }
+        },
+
+        "sameAs": [
+          "https://www.instagram.com/",
+          "https://www.linkedin.com/"
+        ]
       }
     </script>
   </head>
+
   <body>
-    <!-- FALLBACK para crawlers sem JS (SEO) -->
+    <!-- ================= SEO FALLBACK ================= -->
     <noscript>
       <main>
-        <h1>Ocyan Tech | Agência de Criação de Sites Profissionais</h1>
-        <p>Criamos sites profissionais para empresas, psicólogos, autônomos, clinicas e estúdios de pilates e yoga em todo o Brasil. Design moderno, SEO incluso e entrega rápida.</p>
+        <h1>
+          Ocyan Tech | Agência de Criação de Sites Profissionais
+        </h1>
+
+        <p>
+          Criamos sites profissionais para empresas, clínicas,
+          psicólogos, autônomos e negócios em todo o Brasil.
+        </p>
+
+        <p>
+          Desenvolvemos landing pages, automações, chatbots
+          inteligentes e soluções digitais com foco em SEO,
+          conversão e performance.
+        </p>
       </main>
     </noscript>
 
+    <!-- ================= REACT ROOT ================= -->
     <div id="root"></div>
 
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- ================= APP ================= -->
+    <script
+      type="module"
+      src="/src/main.tsx"
+    ></script>
   </body>
 </html>
