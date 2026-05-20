@@ -10,7 +10,7 @@
   "hero": {
     "tag": "Digital Presence Specialists",
     "headline1": "Professional",
-    "headline2": "Website Development",
+    "headline2": " Website Development",
     "headline3": "and Business Automation.",
     "sub": "We build high-performance websites, intelligent chatbots, and automations that turn visitors into customers.",
     "cta_primary": "Start my project",
@@ -235,7 +235,7 @@
   "contact": {
     "tag": "Contact",
     "title": "Let's build",
-    "title_accent": "something together",
+    "title_accent": " something together",
     "sub": "Fill out the form or contact us directly on WhatsApp. We reply within 24 hours.",
     "methods": [
       {
@@ -287,7 +287,7 @@
 
   "cta_banner": {
     "title": "Ready to have a website",
-    "title_accent": "that works for you?",
+    "title_accent": " that works for you?",
     "sub": "Talk to us today. Free quote within 24 hours.",
     "cta_primary": "Request a quote",
     "cta_secondary": "View plans"
