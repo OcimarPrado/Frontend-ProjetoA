@@ -237,7 +237,7 @@
     "sub": "Preencha o formulário ou nos chame direto no WhatsApp. Respondemos em até 24 horas.",
     "methods": [
       { "icon": "📱", "label": "WhatsApp",    "value": "+55 (51) 9 8673-0107" },
-      { "icon": "📧", "label": "E-mail",      "value": "onprado39@gmail.com" },
+      { "icon": "📧", "label": "E-mail",      "value": "contato@ocyan-tech.com.br" },
       { "icon": "📍", "label": "Localização", "value": "Canoas, RS — Atendemos todo o Brasil" }
     ],
     "form": {
