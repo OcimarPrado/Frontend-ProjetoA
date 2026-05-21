@@ -2,7 +2,7 @@
    SOBRE — White / Navy / Cyan  |  Scroll Motion estilo Elementor
    ============================================================ */
 
-/* ── Variáveis locais (sobrescreve se necessário) ─────────── */
+/* ── Variáveis locais ─────────────────────────────────────── */
 :root {
   --navy:        #0b1f3a;
   --navy-mid:    #1a3a5c;
@@ -87,7 +87,6 @@
   animation: orbFloat2 11s ease-in-out infinite;
 }
 
-/* ── Orb extra – centro da seção ─────────────────────────── */
 .sobre-orb--3 {
   width: 220px; height: 220px;
   background: var(--cyan-soft);
@@ -153,7 +152,6 @@
   will-change: transform;
 }
 
-/* Linha topo – cyan → navy */
 .identity-card::before {
   content: '';
   position: absolute;
@@ -163,7 +161,6 @@
   transition: background 0.4s ease;
 }
 
-/* Brilho de fundo interno */
 .identity-card::after {
   content: '';
   position: absolute;
@@ -184,7 +181,6 @@
   background: linear-gradient(90deg, transparent, var(--cyan), var(--blue-bright), transparent);
 }
 
-/* Tag topo */
 .identity-tag {
   display: inline-flex;
   align-items: center;
@@ -201,7 +197,6 @@
   font-weight: 700;
 }
 
-/* Stats */
 .identity-stats {
   display: flex;
   flex-direction: column;
@@ -231,8 +226,6 @@
   color: var(--navy);
   line-height: 1;
   letter-spacing: -0.03em;
-
-  /* degradê navy→cyan no número */
   background: linear-gradient(135deg, var(--navy) 30%, var(--cyan-soft) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -252,7 +245,6 @@
   line-height: 1.4;
 }
 
-/* Citação */
 .identity-quote {
   position: relative;
   margin: 0;
@@ -287,7 +279,7 @@
   flex-direction: column;
 }
 
-/* Eyebrow badge */
+/* Eyebrow badge — Corrigido alinhamento e margem */
 .sobre-eyebrow {
   display: inline-flex;
   align-items: center;
@@ -298,10 +290,10 @@
   color: var(--blue-bright);
   background: rgba(0, 212, 255, 0.07);
   border: 1px solid rgba(0, 212, 255, 0.22);
-  padding: 0.4rem 1.1rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 100px;
   width: fit-content;
-  margin-bottom: 1.6rem;
+  margin-bottom: 2rem;
   font-weight: 700;
 }
 
@@ -337,7 +329,6 @@
   position: relative;
 }
 
-/* sublinhado animado no highlight */
 .sobre-highlight::after {
   content: '';
   position: absolute;
@@ -358,14 +349,14 @@
   .sobre-highlight { color: var(--blue-bright); }
 }
 
-/* Parágrafos */
+/* Parágrafos — Melhoria de largura máxima e legibilidade */
 .sobre-description {
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.85;
   color: var(--navy);
-  opacity: 0.60;
-  margin: 0 0 1rem;
-  max-width: 560px;
+  opacity: 0.75;
+  margin: 0 0 1.2rem;
+  max-width: 680px;
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -434,15 +425,17 @@
 }
 
 /* ══════════════════════════════════════════════════════════════
-   DIFERENCIAL
+   DIFERENCIAL — Ajustado espaçamento e contraste
    ══════════════════════════════════════════════════════════════ */
 .sobre-differentiator {
   display: flex;
   align-items: stretch;
-  background: rgba(0, 212, 255, 0.05);
-  border: 1px solid rgba(0, 212, 255, 0.16);
+  background: var(--white);
+  border: 1px solid rgba(0, 100, 200, 0.08);
   border-radius: 14px;
   overflow: hidden;
+  margin-top: 3.5rem;
+  box-shadow: 0 10px 30px rgba(0, 100, 200, 0.04);
   transition:
     transform 0.5s var(--ease-smooth),
     box-shadow 0.5s var(--ease-smooth),
@@ -451,15 +444,13 @@
 }
 
 .sobre-differentiator:hover {
-  transform: translateY(-7px) scale(1.01);
+  transform: translateY(-5px) scale(1.01);
   border-color: rgba(0, 212, 255, 0.35);
-  box-shadow:
-    0 12px 32px rgba(0, 100, 200, 0.10),
-    0 0 0 1px rgba(0, 212, 255, 0.08);
+  box-shadow: 0 16px 40px rgba(0, 100, 200, 0.10);
 }
 
 .diff-accent {
-  width: 4px;
+  width: 5px;
   flex-shrink: 0;
   background: linear-gradient(180deg, var(--cyan), var(--blue-bright));
 }
@@ -489,12 +480,7 @@
 
 /* ══════════════════════════════════════════════════════════════
    SCROLL MOTION  –  estilo Elementor
-   Todos os elementos começam invisíveis/deslocados.
-   A classe `.active` (adicionada via JS/IntersectionObserver)
-   dispara a transição com delays escalonados.
    ══════════════════════════════════════════════════════════════ */
-
-/* Estado inicial (oculto) */
 .sobre .identity-card,
 .sobre .sobre-content,
 .sobre .pillar-card,
@@ -509,7 +495,6 @@
   will-change: transform, opacity, filter;
 }
 
-/* Estado ativo */
 .sobre.active .identity-card,
 .sobre.active .sobre-content,
 .sobre.active .pillar-card,
@@ -519,7 +504,6 @@
   filter: blur(0);
 }
 
-/* ── Delays escalonados ─────────────────────────────────── */
 .sobre.active .identity-card          { transition-delay: 0.05s; }
 .sobre.active .sobre-content          { transition-delay: 0.25s; }
 .sobre.active .pillar-card:nth-child(1) { transition-delay: 0.42s; }
@@ -596,21 +580,3 @@
     padding-bottom: 1rem;
   }
 }
-
-/* ══════════════════════════════════════════════════════════════
-   JS HELPER  (cole no seu main.js ou inline no HTML)
-   ══════════════════════════════════════════════════════════════
-
-   const section = document.querySelector('.sobre');
-   const observer = new IntersectionObserver(
-     ([entry]) => {
-       if (entry.isIntersecting) {
-         entry.target.classList.add('active');
-         observer.unobserve(entry.target); // dispara só uma vez
-       }
-     },
-     { threshold: 0.12 }
-   );
-   observer.observe(section);
-
-   ══════════════════════════════════════════════════════════════ */
