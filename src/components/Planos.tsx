@@ -17,7 +17,7 @@ interface Plan {
 
 export default function Pricing() {
   const { t } = useTranslation();
-  const plans = t('pricing.plans', { returnObjects: true }) as Plan[];
+  const plans = t('pricing', { returnObjects: true }) as Plan[];
 
   const scrollToContact = () =>
     document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });

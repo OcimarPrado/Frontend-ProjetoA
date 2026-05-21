@@ -103,75 +103,169 @@
       }
     ]
   },
-  "pricing": {
-    "tag": "Planos",
-    "title": "Sem surpresas,",
-    "title_accent": " sem letras miúdas",
-    "sub": "Preço justo, entrega profissional e suporte de verdade. Escolha o plano ideal para o seu negócio.",
-    "featured_badge": "Mais popular",
-    "note_setup": "* Taxa de criação cobrada uma única vez",
-    "cta": "Escolher plano",
-    "cta_custom": "Solicitar proposta",
-    "plans": [
-      {
-        "name": "Starter",
-        "desc": "Ideal para quem precisa de um site rápido, moderno, confiável e não tem necessidade de fazer mudanças no conteúdo mensalmente.",
-        "price": "99",
-        "period": "/mês",
-        "note": "Preço Promocional 12 x de R$ 99 - aproveite hoje mesmo*",
-        "featured": true,
-        "features": [
-          { "included": true,  "text": "3(três) rodadas de ajustes após entrega." },
-          { "included": true,  "text": "Inclui criação, hospedagem, manutenção de site" },
-          { "included": true,  "text": "Site ONEPAGE - Página Única contendo: header + hero + sobre + serviços + contato + footer" },
-          { "included": true,  "text": "Design responsivo (mobile)" },
-          { "included": true,  "text": "Domínio .com.br incluso" },
-          { "included": true,  "text": "SEO básico" },
-          { "included": true,  "text": "CTA para WhatsApp" },
-          { "included": false, "text": "Blog / área de notícias" },
-          { "included": false, "text": "Relatório mensal" }
-        ]
-      },
-      {
-        "name": "Profissional",
-        "desc": "Para empresas que querem presença digital completa, sem se preocupar com manutenção e estabilidade.",
-        "price": "249",
-        "period": "/mês",
-        "note": "R$ 1500 de criação do Site sendo R$ 300 no ato da aquisição do serviço e R$ 1200 na entrega. Para Pagamento à vista (pix, débito e dinheiro) 10% de desconto.*",
-        "featured": false,
-        "features": [
-          { "included": true, "text": "Inclui criação, hospedagem, manutenção de site" },
-          { "included": true, "text": "5(cinco) rodadas de ajustes após entrega e suporte dedicado" },
-          { "included": true, "text": "Conteúdo dinâmico, painel de cliente e treinamento de edição de conteúdos" },
-          { "included": true, "text": "Site com até 10 páginas" },
-          { "included": true, "text": "Design responsivo (mobile)" },
-          { "included": true, "text": "SEO planejado para tráfego pago" },
-          { "included": true, "text": "Tráfego pago básico com indicadores de visita e conversão" },
-          { "included": true, "text": "Domínio .com.br incluso" },
-          { "included": true, "text": "Integração WhatsApp + Redes" },
-          { "included": true, "text": "Blog / área de notícias" },
-          { "included": true, "text": "Relatório mensal de acesso" }
-        ]
-      },
-      {
-        "name": "Personalizado",
-        "desc": "Sistemas, APIs, integrações e soluções sob medida.",
-        "price": "?",
-        "period": "sob consulta",
-        "note": "Orçamento em até 24h",
-        "featured": false,
-        "features": [
-          { "included": true, "text": "E-commerce e lojas virtuais" },
-          { "included": true, "text": "Integrações com ERPs e sistemas" },
-          { "included": true, "text": "APIs e back-ends customizados" },
-          { "included": true, "text": "Dashboards e painéis admin" },
-          { "included": true, "text": "Suporte prioritário" },
-          { "included": true, "text": "SLA definido em contrato" },
-          { "included": true, "text": "Treinamento da equipe" }
-        ]
-      }
-    ]
-  },
+  
+  "pricing": [
+    {
+      "name": "Starter",
+      "desc": "Ideal para empresas que querem presença digital, site rápido, moderno, confiável e não têm necessidade de alterações frequentes no conteúdo.",
+      "price": "149",
+      "period": "/mês",
+      "note": "Setup inicial R$ 490",
+      "featured": false,
+      "features": [
+        {
+          "included": true,
+          "text": "2 (duas) rodadas de ajustes durante o desenvolvimento"
+        },
+        {
+          "included": true,
+          "text": "Inclui criação do site"
+        },
+        {
+          "included": true,
+          "text": "Inclui hospedagem gerenciada"
+        },
+        {
+          "included": true,
+          "text": "Monitoramento e manutenção técnica: uptime, backups e segurança (não inclui edições de conteúdo)"
+        },
+        {
+          "included": true,
+          "text": "Site ONEPAGE contendo: header + hero + sobre + serviços + contato + footer"
+        },
+        {
+          "included": true,
+          "text": "Design responsivo (mobile)"
+        },
+        {
+          "included": true,
+          "text": "Domínio .com.br incluso durante a vigência do contrato"
+        },
+        {
+          "included": true,
+          "text": "SEO técnico básico (meta tags, Open Graph, title e description)"
+        },
+        {
+          "included": true,
+          "text": "CTA para WhatsApp"
+        },
+        {
+          "included": true,
+          "text": "Entrega em 5 a 7 dias úteis após envio de todo material"
+        },
+        {
+          "included": true,
+          "text": "1 (uma) atualização de conteúdo por bimestre via solicitação"
+        },
+        {
+          "included": true,
+          "text": "Contrato mínimo de 12 meses"
+        },
+        {
+          "included": false,
+          "text": "Não inclui blog ou área de notícias"
+        },
+        {
+          "included": false,
+          "text": "Não inclui painel de edição"
+        },
+        {
+          "included": false,
+          "text": "Não inclui relatório mensal"
+        },
+        {
+          "included": false,
+          "text": "Não inclui gestão de tráfego pago"
+        }
+      ]
+    },
+    {
+      "name": "Profissional",
+      "desc": "Para empresas que desejam presença digital completa, conteúdo dinâmico e estrutura preparada para crescimento.",
+      "price": "297",
+      "period": "/mês",
+      "note": "Criação do site: R$ 1500 sendo R$ 300 no início do projeto e R$ 1200 na entrega. Pagamento à vista via PIX, débito ou dinheiro possui 10% de desconto.",
+      "featured": true,
+      "features": [
+        {
+          "included": true,
+          "text": "Inclui criação do site"
+        },
+        {
+          "included": true,
+          "text": "Inclui hospedagem gerenciada"
+        },
+        {
+          "included": true,
+          "text": "Monitoramento e manutenção técnica"
+        },
+        {
+          "included": true,
+          "text": "5 (cinco) rodadas de ajustes durante o desenvolvimento"
+        },
+        {
+          "included": true,
+          "text": "Suporte prioritário"
+        },
+        {
+          "included": true,
+          "text": "Conteúdo dinâmico com painel administrativo"
+        },
+        {
+          "included": true,
+          "text": "Treinamento básico para edição de conteúdo"
+        },
+        {
+          "included": true,
+          "text": "Site com até 10 páginas"
+        },
+        {
+          "included": true,
+          "text": "Design responsivo (mobile)"
+        },
+        {
+          "included": true,
+          "text": "SEO técnico + estrutura preparada para campanhas"
+        },
+        {
+          "included": true,
+          "text": "Instalação de Pixel Meta e Google Analytics"
+        },
+        {
+          "included": true,
+          "text": "Domínio .com.br incluso durante a vigência do contrato"
+        },
+        {
+          "included": true,
+          "text": "Integração com WhatsApp e redes sociais"
+        },
+        {
+          "included": true,
+          "text": "Blog ou área de notícias"
+        },
+        {
+          "included": true,
+          "text": "Relatório mensal de acessos"
+        },
+        {
+          "included": true,
+          "text": "Backup e monitoramento"
+        },
+        {
+          "included": false,
+          "text": "Não inclui gestão de tráfego pago"
+        },
+        {
+          "included": false,
+          "text": "Não inclui criação recorrente de conteúdo"
+        },
+        {
+          "included": false,
+          "text": "Alterações estruturais e novas funcionalidades são cobradas separadamente"
+        }
+      ]
+    }
+  ],
   "about": {
   "tag": "Sobre nós",
 
