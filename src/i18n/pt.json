@@ -3,25 +3,22 @@
     "services": "Serviços",
     "portfolio": "Portfólio",
     "pricing": "Preços",
-    "about": "Sobre",
+    "about": "Sobre nós",
     "contact": "Contato",
     "cta": "Iniciar Projeto"
   },
 
   "hero": {
     "tag": "Especialistas em Presença Digital",
-
     "headline1": "Criação de Sites",
     "headline2": "Profissionais",
     "headline3": "e Automação de Negócios.",
-
-    "sub": "Desenvolvemos sites de alta performance, chatbots inteligentes e automações que transformam visitantes em clientes.",
-
+    "sub": "Desenvolvemos sites de alto desempenho, chatbots inteligentes e automações que transformam visitantes em clientes.",
     "cta_primary": "Começar meu projeto",
-    "cta_secondary": "Ver cases de sucesso",
+    "cta_secondary": "Ver casos de sucesso",
 
     "stat_projects_num": "Top 1",
-    "stat_projects_label": "Performance SEO",
+    "stat_projects_label": "Desempenho SEO",
 
     "stat_uptime_num": "100%",
     "stat_uptime_label": "Foco em Conversão",
@@ -37,10 +34,10 @@
   "services": {
     "tag": "O que fazemos",
 
-    "title": "Tudo que seu site",
+    "title": "Tudo o que o seu site",
     "title_accent": "precisa",
 
-    "sub": "Do zero ao ar. Cuidamos de cada etapa para que você foque no que importa: sua empresa.",
+    "sub": "Do zero ao lançamento. Cuidamos de cada etapa para você focar no que importa: sua empresa.",
 
     "items": [
       {
@@ -50,7 +47,7 @@
 
         "name": "Criação de Sites",
 
-        "desc": "Sites profissionais, responsivos e otimizados para buscadores. Desenvolvemos com tecnologia moderna e foco em resultado.",
+        "desc": "Sites profissionais, responsivos e otimizados para buscadores. Desenvolvidos com tecnologia moderna e focados em resultados.",
 
         "features": [
           "Design exclusivo e responsivo",
@@ -67,7 +64,7 @@
 
         "name": "Hospedagem Gerenciada",
 
-        "desc": "Servidor configurado, SSL incluso, backups automáticos e domínio gerenciado. Você não precisa saber nada de tecnologia.",
+        "desc": "Servidor configurado, SSL incluso, backups automáticos e domínio administrado. Você não precisa entender nada de tecnologia.",
 
         "features": [
           "SSL grátis",
@@ -82,7 +79,7 @@
 
         "icon": "🔧",
 
-        "name": "Manutenção & Suporte",
+        "name": "Manutenção e Suporte",
 
         "desc": "Atualizações, correções e melhorias contínuas. Seu site sempre seguro, atualizado e funcionando.",
 
@@ -114,7 +111,7 @@
 
         "title": "Site Institucional",
 
-        "desc": "Alguns exemplos de clientes atendidos em parceria com a agência prósite.poa.br .",
+        "desc": "Alguns exemplos de clientes atendidos em parceria com a agência prosite.poa.br .",
 
         "link": "#",
 
@@ -143,7 +140,7 @@
 
         "title": "ChatBot",
 
-        "desc": "Chatbot com inteligência artificial para atendimento automatizado. Integrado a múltiplos canais com autenticação segura.",
+        "desc": "Chatbot com inteligência artificial para atendimento automatizado. Integrado com múltiplos canais e autenticação segura.",
 
         "link": "https://assistente-inteligente-production.up.railway.app/"
       },
@@ -153,9 +150,9 @@
 
         "tags": ["Sistema", "Indústria"],
 
-        "title": "Boldrini Simulador",
+        "title": "Simulador Boldrini",
 
-        "desc": "Sistema especialista industrial para prensa flangeadora. Encoda 3 anos de conhecimento operacional em lógica computacional.",
+        "desc": "Sistema especialista industrial para prensa rebordeadora. Codifica 3 anos de conhecimento operacional em lógica computacional.",
 
         "link": "https://github.com"
       }
@@ -170,9 +167,9 @@
 
     "sub": "Preço justo, entrega profissional e suporte real. Escolha o plano ideal para o seu negócio.",
 
-    "featured_badge": "Mais escolhido",
+    "featured_badge": "Mais popular",
 
-    "note_setup": "* Taxa de criação cobrada apenas uma vez",
+    "note_setup": "* Taxa de criação cobrada uma única vez",
 
     "cta": "Escolher plano",
 
@@ -182,35 +179,35 @@
       {
         "name": "Starter",
 
-        "desc": "Ideal para empresas que precisam de um site rápido, moderno e confiável sem necessidade de alterações frequentes.",
+        "desc": "Ideal para quem precisa de um site rápido, moderno e confiável sem necessidade de alterações frequentes no conteúdo.",
 
-        "price": "149",
+        "price": "99",
 
         "period": "/mês",
 
-        "note": "Taxa de criação do Site R$ 490 (10% de desconto no pix, débito e dinheiro)",
+        "note": "Preço promocional: 12 parcelas de R$99 — aproveite hoje mesmo*",
 
         "featured": true,
 
         "features": [
           {
             "included": true,
-            "text": "2 rodadas de ajustes após entrega"
+            "text": "3 rodadas de ajustes após a entrega."
           },
 
           {
             "included": true,
-            "text": "Inclui criação, hospedagem e manutenção"
+            "text": "Inclui criação, hospedagem e manutenção do site"
           },
 
           {
             "included": true,
-            "text": "Site ONEPAGE"
+            "text": "Site ONEPAGE — Página única com: header + hero + sobre + serviços + contato + footer"
           },
 
           {
             "included": true,
-            "text": "Design responsivo"
+            "text": "Design responsivo (mobile)"
           },
 
           {
@@ -243,13 +240,13 @@
       {
         "name": "Profissional",
 
-        "desc": "Para empresas que desejam presença digital completa sem se preocupar com manutenção ou estabilidade.",
+        "desc": "Para empresas que desejam uma presença digital completa sem se preocupar com manutenção ou estabilidade.",
 
-        "price": "297",
+        "price": "249",
 
         "period": "/mês",
 
-        "note": "Taxa de criação do site: R$1500 sendo R$500 no início e R$1000 na entrega (10% desconto no pix, débito e dinheiro)",
+        "note": "R$1500 de criação do site, sendo R$300 na contratação do serviço e R$1200 na entrega. Para pagamentos à vista (pix, débito ou dinheiro) 10% de desconto.*",
 
         "featured": false,
 
@@ -261,32 +258,32 @@
 
           {
             "included": true,
-            "text": "5 rodadas de ajustes e suporte prioritário"
+            "text": "5 rodadas de ajustes após a entrega e suporte dedicado"
           },
 
           {
             "included": true,
-            "text": "Painel administrativo"
+            "text": "Conteúdo dinâmico, painel do cliente e treinamento para edição de conteúdo"
           },
 
           {
             "included": true,
-            "text": "Treinamento para edição"
+            "text": "Site completo de até 10 páginas"
           },
 
           {
             "included": true,
-            "text": "Site com até 10 páginas"
+            "text": "Design responsivo (mobile)"
           },
 
           {
             "included": true,
-            "text": "SEO técnico avançado"
+            "text": "SEO voltado para tráfego pago"
           },
 
           {
             "included": true,
-            "text": "Pixel Meta e Google Analytics"
+            "text": "Tráfego pago básico com métricas de visitas e conversão"
           },
 
           {
@@ -306,15 +303,15 @@
 
           {
             "included": true,
-            "text": "Relatório mensal"
+            "text": "Relatório mensal de acessos"
           }
         ]
       },
 
       {
-        "name": "Sob Medida",
+        "name": "Personalizado",
 
-        "desc": "Sistemas, APIs, integrações e soluções personalizadas.",
+        "desc": "Sistemas, APIs, integrações e soluções sob medida.",
 
         "price": "?",
 
@@ -332,7 +329,7 @@
 
           {
             "included": true,
-            "text": "Integrações com ERPs"
+            "text": "Integrações com ERPs e sistemas"
           },
 
           {
@@ -342,7 +339,7 @@
 
           {
             "included": true,
-            "text": "Dashboards administrativos"
+            "text": "Dashboards e painéis administrativos"
           },
 
           {
@@ -352,29 +349,28 @@
 
           {
             "included": true,
-            "text": "SLA em contrato"
+            "text": "SLA definido em contrato"
           },
 
           {
             "included": true,
-            "text": "Treinamento de equipe"
+            "text": "Treinamento da equipe"
           }
         ]
       }
     ]
   },
-
+  
   "about": {
     "tag": "Sobre nós",
 
-    "title": "Tecnologia de verdade",
+    "title": "Tecnologia de verdade,",
     "title_accent": " soluções que geram resultados",
-
     "title2": "",
 
-    "text1": "A Ocyan-Tech desenvolve sites profissionais, sistemas web e automações inteligentes com foco em performance, conversão e presença digital.",
+    "text1": "A Ocyan-Tech desenvolve sites profissionais, sistemas web e automações inteligentes com foco em performance, conversão e presença digital. Não entregamos apenas páginas bonitas — criamos ferramentas que ajudam empresas a crescer no ambiente digital.",
 
-    "text2": "Unimos experiência técnica, visão estratégica e desenvolvimento moderno para construir soluções rápidas, seguras e escaláveis.",
+    "text2": "Unimos experiência técnica, visão estratégica e desenvolvimento moderno para construir soluções rápidas, seguras e escaláveis. Cada projeto é desenvolvido pensando em usabilidade, SEO, identidade visual e resultados comerciais.",
 
     "highlights": [
       {
@@ -386,13 +382,13 @@
       {
         "icon": "🛡️",
         "title": "Código limpo e estrutura profissional",
-        "text": "Tecnologias modernas focadas em segurança e performance."
+        "text": "Sites desenvolvidos com tecnologias modernas, focados em segurança, desempenho e estabilidade."
       },
 
       {
         "icon": "📱",
-        "title": "Suporte humano",
-        "text": "Atendimento direto via WhatsApp durante todas as etapas."
+        "title": "Suporte humano e acompanhamento real",
+        "text": "Atendimento direto via WhatsApp durante todas as etapas do projeto."
       }
     ],
 
@@ -400,36 +396,35 @@
       {
         "icon": "🏗️",
         "title": "22+ anos de experiência técnica",
-        "text": "Experiência industrial e desenvolvimento aplicado."
+        "text": "Vivência industrial, lógica operacional e desenvolvimento de software aplicado."
       },
 
       {
         "icon": "🚀",
         "title": "Projetos reais em produção",
-        "text": "Sites, sistemas e soluções funcionando em ambiente real."
+        "text": "Sites, sistemas e soluções digitais rodando em ambientes reais."
       },
 
       {
         "icon": "🤝",
         "title": "Processo transparente",
-        "text": "Comunicação objetiva e acompanhamento contínuo."
+        "text": "Escopo alinhado, comunicação objetiva e acompanhamento contínuo."
       },
 
       {
         "icon": "📊",
         "title": "Foco em crescimento",
-        "text": "Visibilidade, conversão e autoridade digital."
+        "text": "Cada solução é construída pensando em visibilidade, conversão e autoridade digital."
       }
     ]
   },
 
   "contact": {
     "tag": "Contato",
-
     "title": "Vamos construir",
     "title_accent": " algo juntos",
 
-    "sub": "Preencha o formulário ou nos chame no WhatsApp. Respondemos em até 24h.",
+    "sub": "Preencha o formulário ou entre em contato diretamente pelo WhatsApp. Respondemos em até 24 horas.",
 
     "methods": [
       {
@@ -437,26 +432,24 @@
         "label": "WhatsApp",
         "value": "+55 (51) 9 8673-0107"
       },
-
       {
         "icon": "📧",
         "label": "E-mail",
         "value": "contato@ocyan-tech.com.br"
       },
-
       {
         "icon": "📍",
         "label": "Localização",
-        "value": "Canoas, RS — Atendemos todo Brasil"
+        "value": "Canoas, RS — Atendemos todo o Brasil"
       }
     ],
 
     "form": {
       "name_label": "Seu nome",
-      "name_placeholder": "João da Silva",
+      "name_placeholder": "João Silva",
 
       "email_label": "E-mail",
-      "email_placeholder": "joao@empresa.com.br",
+      "email_placeholder": "joao@empresa.com",
 
       "service_label": "Serviço de interesse",
       "service_placeholder": "Selecione...",
@@ -464,19 +457,19 @@
       "service_options": [
         "Criação de site",
         "Hospedagem + Manutenção",
-        "Plano completo",
+        "Plano completo (criação + hospedagem)",
         "Sistema ou API personalizada",
         "Outro"
       ],
 
-      "message_label": "Conte sobre seu projeto",
+      "message_label": "Conte-nos um pouco sobre o seu projeto",
       "message_placeholder": "Tenho um negócio de... preciso de um site que...",
 
       "submit": "Enviar mensagem",
       "submitting": "Enviando...",
 
       "success_title": "Mensagem enviada!",
-      "success_sub": "Entraremos em contato em até 24h.",
+      "success_sub": "Entraremos em contato em até 24 horas.",
       "success_btn": "Enviar outra mensagem"
     }
   },
@@ -485,14 +478,14 @@
     "title": "Pronto para ter um site",
     "title_accent": " que trabalha por você?",
 
-    "sub": "Fale com a gente hoje mesmo. Orçamento gratuito em até 24h.",
+    "sub": "Fale conosco hoje mesmo. Orçamento gratuito em até 24 horas.",
 
     "cta_primary": "Solicitar orçamento",
     "cta_secondary": "Ver planos"
   },
 
   "footer": {
-    "brand_desc": "Criação, hospedagem e manutenção de sites com tecnologia real e suporte humano.",
+    "brand_desc": "Criação, hospedagem e manutenção de sites com tecnologia real e suporte humano. Canoas, RS.",
 
     "col_services": "Serviços",
     "col_company": "Empresa",
@@ -502,17 +495,14 @@
         "label": "Criação de Sites",
         "href": "#services"
       },
-
       {
         "label": "Hospedagem",
         "href": "#services"
       },
-
       {
         "label": "Manutenção",
         "href": "#services"
       },
-
       {
         "label": "Sistemas Personalizados",
         "href": "#pricing"
@@ -524,17 +514,14 @@
         "label": "Portfólio",
         "href": "#portfolio"
       },
-
       {
         "label": "Preços",
         "href": "#pricing"
       },
-
       {
         "label": "Sobre nós",
         "href": "#about"
       },
-
       {
         "label": "Contato",
         "href": "#contact"

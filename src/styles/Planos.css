@@ -82,7 +82,7 @@
    ============================================ */
 
 .planos-container {
-  text-align: right
+  text-align: right;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 35px;
@@ -233,7 +233,7 @@
 }
 
 .plano-card li {
-  text-align: right
+  text-align: right;
   font-size: clamp(0.95rem, 2vw, 1.05rem);
   line-height: 1.7;
   color: #cbd5e1;

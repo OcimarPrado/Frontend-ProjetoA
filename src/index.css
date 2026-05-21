@@ -1190,6 +1190,27 @@ button {
   line-height: 1.5;
 }
 
+/* ── TAG / BADGE PRINCIPAL (Estilo Planos) ──────────────── */
+.about .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: max-content; /* Impede que a barra estique de ponta a ponta */
+  
+  /* Cores e Fundo */
+  background: rgba(0, 229, 195, 0.08); /* Fundo verde com transparência sutil */
+  border: 1px solid rgba(0, 229, 195, 0.25); /* Borda fina e suave */
+  border-radius: 9999px; /* Formato pílula 100% arredondado nas pontas */
+  padding: 0.4rem 1rem; /* Espaçamento interno para desgrudar do texto */
+
+  /* Tipografia */
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #00e5c3; /* Cor verde/ciano idêntica à do ícone */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
 /* ── CONTATO ────────────────────────────────────────────────── */
 .contact {
   padding: var(--section-padding);

@@ -1,45 +1,56 @@
+import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
-interface Highlight {
+interface AboutItem {
   icon: string;
   title: string;
   text: string;
 }
 
-interface Card {
-  icon: string;
-  title: string;
-  text: string;
-}
-
-export default function About() {
+export default function Sobre() {
   const { t } = useTranslation();
+  const sectionRef = useRef<HTMLElement>(null);
 
-  const highlights = t('about.highlights', {
-    returnObjects: true,
-  }) as Highlight[];
+  // Mapeia os arrays tipados direto do pt.json
+  const stats = (t('about.cards', { returnObjects: true }) || []) as AboutItem[];
+  const pillars = (t('about.highlights', { returnObjects: true }) || []) as AboutItem[];
 
-  const cards = t('about.cards', {
-    returnObjects: true,
-  }) as Card[];
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <section className="about" id="about">
+    <section className="about" id="about" ref={sectionRef}>
       <div className="container">
-        <div className="about-grid">
+        <div className="about-inner">
 
-          {/* ESQUERDA */}
+          {/* LEFT */}
           <div className="about-content">
-            <div className="tag">
+
+            <span className="tag">
               ◈ {t('about.tag')}
-            </div>
+            </span>
 
             <h2 className="section-title">
-              {t('about.title')}
+              {t('about.title')}{' '}
               <span>{t('about.title_accent')}</span>
             </h2>
 
-            <p className="about-text">
+            <p className="section-sub">
               {t('about.text1')}
             </p>
 
@@ -48,32 +59,38 @@ export default function About() {
             </p>
 
             <div className="about-highlights">
-              {highlights.map((item) => (
-                <div key={item.title} className="about-highlight">
-                  <div className="about-highlight-icon">
-                    {item.icon}
-                  </div>
-
-                  <div>
-                    <h4>{item.title}</h4>
-                    <p>{item.text}</p>
+              {pillars.map((pillar, idx) => (
+                <div key={idx} className="about-highlight">
+                  <span className="about-highlight-icon">
+                    {pillar.icon}
+                  </span>
+                  <div className="about-highlight-content">
+                    <h4 className="about-highlight-title">
+                      {pillar.title}
+                    </h4>
+                    <p className="about-highlight-text">
+                      {pillar.text}
+                    </p>
                   </div>
                 </div>
               ))}
             </div>
+
           </div>
 
-          {/* DIREITA */}
-          <div className="about-cards">
-            {cards.map((card) => (
-              <div key={card.title} className="about-card">
-                <div className="about-card-icon">
-                  {card.icon}
-                </div>
-
-                <h3>{card.title}</h3>
-
-                <p>{card.text}</p>
+          {/* RIGHT */}
+          <div className="about-visual">
+            {stats.map((stat, idx) => (
+              <div key={idx} className="about-card">
+                <span className="about-card-icon" style={{ fontSize: '1.25rem' }}>
+                  {stat.icon}
+                </span>
+                <h4 className="about-card-title" style={{ fontSize: '0.9rem', marginTop: '0.25rem' }}>
+                  {stat.title}
+                </h4>
+                <p className="about-card-text">
+                  {stat.text}
+                </p>
               </div>
             ))}
           </div>
