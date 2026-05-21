@@ -15,71 +15,132 @@ interface Plan {
   features: PlanFeature[];
 }
 
+interface PricingData {
+  tag: string;
+  title: string;
+  title_accent: string;
+  sub: string;
+  featured_badge: string;
+  note_setup: string;
+  cta: string;
+  cta_custom: string;
+  plans: Plan[];
+}
+
 export default function Pricing() {
   const { t } = useTranslation();
-  const plans = t('pricing', { returnObjects: true }) as Plan[];
+
+  const pricing = t('pricing', {
+    returnObjects: true,
+  }) as PricingData;
 
   const scrollToContact = () =>
-    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+    document
+      .querySelector('#contact')
+      ?.scrollIntoView({ behavior: 'smooth' });
 
   return (
     <section className="pricing" id="pricing">
       <div className="container">
         <div className="section-header">
-          <div className="tag">◈ {t('pricing.tag')}</div>
+          <div className="tag">
+            ◈ {pricing.tag}
+          </div>
+
           <h2 className="section-title">
-            {t('pricing.title')}
-            <span>{t('pricing.title_accent')}</span>
+            {pricing.title}
+            <span>{pricing.title_accent}</span>
           </h2>
-          <p className="section-sub">{t('pricing.sub')}</p>
+
+          <p className="section-sub">
+            {pricing.sub}
+          </p>
         </div>
 
         <div className="pricing-grid">
-          {plans.map((plan) => (
+          {pricing.plans.map((plan) => (
             <div
               key={plan.name}
-              className={`pricing-card${plan.featured ? ' featured' : ''}`}
+              className={`pricing-card ${
+                plan.featured ? 'featured' : ''
+              }`}
             >
               {plan.featured && (
-                <div className="pricing-badge">{t('pricing.featured_badge')}</div>
+                <div className="pricing-badge">
+                  {pricing.featured_badge}
+                </div>
               )}
 
               <div className="pricing-plan">
-                <div className="pricing-plan-name">{plan.name}</div>
-                <div className="pricing-plan-desc">{plan.desc}</div>
+                <div className="pricing-plan-name">
+                  {plan.name}
+                </div>
+
+                <div className="pricing-plan-desc">
+                  {plan.desc}
+                </div>
               </div>
 
               <div className="pricing-price">
                 <div className="pricing-amount">
                   {plan.price !== '?' && (
-                    <span className="pricing-currency">R$</span>
+                    <span className="pricing-currency">
+                      R$
+                    </span>
                   )}
-                  <span className="pricing-value">{plan.price}</span>
-                  <span className="pricing-period">{plan.period}</span>
+
+                  <span className="pricing-value">
+                    {plan.price}
+                  </span>
+
+                  <span className="pricing-period">
+                    {plan.period}
+                  </span>
                 </div>
-                <div className="pricing-note">{plan.note}</div>
+
+                <div className="pricing-note">
+                  {plan.note}
+                </div>
               </div>
 
               <ul className="pricing-features">
-                {plan.features.map((f) => (
-                  <li key={f.text}>
-                    {f.included
-                      ? <span className="check">✓</span>
-                      : <span className="x">✕</span>
-                    }
-                    <span style={{ opacity: f.included ? 1 : 0.4 }}>{f.text}</span>
+                {plan.features.map((feature) => (
+                  <li key={feature.text}>
+                    {feature.included ? (
+                      <span className="check">✓</span>
+                    ) : (
+                      <span className="x">✕</span>
+                    )}
+
+                    <span
+                      style={{
+                        opacity: feature.included ? 1 : 0.45,
+                      }}
+                    >
+                      {feature.text}
+                    </span>
                   </li>
                 ))}
               </ul>
 
               <button
                 onClick={scrollToContact}
-                className={`pricing-cta ${plan.featured ? 'btn-primary' : 'btn-outline'}`}
+                className={`pricing-cta ${
+                  plan.featured
+                    ? 'btn-primary'
+                    : 'btn-outline'
+                }`}
               >
-                {plan.price === '?' ? t('pricing.cta_custom') : t('pricing.cta')}
+                {plan.price === '?'
+                  ? pricing.cta_custom
+                  : pricing.cta}
               </button>
             </div>
           ))}
+        </div>
+
+        <div className="pricing-footer-note">
+          {pricing.note_setup}
         </div>
       </div>
     </section>

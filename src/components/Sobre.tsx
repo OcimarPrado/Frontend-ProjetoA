@@ -14,53 +14,70 @@ interface Card {
 
 export default function About() {
   const { t } = useTranslation();
-  const highlights = t('about.highlights', { returnObjects: true }) as Highlight[];
-  const cards      = t('about.cards',      { returnObjects: true }) as Card[];
+
+  const highlights = t('about.highlights', {
+    returnObjects: true,
+  }) as Highlight[];
+
+  const cards = t('about.cards', {
+    returnObjects: true,
+  }) as Card[];
 
   return (
     <section className="about" id="about">
       <div className="container">
-        <div className="about-inner">
-          {/* Grid de cards visuais */}
-          <div className="about-visual">
-            {cards.map((card, i) => (
-              <div
-                key={card.title}
-                className={`about-card${i === 3 ? ' span-2' : ''}`}
-              >
-                <div className="about-card-icon">{card.icon}</div>
-                <div className="about-card-title">{card.title}</div>
-                <div className="about-card-text">{card.text}</div>
-              </div>
-            ))}
-          </div>
+        <div className="about-grid">
 
-          {/* Conteúdo textual */}
+          {/* ESQUERDA */}
           <div className="about-content">
-            <div>
-              <div className="tag">◈ {t('about.tag')}</div>
-              <h2 className="section-title">
-                {t('about.title')}
-                <span>{t('about.title_accent')}</span>
-                {t('about.title2')}
-              </h2>
+            <div className="tag">
+              ◈ {t('about.tag')}
             </div>
 
-            <p className="about-text">{t('about.text1')}</p>
-            <p className="about-text">{t('about.text2')}</p>
+            <h2 className="section-title">
+              {t('about.title')}
+              <span>{t('about.title_accent')}</span>
+            </h2>
+
+            <p className="about-text">
+              {t('about.text1')}
+            </p>
+
+            <p className="about-text">
+              {t('about.text2')}
+            </p>
 
             <div className="about-highlights">
-              {highlights.map((h) => (
-                <div className="about-highlight" key={h.title}>
-                  <span className="about-highlight-icon">{h.icon}</span>
-                  <div className="about-highlight-content">
-                    <span className="about-highlight-title">{h.title}</span>
-                    <span className="about-highlight-text">{h.text}</span>
+              {highlights.map((item) => (
+                <div key={item.title} className="about-highlight">
+                  <div className="about-highlight-icon">
+                    {item.icon}
+                  </div>
+
+                  <div>
+                    <h4>{item.title}</h4>
+                    <p>{item.text}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
+
+          {/* DIREITA */}
+          <div className="about-cards">
+            {cards.map((card) => (
+              <div key={card.title} className="about-card">
+                <div className="about-card-icon">
+                  {card.icon}
+                </div>
+
+                <h3>{card.title}</h3>
+
+                <p>{card.text}</p>
+              </div>
+            ))}
+          </div>
+
         </div>
       </div>
     </section>
