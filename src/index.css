@@ -929,6 +929,28 @@ button {
   gap: 0.65rem;
 }
 
+/* Garante que o container do vídeo ocupe 100% do tamanho do card do portfólio */
+.portfolio-video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: inherit; /* Copia o arredondamento de borda do card, se houver */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Força o vídeo a se comportar como uma imagem de fundo (background-size: cover) */
+.portfolio-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* Preenche todo o espaço cortando as sobras, sem distorcer */
+  object-position: center; /* Mantém o centro do vídeo sempre visível */
+}
+
 /* ── PREÇOS ─────────────────────────────────────────────────── */
 .pricing {
   padding: var(--section-padding);

@@ -132,16 +132,13 @@
           }
         ]
       },
-
+      
       {
         "icon": "🤖",
-
+        "video": "/videos/ocyanbot-demo.mp4", 
         "tags": ["SaaS", "IA"],
-
         "title": "ChatBot",
-
         "desc": "Chatbot com inteligência artificial para atendimento automatizado. Integrado com múltiplos canais e autenticação segura.",
-
         "link": "https://assistente-inteligente-production.up.railway.app/"
       },
 

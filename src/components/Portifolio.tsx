@@ -14,6 +14,7 @@ interface PortfolioImage {
 interface PortfolioItem {
   icon: string;
   images?: PortfolioImage[];
+  video?: string; // <-- Adicionado: caminho para o vídeo do ocyanBot
   tags: string[];
   title: string;
   desc: string;
@@ -42,7 +43,20 @@ export default function Portfolio() {
               <div className="portfolio-thumb">
                 <div className="portfolio-thumb-bg" />
 
-                {item.images && item.images.length > 0 ? (
+                {/* 1. SE HOUVER VÍDEO (Ex: ocyanBot), RENDERIZA O VÍDEO ESTILO GIF */}
+                {item.video ? (
+                  <div className="portfolio-video-wrapper">
+                    <video
+                      src={item.video}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="portfolio-video"
+                    />
+                  </div>
+                ) : item.images && item.images.length > 0 ? (
+                  /* 2. CASO CONTRÁRIO, SE HOUVER IMAGENS, EXIBE O SLIDER */
                   <Swiper
                     modules={[Autoplay, Pagination, EffectFade]}
                     effect="fade"
@@ -67,6 +81,7 @@ export default function Portfolio() {
                     ))}
                   </Swiper>
                 ) : (
+                  /* 3. CASO NENHUM DOS DOIS, EXIBE APENAS O ÍCONE */
                   <div className="portfolio-thumb-icon">{item.icon}</div>
                 )}
               </div>
