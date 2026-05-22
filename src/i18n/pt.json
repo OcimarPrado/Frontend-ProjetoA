@@ -157,206 +157,79 @@
   },
 
   "pricing": {
-    "tag": "Planos",
-
-    "title": "Sem surpresas,",
-    "title_accent": " sem letras miúdas",
-
-    "sub": "Preço justo, entrega profissional e suporte real. Escolha o plano ideal para o seu negócio.",
-
-    "featured_badge": "Mais popular",
-
-    "note_setup": "* Taxa de criação cobrada uma única vez",
-
-    "cta": "Escolher plano",
-
-    "cta_custom": "Solicitar proposta",
-
-    "plans": [
-      {
-        "name": "Starter",
-
-        "desc": "Ideal para quem precisa de um site rápido, moderno e confiável sem necessidade de alterações frequentes no conteúdo.",
-
-        "price": "99",
-
-        "period": "/mês",
-
-        "note": "Preço promocional: 12 parcelas de R$99 — aproveite hoje mesmo*",
-
-        "featured": true,
-
-        "features": [
-          {
-            "included": true,
-            "text": "3 rodadas de ajustes após a entrega."
-          },
-
-          {
-            "included": true,
-            "text": "Inclui criação, hospedagem e manutenção do site"
-          },
-
-          {
-            "included": true,
-            "text": "Site ONEPAGE — Página única com: header + hero + sobre + serviços + contato + footer"
-          },
-
-          {
-            "included": true,
-            "text": "Design responsivo (mobile)"
-          },
-
-          {
-            "included": true,
-            "text": "Domínio .com.br incluso"
-          },
-
-          {
-            "included": true,
-            "text": "SEO básico"
-          },
-
-          {
-            "included": true,
-            "text": "CTA para WhatsApp"
-          },
-
-          {
-            "included": false,
-            "text": "Blog / área de notícias"
-          },
-
-          {
-            "included": false,
-            "text": "Relatório mensal"
-          }
-        ]
-      },
-
-      {
-        "name": "Profissional",
-
-        "desc": "Para empresas que desejam uma presença digital completa sem se preocupar com manutenção ou estabilidade.",
-
-        "price": "249",
-
-        "period": "/mês",
-
-        "note": "R$1500 de criação do site, sendo R$300 na contratação do serviço e R$1200 na entrega. Para pagamentos à vista (pix, débito ou dinheiro) 10% de desconto.*",
-
-        "featured": false,
-
-        "features": [
-          {
-            "included": true,
-            "text": "Inclui criação, hospedagem e manutenção"
-          },
-
-          {
-            "included": true,
-            "text": "5 rodadas de ajustes após a entrega e suporte dedicado"
-          },
-
-          {
-            "included": true,
-            "text": "Conteúdo dinâmico, painel do cliente e treinamento para edição de conteúdo"
-          },
-
-          {
-            "included": true,
-            "text": "Site completo de até 10 páginas"
-          },
-
-          {
-            "included": true,
-            "text": "Design responsivo (mobile)"
-          },
-
-          {
-            "included": true,
-            "text": "SEO voltado para tráfego pago"
-          },
-
-          {
-            "included": true,
-            "text": "Tráfego pago básico com métricas de visitas e conversão"
-          },
-
-          {
-            "included": true,
-            "text": "Domínio .com.br incluso"
-          },
-
-          {
-            "included": true,
-            "text": "Integração WhatsApp + Redes Sociais"
-          },
-
-          {
-            "included": true,
-            "text": "Blog / área de notícias"
-          },
-
-          {
-            "included": true,
-            "text": "Relatório mensal de acessos"
-          }
-        ]
-      },
-
-      {
-        "name": "Personalizado",
-
-        "desc": "Sistemas, APIs, integrações e soluções sob medida.",
-
-        "price": "?",
-
-        "period": "sob consulta",
-
-        "note": "Orçamento em até 24h",
-
-        "featured": false,
-
-        "features": [
-          {
-            "included": true,
-            "text": "E-commerce e lojas virtuais"
-          },
-
-          {
-            "included": true,
-            "text": "Integrações com ERPs e sistemas"
-          },
-
-          {
-            "included": true,
-            "text": "APIs e backends personalizados"
-          },
-
-          {
-            "included": true,
-            "text": "Dashboards e painéis administrativos"
-          },
-
-          {
-            "included": true,
-            "text": "Suporte prioritário"
-          },
-
-          {
-            "included": true,
-            "text": "SLA definido em contrato"
-          },
-
-          {
-            "included": true,
-            "text": "Treinamento da equipe"
-          }
-        ]
-      }
-    ]
-  },
+  "tag": "Planos",
+  "title": "Sem surpresas,",
+  "title_accent": " sem letras miúdas",
+  "sub": "Preço justo, entrega profissional e suporte real. Escolha o plano ideal para o seu negócio.",
+  "featured_badge": "Mais popular",
+  "note_setup": "* Taxa de criação cobrada uma única vez",
+  "cta": "Escolher plano",
+  "cta_custom": "Solicitar proposta",
+  "plans": [
+    {
+      "name": "Starter",
+      "desc": "Ideal para quem precisa de um site rápido, moderno e confiável sem necessidade de alterações frequentes no conteúdo.",
+      "price": "149",
+      "period": "/mês",
+      "note": "R$490 de criação (R$200 na contratação + R$290 na entrega). Contrato mínimo de 12 meses.*",
+      "featured": true,
+      "features": [
+        { "included": true, "text": "Site ONEPAGE — header + hero + sobre + serviços + contato + footer" },
+        { "included": true, "text": "Design responsivo (mobile-first)" },
+        { "included": true, "text": "Domínio .com.br incluso (registrado no cliente)" },
+        { "included": true, "text": "Hospedagem via Vercel inclusa" },
+        { "included": true, "text": "SEO básico (meta tags, OG, title, description)" },
+        { "included": true, "text": "CTA para WhatsApp" },
+        { "included": true, "text": "2 rodadas de ajustes após a entrega" },
+        { "included": true, "text": "1 atualização de conteúdo por semestre (sob solicitação)" },
+        { "included": true, "text": "Entrega em 5–7 dias úteis" },
+        { "included": false, "text": "Blog / área de notícias" },
+        { "included": false, "text": "Painel de edição" },
+        { "included": false, "text": "Relatório mensal" },
+        { "included": false, "text": "Tráfego pago" }
+      ]
+    },
+    {
+      "name": "Profissional",
+      "desc": "Para empresas que desejam uma presença digital completa com painel de edição e suporte mensal.",
+      "price": "299",
+      "period": "/mês",
+      "note": "R$1.500 de criação (R$500 na contratação + R$1.000 na entrega). 10% de desconto para pagamento à vista. Contrato mínimo de 12 meses.*",
+      "featured": false,
+      "features": [
+        { "included": true, "text": "Até 8 páginas + blog" },
+        { "included": true, "text": "Design responsivo (mobile-first)" },
+        { "included": true, "text": "Domínio .com.br incluso (registrado no cliente)" },
+        { "included": true, "text": "Hospedagem Hostinger inclusa" },
+        { "included": true, "text": "Painel de edição + 1 sessão de treinamento (1h)" },
+        { "included": true, "text": "SEO on-page estruturado" },
+        { "included": true, "text": "Integração WhatsApp + Redes Sociais" },
+        { "included": true, "text": "4 rodadas de ajustes após a entrega" },
+        { "included": true, "text": "1 atualização de conteúdo por mês (sob solicitação)" },
+        { "included": true, "text": "Relatório mensal (Google Analytics)" },
+        { "included": true, "text": "Entrega em 15–20 dias úteis" },
+        { "included": false, "text": "Tráfego pago (disponível como add-on — R$450/mês)" }
+      ]
+    },
+    {
+      "name": "Personalizado",
+      "desc": "Sistemas, APIs, integrações e soluções sob medida.",
+      "price": "?",
+      "period": "/mês",
+      "note": "Consulte valores.",
+      "featured": false,
+      "features": [
+        { "included": true, "text": "E-commerce e lojas virtuais" },
+        { "included": true, "text": "Integrações com ERPs e sistemas" },
+        { "included": true, "text": "APIs e backends personalizados" },
+        { "included": true, "text": "Dashboards e painéis administrativos" },
+        { "included": true, "text": "Suporte prioritário" },
+        { "included": true, "text": "SLA definido em contrato" },
+        { "included": true, "text": "Treinamento da equipe" }
+      ]
+    }
+  ]
+},
   
   "about": {
     "tag": "Sobre nós",

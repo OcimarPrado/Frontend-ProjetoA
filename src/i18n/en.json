@@ -104,74 +104,79 @@
     ]
   },
   "pricing": {
-    "tag": "Plans",
-    "title": "No surprises,",
-    "title_accent": " no hidden fees",
-    "sub": "Fair pricing, professional delivery, and real support. Choose the ideal plan for your business.",
-    "featured_badge": "Most popular",
-    "note_setup": "* One-time setup fee",
-    "cta": "Choose plan",
-    "cta_custom": "Request proposal",
-    "plans": [
-      {
-        "name": "Starter",
-        "desc": "Ideal for businesses that need a fast, modern, and reliable website without frequent content updates.",
-        "price": "99",
-        "period": "/month",
-        "note": "Promotional price: 12 installments of R$99 — limited offer*",
-        "featured": true,
-        "features": [
-          { "included": true, "text": "3 rounds of revisions after delivery." },
-          { "included": true, "text": "Includes website creation, hosting, and maintenance" },
-          { "included": true, "text": "One-page website including: header + hero + about + services + contact + footer" },
-          { "included": true, "text": "Responsive mobile design" },
-          { "included": true, "text": ".com.br domain included" },
-          { "included": true, "text": "Basic SEO" },
-          { "included": true, "text": "WhatsApp CTA integration" },
-          { "included": false, "text": "Blog / news area" },
-          { "included": false, "text": "Monthly reports" }
-        ]
-      },
-      {
-        "name": "Professional",
-        "desc": "For companies seeking a complete digital presence without worrying about maintenance or stability.",
-        "price": "249",
-        "period": "/month",
-        "note": "Website creation fee: R$1500, with R$300 upfront and R$1200 upon delivery. 10% discount for upfront payment via PIX, debit, or cash.*",
-        "featured": false,
-        "features": [
-          { "included": true, "text": "Includes website creation, hosting, and maintenance" },
-          { "included": true, "text": "5 rounds of revisions after delivery and dedicated support" },
-          { "included": true, "text": "Dynamic content, client dashboard, and content editing training" },
-          { "included": true, "text": "Website with up to 10 pages" },
-          { "included": true, "text": "Responsive mobile design" },
-          { "included": true, "text": "SEO strategy for paid traffic" },
-          { "included": true, "text": "Basic paid traffic management with conversion indicators" },
-          { "included": true, "text": ".com.br domain included" },
-          { "included": true, "text": "WhatsApp + social media integration" },
-          { "included": true, "text": "Blog / news area" },
-          { "included": true, "text": "Monthly traffic reports" }
-        ]
-      },
-      {
-        "name": "Custom",
-        "desc": "Custom systems, APIs, integrations, and tailored solutions.",
-        "price": "?",
-        "period": "upon request",
-        "note": "Quotation within 24h",
-        "featured": false,
-        "features": [
-          { "included": true, "text": "E-commerce and online stores" },
-          { "included": true, "text": "ERP and system integrations" },
-          { "included": true, "text": "Custom APIs and backends" },
-          { "included": true, "text": "Dashboards and admin panels" },
-          { "included": true, "text": "Priority support" },
-          { "included": true, "text": "Contract-defined SLA" },
-          { "included": true, "text": "Team training" }
-        ]
-      }
-    ]
-  },
+  "tag": "Plans",
+  "title": "No surprises,",
+  "title_accent": " no hidden fees",
+  "sub": "Fair pricing, professional delivery, and real support. Choose the ideal plan for your business.",
+  "featured_badge": "Most popular",
+  "note_setup": "* One-time setup fee",
+  "cta": "Choose plan",
+  "cta_custom": "Request proposal",
+  "plans": [
+    {
+      "name": "Starter",
+      "desc": "Ideal for businesses that need a fast, modern, and reliable website without frequent content updates.",
+      "price": "149",
+      "period": "/month",
+      "note": "R$490 setup fee (R$200 upfront + R$290 upon delivery). Minimum 12-month contract.*",
+      "featured": true,
+      "features": [
+        { "included": true, "text": "One-page website: header + hero + about + services + contact + footer" },
+        { "included": true, "text": "Responsive design (mobile-first)" },
+        { "included": true, "text": ".com.br domain included (registered under the client)" },
+        { "included": true, "text": "Hosting via Vercel included" },
+        { "included": true, "text": "Basic SEO (meta tags, OG, title, description)" },
+        { "included": true, "text": "WhatsApp CTA integration" },
+        { "included": true, "text": "2 rounds of revisions after delivery" },
+        { "included": true, "text": "1 content update per semester (upon request)" },
+        { "included": true, "text": "Delivery within 5–7 business days" },
+        { "included": false, "text": "Blog / news area" },
+        { "included": false, "text": "Content editing panel" },
+        { "included": false, "text": "Monthly reports" },
+        { "included": false, "text": "Paid traffic management" }
+      ]
+    },
+    {
+      "name": "Professional",
+      "desc": "For companies seeking a complete digital presence with an editing panel and monthly support.",
+      "price": "299",
+      "period": "/month",
+      "note": "R$1,500 setup fee (R$500 upfront + R$1,000 upon delivery). 10% discount for upfront payment. Minimum 12-month contract.*",
+      "featured": false,
+      "features": [
+        { "included": true, "text": "Up to 8 pages + blog" },
+        { "included": true, "text": "Responsive design (mobile-first)" },
+        { "included": true, "text": ".com.br domain included (registered under the client)" },
+        { "included": true, "text": "Hostinger hosting included" },
+        { "included": true, "text": "Editing panel + 1 training session (1h)" },
+        { "included": true, "text": "Structured on-page SEO" },
+        { "included": true, "text": "WhatsApp + social media integration" },
+        { "included": true, "text": "4 rounds of revisions after delivery" },
+        { "included": true, "text": "1 content update per month (upon request)" },
+        { "included": true, "text": "Monthly report (Google Analytics)" },
+        { "included": true, "text": "Delivery within 15–20 business days" },
+        { "included": false, "text": "Paid traffic management (available as add-on — R$450/month)" }
+      ]
+    },
+    {
+      "name": "Custom",
+      "desc": "Custom systems, APIs, integrations, and tailored solutions.",
+      "price": "600",
+      "period": "/month",
+      "note": "Setup from R$2,500. Quotation within 24h.",
+      "featured": false,
+      "features": [
+        { "included": true, "text": "E-commerce and online stores" },
+        { "included": true, "text": "ERP and system integrations" },
+        { "included": true, "text": "Custom APIs and backends" },
+        { "included": true, "text": "Dashboards and admin panels" },
+        { "included": true, "text": "Priority support" },
+        { "included": true, "text": "Contract-defined SLA" },
+        { "included": true, "text": "Team training" }
+      ]
+    }
+  ]
+},
 
 
   "about": {
