@@ -104,7 +104,7 @@
     ]
   },
 
-  
+
   "pricing": {
   "tag": "Plans",
   "title": "Transparent ",
@@ -144,7 +144,7 @@
       "price_monthly": "299",
       "setup_label": "One-time setup fee",
       "monthly_label": "/mo",
-      "note": "$1,500 setup fee ($500 upfront + $1,000 upon delivery). 10% cash discount. Maintenance: $299/mo.",
+      "note": "$1,500 setup fee ($500 upfront + $1,000 upon delivery). 10% cash discount. Maintenance: $299/mo. Min. 12-month contract.",
       "featured": true,
       "features": [
         { "included": true, "text": "Up to 8 Pages + Integrated Blog" },
