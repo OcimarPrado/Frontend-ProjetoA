@@ -8,8 +8,10 @@ interface PlanFeature {
 interface Plan {
   name: string;
   desc: string;
-  price: string;
-  period: string;
+  price_setup: string;        // Novo campo
+  price_monthly: string;      // Novo campo
+  setup_label: string;        // Novo campo
+  monthly_label: string;      // Novo campo
   note: string;
   featured: boolean;
   features: PlanFeature[];
@@ -81,21 +83,34 @@ export default function Pricing() {
                 </div>
               </div>
 
+              {/* Bloco de Preço Otimizado */}
               <div className="pricing-price">
-                <div className="pricing-amount">
-                  {plan.price !== '?' && (
-                    <span className="pricing-currency">
-                      R$
+                <div className="pricing-amount-block">
+                  
+                  {/* renderização do SETUP (Taxa Única) */}
+                  <div className="pricing-setup">
+                    {plan.price_setup !== '?' && (
+                      <span className="pricing-currency">R$</span>
+                    )}
+                    <span className="pricing-value-setup">
+                      {plan.price_setup}
                     </span>
+                    <span className="pricing-label-setup">
+                      {plan.setup_label}
+                    </span>
+                  </div>
+
+                  {/* Renderização do MENSAL (Recorrência) - Esconde se não houver monthly_label */}
+                  {plan.monthly_label && (
+                    <div className="pricing-monthly">
+                      <span className="pricing-value-monthly">
+                        + R$ {plan.price_monthly}
+                      </span>
+                      <span className="pricing-label-monthly">
+                        {plan.monthly_label}
+                      </span>
+                    </div>
                   )}
-
-                  <span className="pricing-value">
-                    {plan.price}
-                  </span>
-
-                  <span className="pricing-period">
-                    {plan.period}
-                  </span>
                 </div>
 
                 <div className="pricing-note">
@@ -131,7 +146,7 @@ export default function Pricing() {
                     : 'btn-outline'
                 }`}
               >
-                {plan.price === '?'
+                {plan.price_setup === '?'
                   ? pricing.cta_custom
                   : pricing.cta}
               </button>
