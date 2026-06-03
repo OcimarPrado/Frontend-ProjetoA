@@ -3,314 +3,357 @@
     "services": "Servicios",
     "portfolio": "Portafolio",
     "pricing": "Precios",
-    "about": "Sobre nosotros",
+    "about": "Nosotros",
     "contact": "Contacto",
     "cta": "Iniciar Proyecto"
   },
-
   "hero": {
     "tag": "Especialistas en Presencia Digital",
     "headline1": "Creación de Sitios Web",
     "headline2": "Profesionales",
     "headline3": "y Automatización de Negocios.",
-    "sub": "Desarrollamos sitios web de alto rendimiento, chatbots inteligentes y automatizaciones que transforman visitantes en clientes.",
+    "sub": "Desarrollamos sitios web de alto rendimiento, chatbots inteligentes y automatizaciones que convierten visitantes en clientes.",
     "cta_primary": "Comenzar mi proyecto",
     "cta_secondary": "Ver casos de éxito",
-
     "stat_projects_num": "Top 1",
     "stat_projects_label": "Rendimiento SEO",
-
     "stat_uptime_num": "100%",
     "stat_uptime_label": "Enfoque en Conversión",
-
     "stat_support_num": "API",
     "stat_support_label": "Integraciones Listas",
-
     "device_url": "ocyan-tech.com.br",
-
-    "badge_title": "Tecnología de Punta"
+    "badge_title": "Tecnología de Vanguardia"
   },
-
   "services": {
     "tag": "Qué hacemos",
-
-    "title": "Todo lo que tu sitio",
-    "title_accent": "necesita",
-
-    "sub": "Desde cero hasta el lanzamiento. Nos encargamos de cada etapa para que te enfoques en lo que importa - tu empresa.",
-
+    "title": "Soluciones digitales para",
+    "title_accent": "impulsar negocios",
+    "sub": "Creamos sitios web profesionales, sistemas a medida, soluciones con inteligencia artificial y plataformas para la automatización de procesos empresariales e industriales.",
     "items": [
       {
         "number": "01",
-
-        "icon": "🖥️",
-
-        "name": "Creación de Sitios Web",
-
-        "desc": "Sitios profesionales, responsivos y optimizados para buscadores. Desarrollados con tecnología moderna y enfocados en resultados.",
-
+        "icon": "🌐",
+        "name": "Sitios Web y Landing Pages",
+        "desc": "Desarrollamos sitios modernos, rápidos y responsivos para fortalecer tu presencia digital, atraer clientes y generar oportunidades de negocio.",
         "features": [
-          "Diseño exclusivo y responsivo",
+          "Diseño profesional y responsivo",
           "Optimización para Google (SEO)",
           "Integración con WhatsApp y redes sociales",
-          "Entrega en hasta 15 días hábiles"
+          "Alto rendimiento y seguridad"
         ]
       },
-
       {
         "number": "02",
-
-        "icon": "☁️",
-
-        "name": "Hosting Gestionado",
-
-        "desc": "Servidor configurado, SSL incluido, copias de seguridad automáticas y dominio administrado. No necesitas saber nada de tecnología.",
-
+        "icon": "🤖",
+        "name": "IA y Automatización",
+        "desc": "Aplicamos inteligencia artificial y automatización para reducir tareas manuales, mejorar la atención al cliente y aumentar la eficiencia operativa.",
         "features": [
-          "SSL gratis",
-          "Backups automáticos diarios",
-          "Dominio .com.br incluido",
-          "Monitoreo 24/7"
+          "Chatbots inteligentes",
+          "Automatización de procesos",
+          "Sistemas expertos industriales",
+          "Dashboards e indicadores en tiempo real"
         ]
       },
-
       {
         "number": "03",
-
-        "icon": "🔧",
-
-        "name": "Mantenimiento y Soporte",
-
-        "desc": "Actualizaciones, correcciones y mejoras continuas. Tu sitio siempre seguro, actualizado y funcionando.",
-
+        "icon": "💻",
+        "name": "Sistemas y Plataformas",
+        "desc": "Creamos sistemas web personalizados para gestión, ventas, operaciones y control de procesos, adaptados a la realidad de cada empresa.",
         "features": [
-          "Actualizaciones de contenido",
-          "Soporte vía WhatsApp",
-          "Informe mensual de accesos",
-          "Renovación automática de SSL"
+          "Paneles administrativos completos",
+          "Control de usuarios y permisos",
+          "Integración con APIs y servicios externos",
+          "Arquitectura escalable y segura"
         ]
       }
     ]
   },
-
   "portfolio": {
     "tag": "Proyectos",
-
     "title": "Trabajos",
     "title_accent": "recientes",
-
     "sub": "Tecnología real aplicada en proyectos publicados.",
-
-    "link": "Ver proyecto →",
-
+    "link1": "Ver proyecto →",
+    "link2": "Quiero mi SITIO WEB →",
     "items": [
       {
         "icon": "🏪",
-
-        "tags": ["Sitio"],
-
+        "tags": [
+          "Sitio Web"
+        ],
         "title": "Sitio Institucional",
-
-        "desc": "Algunos ejemplos de clientes atendidos en asociación con la agencia prósite.poa.br .",
-
-        "link": "#",
-
+        "desc": "Algunos ejemplos de clientes atendidos en asociación con la agencia prosite.poa.br.",
+        "link2": "#contact",
         "images": [
           {
             "src": "./mulhergauchatour.png",
             "label": "Mulher Gaúcha Tour"
           },
-
           {
             "src": "./mffconsultoria.png",
             "label": "MFF Consultoria"
           },
-
           {
             "src": "/geomicro.png",
             "label": "GeoMicro"
           }
         ]
       },
-
       {
         "icon": "🤖",
-
-        "tags": ["SaaS", "IA"],
-
-        "title": "ChatBot",
-
-        "desc": "Chatbot con inteligencia artificial para atención automatizada. Integrado con múltiples canales y autenticación segura.",
-
-        "link": "https://assistente-inteligente-production.up.railway.app/"
+        "video": "/videos/CyanBot-demo.mp4",
+        "tags": [
+          "Automatización",
+          "Chatbot"
+        ],
+        "title": "Chatbot configurable según tu negocio para atención inteligente al cliente.",
+        "desc": "Automatización de atención vía webChat, con respuestas inteligentes e integración con sistema de agendamiento.",
+        "link1": "https://assistente-inteligente-production.up.railway.app/"
       },
-
       {
         "icon": "⚙️",
-
-        "tags": ["Sistema", "Industria"],
-
+        "tags": [
+          "Sistema",
+          "Industria"
+        ],
         "title": "Simulador Boldrini",
-
-        "desc": "Sistema especialista industrial para prensa rebordeadora. Codifica 3 años de conocimiento operativo en lógica computacional.",
-
-        "link": "https://github.com"
+        "desc": "Sistema experto industrial para prensa bordeadora. Codifica 3 años de conocimiento operativo en lógica computacional.",
+        "link": "https://github.com",
+        "ativo": false
+      },
+      {
+        "icon": "🛒",
+        "tags": [
+          "Sistema",
+          "Delivery"
+        ],
+        "title": "Sistema de Delivery",
+        "desc": "Sistema de delivery para restaurante, con panel administrativo completo — productos | clientes | colaboradores | métricas — y control de pedidos en tiempo real.",
+        "link1": "https://delivery-painel.vercel.app/",
+        "video": "/videos/delivery.mp4"
       }
     ]
   },
-
   "pricing": {
-  "tag": "Planes",
-  "title": "Inversión ",
-  "title_accent": "transparente",
-  "sub": "Sin sorpresas. Estructura profesional, soporte real y enfoque en la conversión para su negocio.",
-  "featured_badge": "Más popular",
-  "note_setup": "* Tarifa de configuración cobrada una sola vez al contratar.",
-  "cta": "Elegir plan",
-  "cta_custom": "Solicitar propuesta",
-  "plans": [
-    {
-      "name": "Starter",
-      "desc": "Ideal para landing pages rápidas y sitios web institucionales de alto rendimiento que no requieren blog.",
-      "price_setup": "490",
-      "price_monthly": "149",
-      "setup_label": "Pago único de configuración",
-      "monthly_label": "/mes",
-      "note": "490€ de configuración (200€ al contratar + 290€ en la entrega). Mantenimiento y Hospedaje: 149€/mes. Contrato mín. 12 meses.",
-      "featured": false,
-      "features": [
-        { "included": true, "text": "Sitio web ONEPAGE — Estructura completa de conversión" },
-        { "included": true, "text": "Diseño responsivo (Mobile-First)" },
-        { "included": true, "text": "Dominio .com.br incluido en el primer año" },
-        { "included": true, "text": "Hospedaje Profesional de Alto Rendimiento" },
-        { "included": true, "text": "SEO Básico y Optimización de Rendimiento" },
-        { "included": true, "text": "CTA Inteligente para WhatsApp" },
-        { "included": true, "text": "2 rondas de ajustes después de la entrega" },
-        { "included": true, "text": "Entrega acelerada (5–7 días hábiles)" },
-        { "included": false, "text": "Blog / Panel de Edición" },
-        { "included": false, "text": "Informe mensual detallado" }
-      ]
-    },
-    {
-      "name": "Profesional",
-      "desc": "La solución completa para empresas que necesitan un blog, múltiples páginas y autonomía para editar contenido.",
-      "price_setup": "1.500",
-      "price_monthly": "299",
-      "setup_label": "Pago único de configuración",
-      "monthly_label": "/mes",
-      "note": "1.500€ de configuración (500€ al contratar + 1.000€ en la entrega). 10% de desc. por pago al contado. Mantenimiento: 299€/mes. Contrato mín. 12 meses.",
-      "featured": true,
-      "features": [
-        { "included": true, "text": "Hasta 8 páginas + Blog Integrado" },
-        { "included": true, "text": "Panel Autoadministrable (Tú mismo editas)" },
-        { "included": true, "text": "Capacitación de uso del panel (1h)" },
-        { "included": true, "text": "Hospedaje Hostinger incluido" },
-        { "included": true, "text": "SEO On-Page estructurado" },
-        { "included": true, "text": "Integración con Redes Sociales y Píxel" },
-        { "included": true, "text": "2 rondas de ajustes después de la entrega" },
-        { "included": true, "text": "Informe mensual (Google Analytics)" },
-        { "included": true, "text": "Soporte técnico prioritario" },
-        { "included": true, "text": "Entrega en 15–20 días hábiles" }
-      ]
-    },
-    {
-      "name": "Personalizado",
-      "desc": "Sistemas SaaS, APIs, Automatizaciones con IA y soluciones complejas a la medida.",
-      "price_setup": "?",
-      "price_monthly": "Variable",
-      "setup_label": "Bajo consulta",
-      "monthly_label": "",
-      "note": "Precios definidos tras el análisis del alcance técnico.",
-      "featured": false,
-      "features": [
-        { "included": true, "text": "Agentes de IA y Chatbots inteligentes" },
-        { "included": true, "text": "Sistemas SaaS Multitenant" },
-        { "included": true, "text": "Integraciones con ERPs y APIs externas" },
-        { "included": true, "text": "E-commerce y Tiendas Virtuales complejas" },
-        { "included": true, "text": "Backends y Bases de Datos escalables" },
-        { "included": true, "text": "Cuadros de Mando (Dashboards) Administrativos" },
-        { "included": true, "text": "Soporte y SLA definido por contrato" }
-      ]
-    }
-  ]
-}, 
-
-  "about": {
-  "tag": "Sobre nosotros",
-
-  "title": "Tecnología real",
-  "title_accent": " soluciones que generan resultados",
-  "title2": "",
-
-  "text1": "Ocyan-Tech desarrolla sitios web profesionales, sistemas web y automatizaciones inteligentes enfocadas en rendimiento, conversión y presencia digital. No entregamos solo páginas bonitas — creamos herramientas que ayudan a las empresas a crecer en el entorno digital.",
-
-  "text2": "Combinamos experiencia técnica, visión estratégica y desarrollo moderno para construir soluciones rápidas, seguras y escalables. Cada proyecto se desarrolla pensando en usabilidad, SEO, identidad visual y resultados comerciales.",
-
-  "highlights": [
-    {
-      "icon": "⚡",
-      "title": "Entrega rápida y organizada",
-      "text": "Proyectos con cronograma definido, comunicación clara y desarrollo ágil."
-    },
-
-    {
-      "icon": "🛡️",
-      "title": "Código limpio y estructura profesional",
-      "text": "Sitios desarrollados con tecnologías modernas, enfocados en seguridad, rendimiento y estabilidad."
-    },
-
-    {
-      "icon": "📱",
-      "title": "Soporte humano y acompañamiento real",
-      "text": "Atención directa vía WhatsApp durante todas las etapas del proyecto."
-    }
-  ],
-
-  "cards": [
-    {
-      "icon": "🏗️",
-      "title": "22+ años de experiencia técnica",
-      "text": "Experiencia industrial, lógica operacional y desarrollo de software aplicado."
-    },
-
-    {
-      "icon": "🚀",
-      "title": "Proyectos reales en producción",
-      "text": "Sitios web, sistemas y soluciones digitales funcionando en entornos reales."
-    },
-
-    {
-      "icon": "🤝",
-      "title": "Proceso transparente",
-      "text": "Alcance alineado, comunicación objetiva y seguimiento continuo."
-    },
-
-    {
-      "icon": "📊",
-      "title": "Enfoque en crecimiento",
-      "text": "Cada solución se construye pensando en visibilidad, conversión y autoridad digital."
-    }
-  ]
-
+    "tag": "Planes",
+    "title": "Inversión ",
+    "title_accent": "transparente",
+    "sub": "Sin sorpresas. Estructura profesional, soporte real y enfoque en conversión para tu negocio.",
+    "featured_badge": "Más popular",
+    "note_setup": "* Tarifa de configuración cobrada una única vez al contratar.",
+    "cta": "Elegir plan",
+    "cta_custom": "Solicitar propuesta",
+    "plans": [
+      {
+        "name": "Starter",
+        "desc": "Ideal para landing pages rápidas y sitios institucionales de alto rendimiento que no requieren blog.",
+        "price_setup": " 490",
+        "price_monthly": "149",
+        "setup_label": " Tarifa única de configuración",
+        "monthly_label": "/mes",
+        "note": "R$490 de configuración (R$200 al contratar + R$290 en la entrega). Mantenimiento y Hosting: R$149/mes. Contrato mín. 12 meses.",
+        "featured": false,
+        "features": [
+          {
+            "included": true,
+            "text": "Sitio ONEPAGE — estructura completa de conversión"
+          },
+          {
+            "included": true,
+            "text": "Diseño responsivo (Mobile-First)"
+          },
+          {
+            "included": true,
+            "text": "Dominio .com.br incluido el primer año"
+          },
+          {
+            "included": true,
+            "text": "Hosting profesional de alto rendimiento"
+          },
+          {
+            "included": true,
+            "text": "SEO básico y optimización de rendimiento"
+          },
+          {
+            "included": true,
+            "text": "CTA inteligente para WhatsApp"
+          },
+          {
+            "included": true,
+            "text": "2 rondas de ajustes tras la entrega"
+          },
+          {
+            "included": true,
+            "text": "Entrega acelerada (5–7 días hábiles)"
+          },
+          {
+            "included": false,
+            "text": "Blog / Panel de edición de contenido"
+          },
+          {
+            "included": false,
+            "text": "Informe mensual detallado"
+          }
+        ]
+      },
+      {
+        "name": "Profesional",
+        "desc": "La solución completa para empresas que necesitan blog, múltiples páginas y autonomía para editar su contenido.",
+        "price_setup": " 1.500",
+        "price_monthly": " 299",
+        "setup_label": " Tarifa única de configuración",
+        "monthly_label": "/mes",
+        "note": "R$1.500 de configuración (R$500 al contratar + R$1.000 en la entrega). 10% de desc. pago al contado. Mantenimiento: R$299/mes. Contrato mín. 12 meses.",
+        "featured": true,
+        "features": [
+          {
+            "included": true,
+            "text": "Hasta 8 páginas + Blog integrado"
+          },
+          {
+            "included": true,
+            "text": "Panel autogestionable (tú mismo editas)"
+          },
+          {
+            "included": true,
+            "text": "Capacitación de uso del panel (1h)"
+          },
+          {
+            "included": true,
+            "text": "Hosting Hostinger incluido"
+          },
+          {
+            "included": true,
+            "text": "SEO on-page estructurado"
+          },
+          {
+            "included": true,
+            "text": "Integración con redes sociales y Pixel"
+          },
+          {
+            "included": true,
+            "text": "2 rondas de ajustes tras la entrega"
+          },
+          {
+            "included": true,
+            "text": "Informe mensual (Google Analytics)"
+          },
+          {
+            "included": true,
+            "text": "Soporte técnico prioritario"
+          },
+          {
+            "included": true,
+            "text": "Entrega en 15–20 días hábiles"
+          }
+        ]
+      },
+      {
+        "name": "Personalizado",
+        "desc": "Sistemas SaaS, APIs, automatizaciones con IA y soluciones complejas a medida.",
+        "price_setup": "?",
+        "price_monthly": "Variable",
+        "setup_label": " Bajo consulta",
+        "monthly_label": "",
+        "note": "Valores definidos tras análisis de alcance técnico.",
+        "featured": false,
+        "features": [
+          {
+            "included": true,
+            "text": "Agentes de IA y chatbots inteligentes"
+          },
+          {
+            "included": true,
+            "text": "Sistemas SaaS multitenant"
+          },
+          {
+            "included": true,
+            "text": "Integraciones con ERPs y APIs externas"
+          },
+          {
+            "included": true,
+            "text": "E-commerce y tiendas online complejas"
+          },
+          {
+            "included": true,
+            "text": "Backends y bases de datos escalables"
+          },
+          {
+            "included": true,
+            "text": "Dashboards administrativos"
+          },
+          {
+            "included": true,
+            "text": "Soporte y SLA definido en contrato"
+          }
+        ]
+      }
+    ]
   },
-
+  "about": {
+    "tag": "Nosotros",
+    "title": "Tecnología real,",
+    "title_accent": " soluciones que generan resultados",
+    "title2": "",
+    "text1": "Ocyan-Tech desarrolla sitios web profesionales, sistemas web y automatizaciones inteligentes con foco en rendimiento, conversión y presencia digital. No solo entregamos páginas bonitas — creamos herramientas que ayudan a las empresas a crecer en el entorno digital.",
+    "text2": "Combinamos experiencia técnica, visión estratégica y desarrollo moderno para construir soluciones rápidas, seguras y escalables. Cada proyecto se desarrolla pensando en usabilidad, SEO, identidad visual y resultados comerciales.",
+    "highlights": [
+      {
+        "icon": "⚡",
+        "title": "Entrega rápida y organizada",
+        "text": "Proyectos con cronograma definido, comunicación clara y desarrollo ágil."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Código limpio y estructura profesional",
+        "text": "Sitios desarrollados con tecnologías modernas, enfocados en seguridad, rendimiento y estabilidad."
+      },
+      {
+        "icon": "📱",
+        "title": "Soporte humano y seguimiento real",
+        "text": "Atención directa por WhatsApp en todas las etapas del proyecto."
+      }
+    ],
+    "cards": [
+      {
+        "icon": "🏗️",
+        "title": "22+ años de experiencia técnica",
+        "text": "Experiencia industrial, lógica operativa y desarrollo de software aplicado."
+      },
+      {
+        "icon": "🚀",
+        "title": "Proyectos reales en producción",
+        "text": "Sitios, sistemas y soluciones digitales funcionando en entornos reales."
+      },
+      {
+        "icon": "🤝",
+        "title": "Proceso transparente",
+        "text": "Alcance alineado, comunicación objetiva y seguimiento continuo."
+      },
+      {
+        "icon": "📊",
+        "title": "Enfoque en crecimiento",
+        "text": "Cada solución se construye pensando en visibilidad, conversión y autoridad digital."
+      }
+    ]
+  },
   "contact": {
     "tag": "Contacto",
     "title": "Construyamos",
     "title_accent": " algo juntos",
-
     "sub": "Completa el formulario o contáctanos directamente por WhatsApp. Respondemos en hasta 24 horas.",
-
     "methods": [
       {
         "icon": "📱",
         "label": "WhatsApp",
-        "value": "+55 (51) 9 8673-0107"
+        "value": "+55 (51) 9 8673-0107",
+        "link": "https://wa.me/5551986730107?text=Hola%2C%20vine%20del%20sitio%20de%20Ocyan-Tech%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20los%20servicios%20de%20creaci%C3%B3n%20de%20sitios%20web."
       },
       {
         "icon": "📧",
-        "label": "Correo",
-        "value": "contato@ocyan-tech.com.br"
+        "label": "E-mail",
+        "value": "contato@ocyan-tech.com.br",
+        "link": "mailto:contato@ocyan-tech.com.br/?subject=Contacto%20v%C3%ADa%20sitio%20Ocyan-Tech&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20los%20servicios%20de%20creaci%C3%B3n%20de%20sitios%20web."
       },
       {
         "icon": "📍",
@@ -318,17 +361,13 @@
         "value": "Canoas, RS — Atendemos todo Brasil"
       }
     ],
-
     "form": {
       "name_label": "Tu nombre",
-      "name_placeholder": "Juan Pérez",
-
-      "email_label": "Correo electrónico",
+      "name_placeholder": "Juan García",
+      "email_label": "E-mail",
       "email_placeholder": "juan@empresa.com",
-
       "service_label": "Servicio de interés",
       "service_placeholder": "Selecciona...",
-
       "service_options": [
         "Creación de sitio web",
         "Hosting + Mantenimiento",
@@ -336,38 +375,29 @@
         "Sistema o API personalizada",
         "Otro"
       ],
-
       "message_label": "Cuéntanos un poco sobre tu proyecto",
-      "message_placeholder": "Tengo un negocio de... necesito un sitio web que...",
-
+      "message_placeholder": "Tengo un negocio de... necesito un sitio que...",
       "submit": "Enviar mensaje",
       "submitting": "Enviando...",
-
       "success_title": "¡Mensaje enviado!",
-      "success_sub": "Nos pondremos en contacto dentro de 24 horas.",
+      "success_sub": "Nos pondremos en contacto en hasta 24 horas.",
       "success_btn": "Enviar otro mensaje"
     }
   },
-
   "cta_banner": {
     "title": "¿Listo para tener un sitio web",
-    "title_accent": " que trabaje para ti?",
-
-    "sub": "Habla con nosotros hoy mismo. Presupuesto gratuito en hasta 24 horas.",
-
+    "title_accent": " que trabaje por ti?",
+    "sub": "Contáctanos hoy mismo. Presupuesto gratuito en hasta 24 horas.",
     "cta_primary": "Solicitar presupuesto",
     "cta_secondary": "Ver planes"
   },
-
   "footer": {
     "brand_desc": "Creación, hosting y mantenimiento de sitios web con tecnología real y soporte humano. Canoas, RS.",
-
     "col_services": "Servicios",
     "col_company": "Empresa",
-
     "links_services": [
       {
-        "label": "Creación de Sitios Web",
+        "label": "Creación de Sitios",
         "href": "#services"
       },
       {
@@ -383,7 +413,6 @@
         "href": "#pricing"
       }
     ],
-
     "links_company": [
       {
         "label": "Portafolio",
@@ -394,7 +423,7 @@
         "href": "#pricing"
       },
       {
-        "label": "Sobre nosotros",
+        "label": "Nosotros",
         "href": "#about"
       },
       {
@@ -402,10 +431,8 @@
         "href": "#contact"
       }
     ],
-
     "copyright": "© {year} Ocyan-Tech. Hecho por",
     "copyright_end": " Canoas - Brasil.",
-
     "privacy": "Privacidad",
     "terms": "Términos"
   }
