@@ -95,64 +95,52 @@
 
   "portfolio": {
     "tag": "Projetos",
-
     "title": "Trabalhos",
     "title_accent": "recentes",
-
     "sub": "Tecnologia real aplicada em projetos publicados.",
-
     "link": "Ver projeto →",
-
-    "items": [
-      {
+    "items": [{ 
         "icon": "🏪",
-
         "tags": ["Site"],
-
         "title": "Site Institucional",
-
         "desc": "Alguns exemplos de clientes atendidos em parceria com a agência prosite.poa.br .",
-
         "link": "#",
-
         "images": [
-          {
-            "src": "./mulhergauchatour.png",
-            "label": "Mulher Gaúcha Tour"
-          },
-
-          {
-            "src": "./mffconsultoria.png",
-            "label": "MFF Consultoria"
-          },
-
-          {
-            "src": "/geomicro.png",
-            "label": "GeoMicro"
-          }
+          {  "src": "./mulhergauchatour.png", "label": "Mulher Gaúcha Tour" },
+          {  "src": "./mffconsultoria.png", "label": "MFF Consultoria" },
+          {  "src": "/geomicro.png", "label": "GeoMicro" }
         ]
       },
-      
+
       {
         "icon": "🤖",
-        "video": "/videos/ocyanbot-demo.mp4", 
-        "tags": ["SaaS", "IA"],
-        "title": "ChatBot",
-        "desc": "Chatbot com inteligência artificial para atendimento automatizado. Integrado com múltiplos canais e autenticação segura.",
+        "video": "/videos/CyanBot-demo.mp4",
+        "tags": ["Automação", "Chatbot"],
+        "title": "Chatbot configurável de acordo com seu negócio para atendimento inteligente.",
+        "desc": "Automação de atendimento via webChat, com respostas inteligentes e integração com sistema de agendamento.",
         "link": "https://assistente-inteligente-production.up.railway.app/"
       },
 
-      {
+    {
         "icon": "⚙️",
-
         "tags": ["Sistema", "Indústria"],
-
         "title": "Simulador Boldrini",
-
         "desc": "Sistema especialista industrial para prensa rebordeadora. Codifica 3 anos de conhecimento operacional em lógica computacional.",
-
-        "link": "https://github.com"
+        "link": "https://github.com",
+        "ativo": false
+      },
+      
+      {
+        "icon": "🛒",
+        "tags": ["Sistema", "Delivery"],
+        "title": "Sistema de Delivery",
+        "desc": "Sistema de delivery para restaurante, com painel administrativo completo - produtos | clientes | colaboradores | métricas -  e controle de pedidos em tempo real.",
+        "link": "https://delivery-painel.vercel.app/",
+        "video":"/videos/delivery.mp4"
+          
+        
       }
+
     ]
   },
 

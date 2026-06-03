@@ -947,8 +947,8 @@ button {
 .portfolio-video {
   width: 100%;
   height: 100%;
-  object-fit: cover;     /* Preenche todo o espaço cortando as sobras, sem distorcer */
-  object-position: center; /* Mantém o centro do vídeo sempre visível */
+  object-fit: contain;     /* Preenche todo o espaço cortando as sobras, sem distorcer */
+  object-position: center center; /* Mantém o centro do vídeo sempre visível */
 }
 
 /* ── PREÇOS ─────────────────────────────────────────────────── */
