@@ -44,7 +44,7 @@ export default function Footer() {
               in
             </a>
             <a
-              href="https://wa.me/5551986730108"
+              href="https://wa.me/5551986730108?text=Olá%2c%20vim%20do%20site%20Ocyan-Tech%2c%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Ocyan-Tech."
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
