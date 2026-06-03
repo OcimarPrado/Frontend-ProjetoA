@@ -924,6 +924,12 @@ button {
   margin-top: 0.5rem;
   transition: gap var(--transition);
 }
+ 
+
+.portfolio-link.secondary {
+  color: var(--orange);
+}
+
 
 .portfolio-link:hover {
   gap: 0.65rem;
@@ -1317,6 +1323,56 @@ button {
   gap: 1.25rem;
 }
 
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  background: var(--bg-surface);   /* ← escuro, igual ao .form-input */
+  color: var(--text);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px var(--teal-dim);
+}
+
+/* placeholder */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(226, 232, 240, 0.5);
+}
+
+/* foco */
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #00e5c6;
+  box-shadow: 0 0 0 2px rgba(0, 229, 198, 0.12);
+}
+
+/* select precisa disso em muitos browsers */
+.contact-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -1374,7 +1430,7 @@ button {
 
 .form-textarea {
   resize: vertical;
-  min-height: 110px;
+  min-height: 200px;
   line-height: 1.65;
 }
 

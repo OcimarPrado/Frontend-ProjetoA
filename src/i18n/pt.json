@@ -104,17 +104,19 @@
     "title": "Trabalhos",
     "title_accent": "recentes",
     "sub": "Tecnologia real aplicada em projetos publicados.",
-    "link": "Ver projeto →",
-    "items": [{ 
+    "link1": "Ver projeto →",
+    "link2": "Quero meu SITE →",
+    "items": [
+      {
         "icon": "🏪",
         "tags": ["Site"],
         "title": "Site Institucional",
         "desc": "Alguns exemplos de clientes atendidos em parceria com a agência prosite.poa.br .",
-        "link": "#",
+        "link2": "#contact",
         "images": [
-          {  "src": "./mulhergauchatour.png", "label": "Mulher Gaúcha Tour" },
-          {  "src": "./mffconsultoria.png", "label": "MFF Consultoria" },
-          {  "src": "/geomicro.png", "label": "GeoMicro" }
+          { "src": "./mulhergauchatour.png", "label": "Mulher Gaúcha Tour" },
+          { "src": "./mffconsultoria.png", "label": "MFF Consultoria" },
+          { "src": "/geomicro.png", "label": "GeoMicro" }
         ]
       },
 
@@ -124,7 +126,7 @@
         "tags": ["Automação", "Chatbot"],
         "title": "Chatbot configurável de acordo com seu negócio para atendimento inteligente.",
         "desc": "Automação de atendimento via webChat, com respostas inteligentes e integração com sistema de agendamento.",
-        "link": "https://assistente-inteligente-production.up.railway.app/"
+        "link1": "https://assistente-inteligente-production.up.railway.app/"
       },
 
     {
@@ -141,7 +143,7 @@
         "tags": ["Sistema", "Delivery"],
         "title": "Sistema de Delivery",
         "desc": "Sistema de delivery para restaurante, com painel administrativo completo - produtos | clientes | colaboradores | métricas -  e controle de pedidos em tempo real.",
-        "link": "https://delivery-painel.vercel.app/",
+        "link1": "https://delivery-painel.vercel.app/",
         "video":"/videos/delivery.mp4"
           
         
@@ -283,26 +285,28 @@
       }
     ]
   },
-
+  
   "contact": {
-    "tag": "Contato",
-    "title": "Vamos construir",
-    "title_accent": " algo juntos",
+  "tag": "Contato",
+  "title": "Vamos construir",
+  "title_accent": " algo juntos",
+  "sub": "Preencha o formulário ou entre em contato diretamente pelo WhatsApp. Respondemos em até 24 horas.",
 
-    "sub": "Preencha o formulário ou entre em contato diretamente pelo WhatsApp. Respondemos em até 24 horas.",
-
-    "methods": [
-      {
-        "icon": "📱",
-        "label": "WhatsApp",
-        "value": "+55 (51) 9 8673-0107"
-      },
-      {
-        "icon": "📧",
-        "label": "E-mail",
-        "value": "contato@ocyan-tech.com.br"
-      },
-      {
+  "methods": [
+    {
+      "icon": "📱",
+      "label": "WhatsApp",
+      "value": "+55 (51) 9 8673-0107",
+      "link": "https://wa.me/5551986730107?text=Olá%2c%20vim%20do%20site%20Ocyan-Tech%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20criação%20de%20SITES."
+    },
+    {
+      "icon": "📧",
+      "label": "E-mail",
+      "value": "contato@ocyan-tech.com.br",
+      "link": "mailto:contato@ocyan-tech.com.br"
+    },
+    {
+      
         "icon": "📍",
         "label": "Localização",
         "value": "Canoas, RS — Atendemos todo o Brasil"
