@@ -31,67 +31,74 @@
     "badge_title": "Tecnologia de Ponta"
   },
 
-  "services": {
-    "tag": "O que fazemos",
+  
+"services": {
+"tag": "O que fazemos",
 
-    "title": "Tudo o que o seu site",
-    "title_accent": "precisa",
 
-    "sub": "Do zero ao lançamento. Cuidamos de cada etapa para você focar no que importa - sua empresa.",
+"title": "Soluções digitais para",
+"title_accent": "impulsionar negócios",
 
-    "items": [
-      {
-        "number": "01",
+"sub": "Criamos sites profissionais, sistemas sob medida, soluções com inteligência artificial e plataformas para automação de processos empresariais e industriais.",
 
-        "icon": "🖥️",
+"items": [
+  {
+    "number": "01",
 
-        "name": "Criação de Sites",
+    "icon": "🌐",
 
-        "desc": "Sites profissionais, responsivos e otimizados para buscadores. Desenvolvidos com tecnologia moderna e focados em resultados.",
+    "name": "Sites e Landing Pages",
 
-        "features": [
-          "Design exclusivo e responsivo",
-          "Otimização para Google (SEO)",
-          "Integração com WhatsApp e redes sociais",
-          "Entrega em até 15 dias úteis"
-        ]
-      },
+    "desc": "Desenvolvemos sites modernos, rápidos e responsivos para fortalecer sua presença digital, atrair clientes e gerar oportunidades de negócio.",
 
-      {
-        "number": "02",
-
-        "icon": "☁️",
-
-        "name": "Hospedagem Gerenciada",
-
-        "desc": "Servidor configurado, SSL incluso, backups automáticos e domínio administrado. Você não precisa entender nada de tecnologia.",
-
-        "features": [
-          "SSL grátis",
-          "Backups automáticos diários",
-          "Domínio .com.br incluso",
-          "Monitoramento 24/7"
-        ]
-      },
-
-      {
-        "number": "03",
-
-        "icon": "🔧",
-
-        "name": "Manutenção e Suporte",
-
-        "desc": "Atualizações, correções e melhorias contínuas. Seu site sempre seguro, atualizado e funcionando.",
-
-        "features": [
-          "Atualizações de conteúdo",
-          "Suporte via WhatsApp",
-          "Relatório mensal de acessos",
-          "Renovação automática de SSL"
-        ]
-      }
+    "features": [
+      "Design profissional e responsivo",
+      "Otimização para Google (SEO)",
+      "Integração com WhatsApp e redes sociais",
+      "Alta performance e segurança"
     ]
   },
+
+  {
+    "number": "02",
+
+    "icon": "💻",
+
+    "name": "Sistemas e Plataformas",
+
+    "desc": "Criamos sistemas web personalizados para gestão, vendas, operações e controle de processos, adaptados à realidade de cada empresa.",
+
+    "features": [
+      "Painéis administrativos completos",
+      "Controle de usuários e permissões",
+      "Integração com APIs e serviços externos",
+      "Arquitetura escalável e segura"
+    ]
+  },
+
+  {
+    "number": "03",
+
+    "icon": "🤖",
+
+    "name": "IA e Automação",
+
+    "desc": "Aplicamos inteligência artificial e automação para reduzir tarefas manuais, melhorar o atendimento e aumentar a eficiência operacional.",
+
+    "features": [
+      "Chatbots inteligentes",
+      "Automação de processos",
+      "Sistemas especialistas industriais",
+      "Dashboards e indicadores em tempo real"
+    ]
+  }
+]
+
+
+
+},
+
+
 
   "portfolio": {
     "tag": "Projetos",
