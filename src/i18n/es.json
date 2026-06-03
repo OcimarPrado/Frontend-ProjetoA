@@ -134,45 +134,44 @@
       }
     ]
   },
+  
   "pricing": {
     "tag": "Planes",
     "title": "Inversión ",
     "title_accent": "transparente",
-    "sub": "Sin sorpresas. Estructura profesional, soporte real y enfoque en conversión para tu negocio.",
-    "featured_badge": "Más popular",
+    "sub": "Sin sorpresas. Cada solución dimensionada para tu negocio — desde el sitio web hasta el sistema completo.",
+    "featured_badge": "Precio Promocional",
     "note_setup": "* Tarifa de configuración cobrada una única vez al contratar.",
-    "cta": "Elegir plan",
-    "cta_custom": "Solicitar propuesta",
+    "cta": "Solicitar presupuesto",
+    "cta_custom": "Solicitar presupuesto",
     "plans": [
       {
-        "name": "Starter",
-        "desc": "Ideal para landing pages rápidas y sitios institucionales de alto rendimiento que no requieren blog.",
-        "price_setup": " 490",
+        "name": "Sitios Web",
+        "icon": "🌐",
+        "desc": "Landing pages, sitios institucionales y portafolios profesionales para fortalecer tu presencia digital y atraer más clientes.",
+        "price_from": "490",
         "price_monthly": "149",
-        "setup_label": " Tarifa única de configuración",
-        "monthly_label": "/mes",
-        "note": "R$490 de configuración (R$200 al contratar + R$290 en la entrega). Mantenimiento y Hosting: R$149/mes. Contrato mín. 12 meses.",
-        "featured": false,
+        "price_label": "desde R$",
+        "setup_label": "configuración única",
+        "monthly_label": "R$ 149/mes hosting + Mantenimiento",
+        "note": "Configuración en cuotas: R$200 al contratar + saldo en la entrega. Contrato mín. 12 meses.",
+        "featured": true,
         "features": [
           {
             "included": true,
-            "text": "Sitio ONEPAGE — estructura completa de conversión"
+            "text": "Diseño responsivo y Mobile-First"
           },
           {
             "included": true,
-            "text": "Diseño responsivo (Mobile-First)"
+            "text": "Optimización para Google (SEO)"
           },
           {
             "included": true,
-            "text": "Dominio .com.br incluido el primer año"
+            "text": "Dominio .com.br incluido el 1er año"
           },
           {
             "included": true,
             "text": "Hosting profesional de alto rendimiento"
-          },
-          {
-            "included": true,
-            "text": "SEO básico y optimización de rendimiento"
           },
           {
             "included": true,
@@ -184,112 +183,101 @@
           },
           {
             "included": true,
-            "text": "Entrega acelerada (5–7 días hábiles)"
+            "text": "Entrega en 5–20 días hábiles"
           },
           {
-            "included": false,
-            "text": "Blog / Panel de edición de contenido"
-          },
-          {
-            "included": false,
-            "text": "Informe mensual detallado"
+            "included": true,
+            "text": "Soporte por WhatsApp"
           }
         ]
       },
       {
-        "name": "Profesional",
-        "desc": "La solución completa para empresas que necesitan blog, múltiples páginas y autonomía para editar su contenido.",
-        "price_setup": " 1.500",
-        "price_monthly": " 299",
-        "setup_label": " Tarifa única de configuración",
-        "monthly_label": "/mes",
-        "note": "R$1.500 de configuración (R$500 al contratar + R$1.000 en la entrega). 10% de desc. pago al contado. Mantenimiento: R$299/mes. Contrato mín. 12 meses.",
-        "featured": true,
-        "features": [
-          {
-            "included": true,
-            "text": "Hasta 8 páginas + Blog integrado"
-          },
-          {
-            "included": true,
-            "text": "Panel autogestionable (tú mismo editas)"
-          },
-          {
-            "included": true,
-            "text": "Capacitación de uso del panel (1h)"
-          },
-          {
-            "included": true,
-            "text": "Hosting Hostinger incluido"
-          },
-          {
-            "included": true,
-            "text": "SEO on-page estructurado"
-          },
-          {
-            "included": true,
-            "text": "Integración con redes sociales y Pixel"
-          },
-          {
-            "included": true,
-            "text": "2 rondas de ajustes tras la entrega"
-          },
-          {
-            "included": true,
-            "text": "Informe mensual (Google Analytics)"
-          },
-          {
-            "included": true,
-            "text": "Soporte técnico prioritario"
-          },
-          {
-            "included": true,
-            "text": "Entrega en 15–20 días hábiles"
-          }
-        ]
-      },
-      {
-        "name": "Personalizado",
-        "desc": "Sistemas SaaS, APIs, automatizaciones con IA y soluciones complejas a medida.",
-        "price_setup": "?",
-        "price_monthly": "Variable",
-        "setup_label": " Bajo consulta",
+        "name": "Automatizaciones & APIs",
+        "icon": "🤖",
+        "desc": "Chatbots inteligentes, agentes de IA, integraciones entre sistemas y automatizaciones de procesos que eliminan tareas manuales.",
+        "price_from": null,
+        "price_monthly": null,
+        "price_label": "Bajo consulta",
+        "setup_label": "proyecto dimensionado tras briefing",
         "monthly_label": "",
-        "note": "Valores definidos tras análisis de alcance técnico.",
+        "note": "Valor definido tras análisis del alcance técnico. Sin sorpresas.",
         "featured": false,
         "features": [
           {
             "included": true,
-            "text": "Agentes de IA y chatbots inteligentes"
+            "text": "Chatbots y agentes de IA personalizados"
           },
           {
             "included": true,
-            "text": "Sistemas SaaS multitenant"
+            "text": "Automatización de atención y procesos"
           },
           {
             "included": true,
-            "text": "Integraciones con ERPs y APIs externas"
+            "text": "Integraciones vía API (WhatsApp, CRMs, ERPs)"
           },
           {
             "included": true,
-            "text": "E-commerce y tiendas online complejas"
+            "text": "Webhooks y pipelines de datos"
           },
           {
             "included": true,
-            "text": "Backends y bases de datos escalables"
+            "text": "Deploy en la nube (Railway, Vercel, VPS)"
           },
           {
             "included": true,
-            "text": "Dashboards administrativos"
+            "text": "Documentación técnica entregada"
           },
           {
             "included": true,
-            "text": "Soporte y SLA definido en contrato"
+            "text": "Soporte y SLA definidos en contrato"
+          }
+        ]
+      },
+      {
+        "name": "Sistemas",
+        "icon": "💻",
+        "desc": "Plataformas web, paneles administrativos, SaaS multitenant y sistemas a medida para la gestión y operación de tu negocio.",
+        "price_from": null,
+        "price_monthly": null,
+        "price_label": "Bajo consulta",
+        "setup_label": "proyecto dimensionado tras briefing",
+        "monthly_label": "",
+        "note": "Valor definido tras análisis del alcance técnico. Sin sorpresas.",
+        "featured": false,
+        "features": [
+          {
+            "included": true,
+            "text": "Paneles administrativos completos"
+          },
+          {
+            "included": true,
+            "text": "Control de usuarios y permisos"
+          },
+          {
+            "included": true,
+            "text": "Arquitectura escalable y segura"
+          },
+          {
+            "included": true,
+            "text": "Integración con APIs y servicios externos"
+          },
+          {
+            "included": true,
+            "text": "Base de datos relacional y backup"
+          },
+          {
+            "included": true,
+            "text": "Plataformas SaaS multitenant"
+          },
+          {
+            "included": true,
+            "text": "Soporte y SLA definidos en contrato"
           }
         ]
       }
     ]
   },
+
   "about": {
     "tag": "Nosotros",
     "title": "Tecnología real,",

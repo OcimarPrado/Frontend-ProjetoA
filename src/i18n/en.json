@@ -134,45 +134,45 @@
       }
     ]
   },
+
+  
   "pricing": {
     "tag": "Plans",
     "title": "Transparent ",
     "title_accent": "pricing",
-    "sub": "No surprises. Professional structure, real support and a conversion-first approach for your business.",
-    "featured_badge": "Most popular",
+    "sub": "No surprises. Every solution scoped to your business — from website to full system.",
+    "featured_badge": "Promotional Price",
     "note_setup": "* Setup fee charged once at contract signing.",
-    "cta": "Choose plan",
-    "cta_custom": "Request proposal",
+    "cta": "Request a quote",
+    "cta_custom": "Request a quote",
     "plans": [
       {
-        "name": "Starter",
-        "desc": "Ideal for quick landing pages and high-performance institutional websites that don't require a blog.",
-        "price_setup": " 490",
+        "name": "Websites",
+        "icon": "🌐",
+        "desc": "Landing pages, institutional websites and professional portfolios to strengthen your digital presence and attract more clients.",
+        "price_from": "490",
         "price_monthly": "149",
-        "setup_label": " One-time setup fee",
-        "monthly_label": "/mo",
-        "note": "R$490 setup fee (R$200 upfront + R$290 on delivery). Maintenance & Hosting: R$149/mo. Min. 12-month contract.",
-        "featured": false,
+        "price_label": "from R$",
+        "setup_label": "one-time setup",
+        "monthly_label": "R$ 149/mo hosting + Maintenance",
+        "note": "Setup split: R$200 upfront + balance on delivery. Min. 12-month contract.",
+        "featured": true,
         "features": [
           {
             "included": true,
-            "text": "ONEPAGE site — complete conversion structure"
+            "text": "Responsive and Mobile-First design"
           },
           {
             "included": true,
-            "text": "Responsive design (Mobile-First)"
+            "text": "Google optimization (SEO)"
           },
           {
             "included": true,
-            "text": ".com.br domain included for the first year"
+            "text": ".com.br domain included for the 1st year"
           },
           {
             "included": true,
             "text": "High-performance professional hosting"
-          },
-          {
-            "included": true,
-            "text": "Basic SEO & performance optimization"
           },
           {
             "included": true,
@@ -184,103 +184,91 @@
           },
           {
             "included": true,
-            "text": "Accelerated delivery (5–7 business days)"
+            "text": "Delivery in 5–20 business days"
           },
           {
-            "included": false,
-            "text": "Blog / Content Management Panel"
-          },
-          {
-            "included": false,
-            "text": "Detailed monthly report"
+            "included": true,
+            "text": "WhatsApp support"
           }
         ]
       },
       {
-        "name": "Professional",
-        "desc": "The complete solution for businesses that need a blog, multiple pages and the freedom to edit their own content.",
-        "price_setup": " 1.500",
-        "price_monthly": " 299",
-        "setup_label": " One-time setup fee",
-        "monthly_label": "/mo",
-        "note": "R$1,500 setup fee (R$500 upfront + R$1,000 on delivery). 10% discount for full upfront payment. Maintenance: R$299/mo. Min. 12-month contract.",
-        "featured": true,
-        "features": [
-          {
-            "included": true,
-            "text": "Up to 8 pages + Integrated Blog"
-          },
-          {
-            "included": true,
-            "text": "Self-managed panel (edit it yourself)"
-          },
-          {
-            "included": true,
-            "text": "Panel usage training (1h)"
-          },
-          {
-            "included": true,
-            "text": "Hostinger hosting included"
-          },
-          {
-            "included": true,
-            "text": "Structured on-page SEO"
-          },
-          {
-            "included": true,
-            "text": "Social media & Pixel integration"
-          },
-          {
-            "included": true,
-            "text": "2 revision rounds after delivery"
-          },
-          {
-            "included": true,
-            "text": "Monthly report (Google Analytics)"
-          },
-          {
-            "included": true,
-            "text": "Priority technical support"
-          },
-          {
-            "included": true,
-            "text": "Delivery in 15–20 business days"
-          }
-        ]
-      },
-      {
-        "name": "Custom",
-        "desc": "SaaS systems, APIs, AI automations and complex tailor-made solutions.",
-        "price_setup": "?",
-        "price_monthly": "Variable",
-        "setup_label": " By consultation",
+        "name": "Automations & APIs",
+        "icon": "🤖",
+        "desc": "Intelligent chatbots, AI agents, system integrations and process automations that eliminate manual tasks.",
+        "price_from": null,
+        "price_monthly": null,
+        "price_label": "By consultation",
+        "setup_label": "project scoped after briefing",
         "monthly_label": "",
-        "note": "Pricing defined after technical scope analysis.",
+        "note": "Pricing defined after technical scope analysis. No surprises.",
         "featured": false,
         "features": [
           {
             "included": true,
-            "text": "AI agents and intelligent chatbots"
+            "text": "Custom chatbots and AI agents"
           },
           {
             "included": true,
-            "text": "Multitenant SaaS systems"
+            "text": "Customer service and process automation"
           },
           {
             "included": true,
-            "text": "ERP and external API integrations"
+            "text": "API integrations (WhatsApp, CRMs, ERPs)"
           },
           {
             "included": true,
-            "text": "E-commerce and complex online stores"
+            "text": "Webhooks and data pipelines"
           },
           {
             "included": true,
-            "text": "Scalable backends and databases"
+            "text": "Cloud deployment (Railway, Vercel, VPS)"
           },
           {
             "included": true,
-            "text": "Admin dashboards"
+            "text": "Technical documentation delivered"
+          },
+          {
+            "included": true,
+            "text": "Support and SLA defined by contract"
+          }
+        ]
+      },
+      {
+        "name": "Systems",
+        "icon": "💻",
+        "desc": "Web platforms, admin panels, multitenant SaaS and custom systems for managing and running your business.",
+        "price_from": null,
+        "price_monthly": null,
+        "price_label": "By consultation",
+        "setup_label": "project scoped after briefing",
+        "monthly_label": "",
+        "note": "Pricing defined after technical scope analysis. No surprises.",
+        "featured": false,
+        "features": [
+          {
+            "included": true,
+            "text": "Complete admin panels"
+          },
+          {
+            "included": true,
+            "text": "User and permission control"
+          },
+          {
+            "included": true,
+            "text": "Scalable and secure architecture"
+          },
+          {
+            "included": true,
+            "text": "API and external service integration"
+          },
+          {
+            "included": true,
+            "text": "Relational database and backup"
+          },
+          {
+            "included": true,
+            "text": "Multitenant SaaS platforms"
           },
           {
             "included": true,
@@ -290,6 +278,7 @@
       }
     ]
   },
+  
   "about": {
     "tag": "About us",
     "title": "Real technology,",

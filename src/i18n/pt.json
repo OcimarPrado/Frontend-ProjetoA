@@ -152,81 +152,150 @@
     ]
   },
 
+  
   "pricing": {
-  "tag": "Planos",
-  "title": "Investimento ",
-  "title_accent": "transparente",
-  "sub": "Sem surpresas. Estrutura profissional, suporte real e foco em conversão para o seu negócio.",
-  "featured_badge": "Mais popular",
-  "note_setup": "* Taxa de setup cobrada uma única vez na contratação.",
-  "cta": "Escolher plano",
-  "cta_custom": "Solicitar proposta",
-  "plans": [
-    {
-      "name": "Starter",
-      "desc": "Ideal para landing pages rápidas e sites institucionais de alta performance que não exigem blog.",
-      "price_setup": " 490",
-      "price_monthly": "149",
-      "setup_label": " Taxa única de setup",
-      "monthly_label": "/mês",
-      "note": "R$490 de setup (R$200 na contratação + R$290 na entrega). Manutenção e Hospedagem: R$149/mês. Contrato mín. 12 meses.",
-      "featured": false,
-      "features": [
-        { "included": true, "text": "Site ONEPAGE — Estrutura completa de conversão" },
-        { "included": true, "text": "Design responsivo (Mobile-First)" },
-        { "included": true, "text": "Domínio .com.br incluso no primeiro ano" },
-        { "included": true, "text": "Hospedagem Profissional de Alta Performance" },
-        { "included": true, "text": "SEO Básico e Otimização de Performance" },
-        { "included": true, "text": "CTA Inteligente para WhatsApp" },
-        { "included": true, "text": "2 rodadas de ajustes após a entrega" },
-        { "included": true, "text": "Entrega acelerada (5–7 dias úteis)" },
-        { "included": false, "text": "Blog / Painel de Edição" },
-        { "included": false, "text": "Relatório mensal detalhado" }
-      ]
-    },
-    {
-      "name": "Profissional",
-      "desc": "A solução completa para empresas que precisam de blog, múltiplas páginas e autonomia para editar conteúdo.",
-      "price_setup": " 1.500",
-      "price_monthly": " 299",
-      "setup_label": " Taxa única de setup",
-      "monthly_label": "/mês",
-      "note": "R$1.500 de setup (R$500 na contratação + R$1.000 na entrega). 10% de desc. para pagamento à vista. Manutenção: R$299/mês. Contrato mín. 12 meses.",
-      "featured": true,
-      "features": [
-        { "included": true, "text": "Até 8 páginas + Blog Integrado" },
-        { "included": true, "text": "Painel Autogerenciável (Você mesmo edita)" },
-        { "included": true, "text": "Treinamento de uso do painel (1h)" },
-        { "included": true, "text": "Hospedagem Hostinger inclusa" },
-        { "included": true, "text": "SEO On-Page estruturado" },
-        { "included": true, "text": "Integração com Redes Sociais e Pixel" },
-        { "included": true, "text": "2 rodadas de ajustes após a entrega" },
-        { "included": true, "text": "Relatório mensal (Google Analytics)" },
-        { "included": true, "text": "Suporte técnico prioritário" },
-        { "included": true, "text": "Entrega em 15–20 dias úteis" }
-      ]
-    },
-    {
-      "name": "Personalizado",
-      "desc": "Sistemas SaaS, APIs, Automações com IA e soluções complexas sob medida.",
-      "price_setup": "?",
-      "price_monthly": "Variável",
-      "setup_label": " Sob consulta",
-      "monthly_label": "",
-      "note": "Valores definidos após análise de escopo técnico.",
-      "featured": false,
-      "features": [
-        { "included": true, "text": "Agentes de IA e Chatbots inteligentes" },
-        { "included": true, "text": "Sistemas SaaS Multitenant" },
-        { "included": true, "text": "Integrações com ERPs e APIs externas" },
-        { "included": true, "text": "E-commerce e Lojas Virtuais complexas" },
-        { "included": true, "text": "Backends e Banco de Dados escaláveis" },
-        { "included": true, "text": "Dashboards Administrativos" },
-        { "included": true, "text": "Suporte e SLA definido em contrato" }
-      ]
-    }
-  ]
-},
+    "tag": "Planos",
+    "title": "Investimento ",
+    "title_accent": "transparente",
+    "sub": "Sem surpresas. Cada solução dimensionada para o seu negócio — do site ao sistema completo.",
+    "featured_badge": "Preço Promocional",
+    "note_setup": "* Taxa de setup cobrada uma única vez na contratação.",
+    "cta": "Solicitar orçamento",
+    "cta_custom": "Solicitar orçamento",
+    "plans": [
+      {
+        "name": "Sites",
+        "icon": "🌐",
+        "desc": "Landing pages, sites institucionais e portfólios profissionais para fortalecer sua presença digital e gerar mais clientes.",
+        "price_from": "490",
+        "price_monthly": "149",
+        "price_label": "a partir de R$",
+        "setup_label": "setup único",
+        "monthly_label": "R$ 149/mês hospedagem + manutenção",
+        "note": "Setup parcelado: R$200 na contratação + saldo na entrega. Contrato mín. 12 meses.",
+        "featured": true,
+        "features": [
+          {
+            "included": true,
+            "text": "Design responsivo e Mobile-First"
+          },
+          {
+            "included": true,
+            "text": "Otimização para Google (SEO)"
+          },
+          {
+            "included": true,
+            "text": "Domínio .com.br incluso no 1º ano"
+          },
+          {
+            "included": true,
+            "text": "Hospedagem profissional de alta performance"
+          },
+          {
+            "included": true,
+            "text": "CTA inteligente para WhatsApp"
+          },
+          {
+            "included": true,
+            "text": "2 rodadas de ajustes após a entrega"
+          },
+          {
+            "included": true,
+            "text": "Entrega em 5–20 dias úteis"
+          },
+          {
+            "included": true,
+            "text": "Suporte via WhatsApp"
+          }
+        ]
+      },
+      {
+        "name": "Automações & APIs",
+        "icon": "🤖",
+        "desc": "Chatbots inteligentes, agentes de IA, integrações entre sistemas e automações de processos que eliminam tarefas manuais.",
+        "price_from": null,
+        "price_monthly": null,
+        "price_label": "Sob consulta",
+        "setup_label": "projeto dimensionado após briefing",
+        "monthly_label": "",
+        "note": "Valor definido após análise do escopo técnico. Sem surpresas.",
+        "featured": false,
+        "features": [
+          {
+            "included": true,
+            "text": "Chatbots e agentes de IA personalizados"
+          },
+          {
+            "included": true,
+            "text": "Automação de atendimento e processos"
+          },
+          {
+            "included": true,
+            "text": "Integrações via API (WhatsApp, CRMs, ERPs)"
+          },
+          {
+            "included": true,
+            "text": "Webhooks e pipelines de dados"
+          },
+          {
+            "included": true,
+            "text": "Deploy em nuvem (Railway, Vercel, VPS)"
+          },
+          {
+            "included": true,
+            "text": "Documentação técnica entregue"
+          },
+          {
+            "included": true,
+            "text": "Suporte e SLA definidos em contrato"
+          }
+        ]
+      },
+      {
+        "name": "Sistemas",
+        "icon": "💻",
+        "desc": "Plataformas web, painéis administrativos, SaaS multitenant e sistemas sob medida para gestão e operação do seu negócio.",
+        "price_from": null,
+        "price_monthly": null,
+        "price_label": "Sob consulta",
+        "setup_label": "projeto dimensionado após briefing",
+        "monthly_label": "",
+        "note": "Valor definido após análise do escopo técnico. Sem surpresas.",
+        "featured": false,
+        "features": [
+          {
+            "included": true,
+            "text": "Painéis administrativos completos"
+          },
+          {
+            "included": true,
+            "text": "Controle de usuários e permissões"
+          },
+          {
+            "included": true,
+            "text": "Arquitetura escalável e segura"
+          },
+          {
+            "included": true,
+            "text": "Integração com APIs e serviços externos"
+          },
+          {
+            "included": true,
+            "text": "Banco de dados relacional e backup"
+          },
+          {
+            "included": true,
+            "text": "Plataformas SaaS multitenant"
+          },
+          {
+            "included": true,
+            "text": "Suporte e SLA definidos em contrato"
+          }
+        ]
+      }
+    ]
+  },
+
   
   "about": {
     "tag": "Sobre nós",

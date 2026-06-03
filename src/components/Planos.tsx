@@ -7,11 +7,13 @@ interface PlanFeature {
 
 interface Plan {
   name: string;
+  icon: string;
   desc: string;
-  price_setup: string;        // Novo campo
-  price_monthly: string;      // Novo campo
-  setup_label: string;        // Novo campo
-  monthly_label: string;      // Novo campo
+  price_from: string | null;
+  price_monthly: string | null;
+  price_label: string;
+  setup_label: string;
+  monthly_label: string;
   note: string;
   featured: boolean;
   features: PlanFeature[];
@@ -32,92 +34,86 @@ interface PricingData {
 export default function Pricing() {
   const { t } = useTranslation();
 
-  const pricing = t('pricing', {
-    returnObjects: true,
-  }) as PricingData;
+  const pricing = t('pricing', { returnObjects: true }) as PricingData;
 
   const scrollToContact = () =>
-    document
-      .querySelector('#contact')
-      ?.scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
 
   return (
     <section className="pricing" id="pricing">
       <div className="container">
         <div className="section-header">
-          <div className="tag">
-            ◈ {pricing.tag}
-          </div>
+          <div className="tag">◈ {pricing.tag}</div>
 
           <h2 className="section-title">
             {pricing.title}
             <span>{pricing.title_accent}</span>
           </h2>
 
-          <p className="section-sub">
-            {pricing.sub}
-          </p>
+          <p className="section-sub">{pricing.sub}</p>
         </div>
 
         <div className="pricing-grid">
           {pricing.plans.map((plan) => (
             <div
               key={plan.name}
-              className={`pricing-card ${
-                plan.featured ? 'featured' : ''
-              }`}
+              className={`pricing-card ${plan.featured ? 'featured' : ''}`}
             >
               {plan.featured && (
-                <div className="pricing-badge">
-                  {pricing.featured_badge}
-                </div>
+                <div className="pricing-badge">{pricing.featured_badge}</div>
               )}
 
+              {/* Nome + Descrição */}
               <div className="pricing-plan">
                 <div className="pricing-plan-name">
+                  {plan.icon && (
+                    <span style={{ marginRight: '0.4rem' }}>{plan.icon}</span>
+                  )}
                   {plan.name}
                 </div>
-
-                <div className="pricing-plan-desc">
-                  {plan.desc}
-                </div>
+                <div className="pricing-plan-desc">{plan.desc}</div>
               </div>
 
-              {/* Bloco de Preço Otimizado */}
+              {/* Bloco de Preço */}
               <div className="pricing-price">
-                <div className="pricing-amount-block">
-                  
-                  {/* renderização do SETUP (Taxa Única) */}
-                  <div className="pricing-setup">
-                    {plan.price_setup !== '?' && (
-                      <span className="pricing-currency">R$</span>
+
+                {plan.price_from ? (
+                  /* Card com preço definido — Sites */
+                  <>
+                    <div className="pricing-amount">
+                      <span className="pricing-currency">
+                        {plan.price_label}
+                      </span>
+                      <span className="pricing-value">{plan.price_from}</span>
+                      <span className="pricing-period">{plan.setup_label}</span>
+                    </div>
+
+                    {plan.monthly_label && (
+                      <div style={{ marginTop: '0.4rem' }}>
+                        <span className="pricing-period">
+                          + {plan.monthly_label}
+                        </span>
+                      </div>
                     )}
-                    <span className="pricing-value-setup">
-                      {plan.price_setup}
-                    </span>
-                    <span className="pricing-label-setup">
-                      {plan.setup_label}
+                  </>
+                ) : (
+                  /* Card sob consulta — Automações & Sistemas */
+                  <div className="pricing-amount">
+                    <span
+                      className="pricing-value"
+                      style={{ fontSize: '1.5rem', letterSpacing: '-0.02em' }}
+                    >
+                      {plan.price_label}
                     </span>
                   </div>
+                )}
 
-                  {/* Renderização do MENSAL (Recorrência) - Esconde se não houver monthly_label */}
-                  {plan.monthly_label && (
-                    <div className="pricing-monthly">
-                      <span className="pricing-value-monthly">
-                        + R$ {plan.price_monthly}
-                      </span>
-                      <span className="pricing-label-monthly">
-                        {plan.monthly_label}
-                      </span>
-                    </div>
-                  )}
-                </div>
-
-                <div className="pricing-note">
+                <div className="pricing-note" style={{ marginTop: '0.6rem' }}>
                   {plan.note}
                 </div>
               </div>
 
+              {/* Features */}
               <ul className="pricing-features">
                 {plan.features.map((feature) => (
                   <li key={feature.text}>
@@ -126,37 +122,27 @@ export default function Pricing() {
                     ) : (
                       <span className="x">✕</span>
                     )}
-
-                    <span
-                      style={{
-                        opacity: feature.included ? 1 : 0.45,
-                      }}
-                    >
+                    <span style={{ opacity: feature.included ? 1 : 0.45 }}>
                       {feature.text}
                     </span>
                   </li>
                 ))}
               </ul>
 
+              {/* CTA */}
               <button
                 onClick={scrollToContact}
                 className={`pricing-cta ${
-                  plan.featured
-                    ? 'btn-primary'
-                    : 'btn-outline'
+                  plan.featured ? 'btn-primary' : 'btn-outline'
                 }`}
               >
-                {plan.price_setup === '?'
-                  ? pricing.cta_custom
-                  : pricing.cta}
+                {plan.price_from ? pricing.cta : pricing.cta_custom}
               </button>
             </div>
           ))}
         </div>
 
-        <div className="pricing-footer-note">
-          {pricing.note_setup}
-        </div>
+        <div className="pricing-footer-note">{pricing.note_setup}</div>
       </div>
     </section>
   );
