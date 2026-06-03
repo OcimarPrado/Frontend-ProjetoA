@@ -62,23 +62,6 @@
   {
     "number": "02",
 
-    "icon": "💻",
-
-    "name": "Sistemas e Plataformas",
-
-    "desc": "Criamos sistemas web personalizados para gestão, vendas, operações e controle de processos, adaptados à realidade de cada empresa.",
-
-    "features": [
-      "Painéis administrativos completos",
-      "Controle de usuários e permissões",
-      "Integração com APIs e serviços externos",
-      "Arquitetura escalável e segura"
-    ]
-  },
-
-  {
-    "number": "03",
-
     "icon": "🤖",
 
     "name": "IA e Automação",
@@ -90,6 +73,22 @@
       "Automação de processos",
       "Sistemas especialistas industriais",
       "Dashboards e indicadores em tempo real"
+    ]
+  },
+  {
+    "number": "03",
+
+    "icon": "💻",
+
+    "name": "Sistemas e Plataformas",
+
+    "desc": "Criamos sistemas web personalizados para gestão, vendas, operações e controle de processos, adaptados à realidade de cada empresa.",
+
+    "features": [
+      "Painéis administrativos completos",
+      "Controle de usuários e permissões",
+      "Integração com APIs e serviços externos",
+      "Arquitetura escalável e segura"
     ]
   }
 ]
