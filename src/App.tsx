@@ -11,6 +11,7 @@ import About     from './components/Sobre';
 import CtaBanner from './components/CtaBanner';
 import Contact   from './components/Contact';
 import Footer    from './components/Footer';
+import WhatsAppFloat from './components/WhatsAppFloat'; // Importação do novo componente
 
 export default function App() {
   return (
@@ -26,7 +27,9 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      
+      {/* Componente flutuante inserido aqui para garantir visibilidade global */}
+      <WhatsAppFloat />
     </>
   );
 }
-
