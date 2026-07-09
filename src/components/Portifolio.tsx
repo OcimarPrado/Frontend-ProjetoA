@@ -31,17 +31,6 @@ export default function Portfolio() {
     returnObjects: true,
   }) as PortfolioItem[];
 
-  const handleInternalLink = (selector: string) => {
-    const element = document.querySelector(selector);
-
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
-  };
-
   return (
     <section className="portfolio" id="portfolio">
       <div className="container">
@@ -157,17 +146,14 @@ export default function Portfolio() {
                     )}
 
                     {item.link2 && (
-                      <button
-                        type="button"
-                        className="portfolio-link secondary"
-                        onClick={() =>
-                          handleInternalLink(
-                            item.link2 as string
-                          )
-                        }
+                      <a
+                        href={item.link2}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="portfolio-link"
                       >
                         {t('portfolio.link2')}
-                      </button>
+                      </a>
                     )}
                   </div>
                 </div>
