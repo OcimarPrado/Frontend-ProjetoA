@@ -26,7 +26,7 @@
     "stat_support_num": "API",
     "stat_support_label": "Integrações Prontas",
 
-    "device_url": "ocyan-tech.com.br",
+    "device_url": "nayco.com.br",
 
     "badge_title": "Tecnologia de Ponta"
   },
@@ -112,11 +112,12 @@
         "tags": ["Site"],
         "title": "Site Institucional",
         "desc": "Alguns exemplos de clientes atendidos em parceria com a agência prosite.poa.br .",
-        "link2": "https://wa.me/5551980534875?text=Olá%2c%20vim%20do%20site%20Ocyan-Tech%2C%20gostaria%20de%20saber%20mais%20sobre%20criação%20de%20SITES.",
+        "link2": "https://wa.me/5551980534875?text=Olá%2c%20vim%20do%20site%20Nayco-Tech%2C%20gostaria%20de%20saber%20mais%20sobre%20criação%20de%20SITES.",
         "images": [
           { "src": "./mulhergauchatour.png", "label": "Mulher Gaúcha Tour" },
           { "src": "./mffconsultoria.png", "label": "MFF Consultoria" },
-          { "src": "/geomicro.png", "label": "GeoMicro" }
+          { "src": "/geomicro.png", "label": "GeoMicro" },
+          { "src": "/jvautocenter.png", "label": "JV Autocenter" }
         ]
       },
 
@@ -304,7 +305,7 @@
     "title_accent": " soluções que geram resultados",
     "title2": "",
 
-    "text1": "A Ocyan-Tech desenvolve sites profissionais, sistemas web e automações inteligentes com foco em performance, conversão e presença digital. Não entregamos apenas páginas bonitas — criamos ferramentas que ajudam empresas a crescer no ambiente digital.",
+    "text1": "A Nayco-Tech desenvolve sites profissionais, sistemas web e automações inteligentes com foco em performance, conversão e presença digital. Não entregamos apenas páginas bonitas — criamos ferramentas que ajudam empresas a crescer no ambiente digital.",
 
     "text2": "Unimos experiência técnica, visão estratégica e desenvolvimento moderno para construir soluções rápidas, seguras e escaláveis. Cada projeto é desenvolvido pensando em usabilidade, SEO, identidade visual e resultados comerciais.",
 
@@ -366,13 +367,13 @@
       "icon": "📱",
       "label": "WhatsApp",
       "value": "+55 (51) 9 8053-4875",
-      "link": "https://wa.me/5551980534875?text=Olá%2c%20vim%20do%20site%20Ocyan-Tech%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
+      "link": "https://wa.me/5551980534875?text=Olá%2c%20vim%20do%20site%20Nayco-Tech%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
     },
     {
       "icon": "📧",
       "label": "E-mail",
-      "value": "contato@ocyan-tech.com.br",
-      "link": "mailto:contato@ocyan-tech.com.br/?subject=Contato%20via%20site%20Ocyan-Tech&body=Olá%2c%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20criação%20de%20SITES."
+      "value": "contato@nayco-tech.com.br",
+      "link": "mailto:contato@nayco-tech.com.br/?subject=Contato%20via%20site%20Nayco-Tech&body=Olá%2c%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20criação%20de%20SITES."
     },
     {
       
@@ -466,7 +467,7 @@
       }
     ],
 
-    "copyright": "© {year} Ocyan-Tech. Feito por",
+    "copyright": "© {year} Nayco. Feito por",
     "copyright_end": " Canoas - Brasil.",
 
     "privacy": "Privacidade",

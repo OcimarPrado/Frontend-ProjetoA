@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 const Logo = () => (
   <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
     <span style={{ letterSpacing: '-0.02em' }}>
-      OC<span style={{ color: 'var(--teal)' }}>YAN</span>
+      NA<span style={{ color: 'var(--teal)' }}>YCO</span>
     </span>
     <span className="logo-badge">tech</span>
   </span>
