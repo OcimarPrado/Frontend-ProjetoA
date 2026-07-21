@@ -22,7 +22,7 @@ export default function Footer() {
         {/* Brand */}
         <div className="footer-brand">
           <div className="footer-brand-name">
-            {"NA"}<span className="accent">{"YCO"}</span>{"-TECH"}
+            {"NAY"}<span className="accent">{"CO"}</span>{"-TECH"}
           </div>
           <p className="footer-brand-desc">{t('footer.brand_desc')}</p>
           <div className="footer-social">
