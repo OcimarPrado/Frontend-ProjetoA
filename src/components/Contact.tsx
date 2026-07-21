@@ -43,10 +43,10 @@ export default function Contact() {
 
     setLoading(true);
 
-    const WHATSAPP_NUMBER = '5551986730107';
+    const WHATSAPP_NUMBER = '5551980534875';
 
     const text = [
-      `Olá! Vim pelo site da Ocyan-Tech 👋`,
+      `Olá! Vim pelo site da Nayco-Tech 👋`,
       ``,
       `Nome: ${form.name}`,
       `E-mail: ${form.email}`,
