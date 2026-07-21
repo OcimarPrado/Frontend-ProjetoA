@@ -161,8 +161,10 @@
     "sub": "Sem surpresas. Cada solução dimensionada para o seu negócio — do site ao sistema completo.",
     "featured_badge": "Preço Promocional",
     "note_setup": "* Taxa de setup cobrada uma única vez na contratação.",
-    "cta": "Solicitar orçamento",
+    "cta": "Adiquirir agora",
     "cta_custom": "Solicitar orçamento",
+    "link1": "https://wa.me/5551980534875?text=Olá%2c%20vim%20do%20site%20Nayco-Tech%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços.",
+
     "plans": [
       {
         "name": "Sites",
@@ -360,7 +362,7 @@
   "tag": "Contato",
   "title": "Vamos construir",
   "title_accent": " algo juntos",
-  "sub": "Preencha o formulário ou entre em contato diretamente pelo WhatsApp. Respondemos em até 24 horas.",
+  "sub": "Preencha o formulário ao lado com o máximo de informações sobre deu negócio e o que você precisa criar ou automatizar. Respondemos em até 24 horas.",
 
   "methods": [
     {

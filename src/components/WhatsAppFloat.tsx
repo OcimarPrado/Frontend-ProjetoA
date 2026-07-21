@@ -3,7 +3,7 @@ import "../styles/WhatsAppFloat.css";
 
 const WhatsAppFloat: React.FC = () => {
   const numero = "5551980534875"; // Substitua pelo número de telefone desejado
-  const mensagem = "Olá, vim do site Ocyan-Tech, gostaria de saber mais sobre os serviços."; // Substitua pela mensagem desejada
+  const mensagem = "Olá, vim do site Nayco-Tech, gostaria de saber mais sobre os serviços."; // Substitua pela mensagem desejada
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
   return (
