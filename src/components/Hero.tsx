@@ -14,7 +14,7 @@ export default function Hero() {
 
   return (
     <section className="hero" id="hero">
-      {/* Fundo decorativo */}
+      {/* Fundo decorativo */}            
       <div className="hero-bg">
         <div className="hero-grid" />
         <div className="hero-glow" />
@@ -119,3 +119,8 @@ export default function Hero() {
     </section>
   );
 }
+
+
+
+
+
