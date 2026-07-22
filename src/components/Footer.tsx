@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+
 
 interface NavLink {
   label: string;
@@ -27,30 +29,28 @@ export default function Footer() {
           <p className="footer-brand-desc">{t('footer.brand_desc')}</p>
           <div className="footer-social">
             <a
-              href="https://github.com/OcimarPrado"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            >
-              {/* GitHub icon via unicode */}
-              ⌥
-            </a>
-            <a
+            href="https://github.com/OcimarPrado"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub">
+              <FaGithub size={24} />
+              </a>
+              <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              in
-            </a>
+              <FaLinkedin size={24} />
+              </a>
             <a
-              href="https://wa.me/5551986730108?text=Olá%2c%20vim%20do%20site%20Ocyan-Tech%2c%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Ocyan-Tech."
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp"
+            href="https://wa.me/5551986730108?text=Olá%2c%20vim%20do%20site%20Ocyan-Tech%2c%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Ocyan-Tech."
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
             >
-              ✆
-            </a>
+              <FaWhatsapp size={24} />
+              </a>
           </div>
         </div>
 
