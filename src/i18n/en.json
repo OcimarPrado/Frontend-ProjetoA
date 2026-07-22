@@ -21,7 +21,7 @@
     "stat_uptime_label": "Conversion Focused",
     "stat_support_num": "API",
     "stat_support_label": "Ready Integrations",
-    "device_url": "ocyan-tech.com.br",
+    "device_url": "Nayco.com.br",
     "badge_title": "Cutting-edge Technology"
   },
   "services": {
@@ -83,7 +83,7 @@
         ],
         "title": "Institutional Website",
         "desc": "Some examples of clients served in partnership with the agency prosite.poa.br.",
-        "link2": "#contact",
+        "link2": "https://wa.me/5551980534875?text=Hello%2C%20I%20came%20from%20the%20Nayco%20website%20and%20would%20like%20to%20learn%20more%20about%20creating%20websites.",
         "images": [
           {
             "src": "./mulhergauchatour.png",
@@ -284,7 +284,7 @@
     "title": "Real technology,",
     "title_accent": " solutions that deliver results",
     "title2": "",
-    "text1": "Ocyan-Tech develops professional websites, web systems and intelligent automations focused on performance, conversion and digital presence. We don't just deliver beautiful pages — we build tools that help businesses grow in the digital environment.",
+    "text1": "Nayco develops professional websites, web systems and intelligent automations focused on performance, conversion and digital presence. We don't just deliver beautiful pages — we build tools that help businesses grow in the digital environment.",
     "text2": "We combine technical expertise, strategic vision and modern development to build fast, secure and scalable solutions. Every project is developed with usability, SEO, visual identity and commercial results in mind.",
     "highlights": [
       {
@@ -335,14 +335,14 @@
       {
         "icon": "📱",
         "label": "WhatsApp",
-        "value": "+55 (51) 9 8673-0107",
-        "link": "https://wa.me/5551986730107?text=Hello%2C%20I%20came%20from%20the%20Ocyan-Tech%20website%2C%20I%27d%20like%20to%20know%20more%20about%20your%20website%20creation%20services."
+        "value": "+55 (51) 9 8053-4875",
+        "link": "https://wa.me/5551980534875?text=Hello%2C%20I%20came%20from%20the%20Nayco%20website%20and%20would%20like%20to%20learn%20more%20about%20your%20services."
       },
       {
         "icon": "📧",
         "label": "E-mail",
-        "value": "contato@ocyan-tech.com.br",
-        "link": "mailto:contato@ocyan-tech.com.br/?subject=Contact%20via%20Ocyan-Tech%20website&body=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20website%20creation%20services."
+        "value": "contato@Nayco.com.br",
+        "link": "mailto:contato@Nayco.com.br/?subject=Contact%20via%20Nayco%20website&body=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20website%20creation%20services."
       },
       {
         "icon": "📍",
@@ -420,7 +420,7 @@
         "href": "#contact"
       }
     ],
-    "copyright": "© {year} Ocyan-Tech. Made by",
+    "copyright": "© {year} Nayco. Made by",
     "copyright_end": " Canoas - Brazil.",
     "privacy": "Privacy",
     "terms": "Terms"

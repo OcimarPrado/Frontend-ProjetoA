@@ -21,7 +21,7 @@
     "stat_uptime_label": "Enfoque en Conversión",
     "stat_support_num": "API",
     "stat_support_label": "Integraciones Listas",
-    "device_url": "ocyan-tech.com.br",
+    "device_url": "nayco.com.br",
     "badge_title": "Tecnología de Vanguardia"
   },
   "services": {
@@ -83,7 +83,7 @@
         ],
         "title": "Sitio Institucional",
         "desc": "Algunos ejemplos de clientes atendidos en asociación con la agencia prosite.poa.br.",
-        "link2": "#contact",
+        "link2": "https://wa.me/5551980534875?text=Hola%2C%20vengo%20del%20sitio%20web%20de%20Nayco%20y%20me%20gustaria%20obtener%20más%20información%20sobre%20creación%20de%20sitios%20web.",
         "images": [
           {
             "src": "./mulhergauchatour.png",
@@ -283,7 +283,7 @@
     "title": "Tecnología real,",
     "title_accent": " soluciones que generan resultados",
     "title2": "",
-    "text1": "Ocyan-Tech desarrolla sitios web profesionales, sistemas web y automatizaciones inteligentes con foco en rendimiento, conversión y presencia digital. No solo entregamos páginas bonitas — creamos herramientas que ayudan a las empresas a crecer en el entorno digital.",
+    "text1": "Nayco desarrolla sitios web profesionales, sistemas web y automatizaciones inteligentes con foco en rendimiento, conversión y presencia digital. No solo entregamos páginas bonitas — creamos herramientas que ayudan a las empresas a crecer en el entorno digital.",
     "text2": "Combinamos experiencia técnica, visión estratégica y desarrollo moderno para construir soluciones rápidas, seguras y escalables. Cada proyecto se desarrolla pensando en usabilidad, SEO, identidad visual y resultados comerciales.",
     "highlights": [
       {
@@ -335,13 +335,13 @@
         "icon": "📱",
         "label": "WhatsApp",
         "value": "+55 (51) 9 8673-0107",
-        "link": "https://wa.me/5551986730107?text=Hola%2C%20vine%20del%20sitio%20de%20Ocyan-Tech%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20los%20servicios%20de%20creaci%C3%B3n%20de%20sitios%20web."
+        "link": "https://wa.me/5551980534875?text=Hola%2C%20vengo%20del%20sitio%20web%20de%20Nayco%20y%20me%20gustaría%20obtener%20más%20información%20sobre%20sus%20servicios."
       },
       {
         "icon": "📧",
         "label": "E-mail",
-        "value": "contato@ocyan-tech.com.br",
-        "link": "mailto:contato@ocyan-tech.com.br/?subject=Contacto%20v%C3%ADa%20sitio%20Ocyan-Tech&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20los%20servicios%20de%20creaci%C3%B3n%20de%20sitios%20web."
+        "value": "contato@Nayco.com.br",
+        "link": "mailto:contato@Nayco.com.br/?subject=Contacto%20v%C3%ADa%20sitio%20Nayco&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20los%20servicios%20de%20creaci%C3%B3n%20de%20sitios%20web."
       },
       {
         "icon": "📍",
@@ -419,7 +419,7 @@
         "href": "#contact"
       }
     ],
-    "copyright": "© {year} Ocyan-Tech. Hecho por",
+    "copyright": "© {year} Nayco. Hecho por",
     "copyright_end": " Canoas - Brasil.",
     "privacy": "Privacidad",
     "terms": "Términos"

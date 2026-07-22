@@ -22,7 +22,7 @@ export default function Footer() {
         {/* Brand */}
         <div className="footer-brand">
           <div className="footer-brand-name">
-            {"OC"}<span className="accent">{"YAN"}</span>{"-TECH"}
+            {"NAY"}<span className="accent">{"CO"}</span>{"-TECH"}
           </div>
           <p className="footer-brand-desc">{t('footer.brand_desc')}</p>
           <div className="footer-social">
@@ -93,7 +93,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <p className="footer-copy">
           {t('footer.copyright').replace('{year}', String(year))}{' '}
-          <span>OCYAN-TECH</span>{' '}
+          <span>NAYCO-TECH</span>{' '}
           {t('footer.copyright_end')}
         </p>
         <div className="footer-legal">
