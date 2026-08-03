@@ -28,7 +28,7 @@ export default function Hero() {
 
           <h1 className="hero-headline">
             {t('hero.headline1')}{' '}
-            <span className="teal">{t('hero.headline2')}</span>
+            -<span className="teal">{t('hero.headline2')}</span>
             <span className="line-break">{t('hero.headline3')}</span>
           </h1>
 
@@ -55,6 +55,10 @@ export default function Hero() {
               </span>
               <span className="hero-stat-label">{t('hero.stat_uptime_label')}</span>
             </div>
+            
+                 
+                     
+
             <div className="hero-stat">
               <span className="hero-stat-num">{t('hero.stat_support_num')}</span>
               <span className="hero-stat-label">{t('hero.stat_support_label')}</span>
