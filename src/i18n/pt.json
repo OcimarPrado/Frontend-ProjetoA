@@ -17,14 +17,17 @@
     "cta_primary": "Começar meu projeto",
     "cta_secondary": "Ver casos de sucesso",
 
-    "stat_projects_num": "Top 1",
-    "stat_projects_label": "Desempenho SEO",
+    "stat_projects_num": "⚡ Sites Rápidos",
+    "stat_projects_label": "Carregamento otimizado",
 
-    "stat_uptime_num": "100%",
-    "stat_uptime_label": "Foco em Conversão",
+    "stat_uptime_num": "📱 100% Responsivo",
+    "stat_uptime_label": "Funciona em qualquer dispositivo",
 
-    "stat_support_num": "API",
-    "stat_support_label": "Integrações Prontas",
+    "stat_support_num": "📅 Agendamento Online",
+    "stat_support_label": "Recursos inteligentes",
+
+    "stat_support_num": "💬 WhatsApp Integrado",
+    "stat_support_label":"Atendimento facilitado",
 
     "device_url": "nayco.com.br",
 
