@@ -219,6 +219,7 @@
 
 /* ── BADGES ── */
 .hero-features {
+  margin-top:5px;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -228,6 +229,7 @@
 .feature-container { position: relative; display: inline-block; }
 
 .feature-badge {
+  margin-top: 50px;
   display: inline-flex;
   align-items: center;
   gap: 5px;

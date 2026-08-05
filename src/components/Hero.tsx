@@ -1,11 +1,5 @@
 import { useTranslation } from 'react-i18next';
 
-// ── TROQUE pelo caminho da sua screenshot ──────────────────────
-// Coloque a imagem em: public/screenshot.png  (ou .jpg/.webp)
-// e ajuste o src abaixo:
-const SITE_SCREENSHOT = '/screenshot.png';
-// ──────────────────────────────────────────────────────────────
-
 export default function Hero() {
   const { t } = useTranslation();
 
@@ -14,7 +8,6 @@ export default function Hero() {
 
   return (
     <section className="hero" id="hero">
-      {/* Fundo decorativo */}            
       <div className="hero-bg">
         <div className="hero-grid" />
         <div className="hero-glow" />
@@ -22,7 +15,6 @@ export default function Hero() {
       </div>
 
       <div className="hero-inner">
-        {/* Conteúdo principal */}
         <div className="hero-content">
           <div className="tag">✦ {t('hero.tag')}</div>
 
@@ -35,15 +27,14 @@ export default function Hero() {
           <p className="hero-sub">{t('hero.sub')}</p>
 
           <div className="hero-actions">
-            <button className="btn-primary" onClick={() => scrollTo('#contact')}>
+            <button className="btn-primary" onClick={() => scrollTo('#contato')}>
               {t('hero.cta_primary')} →
             </button>
-            <button className="btn-outline" onClick={() => scrollTo('#portfolio')}>
+            <button className="btn-outline" onClick={() => scrollTo('#projetos')}>
               {t('hero.cta_secondary')}
             </button>
           </div>
 
-          {/* Stats */}
           <div className="hero-stats">
             <div className="hero-stat">
               <span className="hero-stat-num">{t('hero.stat_projects_num')}</span>
@@ -55,10 +46,6 @@ export default function Hero() {
               </span>
               <span className="hero-stat-label">{t('hero.stat_uptime_label')}</span>
             </div>
-            
-                 
-                     
-
             <div className="hero-stat">
               <span className="hero-stat-num">{t('hero.stat_support_num')}</span>
               <span className="hero-stat-label">{t('hero.stat_support_label')}</span>
@@ -66,11 +53,9 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Visual mockup com screenshot real */}
         <div className="hero-visual">
-          <div className="device-mockup">
-            <div className="device-frame">
-              {/* Header do browser */}
+          <div className="device-mockup" style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-end' }}>
+            <div className="device-frame" style={{ width: '100%' }}>
               <div className="device-header">
                 <div className="device-dots">
                   <span /><span /><span />
@@ -81,32 +66,37 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Screenshot real */}
-              <div className="device-screenshot">
+              <div className="device-screenshot" style={{ position: 'relative', width: '100%', minHeight: '350px', aspectRatio: '16/13', overflow: 'hidden', display: 'block', backgroundColor: '#0b0f17' }}>
                 <img
-                  src={SITE_SCREENSHOT}
-                  alt="Site example"
+                  src="/Demo01.jpg"
+                  alt="Site example demo"
                   className="device-screenshot-img"
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover'
+                  }}
                   onError={(e) => {
-                    // Fallback: mostra placeholder se imagem não encontrada
                     (e.target as HTMLImageElement).style.display = 'none';
-                    const parent = (e.target as HTMLImageElement).parentElement;
-                    if (parent) parent.classList.add('device-screenshot-fallback');
                   }}
                 />
               </div>
             </div>
 
-            {/* Badge flutuante - Transformada em LINK */}
-            <a 
-              href="https://site-psicologia-three.vercel.app/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://psi-demo-sigma.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="device-badge"
-              style={{ 
-                textDecoration: 'none', 
+              style={{
+                textDecoration: 'none',
                 cursor: 'pointer',
-                transition: 'transform 0.3s ease'
+                transition: 'transform 0.3s ease',
+                position: 'relative',
+                zIndex: 3
               }}
               onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
               onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
@@ -123,8 +113,4 @@ export default function Hero() {
     </section>
   );
 }
-
-
-
-
 
