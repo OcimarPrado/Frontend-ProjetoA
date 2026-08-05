@@ -9,98 +9,76 @@
   },
 
   "hero": {
-    "tag": "Sites Inteligentes para Empresas",
-    "headline1": "Criação de Sites",
-    "headline2": "Profissionais",
-    "headline3": "que geram clientes.",
-    "sub": "Desenvolvemos sites rápidos, modernos e responsivos com recursos como agendamento online, integração com WhatsApp e ferramentas que ajudam sua empresa a vender mais.",
+    "tag": "Sistemas, IA e Sites Inteligentes",
+    "headline1": "Tecnologia e Inovação",
+    "headline2": " para Empresas",
+    "headline3": "e Indústrias.",
+    "sub": "Desenvolvemos software sob medida, automações com IA, plataformas SaaS e sites de alta performance para acelerar a eficiência e as vendas do seu negócio.",
     "cta_primary": "Começar meu projeto",
     "cta_secondary": "Ver casos de sucesso",
 
-    "stat_projects_num": "⚡ Sites Rápidos",
-    "stat_projects_label": "Carregamento otimizado",
+    "stat_projects_num": "⚡ Alta Performance",
+    "stat_projects_label": "Sistemas rápidos e seguros",
 
-    "stat_uptime_num": "📱 100% Responsivo",
-    "stat_uptime_label": "Funciona em qualquer dispositivo",
+    "stat_uptime_num": "🤖 Inteligência Artificial",
+    "stat_uptime_label": "Automação e eficiência operacional",
 
-    "stat_support_num": "📅 Agendamento Online",
-    "stat_support_label": "Recursos inteligentes",
+    "stat_word_num": "⚙️ Soluções Industriais",
+    "stat_word_label": "Sistemas especialistas e lógica real",
 
-    "stat_support_num": "💬 WhatsApp Integrado",
-    "stat_support_label":"Atendimento facilitado",
+    "stat_support_num": "🌐 Presença Digital",
+    "stat_support_label": "Sites e plataformas escaláveis",
 
     "device_url": "nayco.com.br",
 
     "badge_title": "Tecnologia de Ponta"
   },
 
-  
-"services": {
-"tag": "O que fazemos",
+  "services": {
+    "tag": "O que fazemos",
+    "title": "Soluções digitais para",
+    "title_accent": "impulsionar negócios",
+    "sub": "Criamos sites profissionais, sistemas sob medida, soluções com inteligência artificial e plataformas para automação de processos empresariais e industriais.",
 
-
-"title": "Soluções digitais para",
-"title_accent": "impulsionar negócios",
-
-"sub": "Criamos sites profissionais, sistemas sob medida, soluções com inteligência artificial e plataformas para automação de processos empresariais e industriais.",
-
-"items": [
-  {
-    "number": "01",
-
-    "icon": "🌐",
-
-    "name": "Sites e Landing Pages",
-
-    "desc": "Desenvolvemos sites modernos, rápidos e responsivos para fortalecer sua presença digital, atrair clientes e gerar oportunidades de negócio.",
-
-    "features": [
-      "Design profissional e responsivo",
-      "Otimização para Google (SEO)",
-      "Integração com WhatsApp e redes sociais",
-      "Alta performance e segurança"
+    "items": [
+      {
+        "number": "01",
+        "icon": "🌐",
+        "name": "Sites e Landing Pages",
+        "desc": "Desenvolvemos sites modernos, rápidos e responsivos para fortalecer sua presença digital, atrair clientes e gerar oportunidades de negócio.",
+        "features": [
+          "Design profissional e responsivo",
+          "Otimização para Google (SEO)",
+          "Integração com WhatsApp e redes sociais",
+          "Alta performance e segurança"
+        ]
+      },
+      {
+        "number": "02",
+        "icon": "🤖",
+        "name": "IA e Automação",
+        "desc": "Aplicamos inteligência artificial e automação para reduzir tarefas manuais, melhorar o atendimento e aumentar a eficiência operacional.",
+        "features": [
+          "Chatbots inteligentes",
+          "Automação de processos",
+          "Sistemas especialistas industriais",
+          "Dashboards e indicadores em tempo real"
+        ]
+      },
+      {
+        "number": "03",
+        "icon": "💻",
+        "name": "Sistemas e Plataformas",
+        "desc": "Criamos sistemas web personalizados para gestão, vendas, operações e controle de processos, adaptados à realidade de cada empresa.",
+        "features": [
+          "Painéis administrativos completos",
+          "Controle de usuários e permissões",
+          "Integração com APIs e serviços externos",
+          "Arquitetura escalável e segura"
+        ]
+      }
     ]
   },
-
-  {
-    "number": "02",
-
-    "icon": "🤖",
-
-    "name": "IA e Automação",
-
-    "desc": "Aplicamos inteligência artificial e automação para reduzir tarefas manuais, melhorar o atendimento e aumentar a eficiência operacional.",
-
-    "features": [
-      "Chatbots inteligentes",
-      "Automação de processos",
-      "Sistemas especialistas industriais",
-      "Dashboards e indicadores em tempo real"
-    ]
-  },
-  {
-    "number": "03",
-
-    "icon": "💻",
-
-    "name": "Sistemas e Plataformas",
-
-    "desc": "Criamos sistemas web personalizados para gestão, vendas, operações e controle de processos, adaptados à realidade de cada empresa.",
-
-    "features": [
-      "Painéis administrativos completos",
-      "Controle de usuários e permissões",
-      "Integração com APIs e serviços externos",
-      "Arquitetura escalável e segura"
-    ]
-  }
-]
-
-
-
-},
-
-
 
   "portfolio": {
     "tag": "Projetos",
@@ -108,14 +86,14 @@
     "title_accent": "recentes",
     "sub": "Tecnologia real aplicada em projetos publicados.",
     "link1": "Ver projeto →",
-    "link2": "Quero meu SITE →",
+    "link2": "Quero meu SISTEMA →",
     "items": [
       {
         "icon": "🏪",
         "tags": ["Site"],
         "title": "Site Institucional",
         "desc": "Alguns exemplos de clientes atendidos em parceria com a agência prosite.poa.br .",
-        "link2": "https://wa.me/5551980534875?text=Olá%2c%20vim%20do%20site%20Nayco-Tech%2C%20gostaria%20de%20saber%20mais%20sobre%20criação%20de%20SITES.",
+        "link2": "https://wa.me/5551980534875?text=Olá%2c%20vim%20do%20site%20Nayco-Tech%2C%20gostaria%20de%20saber%20mais%20sobre%20desenvolvimento%20de%20sistemas%20e%20tecnologia.",
         "images": [
           { "src": "./mulhergauchatour.png", "label": "Mulher Gaúcha Tour" },
           { "src": "./mffconsultoria.png", "label": "MFF Consultoria" },
@@ -123,7 +101,6 @@
           { "src": "/jvautocenter.png", "label": "JV Autocenter" }
         ]
       },
-
       {
         "icon": "🤖",
         "video": "/videos/CyanBot-demo.mp4",
@@ -132,31 +109,25 @@
         "desc": "Automação de atendimento via webChat, com respostas inteligentes e integração com sistema de agendamento.",
         "link1": "https://assistente-inteligente-production.up.railway.app/"
       },
-
-    {
+      {
         "icon": "⚙️",
         "tags": ["Sistema", "Indústria"],
         "title": "Simulador Boldrini",
-        "desc": "Sistema especialista industrial para prensa rebordeadora. Codifica 3 anos de conhecimento operacional em lógica computacional.",
+        "desc": "Sistema especialista industrial para prensa rebordeadora. Codifica anos de conhecimento operacional em lógica computacional.",
         "link": "https://github.com",
         "ativo": false
       },
-      
       {
         "icon": "🛒",
         "tags": ["Sistema", "Delivery"],
         "title": "Sistema de Delivery",
-        "desc": "Sistema de delivery para restaurante, com painel administrativo completo - produtos | clientes | colaboradores | métricas -  e controle de pedidos em tempo real.",
+        "desc": "Sistema de delivery para restaurante, com painel administrativo completo - produtos | clientes | colaboradores | métricas - e controle de pedidos em tempo real.",
         "link1": "https://delivery-painel.vercel.app/",
-        "video":"/videos/delivery.mp4"
-          
-        
+        "video": "/videos/delivery.mp4"
       }
-
     ]
   },
 
-  
   "pricing": {
     "tag": "Planos",
     "title": "Investimento ",
@@ -164,7 +135,7 @@
     "sub": "Sem surpresas. Cada solução dimensionada para o seu negócio — do site ao sistema completo.",
     "featured_badge": "Preço Promocional",
     "note_setup": "* Taxa de setup cobrada uma única vez na contratação.",
-    "cta": "Adiquirir agora",
+    "cta": "Adquirir agora",
     "cta_custom": "Solicitar orçamento",
     "link1": "https://wa.me/5551980534875?text=Olá%2c%20vim%20do%20site%20Nayco-Tech%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços.",
 
@@ -302,35 +273,31 @@
     ]
   },
 
-  
   "about": {
     "tag": "Sobre nós",
-
     "title": "Tecnologia de verdade,",
-    "title_accent": " soluções que geram resultados",
+    "title_accent": "soluções que geram resultados",
     "title2": "",
 
-    "text1": "A Nayco-Tech desenvolve sites profissionais, sistemas web e automações inteligentes com foco em performance, conversão e presença digital. Não entregamos apenas páginas bonitas — criamos ferramentas que ajudam empresas a crescer no ambiente digital.",
+    "text1": "A Nayco-Tech desenvolve software sob medida, sistemas web avançados e automações inteligentes com foco em performance, escalabilidade e inovação. Não entregamos apenas código — criamos ferramentas robustas que resolvem problemas reais de empresas e indústrias.",
 
-    "text2": "Unimos experiência técnica, visão estratégica e desenvolvimento moderno para construir soluções rápidas, seguras e escaláveis. Cada projeto é desenvolvido pensando em usabilidade, SEO, identidade visual e resultados comerciais.",
+    "text2": "Unimos sólida vivência técnica industrial, visão estratégica de software e desenvolvimento moderno para construir soluções rápidas, seguras e eficientes. Cada projeto é arquitetado para otimizar operações, automatizar fluxos e impulsionar o crescimento do seu negócio.",
 
     "highlights": [
       {
         "icon": "⚡",
-        "title": "Entrega rápida e organizada",
-        "text": "Projetos com cronograma definido, comunicação clara e desenvolvimento ágil."
+        "title": "Arquitetura moderna e ágil",
+        "text": "Projetos desenvolvidos com pilhas tecnológicas eficientes, garantindo escalabilidade e robustez."
       },
-
       {
         "icon": "🛡️",
-        "title": "Código limpo e estrutura profissional",
-        "text": "Sites desenvolvidos com tecnologias modernas, focados em segurança, desempenho e estabilidade."
+        "title": "Lógica real e engenharia de software",
+        "text": "Soluções estruturadas com foco em segurança, desempenho e estabilidade operacional."
       },
-
       {
         "icon": "📱",
-        "title": "Suporte humano e acompanhamento real",
-        "text": "Atendimento direto via WhatsApp durante todas as etapas do projeto."
+        "title": "Parceria técnica direta",
+        "text": "Atendimento e consultoria diretamente com o desenvolvedor em todas as etapas."
       }
     ],
 
@@ -340,48 +307,44 @@
         "title": "22+ anos de experiência técnica",
         "text": "Vivência industrial, lógica operacional e desenvolvimento de software aplicado."
       },
-
       {
         "icon": "🚀",
         "title": "Projetos reais em produção",
-        "text": "Sites, sistemas e soluções digitais rodando em ambientes reais."
+        "text": "Sistemas, automações e plataformas digitais rodando em ambientes reais."
       },
-
       {
         "icon": "🤝",
         "title": "Processo transparente",
         "text": "Escopo alinhado, comunicação objetiva e acompanhamento contínuo."
       },
-
       {
         "icon": "📊",
-        "title": "Foco em crescimento",
-        "text": "Cada solução é construída pensando em visibilidade, conversão e autoridade digital."
+        "title": "Foco em eficiência",
+        "text": "Cada solução é construída para automatizar processos, reduzir custos e gerar escala."
       }
     ]
   },
-  
-  "contact": {
-  "tag": "Contato",
-  "title": "Vamos construir",
-  "title_accent": " algo juntos",
-  "sub": "Preencha o formulário com o máximo de informações sobre seu negócio e o que você precisa criar ou automatizar. Respondemos em até 24 horas.",
 
-  "methods": [
-    {
-      "icon": "📱",
-      "label": "WhatsApp",
-      "value": "+55 (51) 9 8053-4875",
-      "link": "https://wa.me/5551980534875?text=Olá%2c%20vim%20do%20site%20Nayco-Tech%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
-    },
-    {
-      "icon": "📧",
-      "label": "E-mail",
-      "value": "contato@nayco.com.br",
-      "link": "mailto:contato@nayco.com.br/?subject=Contato%20via%20site%20Nayco-Tech&body=Olá%2c%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20criação%20de%20SITES."
-    },
-    {
-      
+  "contact": {
+    "tag": "Contato",
+    "title": "Vamos construir",
+    "title_accent": " algo juntos",
+    "sub": "Preencha o formulário com o máximo de informações sobre seu projeto, sistema ou automação desejada. Respondemos em até 24 horas.",
+
+    "methods": [
+      {
+        "icon": "📱",
+        "label": "WhatsApp",
+        "value": "+55 (51) 9 8053-4875",
+        "link": "https://wa.me/5551980534875?text=Olá%2c%20vim%20do%20site%20Nayco-Tech%2C%20gostaria%20de%20saber%20mais%20sobre%20desenvolvimento%20de%20sistemas%20e%20automações."
+      },
+      {
+        "icon": "📧",
+        "label": "E-mail",
+        "value": "contato@nayco.com.br",
+        "link": "mailto:contato@nayco.com.br/?subject=Contato%20via%20site%20Nayco-Tech&body=Olá%2c%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20desenvolvimento%20e%20tecnologia."
+      },
+      {
         "icon": "📍",
         "label": "Localização",
         "value": "Canoas, RS — Atendemos todo o Brasil"
@@ -399,15 +362,15 @@
       "service_placeholder": "Selecione...",
 
       "service_options": [
-        "Criação de site",
-        "Hospedagem + Manutenção",
-        "Plano completo (criação + hospedagem)",
         "Sistema ou API personalizada",
+        "IA e Automação de processos",
+        "Plataforma SaaS",
+        "Criação de site",
         "Outro"
       ],
 
       "message_label": "Conte-nos um pouco sobre o seu projeto",
-      "message_placeholder": "Tenho um negócio de... preciso de um site que...",
+      "message_placeholder": "Preciso desenvolver um sistema para... / automatizar...",
 
       "submit": "Enviar mensagem",
       "submitting": "Enviando...",
@@ -419,37 +382,37 @@
   },
 
   "cta_banner": {
-    "title": "Pronto para ter um site",
-    "title_accent": " que trabalha por você?",
+    "title": "Pronto para escalar seu negócio",
+    "title_accent": " com tecnologia de ponta?",
 
-    "sub": "Fale conosco hoje mesmo. Orçamento gratuito em até 24 horas.",
+    "sub": "Fale conosco hoje mesmo. Alinhamento de escopo e orçamento direto com o desenvolvedor.",
 
     "cta_primary": "Solicitar orçamento",
     "cta_secondary": "Ver planos"
   },
 
   "footer": {
-    "brand_desc": "Criação, hospedagem e manutenção de sites com tecnologia real e suporte humano. Canoas, RS.",
+    "brand_desc": "Desenvolvimento de sistemas sob medida, inteligência artificial e automações industriais e corporativas. Canoas, RS.",
 
     "col_services": "Serviços",
     "col_company": "Empresa",
 
     "links_services": [
       {
+        "label": "Sistemas Personalizados",
+        "href": "#pricing"
+      },
+      {
+        "label": "IA e Automações",
+        "href": "#services"
+      },
+      {
         "label": "Criação de Sites",
         "href": "#services"
       },
       {
-        "label": "Hospedagem",
+        "label": "Hospedagem & Manutenção",
         "href": "#services"
-      },
-      {
-        "label": "Manutenção",
-        "href": "#services"
-      },
-      {
-        "label": "Sistemas Personalizados",
-        "href": "#pricing"
       }
     ],
 
@@ -479,3 +442,5 @@
     "terms": "Termos"
   }
 }
+
+

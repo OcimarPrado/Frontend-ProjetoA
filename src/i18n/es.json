@@ -8,19 +8,21 @@
     "cta": "Iniciar Proyecto"
   },
   "hero": {
-    "tag": "Especialistas en Presencia Digital",
-    "headline1": "Creación de Sitios Web",
-    "headline2": "Profesionales",
-    "headline3": "y Automatización de Negocios.",
-    "sub": "Desarrollamos sitios web de alto rendimiento, chatbots inteligentes y automatizaciones que convierten visitantes en clientes.",
+    "tag": "Sistemas, IA y Sitios Inteligentes",
+    "headline1": "Tecnología e Innovación",
+    "headline2": " para Empresas",
+    "headline3": "e Industrias.",
+    "sub": "Desarrollamos software a medida, automatizaciones con IA, plataformas SaaS y sitios web de alto rendimiento para acelerar la eficiencia y las ventas de tu negocio.",
     "cta_primary": "Comenzar mi proyecto",
     "cta_secondary": "Ver casos de éxito",
-    "stat_projects_num": "Top 1",
-    "stat_projects_label": "Rendimiento SEO",
-    "stat_uptime_num": "100%",
-    "stat_uptime_label": "Enfoque en Conversión",
-    "stat_support_num": "API",
-    "stat_support_label": "Integraciones Listas",
+    "stat_projects_num": "⚡ Alto Rendimiento",
+    "stat_projects_label": "Sistemas rápidos y seguros",
+    "stat_uptime_num": "🤖 Inteligencia Artificial",
+    "stat_uptime_label": "Automatización y eficiencia operativa",
+    "stat_word_num": "⚙️ Soluciones Industriales",
+    "stat_word_label": "Sistemas expertos y lógica real",
+    "stat_support_num": "🌐 Presencia Digital",
+    "stat_support_label": "Sitios y plataformas escalables",
     "device_url": "nayco.com.br",
     "badge_title": "Tecnología de Vanguardia"
   },
@@ -69,12 +71,12 @@
     ]
   },
   "portfolio": {
-    "tag": "Proyectos",
+    "tag": "Projetos",
     "title": "Trabajos",
     "title_accent": "recientes",
     "sub": "Tecnología real aplicada en proyectos publicados.",
     "link1": "Ver proyecto →",
-    "link2": "Quiero mi SITIO WEB →",
+    "link2": "Quiero mi SISTEMA →",
     "items": [
       {
         "icon": "🏪",
@@ -83,7 +85,7 @@
         ],
         "title": "Sitio Institucional",
         "desc": "Algunos ejemplos de clientes atendidos en asociación con la agencia prosite.poa.br.",
-        "link2": "https://wa.me/5551980534875?text=Hola%2C%20vengo%20del%20sitio%20web%20de%20Nayco%20y%20me%20gustaria%20obtener%20más%20información%20sobre%20creación%20de%20sitios%20web.",
+        "link2": "https://wa.me/5551980534875?text=Hola%2C%20vengo%20del%20sitio%20web%20de%20Nayco-Tech%20y%20me%20gustaría%20obtener%20más%20información%20sobre%20el%20desarrollo%20de%20sistemas%20y%20tecnología.",
         "images": [
           {
             "src": "./mulhergauchatour.png",
@@ -117,7 +119,7 @@
           "Industria"
         ],
         "title": "Simulador Boldrini",
-        "desc": "Sistema experto industrial para prensa bordeadora. Codifica 3 años de conocimiento operativo en lógica computacional.",
+        "desc": "Sistema experto industrial para prensa bordeadora. Codifica años de conocimiento operativo en lógica computacional.",
         "link": "https://github.com",
         "ativo": false
       },
@@ -134,7 +136,6 @@
       }
     ]
   },
-  
   "pricing": {
     "tag": "Planes",
     "title": "Inversión ",
@@ -142,18 +143,18 @@
     "sub": "Sin sorpresas. Cada solución dimensionada para tu negocio — desde el sitio web hasta el sistema completo.",
     "featured_badge": "Precio Promocional",
     "note_setup": "* Tarifa de configuración cobrada una única vez al contratar.",
-    "cta": "Solicitar presupuesto",
+    "cta": "Adquirir ahora",
     "cta_custom": "Solicitar presupuesto",
     "plans": [
       {
         "name": "Sitios Web",
         "icon": "🌐",
         "desc": "Landing pages, sitios institucionales y portafolios profesionales para fortalecer tu presencia digital y atraer más clientes.",
-        "price_from": "490",
-        "price_monthly": "149",
-        "price_label": "desde R$",
+        "price_from": "110",
+        "price_monthly": "35",
+        "price_label": "desde €",
         "setup_label": "configuración única",
-        "monthly_label": "R$ 149/mes hosting + Mantenimiento",
+        "monthly_label": "€ 50/mes hosting + Mantenimiento",
         "note": "Configuración en cuotas: R$200 al contratar + saldo en la entrega. Contrato mín. 12 meses.",
         "featured": true,
         "features": [
@@ -277,29 +278,28 @@
       }
     ]
   },
-
   "about": {
     "tag": "Nosotros",
     "title": "Tecnología real,",
     "title_accent": " soluciones que generan resultados",
     "title2": "",
-    "text1": "Nayco desarrolla sitios web profesionales, sistemas web y automatizaciones inteligentes con foco en rendimiento, conversión y presencia digital. No solo entregamos páginas bonitas — creamos herramientas que ayudan a las empresas a crecer en el entorno digital.",
-    "text2": "Combinamos experiencia técnica, visión estratégica y desarrollo moderno para construir soluciones rápidas, seguras y escalables. Cada proyecto se desarrolla pensando en usabilidad, SEO, identidad visual y resultados comerciales.",
+    "text1": "Nayco-Tech desarrolla software a medida, sistemas web avanzados y automatizaciones inteligentes con foco en rendimiento, escalabilidad e innovación. No solo entregamos código — creamos herramientas robustas que resuelven problemas reales de empresas e industrias.",
+    "text2": "Combinamos sólida experiencia técnica industrial, visión estratégica de software y desarrollo moderno para construir soluciones rápidas, seguras y eficientes. Cada proyecto está arquitectado para optimizar operaciones, automatizar flujos e impulsar el crecimiento de tu negocio.",
     "highlights": [
       {
         "icon": "⚡",
-        "title": "Entrega rápida y organizada",
-        "text": "Proyectos con cronograma definido, comunicación clara y desarrollo ágil."
+        "title": "Arquitectura moderna y ágil",
+        "text": "Proyectos desarrollados con pilas tecnológicas eficientes, garantizando escalabilidad y robustez."
       },
       {
         "icon": "🛡️",
-        "title": "Código limpio y estructura profesional",
-        "text": "Sitios desarrollados con tecnologías modernas, enfocados en seguridad, rendimiento y estabilidad."
+        "title": "Lógica real e ingeniería de software",
+        "text": "Soluciones estructuradas con foco en seguridad, rendimiento y estabilidad operativa."
       },
       {
         "icon": "📱",
-        "title": "Soporte humano y seguimiento real",
-        "text": "Atención directa por WhatsApp en todas las etapas del proyecto."
+        "title": "Asesoría técnica directa",
+        "text": "Atención y consultoría directamente con el desarrollador en todas las etapas."
       }
     ],
     "cards": [
@@ -311,7 +311,7 @@
       {
         "icon": "🚀",
         "title": "Proyectos reales en producción",
-        "text": "Sitios, sistemas y soluciones digitales funcionando en entornos reales."
+        "text": "Sistemas, automatizaciones y plataformas digitales funcionando en entornos reales."
       },
       {
         "icon": "🤝",
@@ -320,8 +320,8 @@
       },
       {
         "icon": "📊",
-        "title": "Enfoque en crecimiento",
-        "text": "Cada solución se construye pensando en visibilidad, conversión y autoridad digital."
+        "title": "Enfoque en eficiencia",
+        "text": "Cada solución se construye para automatizar procesos, reducir costos y generar escala."
       }
     ]
   },
@@ -329,19 +329,19 @@
     "tag": "Contacto",
     "title": "Construyamos",
     "title_accent": " algo juntos",
-    "sub": "Completa el formulario o contáctanos directamente por WhatsApp. Respondemos en hasta 24 horas.",
+    "sub": "Completa el formulario con el máximo de información sobre tu proyecto, sistema o automatización deseada. Respondemos en hasta 24 horas.",
     "methods": [
       {
         "icon": "📱",
         "label": "WhatsApp",
-        "value": "+55 (51) 9 8673-0107",
-        "link": "https://wa.me/5551980534875?text=Hola%2C%20vengo%20del%20sitio%20web%20de%20Nayco%20y%20me%20gustaría%20obtener%20más%20información%20sobre%20sus%20servicios."
+        "value": "+55 (51) 9 8053-4875",
+        "link": "https://wa.me/5551980534875?text=Hola%2C%20vengo%20del%20sitio%20web%20de%20Nayco-Tech%20y%20me%20gustaría%20obtener%20más%20información%20sobre%20desarrollo%20de%20sistemas%20y%20automatizaciones."
       },
       {
         "icon": "📧",
         "label": "E-mail",
-        "value": "contato@Nayco.com.br",
-        "link": "mailto:contato@Nayco.com.br/?subject=Contacto%20v%C3%ADa%20sitio%20Nayco&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20los%20servicios%20de%20creaci%C3%B3n%20de%20sitios%20web."
+        "value": "contato@nayco.com.br",
+        "link": "mailto:contato@nayco.com.br/?subject=Contacto%20v%C3%ADa%20sitio%20Nayco-Tech&body=Hola%2C%20me%20gustaría%20saber%20más%20sobre%20los%20servicios%20de%20desarrollo%20y%20tecnología."
       },
       {
         "icon": "📍",
@@ -357,14 +357,14 @@
       "service_label": "Servicio de interés",
       "service_placeholder": "Selecciona...",
       "service_options": [
-        "Creación de sitio web",
-        "Hosting + Mantenimiento",
-        "Plan completo (creación + hosting)",
         "Sistema o API personalizada",
+        "IA y Automatización de procesos",
+        "Plataforma SaaS",
+        "Creación de sitio web",
         "Otro"
       ],
       "message_label": "Cuéntanos un poco sobre tu proyecto",
-      "message_placeholder": "Tengo un negocio de... necesito un sitio que...",
+      "message_placeholder": "Necesito desarrollar un sistema para... / automatizar...",
       "submit": "Enviar mensaje",
       "submitting": "Enviando...",
       "success_title": "¡Mensaje enviado!",
@@ -373,32 +373,32 @@
     }
   },
   "cta_banner": {
-    "title": "¿Listo para tener un sitio web",
-    "title_accent": " que trabaje por ti?",
-    "sub": "Contáctanos hoy mismo. Presupuesto gratuito en hasta 24 horas.",
+    "title": "¿Listo para escalar tu negocio",
+    "title_accent": " con tecnología de vanguardia?",
+    "sub": "Contáctanos hoy mismo. Alineación de alcance y presupuesto directo con el desarrollador.",
     "cta_primary": "Solicitar presupuesto",
     "cta_secondary": "Ver planes"
   },
   "footer": {
-    "brand_desc": "Creación, hosting y mantenimiento de sitios web con tecnología real y soporte humano. Canoas, RS.",
+    "brand_desc": "Desarrollo de sistemas a medida, inteligencia artificial y automatizaciones industriales y corporativas. Canoas, RS.",
     "col_services": "Servicios",
     "col_company": "Empresa",
     "links_services": [
+      {
+        "label": "Sistemas Personalizados",
+        "href": "#pricing"
+      },
+      {
+        "label": "IA y Automatizaciones",
+        "href": "#services"
+      },
       {
         "label": "Creación de Sitios",
         "href": "#services"
       },
       {
-        "label": "Hosting",
+        "label": "Hosting y Mantenimiento",
         "href": "#services"
-      },
-      {
-        "label": "Mantenimiento",
-        "href": "#services"
-      },
-      {
-        "label": "Sistemas Personalizados",
-        "href": "#pricing"
       }
     ],
     "links_company": [
@@ -425,3 +425,5 @@
     "terms": "Términos"
   }
 }
+
+
