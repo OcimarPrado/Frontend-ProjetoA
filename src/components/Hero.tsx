@@ -94,13 +94,10 @@ export default function Hero() {
               style={{
                 textDecoration: 'none',
                 cursor: 'pointer',
-                transition: 'transform 0.3s ease',
                 position: 'relative',
-                zIndex: 3
+                zIndex: 3,
               }}
-              onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-              onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-            >
+              >
               <div className="device-badge-icon">✅</div>
               <div className="device-badge-text">
                 <strong>{t('hero.badge_title') || 'Site no ar!'}</strong>

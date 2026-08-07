@@ -86,7 +86,7 @@
     "title_accent": "recentes",
     "sub": "Tecnologia real aplicada em projetos publicados.",
     "link1": "Ver projeto →",
-    "link2": "Quero meu SISTEMA →",
+    "link2": "Quero meu SITE →",
     "items": [
       {
         "icon": "🏪",
@@ -103,11 +103,12 @@
       },
       {
         "icon": "🤖",
-        "video": "/videos/CyanBot-demo.mp4",
+        "images": [{"src": "./naybot.png", "label": "IA e Automações"}],
         "tags": ["Automação", "Chatbot"],
         "title": "Chatbot configurável de acordo com seu negócio para atendimento inteligente.",
         "desc": "Automação de atendimento via webChat, com respostas inteligentes e integração com sistema de agendamento.",
-        "link1": "https://assistente-inteligente-production.up.railway.app/"
+        "link1": "https://assistente-inteligente-production.up.railway.app/",
+        "ativo": true
       },
       {
         "icon": "⚙️",
@@ -123,7 +124,11 @@
         "title": "Sistema de Delivery",
         "desc": "Sistema de delivery para restaurante, com painel administrativo completo - produtos | clientes | colaboradores | métricas - e controle de pedidos em tempo real.",
         "link1": "https://delivery-painel.vercel.app/",
-        "video": "/videos/delivery.mp4"
+        "images": [
+          { "src": "/dashboardDelivery.png", "label": "Painel Administrativo" },
+          { "src": "/vitrineDelivery.png", "label": "Interface do Cliente" }
+        ],
+        "ativo": true
       }
     ]
   },

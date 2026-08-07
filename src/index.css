@@ -1,5 +1,5 @@
 /* ============================================================
-   OCYAN-TECH AGENCY — global.css
+   NAYCO-TECH AGENCY — global.css
    Fontes via Google Fonts (importar no index.html ou main.tsx)
    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;700&display=swap');
    ============================================================ */
@@ -1767,7 +1767,7 @@ button {
 }
 
 .device-frame:hover .device-screenshot-img {
-  transform: translateY(-30%);
+  transform: 'translateY(-30%)';
 }
 
 /* Fallback se imagem não carregar */
