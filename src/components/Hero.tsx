@@ -27,10 +27,10 @@ export default function Hero() {
           <p className="hero-sub">{t('hero.sub')}</p>
 
           <div className="hero-actions">
-            <button className="btn-primary" onClick={() => scrollTo('#contato')}>
+            <button className="btn-primary" onClick={() => scrollTo('#contact')}>
               {t('hero.cta_primary')} →
             </button>
-            <button className="btn-outline" onClick={() => scrollTo('#projetos')}>
+            <button className="btn-outline" onClick={() => scrollTo('#portifolio')}>
               {t('hero.cta_secondary')}
             </button>
           </div>
