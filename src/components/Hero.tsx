@@ -30,7 +30,7 @@ export default function Hero() {
             <button className="btn-primary" onClick={() => scrollTo('#contact')}>
               {t('hero.cta_primary')} →
             </button>
-            <button className="btn-outline" onClick={() => scrollTo('#portifolio')}>
+            <button className="btn-outline" onClick={() => scrollTo('#portfolio')}>
               {t('hero.cta_secondary')}
             </button>
           </div>
