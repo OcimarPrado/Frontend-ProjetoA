@@ -164,12 +164,12 @@
         "name": "Sitios Web",
         "icon": "🌐",
         "desc": "Landing pages, sitios institucionales y portafolios profesionales para fortalecer tu presencia digital y atraer más clientes.",
-        "price_from": "110",
+        "price_from": "100",
         "price_monthly": "35",
         "price_label": "desde €",
         "setup_label": "configuración única",
-        "monthly_label": "€ 50/mes hosting + Mantenimiento",
-        "note": "Configuración en cuotas: R$200 al contratar + saldo en la entrega. Contrato mín. 12 meses.",
+        "monthly_label": "€ 35/mes hosting + Mantenimiento",
+        "note": "Configuración en cuotas: €50 al contratar + saldo en la entrega. Contrato mín. 12 meses.",
         "featured": true,
         "features": [
           {
