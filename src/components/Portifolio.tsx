@@ -1,5 +1,6 @@
 
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 
@@ -22,6 +23,143 @@ interface PortfolioItem {
   link1?: string;
   link2?: string;
   ativo?: boolean;
+  category?: 'projeto' | 'demo';
+}
+
+function isInternalLink(href: string) {
+  return href.startsWith('/') && !href.startsWith('//');
+}
+
+function PortfolioLink({
+  href,
+  className,
+  children,
+}: {
+  href: string;
+  className: string;
+  children: React.ReactNode;
+}) {
+  if (isInternalLink(href)) {
+    return (
+      <Link to={href} className={className}>
+        {children}
+      </Link>
+    );
+  }
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+    >
+      {children}
+    </a>
+  );
+}
+
+function PortfolioCard({
+  item,
+  link1Label,
+  link2Label,
+}: {
+  item: PortfolioItem;
+  link1Label: string;
+  link2Label: string;
+}) {
+  return (
+    <div className="portfolio-card">
+      <div className="portfolio-thumb">
+        <div className="portfolio-thumb-bg" />
+
+        {item.video ? (
+          <div className="portfolio-video-wrapper">
+            <video
+              src={item.video}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="portfolio-video"
+            />
+          </div>
+        ) : item.images && item.images.length > 0 ? (
+          <Swiper
+            modules={[Autoplay, Pagination, EffectFade]}
+            effect="fade"
+            loop
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            className="portfolio-swiper"
+          >
+            {item.images.map((img, idx) => (
+              <SwiperSlide key={idx}>
+                <div className="portfolio-slide-wrapper">
+                  <img
+                    src={img.src}
+                    alt={img.label}
+                    className="portfolio-slide-img"
+                  />
+
+                  <div className="portfolio-slide-label">
+                    <span>{img.label}</span>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        ) : (
+          <div className="portfolio-thumb-icon">
+            {item.icon}
+          </div>
+        )}
+      </div>
+
+      <div className="portfolio-body">
+        <div className="portfolio-tags">
+          {item.tags.map((tag) => (
+            <span className="portfolio-tag" key={tag}>
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <h3 className="portfolio-title">
+          {item.title}
+        </h3>
+
+        <p className="portfolio-desc">
+          {item.desc}
+        </p>
+
+        <div className="portfolio-actions">
+          {item.link1 && (
+            <PortfolioLink
+              href={item.link1}
+              className="portfolio-link"
+            >
+              {link1Label}
+            </PortfolioLink>
+          )}
+
+          {item.link2 && (
+            <PortfolioLink
+              href={item.link2}
+              className="portfolio-link"
+            >
+              {link2Label}
+            </PortfolioLink>
+          )}
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default function Portfolio() {
@@ -31,9 +169,23 @@ export default function Portfolio() {
     returnObjects: true,
   }) as PortfolioItem[];
 
+  const projectItems = items.filter(
+    (item) =>
+      item.ativo !== false &&
+      item.category === 'projeto'
+  );
+
+  const demoItems = items.filter(
+    (item) =>
+      item.ativo !== false &&
+      item.category === 'demo'
+  );
+
   return (
     <section className="portfolio" id="portfolio">
       <div className="container">
+
+        {/* HEADER */}
         <div className="section-header">
           <div className="tag">
             ◈ {t('portfolio.tag')}
@@ -49,117 +201,64 @@ export default function Portfolio() {
           </p>
         </div>
 
-        <div className="portfolio-grid">
-          {items
-            .filter((item) => item.ativo !== false)
-            .map((item) => (
-              <div
-                className="portfolio-card"
-                key={item.title}
-              >
-                <div className="portfolio-thumb">
-                  <div className="portfolio-thumb-bg" />
+        {/* PROJETOS */}
+        {projectItems.length > 0 && (
+          <div className="portfolio-group">
+            <div className="portfolio-group-header">
+              <div>
+                <h3 className="portfolio-group-title">
+                  {t('portfolio.projects.title')}
+                </h3>
 
-                  {item.video ? (
-                    <div className="portfolio-video-wrapper">
-                      <video
-                        src={item.video}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="portfolio-video"
-                      />
-                    </div>
-                  ) : item.images &&
-                    item.images.length > 0 ? (
-                    <Swiper
-                      modules={[
-                        Autoplay,
-                        Pagination,
-                        EffectFade,
-                      ]}
-                      effect="fade"
-                      loop
-                      autoplay={{
-                        delay: 3000,
-                        disableOnInteraction: false,
-                      }}
-                      pagination={{
-                        clickable: true,
-                      }}
-                      className="portfolio-swiper"
-                    >
-                      {item.images.map((img, idx) => (
-                        <SwiperSlide key={idx}>
-                          <div className="portfolio-slide-wrapper">
-                            <img
-                              src={img.src}
-                              alt={img.label}
-                              className="portfolio-slide-img"
-                            />
-
-                            <div className="portfolio-slide-label">
-                              <span>{img.label}</span>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                      ))}
-                    </Swiper>
-                  ) : (
-                    <div className="portfolio-thumb-icon">
-                      {item.icon}
-                    </div>
-                  )}
-                </div>
-
-                <div className="portfolio-body">
-                  <div className="portfolio-tags">
-                    {item.tags.map((tag) => (
-                      <span
-                        className="portfolio-tag"
-                        key={tag}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-
-                  <h3 className="portfolio-title">
-                    {item.title}
-                  </h3>
-
-                  <p className="portfolio-desc">
-                    {item.desc}
-                  </p>
-
-                  <div className="portfolio-actions">
-                    {item.link1 && (
-                      <a
-                        href={item.link1}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="portfolio-link"
-                      >
-                        {t('portfolio.link1')}
-                      </a>
-                    )}
-
-                    {item.link2 && (
-                      <a
-                        href={item.link2}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="portfolio-link"
-                      >
-                        {t('portfolio.link2')}
-                      </a>
-                    )}
-                  </div>
-                </div>
+                <p className="portfolio-group-sub">
+                  {t('portfolio.projects.sub')}
+                </p>
               </div>
-            ))}
-        </div>
+            </div>
+
+            <div className="portfolio-grid">
+              {projectItems.map((item) => (
+                <PortfolioCard
+                  key={item.title}
+                  item={item}
+                  link1Label={t('portfolio.link1')}
+                  link2Label={t('portfolio.link2')}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* DEMONSTRAÇÕES */}
+        {demoItems.length > 0 && (
+          <div className="portfolio-group portfolio-demos">
+            <div className="portfolio-group-header">
+              <div>
+                <h3 className="portfolio-group-title">
+                  {t('portfolio.demos.title')}
+                </h3>
+
+                <p className="portfolio-group-sub">
+                  {t('portfolio.demos.sub')}
+                </p>
+              </div>
+            </div>
+
+            <div className="portfolio-grid">
+              {demoItems.map((item) => (
+                <PortfolioCard
+                  key={item.title}
+                  item={item}
+                  link1Label={t('portfolio.demo_link1')}
+                  link2Label={t('')}
+                />
+              ))}
+            </div>
+
+            
+          </div>
+        )}
+
       </div>
     </section>
   );

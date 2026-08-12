@@ -6,12 +6,44 @@
     "about": "Sobre nós",
     "contact": "Contato",
     "cta": "Iniciar Projeto"
+    
   },
 
-  "hero": {
-    "tag": "Sistemas, IA e Sites Inteligentes",
-    "headline1": "Tecnologia e Inovação",
-    "headline2": " para Empresas",
+"hero": {
+  "tag": "Sistemas, IA e Sites Inteligentes",
+
+  "headline1": "Tecnologia e Inovação",
+
+  "headline2": "para Empresas",
+
+  "headline3": "e Indústrias.",
+
+  "sub": "Desenvolvemos software sob medida, automações com IA, plataformas SaaS e sites de alta performance para acelerar a eficiência e as vendas do seu negócio.",
+
+  "cta_primary": "Começar meu projeto",
+
+  "cta_secondary": "Ver casos de sucesso",
+
+  "stat_projects_icon": "⚡",
+  "stat_projects_title": "Alta Performance",
+  "stat_projects_label": "Sistemas rápidos e seguros",
+
+  "stat_uptime_icon": "🤖",
+  "stat_uptime_title": "Inteligência Artificial",
+  "stat_uptime_label": "Automação e eficiência operacional",
+
+  "stat_support_icon": "🌐",
+  "stat_support_title": "Presença Digital",
+  "stat_support_label": "Sites e plataformas escaláveis",
+
+  "device_url": "nayco.com.br/seunegocio",
+
+  "badge_title": "DEMO Barbearia + agendamento",
+
+  "badge_text": "Clique e veja o site modelo."
+},
+
+  "pricing": {
     "headline3": "e Indústrias.",
     "sub": "Desenvolvemos software sob medida, automações com IA, plataformas SaaS e sites de alta performance para acelerar a eficiência e as vendas do seu negócio.",
     "cta_primary": "Começar meu projeto",
@@ -80,58 +112,263 @@
     ]
   },
 
+
+
   "portfolio": {
-    "tag": "Projetos",
-    "title": "Trabalhos",
-    "title_accent": "recentes",
-    "sub": "Tecnologia real aplicada em projetos publicados.",
+    "tag": "Projetos & Demonstrações",
+
+    "title": "Veja o que",
+
+    "title_accent": "podemos criar",
+
+    "sub": "Projetos reais e demonstrações desenvolvidas pela Nayco para diferentes tipos de negócios.",
+
     "link1": "Ver projeto →",
+
     "link2": "Quero meu SITE →",
+
+    "demo_link1": "Ver demonstração →",
+
+
+    "projects": {
+      "title": "Projetos publicados",
+
+      "sub": "Trabalhos reais desenvolvidos pela Nayco e projetos realizados em parceria com empresas e agências."
+    },
+
+    "demos": {
+      "title": "Demonstrações",
+
+      "sub": "Modelos desenvolvidos para diferentes segmentos. Cada demonstração pode ser personalizada de acordo com a identidade e necessidade do seu negócio.",
+
+      "cta": "Ver todas as demonstrações →"
+    },
+
     "items": [
+
       {
         "icon": "🏪",
-        "tags": ["Site"],
-        "title": "Site Institucional",
-        "desc": "Alguns exemplos de clientes atendidos em parceria com a agência prosite.poa.br .",
-        "link2": "https://wa.me/5551980534875?text=Olá%2c%20vim%20do%20site%20Nayco-Tech%2C%20gostaria%20de%20saber%20mais%20sobre%20desenvolvimento%20de%20sistemas%20e%20tecnologia.",
+
         "images": [
-          { "src": "./mulhergauchatour.png", "label": "Mulher Gaúcha Tour" },
-          { "src": "./mffconsultoria.png", "label": "MFF Consultoria" },
-          { "src": "/geomicro.png", "label": "GeoMicro" },
-          { "src": "/jvautocenter.png", "label": "JV Autocenter" }
-        ]
+          {
+            "src": "./mulhergauchatour.png",
+            "label": "Mulher Gaúcha Tour"
+          },
+          {
+            "src": "./mffconsultoria.png",
+            "label": "MFF Consultoria"
+          },
+          {
+            "src": "/geomicro.png",
+            "label": "GeoMicro"
+          },
+          {
+            "src": "/jvautocenter.png",
+            "label": "JV Autocenter"
+          }
+        ],
+
+        "tags": [
+          "Site",
+          "Institucional"
+        ],
+
+        "title": "Sites Institucionais",
+
+        "desc": "Alguns exemplos de projetos desenvolvidos em parceria com a agência Prosite.",
+
+        "link2": "https://wa.me/5551980534875?text=Ol%C3%A1!%20Vim%20do%20site%20da%20Nayco%20e%20gostaria%20de%20saber%20mais%20sobre%20desenvolvimento%20de%20sites.",
+
+        "category": "projeto",
+
+        "ativo": true
       },
+
       {
         "icon": "🤖",
-        "images": [{"src": "./naybot.png", "label": "IA e Automações"}],
-        "tags": ["Automação", "Chatbot"],
-        "title": "Chatbot configurável de acordo com seu negócio para atendimento inteligente.",
-        "desc": "Automação de atendimento via webChat, com respostas inteligentes e integração com sistema de agendamento.",
+
+        "images": [
+          {
+            "src": "./naybot.png",
+            "label": "IA e Automações"
+          }
+        ],
+
+        "tags": [
+          "Automação",
+          "Chatbot",
+          "IA"
+        ],
+
+        "title": "Chatbot inteligente configurável",
+
+        "desc": "Automação de atendimento via webChat, com respostas inteligentes e integração com sistemas de agendamento.",
+
         "link1": "https://assistente-inteligente-production.up.railway.app/",
+
+        "category": "projeto",
+
         "ativo": true
       },
+
       {
         "icon": "⚙️",
-        "tags": ["Sistema", "Indústria"],
+
+        "tags": [
+          "Sistema",
+          "Indústria"
+        ],
+
         "title": "Simulador Boldrini",
-        "desc": "Sistema especialista industrial para prensa rebordeadora. Codifica anos de conhecimento operacional em lógica computacional.",
-        "link": "https://github.com",
+
+        "desc": "Sistema especialista industrial para prensa rebordeadora. Codifica conhecimento operacional em lógica computacional.",
+
+        "link1": "https://github.com",
+
+        "category": "projeto",
+
         "ativo": false
       },
+
       {
         "icon": "🛒",
-        "tags": ["Sistema", "Delivery"],
-        "title": "Sistema de Delivery",
-        "desc": "Sistema de delivery para restaurante, com painel administrativo completo - produtos | clientes | colaboradores | métricas - e controle de pedidos em tempo real.",
-        "link1": "https://delivery-painel.vercel.app/",
+
         "images": [
-          { "src": "/dashboardDelivery.png", "label": "Painel Administrativo" },
-          { "src": "/vitrineDelivery.png", "label": "Interface do Cliente" }
+          {
+            "src": "/dashboardDelivery.png",
+            "label": "Painel Administrativo"
+          },
+          {
+            "src": "/vitrineDelivery.png",
+            "label": "Interface do Cliente"
+          }
         ],
+
+        "tags": [
+          "Sistema",
+          "Delivery"
+        ],
+
+        "title": "Sistema de Delivery",
+
+        "desc": "Sistema de delivery para restaurante, com painel administrativo completo, gestão de produtos, clientes, colaboradores, métricas e controle de pedidos em tempo real.",
+
+        "link1": "https://delivery-painel.vercel.app/",
+
+        "category": "projeto",
+
         "ativo": true
+      },
+
+      {
+        "images": [
+          {
+            "src": "./public/externo.png",
+            "label": "DEMO Clínica Psicologia"
+        }],
+
+        "tags": [
+          "Site",
+          "Psicologia",
+          "Psiquiatria"
+        ],
+
+        "title": "Site para Psicologia e Psiquiatria",
+
+        "desc": "Demonstração de site profissional para psicólogos, psiquiatras, clínicas e espaços de atendimento, com apresentação dos profissionais e contato facilitado.",
+
+        "link1": "https://clinica-peach-one.vercel.app/",
+
+        "link2": "https://wa.me/5551980534875?text=Ol%C3%A1!%20Conheci%20a%20Nayco%20atrav%C3%A9s%20do%20site%20demonstrativo%20para%20cl%C3%ADnica%20de%20psicologia%20e%20psiquiatria%20e%20gostaria%20de%20saber%20mais%20sobre%20um%20projeto%20assim%20para%20minha%20cl%C3%ADnica.",
+
+        "category": "demo",
+
+        "ativo": true
+      },
+
+      {
+        "images": [
+          {
+            "src": "./public/clinica.png",
+            "label": "DEMO Clínica odontológica"
+        }],
+
+        "tags": [
+          "Site",
+          "Odontologia"
+        ],
+
+        "title": "Site para Clínica Odontológica",
+
+        "desc": "Demonstração de presença digital para clínicas e consultórios odontológicos, com apresentação de serviços, profissionais e canais de contato.",
+
+        "link1": "https://odonto-demo-livid.vercel.app/",
+
+        "category": "demo",
+
+        "ativo": true
+      },
+
+      {
+        "images": [
+          {
+            "src": "./public/oficina.png",
+            "label": "DEMO Mecânica e Centro Automotivo"
+        }],
+        "tags": [
+          "Site",
+          "Automotivo"
+        ],
+
+        "title": "Site para Oficina e Centro Automotivo",
+
+        "desc": "Demonstração de site profissional para oficinas, centros automotivos e serviços especializados.",
+
+        "link1": "https://mecanica-demo.vercel.app/",
+
+        "category": "demo",
+
+        "ativo": true
+      },
+
+      {
+        "icon": "💈",
+
+        "tags": [
+          "Site",
+          "Agendamento"
+        ],
+
+        "title": "Site para Barbearia",
+
+        "desc": "Demonstração de página profissional para barbearias, com apresentação dos serviços e estrutura preparada para agendamento.",
+
+        "category": "demo",
+
+        "ativo": false
+      },
+
+      {
+        "icon": "🍔",
+
+        "tags": [
+          "Site",
+          "Delivery"
+        ],
+
+        "title": "Site para Restaurante e Delivery",
+
+        "desc": "Demonstração de presença digital para restaurantes, com cardápio, apresentação do negócio e integração com canais de pedido.",
+
+        "category": "demo",
+
+        "ativo": false
       }
     ]
-  },
+  }
+,
+
+
 
   "pricing": {
     "tag": "Planos",
@@ -142,11 +379,12 @@
     "note_setup": "* Taxa de setup cobrada uma única vez na contratação.",
     "cta": "Adquirir agora",
     "cta_custom": "Solicitar orçamento",
-    "link1": "https://wa.me/5551980534875?text=Olá%2c%20vim%20do%20site%20Nayco-Tech%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços.",
+    "link1": "/contrato",
 
     "plans": [
       {
         "name": "Sites",
+        "planId": "starter",
         "icon": "🌐",
         "desc": "Landing pages, sites institucionais e portfólios profissionais para fortalecer sua presença digital e gerar mais clientes.",
         "price_from": "490",

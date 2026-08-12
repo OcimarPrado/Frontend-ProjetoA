@@ -8,24 +8,38 @@
     "cta": "Iniciar Proyecto"
   },
   "hero": {
-    "tag": "Sistemas, IA y Sitios Inteligentes",
-    "headline1": "Tecnología e Innovación",
-    "headline2": " para Empresas",
-    "headline3": "e Industrias.",
-    "sub": "Desarrollamos software a medida, automatizaciones con IA, plataformas SaaS y sitios web de alto rendimiento para acelerar la eficiencia y las ventas de tu negocio.",
-    "cta_primary": "Comenzar mi proyecto",
-    "cta_secondary": "Ver casos de éxito",
-    "stat_projects_num": "⚡ Alto Rendimiento",
-    "stat_projects_label": "Sistemas rápidos y seguros",
-    "stat_uptime_num": "🤖 Inteligencia Artificial",
-    "stat_uptime_label": "Automatización y eficiencia operativa",
-    "stat_word_num": "⚙️ Soluciones Industriales",
-    "stat_word_label": "Sistemas expertos y lógica real",
-    "stat_support_num": "🌐 Presencia Digital",
-    "stat_support_label": "Sitios y plataformas escalables",
-    "device_url": "nayco.com.br",
-    "badge_title": "Tecnología de Vanguardia"
-  },
+  "tag": "Sistemas, IA y Sitios Web Inteligentes",
+
+  "headline1": "Tecnología e Innovación",
+
+  "headline2": "para Empresas",
+
+  "headline3": "e Industrias.",
+
+  "sub": "Desarrollamos software a medida, automatizaciones con IA, plataformas SaaS y sitios web de alto rendimiento para mejorar la eficiencia e impulsar el crecimiento de su negocio.",
+
+  "cta_primary": "Comenzar mi proyecto",
+
+  "cta_secondary": "Ver casos de éxito",
+
+  "stat_projects_icon": "⚡",
+  "stat_projects_title": "Alto Rendimiento",
+  "stat_projects_label": "Sistemas rápidos y seguros",
+
+  "stat_uptime_icon": "🤖",
+  "stat_uptime_title": "Inteligencia Artificial",
+  "stat_uptime_label": "Automatización y eficiencia operativa",
+
+  "stat_support_icon": "🌐",
+  "stat_support_title": "Presencia Digital",
+  "stat_support_label": "Sitios web y plataformas escalables",
+
+  "device_url": "nayco.com.br",
+
+  "badge_title": "Tecnología de Vanguardia",
+
+  "badge_text": "Haz clic para ver el sitio de demostración."
+},
   "services": {
     "tag": "Qué hacemos",
     "title": "Soluciones digitales para",

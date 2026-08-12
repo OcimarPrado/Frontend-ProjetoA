@@ -8,24 +8,38 @@
     "cta": "Start Project"
   },
   "hero": {
-    "tag": "Systems, AI & Intelligent Websites",
-    "headline1": "Technology & Innovation",
-    "headline2": " for Businesses",
-    "headline3": "& Industries.",
-    "sub": "We build custom software, AI automations, SaaS platforms and high-performance websites to accelerate your business efficiency and sales.",
-    "cta_primary": "Start my project",
-    "cta_secondary": "See success cases",
-    "stat_projects_num": "⚡ High Performance",
-    "stat_projects_label": "Fast and secure systems",
-    "stat_uptime_num": "🤖 Artificial Intelligence",
-    "stat_uptime_label": "Automation & operational efficiency",
-    "stat_word_num": "⚙️ Industrial Solutions",
-    "stat_word_label": "Expert systems & real logic",
-    "stat_support_num": "🌐 Digital Presence",
-    "stat_support_label": "Scalable sites & platforms",
-    "device_url": "nayco.com.br",
-    "badge_title": "Cutting-edge Technology"
-  },
+  "tag": "Systems, AI and Smart Websites",
+
+  "headline1": "Technology and Innovation",
+
+  "headline2": "for Businesses",
+
+  "headline3": "and Industries.",
+
+  "sub": "We develop custom software, AI-powered automations, SaaS platforms and high-performance websites to improve efficiency and drive business growth.",
+
+  "cta_primary": "Start My Project",
+
+  "cta_secondary": "View Success Stories",
+
+  "stat_projects_icon": "⚡",
+  "stat_projects_title": "High Performance",
+  "stat_projects_label": "Fast and secure systems",
+
+  "stat_uptime_icon": "🤖",
+  "stat_uptime_title": "Artificial Intelligence",
+  "stat_uptime_label": "Automation and operational efficiency",
+
+  "stat_support_icon": "🌐",
+  "stat_support_title": "Digital Presence",
+  "stat_support_label": "Scalable websites and platforms",
+
+  "device_url": "nayco.com.br",
+
+  "badge_title": "Cutting-Edge Technology",
+
+  "badge_text": "Click to view the demo site."
+},
   "services": {
     "tag": "What we do",
     "title": "Digital solutions to",

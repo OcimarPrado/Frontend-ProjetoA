@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 interface ServiceItem {
   number: string;
@@ -6,6 +7,38 @@ interface ServiceItem {
   name: string;
   desc: string;
   features: string[];
+  link1?: string;
+}
+
+/** Mesma regra do Portfolio: link começando com "/" é rota interna
+ *  (navegação sem reload via React Router); "http(s)://..." é externo
+ *  e abre em nova aba. */
+function isInternalLink(href: string) {
+  return href.startsWith('/') && !href.startsWith('//');
+}
+
+function ServiceLink({
+  href,
+  className,
+  children,
+}: {
+  href: string;
+  className: string;
+  children: React.ReactNode;
+}) {
+  if (isInternalLink(href)) {
+    return (
+      <Link to={href} className={className}>
+        {children}
+      </Link>
+    );
+  }
+
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+      {children}
+    </a>
+  );
 }
 
 export default function Services() {
@@ -36,6 +69,12 @@ export default function Services() {
                   <li key={f}>{f}</li>
                 ))}
               </ul>
+
+              {item.link1 && (
+                <ServiceLink href={item.link1} className="service-link">
+                  {t('services.link1')}
+                </ServiceLink>
+              )}
             </div>
           ))}
         </div>

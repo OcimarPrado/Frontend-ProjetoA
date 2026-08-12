@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
 interface PlanFeature {
   included: boolean;
@@ -17,6 +18,10 @@ interface Plan {
   note: string;
   featured: boolean;
   features: PlanFeature[];
+  /** Precisa bater com uma chave de PLANOS em src/pages/Contrato.tsx
+   *  (ex: "essencial" | "profissional" | "avancado"). Se ausente,
+   *  cai no fallback abaixo (nome do plano em minúsculas e sem acento). */
+  planId?: string;
 }
 
 interface PricingData {
@@ -31,13 +36,38 @@ interface PricingData {
   plans: Plan[];
 }
 
+/** Fallback simples: transforma o nome do plano em algo próximo de
+ *  um id de PLANOS (ex: "Profissional" -> "profissional"). */
+function slugifyPlanName(name: string) {
+  return name
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+}
+
 export default function Pricing() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const pricing = t('pricing', { returnObjects: true }) as PricingData;
 
   const scrollToContact = () =>
     document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+
+  const handleCtaClick = (plan: Plan) => {
+    // Planos com preço definido (sites) vão direto pro contrato,
+    // já com o plano pré-selecionado via query param.
+    if (plan.price_from) {
+      const planId = plan.planId || slugifyPlanName(plan.name);
+      navigate(`/contrato?plano=${encodeURIComponent(planId)}`);
+      return;
+    }
+
+    // Planos "sob consulta" (automações/sistemas sob medida) continuam
+    // levando pro formulário de contato, não pro contrato fechado.
+    scrollToContact();
+  };
 
   return (
     <section className="pricing" id="pricing">
@@ -131,7 +161,7 @@ export default function Pricing() {
 
               {/* CTA */}
               <button
-                onClick={scrollToContact}
+                onClick={() => handleCtaClick(plan)}
                 className={`pricing-cta ${
                   plan.featured ? 'btn-primary' : 'btn-outline'
                 }`}

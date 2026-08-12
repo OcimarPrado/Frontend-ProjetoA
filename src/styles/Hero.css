@@ -31,6 +31,8 @@
   -webkit-font-smoothing: antialiased;
 }
 
+
+
 /* Dot grid com toque ciano */
 .hero::before {
   content: '';
@@ -530,4 +532,23 @@
     margin: 20px 0;
     justify-content: center;
   }
+}
+
+.hero-stat-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-stat-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.hero-stat-label {
+  display: block;
+  margin-top: 5px;
 }
