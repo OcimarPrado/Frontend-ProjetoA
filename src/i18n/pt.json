@@ -263,7 +263,7 @@
       {
         "images": [
           {
-            "src": "./public/clinica.png",
+            "src": "./externo.png",
             "label": "DEMO Clínica Psicologia"
         }],
 
@@ -289,7 +289,7 @@
       {
         "images": [
           {
-            "src": "./public/clinica.png",
+            "src": "./clinica.png",
             "label": "DEMO Clínica odontológica"
         }],
 
@@ -312,7 +312,7 @@
       {
         "images": [
           {
-            "src": "./public/oficina.png",
+            "src": "./oficina.png",
             "label": "DEMO Mecânica e Centro Automotivo"
         }],
         "tags": [
