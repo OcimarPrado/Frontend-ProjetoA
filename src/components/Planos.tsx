@@ -42,7 +42,7 @@ export default function Pricing() {
   const whatsappNumber = '5551980534875';
 
   const handleCtaClick = (plan: Plan) => {
-    const message = `Olá! Vim pelo ${plan.name} da Nayco. Gostaria de saber mais detalhes sobre desenvolvimento de sites para meu negócio.`;
+    const message = `Olá! Cliquei no promocional de ${plan.name} da Nayco. Gostaria de saber mais detalhes sobre desenvolvimento de sites para meu negócio.`;
 
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       message
