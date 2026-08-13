@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
 
 interface PlanFeature {
   included: boolean;
@@ -18,9 +17,6 @@ interface Plan {
   note: string;
   featured: boolean;
   features: PlanFeature[];
-  /** Precisa bater com uma chave de PLANOS em src/pages/Contrato.tsx
-   *  (ex: "essencial" | "profissional" | "avancado"). Se ausente,
-   *  cai no fallback abaixo (nome do plano em minúsculas e sem acento). */
   planId?: string;
 }
 
@@ -36,143 +32,210 @@ interface PricingData {
   plans: Plan[];
 }
 
-/** Fallback simples: transforma o nome do plano em algo próximo de
- *  um id de PLANOS (ex: "Profissional" -> "profissional"). */
-function slugifyPlanName(name: string) {
-  return name
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .trim();
-}
-
 export default function Pricing() {
   const { t } = useTranslation();
-  const navigate = useNavigate();
 
-  const pricing = t('pricing', { returnObjects: true }) as PricingData;
+  const pricing = t('pricing', {
+    returnObjects: true
+  }) as PricingData;
 
-  const scrollToContact = () =>
-    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+  const whatsappNumber = '5551980534875';
 
   const handleCtaClick = (plan: Plan) => {
-    // Planos com preço definido (sites) vão direto pro contrato,
-    // já com o plano pré-selecionado via query param.
-    if (plan.price_from) {
-      const planId = plan.planId || slugifyPlanName(plan.name);
-      navigate(`/contrato?plano=${encodeURIComponent(planId)}`);
-      return;
-    }
+    const message = `Olá! Vim pelo ${plan.name} da Nayco. Gostaria de saber mais detalhes sobre desenvolvimento de sites para meu negócio.`;
 
-    // Planos "sob consulta" (automações/sistemas sob medida) continuam
-    // levando pro formulário de contato, não pro contrato fechado.
-    scrollToContact();
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (
     <section className="pricing" id="pricing">
       <div className="container">
+
         <div className="section-header">
-          <div className="tag">◈ {pricing.tag}</div>
+
+          <div className="tag">
+            ◈ {pricing.tag}
+          </div>
 
           <h2 className="section-title">
             {pricing.title}
             <span>{pricing.title_accent}</span>
           </h2>
 
-          <p className="section-sub">{pricing.sub}</p>
+          <p className="section-sub">
+            {pricing.sub}
+          </p>
+
         </div>
 
         <div className="pricing-grid">
+
           {pricing.plans.map((plan) => (
+
             <div
               key={plan.name}
-              className={`pricing-card ${plan.featured ? 'featured' : ''}`}
+              className={`pricing-card ${
+                plan.featured ? 'featured' : ''
+              }`}
             >
+
               {plan.featured && (
-                <div className="pricing-badge">{pricing.featured_badge}</div>
+                <div className="pricing-badge">
+                  {pricing.featured_badge}
+                </div>
               )}
 
               {/* Nome + Descrição */}
               <div className="pricing-plan">
+
                 <div className="pricing-plan-name">
+
                   {plan.icon && (
-                    <span style={{ marginRight: '0.4rem' }}>{plan.icon}</span>
+                    <span
+                      style={{
+                        marginRight: '0.4rem'
+                      }}
+                    >
+                      {plan.icon}
+                    </span>
                   )}
+
                   {plan.name}
+
                 </div>
-                <div className="pricing-plan-desc">{plan.desc}</div>
+
+                <div className="pricing-plan-desc">
+                  {plan.desc}
+                </div>
+
               </div>
 
               {/* Bloco de Preço */}
               <div className="pricing-price">
 
                 {plan.price_from ? (
-                  /* Card com preço definido — Sites */
+
                   <>
                     <div className="pricing-amount">
+
                       <span className="pricing-currency">
                         {plan.price_label}
                       </span>
-                      <span className="pricing-value">{plan.price_from}</span>
-                      <span className="pricing-period">{plan.setup_label}</span>
+
+                      <span className="pricing-value">
+                        {plan.price_from}
+                      </span>
+
+                      <span className="pricing-period">
+                        {plan.setup_label}
+                      </span>
+
                     </div>
 
                     {plan.monthly_label && (
-                      <div style={{ marginTop: '0.4rem' }}>
+                      <div
+                        style={{
+                          marginTop: '0.4rem'
+                        }}
+                      >
                         <span className="pricing-period">
                           + {plan.monthly_label}
                         </span>
                       </div>
                     )}
+
                   </>
+
                 ) : (
-                  /* Card sob consulta — Automações & Sistemas */
+
                   <div className="pricing-amount">
+
                     <span
                       className="pricing-value"
-                      style={{ fontSize: '1.5rem', letterSpacing: '-0.02em' }}
+                      style={{
+                        fontSize: '1.5rem',
+                        letterSpacing: '-0.02em'
+                      }}
                     >
                       {plan.price_label}
                     </span>
+
                   </div>
+
                 )}
 
-                <div className="pricing-note" style={{ marginTop: '0.6rem' }}>
+                <div
+                  className="pricing-note"
+                  style={{
+                    marginTop: '0.6rem'
+                  }}
+                >
                   {plan.note}
                 </div>
+
               </div>
 
               {/* Features */}
               <ul className="pricing-features">
+
                 {plan.features.map((feature) => (
+
                   <li key={feature.text}>
+
                     {feature.included ? (
-                      <span className="check">✓</span>
+                      <span className="check">
+                        ✓
+                      </span>
                     ) : (
-                      <span className="x">✕</span>
+                      <span className="x">
+                        ✕
+                      </span>
                     )}
-                    <span style={{ opacity: feature.included ? 1 : 0.45 }}>
+
+                    <span
+                      style={{
+                        opacity: feature.included
+                          ? 1
+                          : 0.45
+                      }}
+                    >
                       {feature.text}
                     </span>
+
                   </li>
+
                 ))}
+
               </ul>
 
               {/* CTA */}
               <button
                 onClick={() => handleCtaClick(plan)}
                 className={`pricing-cta ${
-                  plan.featured ? 'btn-primary' : 'btn-outline'
+                  plan.featured
+                    ? 'btn-primary'
+                    : 'btn-outline'
                 }`}
               >
-                {plan.price_from ? pricing.cta : pricing.cta_custom}
+                {plan.price_from
+                  ? pricing.cta
+                  : pricing.cta_custom}
               </button>
+
             </div>
+
           ))}
+
         </div>
 
-        <div className="pricing-footer-note">{pricing.note_setup}</div>
+        <div className="pricing-footer-note">
+          {pricing.note_setup}
+        </div>
+
       </div>
     </section>
   );
