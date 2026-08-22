@@ -6,8 +6,10 @@
     "about": "About us",
     "contact": "Contact",
     "cta": "Start Project"
+
   },
-  "hero": {
+
+"hero": {
   "tag": "Systems, AI and Smart Websites",
 
   "headline1": "Technology and Innovation",
@@ -16,15 +18,15 @@
 
   "headline3": "and Industries.",
 
-  "sub": "We develop custom software, AI-powered automations, SaaS platforms and high-performance websites to improve efficiency and drive business growth.",
+  "sub": "We build custom software, AI automations, SaaS platforms and high-performance websites to boost your business's efficiency and sales.",
 
-  "cta_primary": "Start My Project",
+  "cta_primary": "Start my project",
 
-  "cta_secondary": "View Success Stories",
+  "cta_secondary": "See success stories",
 
   "stat_projects_icon": "⚡",
   "stat_projects_title": "High Performance",
-  "stat_projects_label": "Fast and secure systems",
+  "stat_projects_label": "Fast, secure systems",
 
   "stat_uptime_icon": "🤖",
   "stat_uptime_title": "Artificial Intelligence",
@@ -34,25 +36,50 @@
   "stat_support_title": "Digital Presence",
   "stat_support_label": "Scalable websites and platforms",
 
-  "device_url": "nayco.com.br",
+  "device_url": "nayco.com.br/seunegocio",
 
-  "badge_title": "Cutting-Edge Technology",
+  "badge_title": "DEMO Barbershop + booking",
 
-  "badge_text": "Click to view the demo site."
+  "badge_text": "Click to see the sample website."
 },
+
+  "pricing": {
+    "headline3": "and Industries.",
+    "sub": "We build custom software, AI automations, SaaS platforms and high-performance websites to boost your business's efficiency and sales.",
+    "cta_primary": "Start my project",
+    "cta_secondary": "See success stories",
+
+    "stat_projects_num": "⚡ High Performance",
+    "stat_projects_label": "Fast, secure systems",
+
+    "stat_uptime_num": "🤖 Artificial Intelligence",
+    "stat_uptime_label": "Automation and operational efficiency",
+
+    "stat_word_num": "⚙️ Industrial Solutions",
+    "stat_word_label": "Expert systems and real logic",
+
+    "stat_support_num": "🌐 Digital Presence",
+    "stat_support_label": "Scalable websites and platforms",
+
+    "device_url": "nayco.com.br",
+
+    "badge_title": "Cutting-Edge Technology"
+  },
+
   "services": {
     "tag": "What we do",
     "title": "Digital solutions to",
-    "title_accent": "boost businesses",
-    "sub": "We create professional websites, custom systems, AI-powered solutions and platforms for business and industrial process automation.",
+    "title_accent": "drive business forward",
+    "sub": "We build professional websites, custom systems, AI-powered solutions and platforms to automate business and industrial processes.",
+
     "items": [
       {
         "number": "01",
         "icon": "🌐",
-        "name": "Websites & Landing Pages",
-        "desc": "We develop modern, fast and responsive websites to strengthen your digital presence, attract customers and generate business opportunities.",
+        "name": "Websites and Landing Pages",
+        "desc": "We build modern, fast, responsive websites to strengthen your digital presence, attract customers and generate business opportunities.",
         "features": [
-          "Professional and responsive design",
+          "Professional, responsive design",
           "Google optimization (SEO)",
           "WhatsApp and social media integration",
           "High performance and security"
@@ -61,45 +88,67 @@
       {
         "number": "02",
         "icon": "🤖",
-        "name": "AI & Automation",
-        "desc": "We apply artificial intelligence and automation to reduce manual tasks, improve customer service and increase operational efficiency.",
+        "name": "AI and Automation",
+        "desc": "We apply artificial intelligence and automation to cut down on manual tasks, improve service and boost operational efficiency.",
         "features": [
-          "Intelligent chatbots",
+          "Smart chatbots",
           "Process automation",
           "Industrial expert systems",
-          "Real-time dashboards and KPIs"
+          "Real-time dashboards and metrics"
         ]
       },
       {
         "number": "03",
         "icon": "💻",
-        "name": "Systems & Platforms",
-        "desc": "We create custom web systems for management, sales, operations and process control, tailored to each company's reality.",
+        "name": "Systems and Platforms",
+        "desc": "We build custom web systems for management, sales, operations and process control, tailored to each company's reality.",
         "features": [
-          "Complete admin panels",
+          "Full admin dashboards",
           "User and permission control",
-          "API and external service integration",
-          "Scalable and secure architecture"
+          "Integration with APIs and external services",
+          "Scalable, secure architecture"
         ]
       }
     ]
   },
+
+
+
   "portfolio": {
-    "tag": "Projects",
-    "title": "Recent",
-    "title_accent": "work",
-    "sub": "Real technology applied in published projects.",
+    "tag": "Projects & Demos",
+
+    "title": "See what",
+
+    "title_accent": "we can build",
+
+    "sub": "Real projects and demos built by Nayco for different types of businesses.",
+
     "link1": "View project →",
-    "link2": "I want my SYSTEM →",
+
+    "link2": "I want my WEBSITE →",
+
+    "demo_link1": "View demo →",
+
+
+    "projects": {
+      "title": "Published projects",
+
+      "sub": "Real work built by Nayco and projects delivered in partnership with companies and agencies."
+    },
+
+    "demos": {
+      "title": "Demos",
+
+      "sub": "Templates built for different segments. Each demo can be customized to match your business's identity and needs.",
+
+      "cta": "See all demos →"
+    },
+
     "items": [
+
       {
         "icon": "🏪",
-        "tags": [
-          "Website"
-        ],
-        "title": "Institutional Website",
-        "desc": "Some examples of clients served in partnership with the agency prosite.poa.br.",
-        "link2": "https://wa.me/5551980534875?text=Hello%2C%20I%20came%20from%20the%20Nayco-Tech%20website%20and%20would%20like%20to%20learn%20more%20about%20systems%20development%20and%20technology.",
+
         "images": [
           {
             "src": "./mulhergauchatour.png",
@@ -112,69 +161,243 @@
           {
             "src": "/geomicro.png",
             "label": "GeoMicro"
+          },
+          {
+            "src": "/jvautocenter.png",
+            "label": "JV Autocenter"
           }
-        ]
+        ],
+
+        "tags": [
+          "Website",
+          "Corporate"
+        ],
+
+        "title": "Corporate Websites",
+
+        "desc": "A few examples of projects built in partnership with the Prosite agency.",
+
+        "link2": "https://wa.me/5551980534875?text=Hi%21%20I%20came%20from%20the%20Nayco%20website%20and%20I%27d%20like%20to%20know%20more%20about%20website%20development.",
+
+        "category": "projeto",
+
+        "ativo": true
       },
+
       {
         "icon": "🤖",
-        "video": "/videos/CyanBot-demo.mp4",
+
+        "images": [
+          {
+            "src": "./naybot.png",
+            "label": "AI and Automations"
+          }
+        ],
+
         "tags": [
           "Automation",
-          "Chatbot"
+          "Chatbot",
+          "AI"
         ],
-        "title": "Configurable chatbot tailored to your business for intelligent customer service.",
-        "desc": "Customer service automation via webChat, with intelligent responses and scheduling system integration.",
-        "link1": "https://assistente-inteligente-production.up.railway.app/"
+
+        "title": "Configurable smart chatbot",
+
+        "desc": "Customer service automation via webChat, with smart replies and integration with booking systems.",
+
+        "link1": "https://assistente-inteligente-production.up.railway.app/",
+
+        "category": "projeto",
+
+        "ativo": true
       },
+
       {
         "icon": "⚙️",
+
         "tags": [
           "System",
           "Industry"
         ],
+
         "title": "Boldrini Simulator",
-        "desc": "Industrial expert system for a flanging press. Encodes years of operational knowledge into computational logic.",
-        "link": "https://github.com",
+
+        "desc": "Industrial expert system for a flanging press. Encodes operational knowledge into computational logic.",
+
+        "link1": "https://github.com",
+
+        "category": "projeto",
+
         "ativo": false
       },
+
       {
         "icon": "🛒",
+
+        "images": [
+          {
+            "src": "/dashboardDelivery.png",
+            "label": "Admin Dashboard"
+          },
+          {
+            "src": "/vitrineDelivery.png",
+            "label": "Customer Interface"
+          }
+        ],
+
         "tags": [
           "System",
           "Delivery"
         ],
+
         "title": "Delivery System",
-        "desc": "Restaurant delivery system with a complete admin panel — products | customers | staff | metrics — and real-time order management.",
+
+        "desc": "Delivery system for restaurants, with a full admin dashboard, product/customer/staff management, metrics and real-time order control.",
+
         "link1": "https://delivery-painel.vercel.app/",
-        "video": "/videos/delivery.mp4"
+
+        "category": "projeto",
+
+        "ativo": true
+      },
+
+      {
+        "images": [
+          {
+            "src": "./externo.png",
+            "label": "DEMO Psychology Clinic"
+        }],
+
+        "tags": [
+          "Website",
+          "Psychology",
+          "Psychiatry"
+        ],
+
+        "title": "Website for Psychology and Psychiatry",
+
+        "desc": "Demo of a professional website for psychologists, psychiatrists, clinics and care practices, with staff profiles and easy contact.",
+
+        "link1": "https://clinica-peach-one.vercel.app/",
+
+        "link2": "https://wa.me/5551980534875?text=Hi%21%20I%20found%20Nayco%20through%20the%20demo%20site%20for%20psychology%20and%20psychiatry%20clinics%20and%20I%27d%20like%20to%20know%20more%20about%20a%20project%20like%20that%20for%20my%20clinic.",
+
+        "category": "demo",
+
+        "ativo": true
+      },
+
+      {
+        "images": [
+          {
+            "src": "./clinica.png",
+            "label": "DEMO Dental Clinic"
+        }],
+
+        "tags": [
+          "Website",
+          "Dentistry"
+        ],
+
+        "title": "Website for a Dental Clinic",
+
+        "desc": "Demo of a digital presence for dental clinics and offices, with services, staff profiles and contact channels.",
+
+        "link1": "https://odonto-demo-livid.vercel.app/",
+
+        "category": "demo",
+
+        "ativo": true
+      },
+
+      {
+        "images": [
+          {
+            "src": "./oficina.png",
+            "label": "DEMO Auto Shop and Service Center"
+        }],
+        "tags": [
+          "Website",
+          "Automotive"
+        ],
+
+        "title": "Website for Auto Shops and Service Centers",
+
+        "desc": "Demo of a professional website for auto shops, service centers and specialized repair services.",
+
+        "link1": "https://mecanica-demo.vercel.app/",
+
+        "category": "demo",
+
+        "ativo": true
+      },
+
+      {
+        "icon": "💈",
+
+        "tags": [
+          "Website",
+          "Booking"
+        ],
+
+        "title": "Website for Barbershops",
+
+        "desc": "Demo of a professional page for barbershops, with service listings and a structure ready for online booking.",
+
+        "category": "demo",
+
+        "ativo": false
+      },
+
+      {
+        "icon": "🍔",
+
+        "tags": [
+          "Website",
+          "Delivery"
+        ],
+
+        "title": "Website for Restaurants and Delivery",
+
+        "desc": "Demo of a digital presence for restaurants, with menu, business profile and integration with ordering channels.",
+
+        "category": "demo",
+
+        "ativo": false
       }
     ]
-  },
+  }
+,
+
+
+
   "pricing": {
     "tag": "Plans",
     "title": "Transparent ",
-    "title_accent": "pricing",
-    "sub": "No surprises. Every solution scoped to your business — from website to full system.",
+    "title_accent": "investment",
+    "sub": "No surprises. Every solution sized for your business — from a website to a full system.",
     "featured_badge": "Promotional Price",
-    "note_setup": "* Setup fee charged once at contract signing.",
+    "note_setup": "* Setup fee charged once, at signup.",
     "cta": "Get started",
     "cta_custom": "Request a quote",
+    "link1": "/contrato",
+
     "plans": [
       {
         "name": "Websites",
+        "planId": "starter",
         "icon": "🌐",
-        "desc": "Landing pages, institutional websites and professional portfolios to strengthen your digital presence and attract more clients.",
-        "price_from": "100",
-        "price_monthly": "35",
-        "price_label": "from $",
+        "desc": "Landing pages, corporate websites and professional portfolios to strengthen your digital presence and generate more customers.",
+        "price_from": "490",
+        "price_monthly": "149",
+        "price_label": "from R$",
         "setup_label": "one-time setup",
-        "monthly_label": "$35/mo hosting + Maintenance",
-        "note": "Setup split: $50 upfront + balance on delivery. Min. 12-month contract.",
+        "monthly_label": "R$149/month hosting + maintenance",
+        "note": "Setup in installments: R$200 at signup + balance on delivery. Minimum 12-month contract.",
         "featured": true,
         "features": [
           {
             "included": true,
-            "text": "Responsive and Mobile-First design"
+            "text": "Responsive, mobile-first design"
           },
           {
             "included": true,
@@ -182,7 +405,7 @@
           },
           {
             "included": true,
-            "text": ".com.br domain included for the 1st year"
+            "text": ".com.br domain included in year 1"
           },
           {
             "included": true,
@@ -194,11 +417,11 @@
           },
           {
             "included": true,
-            "text": "2 revision rounds after delivery"
+            "text": "2 rounds of revisions after delivery"
           },
           {
             "included": true,
-            "text": "Delivery in 5–20 business days"
+            "text": "Delivered in 5–20 business days"
           },
           {
             "included": true,
@@ -207,15 +430,15 @@
         ]
       },
       {
-        "name": "Automations & APIs",
+        "name": "Automation & APIs",
         "icon": "🤖",
-        "desc": "Intelligent chatbots, AI agents, system integrations and process automations that eliminate manual tasks.",
+        "desc": "Smart chatbots, AI agents, system integrations and process automations that eliminate manual tasks.",
         "price_from": null,
         "price_monthly": null,
-        "price_label": "By consultation",
+        "price_label": "On request",
         "setup_label": "project scoped after briefing",
         "monthly_label": "",
-        "note": "Pricing defined after technical scope analysis. No surprises.",
+        "note": "Price set after reviewing technical scope. No surprises.",
         "featured": false,
         "features": [
           {
@@ -240,29 +463,29 @@
           },
           {
             "included": true,
-            "text": "Technical documentation delivered"
+            "text": "Technical documentation included"
           },
           {
             "included": true,
-            "text": "Direct support with the developer"
+            "text": "Direct support from the developer"
           }
         ]
       },
       {
         "name": "Systems",
         "icon": "💻",
-        "desc": "Web platforms, admin panels, multitenant SaaS and custom systems for managing and running your business.",
+        "desc": "Web platforms, admin dashboards, multi-tenant SaaS and custom systems to manage and run your business.",
         "price_from": null,
         "price_monthly": null,
-        "price_label": "By consultation",
+        "price_label": "On request",
         "setup_label": "project scoped after briefing",
         "monthly_label": "",
-        "note": "Pricing defined after technical scope analysis. No surprises.",
+        "note": "Price set after reviewing technical scope. No surprises.",
         "featured": false,
         "features": [
           {
             "included": true,
-            "text": "Complete admin panels"
+            "text": "Full admin dashboards"
           },
           {
             "included": true,
@@ -270,40 +493,44 @@
           },
           {
             "included": true,
-            "text": "Scalable and secure architecture"
+            "text": "Scalable, secure architecture"
           },
           {
             "included": true,
-            "text": "API and external service integration"
+            "text": "Integration with APIs and external services"
           },
           {
             "included": true,
-            "text": "Relational database and backup"
+            "text": "Relational database and backups"
           },
           {
             "included": true,
-            "text": "Multitenant SaaS platforms"
+            "text": "Multi-tenant SaaS platforms"
           },
           {
             "included": true,
-            "text": "Direct support with the developer"
+            "text": "Direct support from the developer"
           }
         ]
       }
     ]
   },
+
   "about": {
     "tag": "About us",
     "title": "Real technology,",
-    "title_accent": " solutions that deliver results",
+    "title_accent": "solutions that deliver results",
     "title2": "",
-    "text1": "Nayco-Tech develops custom software, advanced web systems and intelligent automations focused on performance, scalability and innovation. We don't just deliver code — we build robust tools that solve real problems for businesses and industries.",
-    "text2": "We combine solid industrial technical experience, strategic software vision and modern development to build fast, secure and efficient solutions. Every project is architected to optimize operations, automate workflows and drive your business growth.",
+
+    "text1": "Nayco-Tech builds custom software, advanced web systems and smart automations focused on performance, scalability and innovation. We don't just deliver code — we build robust tools that solve real problems for companies and industries.",
+
+    "text2": "We combine solid industrial technical experience, strategic software vision and modern development to build fast, secure and efficient solutions. Every project is designed to optimize operations, automate workflows and drive your business growth.",
+
     "highlights": [
       {
         "icon": "⚡",
-        "title": "Modern and agile architecture",
-        "text": "Projects built with efficient technology stacks, ensuring scalability and robustness."
+        "title": "Modern, agile architecture",
+        "text": "Projects built with efficient tech stacks, ensuring scalability and robustness."
       },
       {
         "icon": "🛡️",
@@ -313,14 +540,15 @@
       {
         "icon": "📱",
         "title": "Direct technical partnership",
-        "text": "Direct support and consultation with the developer through all stages."
+        "text": "Support and consulting directly with the developer at every stage."
       }
     ],
+
     "cards": [
       {
         "icon": "🏗️",
         "title": "22+ years of technical experience",
-        "text": "Industrial background, operational logic and applied software development."
+        "text": "Industrial experience, operational logic and applied software development."
       },
       {
         "icon": "🚀",
@@ -330,32 +558,34 @@
       {
         "icon": "🤝",
         "title": "Transparent process",
-        "text": "Aligned scope, objective communication and continuous follow-up."
+        "text": "Aligned scope, clear communication and ongoing follow-up."
       },
       {
         "icon": "📊",
-        "title": "Efficiency-focused",
-        "text": "Every solution is built to automate processes, reduce costs and generate scale."
+        "title": "Focused on efficiency",
+        "text": "Every solution is built to automate processes, cut costs and drive scale."
       }
     ]
   },
+
   "contact": {
     "tag": "Contact",
     "title": "Let's build",
     "title_accent": " something together",
-    "sub": "Fill out the form with as much information as possible about your project, system or desired automation. We respond within 24 hours.",
+    "sub": "Fill out the form with as much detail as possible about your project, system or the automation you need. We reply within 24 hours.",
+
     "methods": [
       {
         "icon": "📱",
         "label": "WhatsApp",
         "value": "+55 (51) 9 8053-4875",
-        "link": "https://wa.me/5551980534875?text=Hello%2C%20I%20came%20from%20the%20Nayco-Tech%20website%20and%20would%20like%20to%20learn%20more%20about%20systems%20development%20and%20automations."
+        "link": "https://wa.me/5551980534875?text=Hi%2C%20I%20came%20from%20the%20Nayco-Tech%20website%2C%20I%27d%20like%20to%20know%20more%20about%20systems%20development%20and%20automations."
       },
       {
         "icon": "📧",
-        "label": "E-mail",
+        "label": "Email",
         "value": "contato@nayco.com.br",
-        "link": "mailto:contato@nayco.com.br/?subject=Contact%20via%20Nayco-Tech%20website&body=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20development%20and%20technology%20services."
+        "link": "mailto:contato@nayco.com.br/?subject=Contact%20via%20Nayco-Tech%20website&body=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20development%20and%20technology%20services."
       },
       {
         "icon": "📍",
@@ -363,47 +593,60 @@
         "value": "Canoas, RS — We serve all of Brazil"
       }
     ],
+
     "form": {
       "name_label": "Your name",
       "name_placeholder": "John Smith",
-      "email_label": "E-mail",
+
+      "email_label": "Email",
       "email_placeholder": "john@company.com",
+
       "service_label": "Service of interest",
       "service_placeholder": "Select...",
+
       "service_options": [
         "Custom system or API",
-        "AI & Process Automation",
-        "SaaS Platform",
+        "AI and process automation",
+        "SaaS platform",
         "Website creation",
         "Other"
       ],
-      "message_label": "Tell us a little about your project",
-      "message_placeholder": "I need to develop a system for... / automate...",
+
+      "message_label": "Tell us a bit about your project",
+      "message_placeholder": "I need to build a system for... / automate...",
+
       "submit": "Send message",
       "submitting": "Sending...",
+
       "success_title": "Message sent!",
-      "success_sub": "We will get back to you within 24 hours.",
+      "success_sub": "We'll get back to you within 24 hours.",
       "success_btn": "Send another message"
     }
   },
+
   "cta_banner": {
     "title": "Ready to scale your business",
     "title_accent": " with cutting-edge technology?",
-    "sub": "Contact us today. Scope alignment and direct quote with the developer.",
+
+    "sub": "Get in touch today. Scope and budget discussed directly with the developer.",
+
     "cta_primary": "Request a quote",
     "cta_secondary": "See plans"
   },
+
   "footer": {
-    "brand_desc": "Custom systems development, artificial intelligence, and industrial & corporate automations. Canoas, RS.",
+    "brand_desc": "Custom systems development, artificial intelligence and industrial and corporate automations. Canoas, RS.",
+
     "col_services": "Services",
     "col_company": "Company",
+
     "links_services": [
       {
         "label": "Custom Systems",
         "href": "#pricing"
       },
       {
-        "label": "AI & Automations",
+        "label": "AI and Automations",
         "href": "#services"
       },
       {
@@ -415,6 +658,7 @@
         "href": "#services"
       }
     ],
+
     "links_company": [
       {
         "label": "Portfolio",
@@ -433,8 +677,10 @@
         "href": "#contact"
       }
     ],
-    "copyright": "© {year} Nayco. Made by",
+
+    "copyright": "© {year} Nayco. Built by",
     "copyright_end": " Canoas - Brazil.",
+
     "privacy": "Privacy",
     "terms": "Terms"
   }
