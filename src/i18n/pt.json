@@ -187,23 +187,21 @@
         "images": [
           {
             "src": "./naybot.png",
-            "label": "IA e Automações"
+            "label": "Captação de LEAD"
           }
         ],
 
         "tags": [
           "Automação",
-          "Chatbot",
+          "Captação",
           "IA"
         ],
 
-        "title": "Chatbot inteligente configurável",
-
-        "desc": "Automação de atendimento via webChat, com respostas inteligentes e integração com sistemas de agendamento.",
-
-        "link1": "https://assistente-inteligente-production.up.railway.app/",
-
-        "category": "projeto",
+       
+  "title": "Mais leads para sua prospecção",
+  "desc": "Receba contatos de potenciais clientes selecionados de acordo com seu nicho e região, prontos para você prospectar e transformar em novas oportunidades.",
+  "link1": "https://wa.me/5551980534875?text=Ol%C3%A1!%20Vim%20do%20site%20da%20Nayco%20e%20gostaria%20de%20saber%20mais%20sobre%20capta%C3%A7%C3%A3o%20de%20leads.",
+  "category": "projeto",
 
         "ativo": true
       },
