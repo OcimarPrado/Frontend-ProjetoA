@@ -443,3 +443,32 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
+
+/* ===== MOVIMENTO ADICIONAL — SOBRE ===== */
+.sobre-stat-icon,
+.sobre-pillar-icon {
+  animation: sobreIconFloat 5s ease-in-out infinite;
+}
+.sobre-stat:nth-child(2) .sobre-stat-icon,
+.sobre-pillar:nth-child(2) .sobre-pillar-icon { animation-delay: -1.5s; }
+.sobre-stat:nth-child(3) .sobre-stat-icon,
+.sobre-pillar:nth-child(3) .sobre-pillar-icon { animation-delay: -3s; }
+
+@keyframes sobreIconFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-5px); }
+}
+
+.sobre-diff-bar {
+  background-size: 100% 200%;
+  animation: diffBarPulse 3s ease-in-out infinite;
+}
+@keyframes diffBarPulse {
+  0%, 100% { filter: brightness(1); }
+  50%      { filter: brightness(1.4); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sobre-stat-icon, .sobre-pillar-icon, .sobre-diff-bar { animation: none !important; }
+}
+

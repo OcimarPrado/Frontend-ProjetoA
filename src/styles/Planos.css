@@ -565,3 +565,26 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
+/* ===== MOVIMENTO ADICIONAL — PLANOS ===== */
+.plano-card.destaque h3::before {
+  animation: badgeWiggle 3s ease-in-out infinite;
+}
+@keyframes badgeWiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25%      { transform: rotate(-3deg); }
+  75%      { transform: rotate(3deg); }
+}
+
+.btn-plano {
+  background-size: 200% 200%;
+  animation: btnGlow 3.5s ease-in-out infinite;
+}
+@keyframes btnGlow {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plano-card.destaque h3::before, .btn-plano { animation: none !important; }
+}

@@ -591,3 +591,19 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
+/* ===== MOVIMENTO ADICIONAL — SERVIÇOS ===== */
+.card-icon {
+  animation: iconBreathe 4s ease-in-out infinite;
+}
+.servico-card:hover .card-icon {
+  animation-play-state: paused; /* não conflita com o hover que já existe */
+}
+@keyframes iconBreathe {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50%      { transform: translateY(-4px) scale(1.03); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-icon { animation: none !important; }
+}
