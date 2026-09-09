@@ -158,10 +158,7 @@
             "src": "./mffconsultoria.png",
             "label": "MFF Consultoria"
           },
-          {
-            "src": "/geomicro.png",
-            "label": "GeoMicro"
-          },
+          
           {
             "src": "/jvautocenter.png",
             "label": "JV Autocenter"
