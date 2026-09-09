@@ -187,13 +187,13 @@
         "images": [
           {
             "src": "./naybot.png",
-            "label": "IA y Automatizaciones"
+            "label": "Captación de LEAD"
           }
         ],
 
         "tags": [
           "Automatización",
-          "Captación de Lead",
+          "Captación",
           "IA"
         ],
 
