@@ -516,3 +516,30 @@
 @media (prefers-reduced-motion: reduce) {
   .footer-img-logo, .footer-social a { animation: none !important; }
 }
+
+/* ===== FOOTER — gatilho por scroll ===== */
+.footer-img-logo,
+.footer-container h2,
+.footer-links,
+.footer-social,
+.footer-contact,
+.footer-divider,
+.footer-copy {
+  animation-play-state: paused;
+}
+.footer.in-view .footer-img-logo,
+.footer.in-view .footer-container h2,
+.footer.in-view .footer-links,
+.footer.in-view .footer-social,
+.footer.in-view .footer-contact,
+.footer.in-view .footer-divider,
+.footer.in-view .footer-copy {
+  animation-play-state: running;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-img-logo, .footer-container h2, .footer-links,
+  .footer-social, .footer-contact, .footer-divider, .footer-copy {
+    animation-play-state: running !important; opacity: 1 !important;
+  }
+}

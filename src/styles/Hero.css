@@ -594,25 +594,39 @@
   }
 }
 
-/* ===== MOVIMENTO — HERO (v2, variado) ===== */
-.hero-eyebrow     { opacity:0; animation: fadeInDown 0.7s ease-out 0.05s forwards; }
-.hero h1          { opacity:0; animation: fadeInUp   0.8s ease-out 0.2s  forwards; }
-.hero-description { opacity:0; animation: fadeInLeft 0.8s ease-out 0.4s  forwards; }
-.hero-cta         { opacity:0; animation: zoomIn     0.7s ease-out 0.55s forwards; }
-.hero-stats       { opacity:0; animation: fadeInRight 0.8s ease-out 0.75s forwards; }
+/* ===== HERO — entrada sequencial (substitui o bloco anterior) ===== */
+.hero-eyebrow      { opacity: 0; animation: heroFadeUp 0.6s var(--ease-smooth) 0.05s forwards; }
+.hero h1           { opacity: 0; animation: heroFadeUp 0.7s var(--ease-smooth) 0.15s forwards; }
+.hero-description  { opacity: 0; animation: heroFadeUp 0.7s var(--ease-smooth) 0.30s forwards; }
+.hero-cta          { opacity: 0; animation: heroFadeUp 0.6s var(--ease-smooth) 0.42s forwards; }
+.hero-features     { opacity: 0; animation: heroFadeUp 0.6s var(--ease-smooth) 0.52s forwards; }
+.hero-stats        { opacity: 0; animation: heroFadeUp 0.6s var(--ease-smooth) 0.62s forwards; }
 
-.feature-container { opacity:0; animation: bounceIn 0.6s ease-out forwards; }
-.feature-container:nth-child(1) { animation-delay: 0.65s; }
-.feature-container:nth-child(2) { animation-delay: 0.75s; }
-.feature-container:nth-child(3) { animation-delay: 0.85s; }
-.feature-container:nth-child(4) { animation-delay: 0.95s; }
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 
 .info-box {
-  opacity:0;
-  animation: slideInUp 0.9s cubic-bezier(0.16,1,0.3,1) 0.35s forwards,
-             infoBoxFloat 6s ease-in-out 1.3s infinite;
+  opacity: 0;
+  animation: revealRight 0.8s var(--ease-smooth) 0.35s forwards,
+             infoBoxFloat 7s ease-in-out 1.2s infinite;
 }
 @keyframes infoBoxFloat {
   0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-10px); }
+  50%      { transform: translateY(-8px); }
+}
+
+/* transição mais suave no hover dos botões, sem mudar valores existentes */
+.btn-primary, .btn-secondary {
+  transition: transform 0.3s var(--ease-smooth), box-shadow 0.3s var(--ease-smooth),
+              background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-eyebrow, .hero h1, .hero-description, .hero-cta,
+  .hero-features, .hero-stats, .info-box {
+    animation: none !important;
+    opacity: 1;
+  }
 }

@@ -127,6 +127,8 @@
 
     "link2": "I want my WEBSITE →",
 
+    "link3": "Learn More →",
+
     "demo_link1": "View demo →",
 
 
@@ -198,7 +200,9 @@
         ],
 
         "title": "More leads for your prospecting", 
-        "desc": "Get potential customer contacts selected according to your industry and location, ready for you to reach out and turn them into new business opportunities.", "link1": "https://wa.me/5551980534875?text=Hello!%20I%20came%20from%20the%20Nayco%20website%20and%20would%20like%20to%20learn%20more%20about%20lead%20generation.",
+        "desc": "Get potential customer contacts selected according to your industry and location, ready for you to reach out and turn them into new business opportunities.", 
+        "link3": "https://wa.me/5551980534875?text=Hola!%20He%20llegado%20desde%20la%20web%20de%20Nayco%20y%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20la%20captaci%C3%B3n%20de%20leads.",
+
         "category": "projeto",
 
         "ativo": true

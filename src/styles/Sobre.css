@@ -472,3 +472,20 @@
   .sobre-stat-icon, .sobre-pillar-icon, .sobre-diff-bar { animation: none !important; }
 }
 
+/* ===== SOBRE — gatilho por scroll + variação entre card e texto ===== */
+.sobre-right {
+  animation-name: revealRight; /* troca só o TIPO de entrada, mantém timing original */
+}
+
+.sobre.in-view .sobre-identity-card,
+.sobre.in-view .sobre-right,
+.sobre.in-view .sobre-pillar,
+.sobre.in-view .sobre-diff {
+  animation-play-state: running; /* usa o mesmo gatilho que .sobre.active já previa */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sobre-identity-card, .sobre-right, .sobre-pillar, .sobre-diff {
+    animation-play-state: running !important; opacity: 1 !important;
+  }
+}

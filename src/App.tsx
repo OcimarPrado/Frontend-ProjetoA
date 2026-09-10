@@ -2,7 +2,8 @@
 import './i18n/i18n.ts';
 import './index.css';
 
-import { Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 import Navbar    from './components/Navbar';
 import Hero      from './components/Hero';
@@ -15,6 +16,7 @@ import Contact   from './components/Contact';
 import Footer    from './components/Footer';
 import Contrato  from './pages/Contrato';
 import WhatsAppFloat from './components/WhatsAppFloat'; // Importação do novo componente
+import { initScrollReveal } from './utils/scrollReveal';
 
 function Home() {
   return (
@@ -31,6 +33,13 @@ function Home() {
 }
 
 export default function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const cleanup = initScrollReveal();
+    return cleanup;
+  }, [location.pathname]);
+
   return (
     <>
       <Navbar />

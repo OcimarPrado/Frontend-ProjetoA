@@ -588,3 +588,31 @@
 @media (prefers-reduced-motion: reduce) {
   .plano-card.destaque h3::before, .btn-plano { animation: none !important; }
 }
+
+/* ===== PLANOS — gatilho por scroll + destaque sutil (uma vez só) ===== */
+.plano-card {
+  animation-play-state: paused;
+}
+.planos.in-view .plano-card {
+  animation-play-state: running;
+}
+
+/* destaque: mesma entrada de todos + UM pulso de luz único depois, sem repetir */
+.plano-card.destaque {
+  animation-name: cardSlideIn, destaqueHighlight;
+  animation-duration: 0.8s, 1.6s;
+  animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1), ease-out;
+  animation-delay: 0.4s, 2s;
+  animation-iteration-count: 1, 1;
+  animation-fill-mode: forwards, forwards;
+  animation-play-state: paused, paused;
+}
+.planos.in-view .plano-card.destaque {
+  animation-play-state: running, running;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plano-card, .plano-card.destaque {
+    animation-play-state: running !important; opacity: 1 !important;
+  }
+}

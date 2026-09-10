@@ -607,3 +607,15 @@
 @media (prefers-reduced-motion: reduce) {
   .card-icon { animation: none !important; }
 }
+
+/* ===== SERVIÇOS — dispara só quando a seção entra na tela ===== */
+.servico-card {
+  animation-play-state: paused; /* trava a cardAppear que já existe */
+}
+.servicos-section.in-view .servico-card {
+  animation-play-state: running; /* libera, respeitando o --delay de cada card */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .servico-card { animation-play-state: running !important; opacity: 1 !important; }
+}

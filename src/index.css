@@ -1858,3 +1858,23 @@ button {
   border-radius: 4px;
   padding: 0.2rem 0.55rem;
 }
+
+/* ===== TOKENS E KEYFRAMES COMPARTILHADOS ===== */
+:root {
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes revealRight { from { opacity: 0; transform: translateX(32px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes destaqueHighlight {
+  0%   { box-shadow: 0 30px 70px rgba(56,189,248,0.30), 0 12px 30px rgba(0,0,0,0.20), inset 0 1px 0 rgba(255,255,255,0.10); }
+  50%  { box-shadow: 0 30px 90px rgba(56,189,248,0.55), 0 12px 30px rgba(0,0,0,0.20), inset 0 1px 0 rgba(255,255,255,0.10); }
+  100% { box-shadow: 0 30px 70px rgba(56,189,248,0.30), 0 12px 30px rgba(0,0,0,0.20), inset 0 1px 0 rgba(255,255,255,0.10); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
