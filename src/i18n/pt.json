@@ -127,13 +127,15 @@
 
     "link2": "Quero meu SITE →",
 
+    "link3": "Saber Mais →",
+
     "demo_link1": "Ver demonstração →",
 
 
     "projects": {
       "title": "Projetos publicados",
 
-      "sub": "Trabalhos reais desenvolvidos pela Nayco e projetos realizados em parceria com empresas e agências."
+      "sub": "Trabalhos desenvolvidos pela Nayco e projetos realizados em parceria com empresas e agências."
     },
 
     "demos": {
@@ -197,11 +199,10 @@
           "IA"
         ],
 
-       
-  "title": "Mais leads para sua prospecção",
-  "desc": "Receba contatos de potenciais clientes selecionados de acordo com seu nicho e região, prontos para você prospectar e transformar em novas oportunidades.",
-  "link1": "https://wa.me/5551980534875?text=Ol%C3%A1!%20Vim%20do%20site%20da%20Nayco%20e%20gostaria%20de%20saber%20mais%20sobre%20capta%C3%A7%C3%A3o%20de%20leads.",
-  "category": "projeto",
+        "title": "Mais leads para sua prospecção",
+        "desc": "Receba contatos de potenciais clientes selecionados de acordo com seu nicho e região, prontos para você prospectar e transformar em novas oportunidades.",
+        "link3": "https://wa.me/5551980534875?text=Ol%C3%A1!%20Vim%20do%20site%20da%20Nayco%20e%20gostaria%20de%20saber%20mais%20sobre%20capta%C3%A7%C3%A3o%20de%20leads.",
+        "category": "projeto",
 
         "ativo": true
       },

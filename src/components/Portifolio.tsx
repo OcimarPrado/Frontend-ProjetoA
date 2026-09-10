@@ -22,6 +22,7 @@ interface PortfolioItem {
   desc: string;
   link1?: string;
   link2?: string;
+  link3?: string;
   ativo?: boolean;
   category?: 'projeto' | 'demo';
 }
@@ -63,10 +64,12 @@ function PortfolioCard({
   item,
   link1Label,
   link2Label,
+  link3Label,
 }: {
   item: PortfolioItem;
   link1Label: string;
   link2Label: string;
+  link3Label: string;
 }) {
   return (
     <div className="portfolio-card">
@@ -156,6 +159,15 @@ function PortfolioCard({
               {link2Label}
             </PortfolioLink>
           )}
+
+          {item.link3 && (
+            <PortfolioLink
+              href={item.link3}
+              className="portfolio-link"
+            >
+              {link3Label}
+            </PortfolioLink>
+          )}
         </div>
       </div>
     </div>
@@ -223,6 +235,7 @@ export default function Portfolio() {
                   item={item}
                   link1Label={t('portfolio.link1')}
                   link2Label={t('portfolio.link2')}
+                  link3Label={t('portfolio.link3')}
                 />
               ))}
             </div>
