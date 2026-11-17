@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nayco | Sites e hospedagem</title>
+<meta name="description" content="Sites e landing pages no ar em dias, com hospedagem e manutenção mensal inclusas.">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07111f; --bg2:#0b1a2e; --line:#1d3250; --ink:#e8f0f8; --mute:#8fa3bb;
+  --cyan:#22d3ee; --orange:#ff8a3d; --ti:#c4ccd6;
+  --head:"Montserrat",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--head);font-weight:800;line-height:1.1;letter-spacing:-.02em}
+h2{font-size:clamp(28px,4vw,40px);margin-bottom:14px}
+section{padding:88px 0}
+.lead{color:var(--mute);max-width:58ch}
+
+/* nav */
+header{position:sticky;top:0;z-index:10;background:rgba(7,17,31,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;gap:22px;height:64px}
+.logo{font:800 22px var(--head);text-decoration:none;letter-spacing:-.03em}
+.logo i{font-style:normal;color:var(--cyan)}
+nav ul{display:flex;gap:22px;list-style:none;padding:0;margin:0 auto 0 28px}
+nav ul a{text-decoration:none;color:var(--mute);font-size:15px}
+nav ul a:hover{color:var(--ink)}
+.lang{display:flex;gap:2px;border:1px solid var(--line);border-radius:6px;padding:2px}
+.lang button{background:none;border:0;color:var(--mute);font:500 12px var(--mono);padding:5px 8px;border-radius:4px;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--cyan);color:#04202a}
+.btn{display:inline-block;background:var(--cyan);color:#04202a;font:800 15px var(--head);text-decoration:none;padding:14px 24px;border-radius:6px;transition:transform .15s}
+.btn{position:relative;overflow:hidden}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px -8px rgba(34,211,238,.55)}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.4) 50%,transparent 65%);transform:translateX(-120%);transition:transform .6s}
+.btn:hover::after{transform:translateX(120%)}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--line)}
+nav .btn{padding:9px 16px;font-size:14px}
+
+/* hero */
+.hero{padding:72px 0 88px;background:radial-gradient(520px 320px at var(--mx,85%) var(--my,10%),rgba(34,211,238,.15),transparent 65%)}
+.hero .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+h1{font-size:clamp(36px,5.6vw,62px);margin-bottom:20px}
+.hero .lead{font-size:19px;margin-bottom:30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.term{background:#040b15;border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 30px 60px -30px #000}
+.term .bar{display:flex;gap:7px;padding:11px 14px;border-bottom:1px solid var(--line);background:var(--bg2)}
+.term .bar b{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.term pre{font:400 13.5px/1.9 var(--mono);padding:18px 20px;min-height:290px;color:var(--ti);white-space:pre-wrap}
+.term .ok{color:var(--cyan)} .term .or{color:var(--orange)} .term .dim{color:var(--mute)}
+.caret{display:inline-block;width:8px;height:15px;background:var(--cyan);vertical-align:-2px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:10px;margin-top:40px;overflow:hidden}
+.svc article{padding:30px 26px;background:var(--bg2);position:relative;overflow:hidden}
+.svc article::before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:var(--cyan);transform:scaleX(0);transform-origin:left;transition:transform .45s}
+.svc article:hover::before{transform:scaleX(1)}
+.svc h3{transition:color .3s}.svc article:hover h3{color:var(--cyan)}
+.svc article+article{border-left:1px solid var(--line)}
+.svc h3{font-size:20px;margin-bottom:10px}
+.svc p{color:var(--mute);font-size:15.5px}
+
+/* plans */
+.plans{margin-top:40px;border-top:1px solid var(--line)}
+.plan{display:grid;grid-template-columns:1.2fr 1.6fr auto;gap:24px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line)}
+.plan h3{font-size:22px}
+.plan p{color:var(--mute);font-size:15.5px}
+.price{font:500 15px var(--mono);text-align:right;color:var(--ti)}
+.price strong{display:block;font:800 26px var(--head);color:var(--ink)}
+.plan.hl h3{color:var(--cyan)}
+.host{margin-top:32px;padding:26px;border:1px solid var(--cyan);border-radius:10px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;background:rgba(34,211,238,.05)}
+.host h3{font-size:20px;margin-bottom:6px}
+.host p{color:var(--mute);font-size:15.5px}
+
+/* portfolio */
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.work figure{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg2)}
+.work img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;background:var(--line)}
+.work figcaption{padding:12px 16px;font:500 13px var(--mono);color:var(--mute)}
+
+/* about + contact */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.about ul{list-style:none;padding:0}
+.about li{padding:14px 0 14px 22px;border-bottom:1px solid var(--line);position:relative;color:var(--ti)}
+.about li::before{content:"";position:absolute;left:0;top:26px;width:8px;height:2px;background:var(--orange)}
+.final{text-align:center;border-top:1px solid var(--line);background:var(--bg2)}
+.final .lead{margin:0 auto 28px}
+footer{padding:28px 0;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.wa{position:fixed;right:18px;bottom:18px;z-index:20;width:54px;height:54px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.wa svg{width:28px;height:28px;fill:#fff}
+
+/* movimento estilo Elementor */
+html,body{overflow-x:clip}
+.js [data-a]{opacity:0;transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js [data-a=up]{transform:translateY(44px)}
+.js [data-a=left]{transform:translateX(-56px)}
+.js [data-a=right]{transform:translateX(56px)}
+.js [data-a=zoom]{transform:scale(.9)}
+.js [data-a].in{opacity:1;transform:none}
+.js .w{display:inline-block;opacity:0;transform:translateY(36px);animation:wIn .8s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes wIn{to{opacity:1;transform:none}}
+#bar{position:fixed;top:0;left:0;width:100%;height:3px;z-index:30;background:linear-gradient(90deg,var(--cyan),var(--orange));transform-origin:0 50%;transform:scaleX(0)}
+header nav{transition:height .3s}
+header.sm nav{height:52px}
+.plan h3{transition:transform .35s,color .35s}
+.plan:hover h3{transform:translateX(12px);color:var(--cyan)}
+.work img{transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.work figure:hover img{transform:scale(1.07)}
+.wa{transition:transform .25s}.wa:hover{transform:scale(1.1) rotate(-6deg)}
+.wa::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;animation:pulse 2.2s ease-out infinite}
+@keyframes pulse{to{transform:scale(1.7);opacity:0}}
+@media(max-width:860px){
+  .js [data-a=left],.js [data-a=right]{transform:translateY(36px)}
+}
+@media(max-width:860px){
+  nav ul{display:none} nav .lang{margin-left:auto}
+  .hero .grid,.about,.host{grid-template-columns:1fr}
+  .svc,.work{grid-template-columns:1fr}
+  .svc article+article{border-left:0;border-top:1px solid var(--line)}
+  .plan{grid-template-columns:1fr;gap:8px} .price{text-align:left}
+  section{padding:64px 0}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+<script>if(!matchMedia("(prefers-reduced-motion:reduce)").matches)document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="logo" href="#top">na<i>y</i>co</a>
+  <ul>
+    <li><a href="#servicos" data-i="n_svc"></a></li>
+    <li><a href="#planos" data-i="n_plans"></a></li>
+    <li><a href="#projetos" data-i="n_work"></a></li>
+    <li><a href="#sobre" data-i="n_about"></a></li>
+  </ul>
+  <div class="lang" role="group" aria-label="Language">
+    <button data-l="pt">PT</button><button data-l="en">EN</button><button data-l="es">ES</button>
+  </div>
+  <a class="btn wa-link" href="#" data-i="n_cta"></a>
+</nav></div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap grid">
+  <div>
+    <h1 data-i="h1"></h1>
+    <p class="lead" data-i="h_sub"></p>
+    <div class="cta">
+      <a class="btn wa-link" href="#" data-i="cta1"></a>
+      <a class="btn ghost" href="#planos" data-i="cta2"></a>
+    </div>
+  </div>
+  <div class="term" aria-hidden="true">
+    <div class="bar"><b></b><b></b><b></b></div>
+    <pre id="term"></pre>
+  </div>
+</div></section>
+
+<section id="servicos"><div class="wrap">
+  <h2 data-i="s_h"></h2><p class="lead" data-i="s_sub"></p>
+  <div class="svc">
+    <article><h3 data-i="s1t"></h3><p data-i="s1d"></p></article>
+    <article><h3 data-i="s2t"></h3><p data-i="s2d"></p></article>
+    <article><h3 data-i="s3t"></h3><p data-i="s3d"></p></article>
+  </div>
+</div></section>
+
+<section id="planos" style="background:var(--bg2)"><div class="wrap">
+  <h2 data-i="p_h"></h2><p class="lead" data-i="p_sub"></p>
+  <div class="plans" id="plans"></div>
+  <div class="host">
+    <div><h3 data-i="hs_t"></h3><p data-i="hs_d"></p></div>
+    <div class="price"><strong id="hostPrice"></strong><span data-i="per_month"></span></div>
+  </div>
+</div></section>
+
+<section id="projetos"><div class="wrap">
+  <h2 data-i="w_h"></h2><p class="lead" data-i="w_sub"></p>
+  <div class="work" id="work"></div>
+  <h2 data-i="d_h" style="margin-top:80px"></h2><p class="lead" data-i="d_sub"></p>
+  <div class="work" id="demos"></div>
+</div></section>
+
+<section id="sobre" style="background:var(--bg2)"><div class="wrap about">
+  <div><h2 data-i="a_h"></h2><p class="lead" data-i="a_p"></p></div>
+  <ul>
+    <li data-i="a1"></li><li data-i="a2"></li><li data-i="a3"></li><li data-i="a4"></li>
+  </ul>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2 data-i="f_h"></h2><p class="lead" data-i="f_p"></p>
+  <a class="btn wa-link" href="#" data-i="cta1"></a>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <span>© <span id="yr"></span> Nayco · Canoas, RS</span>
+  <span><a href="mailto:contato@nayco.com.br">contato@nayco.com.br</a></span>
+</div></footer>
+
+<a class="wa wa-link" href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.1-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.9 1.200 2.200 1.300.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.300Z"/></svg></a>
+
+<script>
+/* ===== Configuração: edite aqui ===== */
+const WHATS = "5551980534875";
+const HOST_PRICE = "R$ 49";           // hospedagem / mês
+const PLANS = [                        // preços de exemplo: ajuste
+  {k:"p1", price:"R$ 497"},
+  {k:"p2", price:"R$ 997", hl:true},
+  {k:"p3", price:"R$ 1.497"}
+];
+const WORK = [                         // sites prontos (imagens em /img/)
+  ["jvautocenter.png","JV Auto Center"],
+  ["mulhergauchatour.png","Mulher Gaúcha Tour"],
+  ["mffconsultoria.png","MFF Consultoria"]
+];
+const DEMOS = [                        // sites demo: [imagem, chave de texto]
+  ["demo-psicologia.jpg","dn1"],
+  ["demo-dentista.jpg","dn2"],
+  ["demo-barbearia.jpg","dn3"]
+];
+
+/* ===== Textos PT / EN / ES ===== */
+const T = {
+pt:{
+ n_svc:"Serviços",n_plans:"Planos",n_work:"Projetos",n_about:"Sobre",n_cta:"Falar no WhatsApp",
+ h1:"Seu site no ar em dias, não em semanas.",
+ h_sub:"Criamos o site, cuidamos da hospedagem e fazemos a manutenção todo mês. Você só atende os clientes que chegarem.",
+ cta1:"Pedir meu site",cta2:"Ver planos",
+ s_h:"O que a Nayco entrega",s_sub:"Três serviços que se completam. Você pode contratar só o site ou o pacote inteiro.",
+ s1t:"Criação de sites",s1d:"Site institucional ou landing page sob medida, rápido no celular e pronto para aparecer no Google.",
+ s2t:"Hospedagem",s2d:"Seu site em servidor estável, com domínio, certificado SSL e backup. Sem você mexer em nada técnico.",
+ s3t:"Manutenção mensal",s3d:"Trocas de texto, fotos e ajustes todo mês. Se algo quebrar, a gente conserta.",
+ p_h:"Planos de site",p_sub:"Valor único de criação. A hospedagem com manutenção é uma mensalidade à parte.",
+ p1t:"Landing page",p1d:"Uma página focada em vender um serviço, com botão direto para o WhatsApp.",
+ p2t:"Site institucional",p2d:"Até 5 seções, em português, inglês ou espanhol, com formulário e Google Maps.",
+ p3t:"Site com agendamento",p3d:"Site completo mais agendamento online, com confirmação pelo WhatsApp.",
+ hs_t:"Hospedagem com manutenção",hs_d:"Domínio, SSL, backup e até 1 hora de ajustes por mês, incluídos.",per_month:"por mês",
+ setup:"criação",
+ w_h:"Sites prontos, já no ar",w_sub:"Negócios reais de Canoas e região.",
+ d_h:"Sites demo",d_sub:"Modelos prontos para você ver como o seu site pode ficar.",
+ dn1:"Demo · Psicologia",dn2:"Demo · Dentista",dn3:"Demo · Barbearia",
+ a_h:"Por que a Nayco",a_p:"Agências genéricas demoram. Freelancers somem. Ferramentas de arrastar e soltar deixam o site com cara de todo mundo.",
+ a1:"Entrega em dias, usando modelos prontos ajustados ao seu negócio",a2:"Manutenção mensal inclusa: alguém responde quando você precisa",
+ a3:"Site em três idiomas, se o seu cliente também fala inglês ou espanhol",a4:"Atendimento direto pelo WhatsApp, sem fila nem ticket",
+ f_h:"Vamos colocar seu negócio no ar?",f_p:"Conte o que você faz. Respondemos com uma proposta no mesmo dia útil."},
+en:{
+ n_svc:"Services",n_plans:"Plans",n_work:"Projects",n_about:"About",n_cta:"WhatsApp us",
+ h1:"Your website live in days, not weeks.",
+ h_sub:"We build the site, run the hosting and handle monthly maintenance. You just serve the customers who show up.",
+ cta1:"Order my website",cta2:"See plans",
+ s_h:"What Nayco delivers",s_sub:"Three services that work together. Hire the site alone or the full package.",
+ s1t:"Website creation",s1d:"Custom business sites and landing pages, fast on mobile and ready to show up on Google.",
+ s2t:"Hosting",s2d:"Your site on a stable server with domain, SSL certificate and backups. Nothing technical for you to do.",
+ s3t:"Monthly maintenance",s3d:"Text, photo and layout updates every month. If something breaks, we fix it.",
+ p_h:"Website plans",p_sub:"One-time creation fee. Hosting with maintenance is a separate monthly fee.",
+ p1t:"Landing page",p1d:"One page focused on selling one service, with a direct WhatsApp button.",
+ p2t:"Business website",p2d:"Up to 5 sections in Portuguese, English or Spanish, with contact form and Google Maps.",
+ p3t:"Website with booking",p3d:"Full site plus online booking with WhatsApp confirmation.",
+ hs_t:"Hosting with maintenance",hs_d:"Domain, SSL, backups and up to 1 hour of changes per month, included.",per_month:"per month",
+ setup:"setup",
+ w_h:"Finished sites, already live",w_sub:"Real businesses in Canoas and the surrounding area.",
+ d_h:"Demo sites",d_sub:"Ready-made models so you can see how your site could look.",
+ dn1:"Demo · Psychology",dn2:"Demo · Dentist",dn3:"Demo · Barbershop",
+ a_h:"Why Nayco",a_p:"Generic agencies are slow. Freelancers disappear. Drag-and-drop tools make your site look like everyone else's.",
+ a1:"Delivered in days, using ready-made templates tailored to your business",a2:"Monthly maintenance included: someone answers when you need help",
+ a3:"Site in three languages if your customers also speak English or Spanish",a4:"Direct support on WhatsApp, no queue or ticket",
+ f_h:"Ready to put your business online?",f_p:"Tell us what you do. We reply with a proposal within one business day."},
+es:{
+ n_svc:"Servicios",n_plans:"Planes",n_work:"Proyectos",n_about:"Nosotros",n_cta:"Hablar por WhatsApp",
+ h1:"Tu sitio web en línea en días, no en semanas.",
+ h_sub:"Creamos el sitio, nos ocupamos del hosting y hacemos el mantenimiento cada mes. Tú solo atiendes a los clientes que lleguen.",
+ cta1:"Pedir mi sitio",cta2:"Ver planes",
+ s_h:"Lo que entrega Nayco",s_sub:"Tres servicios que se complementan. Contrata solo el sitio o el paquete completo.",
+ s1t:"Creación de sitios",s1d:"Sitios corporativos y landing pages a medida, rápidos en el móvil y listos para aparecer en Google.",
+ s2t:"Hosting",s2d:"Tu sitio en un servidor estable, con dominio, certificado SSL y copias de seguridad. Sin nada técnico para ti.",
+ s3t:"Mantenimiento mensual",s3d:"Cambios de texto, fotos y ajustes cada mes. Si algo falla, lo arreglamos.",
+ p_h:"Planes de sitio web",p_sub:"Pago único de creación. El hosting con mantenimiento es una mensualidad aparte.",
+ p1t:"Landing page",p1d:"Una página enfocada en vender un servicio, con botón directo a WhatsApp.",
+ p2t:"Sitio corporativo",p2d:"Hasta 5 secciones en portugués, inglés o español, con formulario y Google Maps.",
+ p3t:"Sitio con reservas",p3d:"Sitio completo más reservas en línea, con confirmación por WhatsApp.",
+ hs_t:"Hosting con mantenimiento",hs_d:"Dominio, SSL, copias de seguridad y hasta 1 hora de cambios al mes, incluidos.",per_month:"al mes",
+ setup:"creación",
+ w_h:"Sitios terminados, ya en línea",w_sub:"Negocios reales de Canoas y la región.",
+ d_h:"Sitios demo",d_sub:"Modelos listos para que veas cómo puede quedar tu sitio.",
+ dn1:"Demo · Psicología",dn2:"Demo · Dentista",dn3:"Demo · Barbería",
+ a_h:"Por qué Nayco",a_p:"Las agencias genéricas tardan. Los freelancers desaparecen. Las herramientas de arrastrar y soltar dejan tu sitio igual que todos.",
+ a1:"Entrega en días, con plantillas listas adaptadas a tu negocio",a2:"Mantenimiento mensual incluido: alguien responde cuando lo necesitas",
+ a3:"Sitio en tres idiomas si tus clientes también hablan inglés o español",a4:"Atención directa por WhatsApp, sin filas ni tickets",
+ f_h:"¿Ponemos tu negocio en línea?",f_p:"Cuéntanos a qué te dedicas. Respondemos con una propuesta el mismo día hábil."}
+};
+const LANGS={pt:"pt-BR",en:"en",es:"es"};
+const MSG={pt:"Olá! Quero um site para o meu negócio.",en:"Hi! I'd like a website for my business.",es:"¡Hola! Quiero un sitio web para mi negocio."};
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+
+function setLang(l){
+  const d=T[l]; document.documentElement.lang=LANGS[l];
+  $$("[data-i]").forEach(e=>e.textContent=d[e.dataset.i]);
+  $$(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===l));
+  $$(".wa-link").forEach(a=>{a.href=`https://wa.me/${WHATS}?text=${encodeURIComponent(MSG[l])}`;a.target="_blank";a.rel="noopener"});
+  $("#plans").innerHTML=PLANS.map(p=>`<div class="plan${p.hl?" hl":""}"><h3>${d[p.k+"t"]}</h3><p>${d[p.k+"d"]}</p><div class="price"><strong>${p.price}</strong>${d.setup}</div></div>`).join("");
+  try{localStorage.setItem("nayco-lang",l)}catch(e){}
+  runTerm(l);animH1();tagAll();
+}
+$$(".lang button").forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+
+$("#hostPrice").textContent=HOST_PRICE;
+$("#yr").textContent=new Date().getFullYear();
+$("#work").innerHTML=WORK.map(w=>`<figure><img src="img/${w[0]}" alt="${w[1]}" loading="lazy" onerror="this.style.visibility='hidden'"><figcaption>${w[1]}</figcaption></figure>`).join("");
+$("#demos").innerHTML=DEMOS.map(w=>`<figure><img src="img/${w[0]}" alt="" loading="lazy" onerror="this.style.visibility='hidden'"><figcaption data-i="${w[1]}"></figcaption></figure>`).join("");
+
+/* Hero: simulação de deploy (único movimento da página) */
+let termTimer;
+function runTerm(l){
+  clearTimeout(termTimer);
+  const L={
+   pt:["Criando seu site...","Ajustando para celular","Configurando domínio e SSL","Ativando backup diário","Publicando","No ar em 3 dias","Manutenção mensal ativa"],
+   en:["Building your site...","Tuning for mobile","Setting up domain and SSL","Enabling daily backup","Publishing","Live in 3 days","Monthly maintenance active"],
+   es:["Creando tu sitio...","Ajustando para móvil","Configurando dominio y SSL","Activando copia diaria","Publicando","En línea en 3 días","Mantenimiento mensual activo"]}[l];
+  const lines=[
+    `<span class="dim">$</span> nayco novo-site seunegocio.com.br`,
+    `<span class="dim">›</span> ${L[0]}`,
+    `<span class="ok">✓</span> ${L[1]}`,
+    `<span class="ok">✓</span> ${L[2]}`,
+    `<span class="ok">✓</span> ${L[3]}`,
+    `<span class="or">›</span> ${L[4]}`,
+    `<span class="ok">● ${L[5]}</span>`,
+    `<span class="ok">✓</span> ${L[6]}`];
+  const el=$("#term"); const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+  if(reduce){el.innerHTML=lines.join("\n");return}
+  let i=0; el.innerHTML="";
+  (function next(){
+    if(i>=lines.length){el.insertAdjacentHTML("beforeend","\n<span class='caret'></span>");return}
+    el.insertAdjacentHTML("beforeend",(i?"\n":"")+lines[i++]);
+    termTimer=setTimeout(next,i===1?500:650);
+  })();
+}
+
+/* ===== Movimento (estilo Elementor) ===== */
+var MOTION=document.documentElement.classList.contains("js"), plansShown=false;
+document.body.insertAdjacentHTML("afterbegin",'<div id="bar"></div>');
+var io=("IntersectionObserver" in window)?new IntersectionObserver(function(es){
+  es.forEach(function(e){
+    if(!e.isIntersecting)return;
+    e.target.classList.add("in"); io.unobserve(e.target);
+    if(e.target.classList.contains("plan"))plansShown=true;
+  });
+},{threshold:.15,rootMargin:"0px 0px -6% 0px"}):null;
+
+function tag(sel,type,step,base){
+  $$(sel).forEach(function(e,i){
+    if(e.dataset.a)return;
+    e.dataset.a=type; e.style.setProperty("--d",((base||0)+i*(step||0))+"s");
+  });
+}
+function tagAll(){
+  if(!MOTION)return;
+  tag(".hero .lead","up",0,.45); tag(".hero .cta","up",0,.6); tag(".term","right",0,.35);
+  tag("section:not(.hero) h2","up"); tag("section:not(.hero) .lead","up",0,.12);
+  tag(".svc article","up",.15); tag(".plan","left",.12); tag(".host","zoom");
+  tag(".work figure","zoom",.1); tag(".about ul li","right",.12);
+  $$("[data-a]:not(.in)").forEach(function(e){
+    if(e.classList.contains("plan")&&plansShown)e.classList.add("in");
+    else if(io)io.observe(e); else e.classList.add("in");
+  });
+}
+function animH1(){
+  if(!MOTION)return;
+  var h=$("h1");
+  h.innerHTML=h.textContent.split(" ").map(function(w,i){
+    return '<span class="w" style="animation-delay:'+(.1+i*.09)+'s">'+w+'</span>';
+  }).join(" ");
+}
+if(MOTION){
+  var tick=false;
+  addEventListener("scroll",function(){
+    if(tick)return; tick=true;
+    requestAnimationFrame(function(){
+      tick=false;
+      var max=document.documentElement.scrollHeight-innerHeight;
+      $("#bar").style.transform="scaleX("+(max>0?scrollY/max:0)+")";
+      $("header").classList.toggle("sm",scrollY>40);
+    });
+  },{passive:true});
+  var hero=$(".hero");
+  hero.addEventListener("pointermove",function(e){
+    var r=hero.getBoundingClientRect();
+    hero.style.setProperty("--mx",(e.clientX-r.left)+"px");
+    hero.style.setProperty("--my",(e.clientY-r.top)+"px");
+  });
+}
+
+let saved=null; try{saved=localStorage.getItem("nayco-lang")}catch(e){}
+setLang(T[saved]?saved:"pt");
+</script>
+</body>
+</html>
