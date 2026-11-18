@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nayco | Criação de sites e hospedagem em Canoas, RS</title>
+<meta name="description" content="Sites e landing pages no ar em dias, com hospedagem e manutenção mensal inclusas. Atendimento direto pelo WhatsApp.">
+<meta name="theme-color" content="#09061c">
+<link rel="canonical" href="https://www.nayco.com.br/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Nayco">
+<meta property="og:url" content="https://www.nayco.com.br/">
+<meta property="og:title" content="Nayco | Seu site no ar em dias, com hospedagem e manutenção">
+<meta property="og:description" content="Criamos o site, cuidamos da hospedagem e fazemos a manutenção todo mês.">
+<meta property="og:image" content="https://www.nayco.com.br/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Nayco","url":"https://www.nayco.com.br/","description":"Criação de sites, landing pages, hospedagem e manutenção mensal.","email":"contato@nayco.com.br","telephone":"+5551980534875","areaServed":"BR","address":{"@type":"PostalAddress","addressLocality":"Canoas","addressRegion":"RS","addressCountry":"BR"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#09061c;--bg2:#0f0a2e;--line:rgba(190,175,255,.16);--ink:#f3f0ff;--mute:#a7a3c9;--cyan:#22d3ee;--violet:#7c3aed;--pink:#ff3d81;--lime:#c6f432;--orange:#ff8a3d;--cream:#f6f1e7;--dark:#0b0820;--brand:linear-gradient(120deg,#22d3ee,#7c3aed 55%,#ff3d81);
+--head:"Montserrat",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px;overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
+::selection{background:var(--lime);color:var(--dark)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--head);font-weight:800;line-height:1.05;letter-spacing:-.035em}
+h2{font-size:clamp(32px,4.6vw,52px);margin-bottom:16px}
+section{padding:112px 0}
+.lead{color:var(--mute);max-width:56ch}
+header{position:sticky;top:0;z-index:10;background:rgba(9,6,28,.7);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;gap:20px;height:68px;transition:height .3s}
+header.sm nav{height:56px}
+.logo{font:800 24px var(--head);text-decoration:none;letter-spacing:-.04em}
+.logo i{font-style:normal;color:var(--lime)}
+nav ul{display:flex;gap:6px;list-style:none;padding:0;margin:0 auto 0 24px}
+nav ul a{text-decoration:none;color:var(--mute);font-size:15px;padding:8px 12px;border-radius:999px;transition:color .2s,background .2s}
+nav ul a:hover{color:var(--ink);background:rgba(255,255,255,.08)}
+.lang{display:flex;gap:2px;border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{background:none;border:0;color:var(--mute);font:500 12px var(--mono);padding:6px 10px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--lime);color:var(--dark)}
+.mb{display:none;background:none;border:1px solid var(--line);border-radius:12px;width:40px;height:40px;color:var(--ink);font-size:20px;cursor:pointer}
+.btn{position:relative;overflow:hidden;display:inline-block;background:linear-gradient(120deg,var(--lime),var(--cyan));color:var(--dark);font:800 15px var(--head);text-decoration:none;padding:16px 30px;border-radius:999px;box-shadow:0 12px 30px -10px rgba(198,244,50,.6);transform:translate(var(--tx,0px),var(--ty,0px));transition:transform .2s,box-shadow .3s}
+.btn:hover{transform:translate(var(--tx,0px),calc(var(--ty,0px) - 3px));box-shadow:0 18px 38px -10px rgba(34,211,238,.8)}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.55) 50%,transparent 65%);transform:translateX(-120%);transition:transform .7s}
+.btn:hover::after{transform:translateX(120%)}
+.btn.ghost{background:rgba(255,255,255,.05);color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.btn.ghost:hover{border-color:var(--pink)}
+nav .btn{padding:10px 20px;font-size:14px}
+.hero{position:relative;padding:100px 0 116px;overflow:hidden;background:radial-gradient(380px 260px at var(--mx,80%) var(--my,15%),rgba(198,244,50,.13),transparent 65%)}
+.hero::before{content:"";position:absolute;inset:-20%;pointer-events:none;background:radial-gradient(40% 40% at 18% 30%,rgba(124,58,237,.6),transparent 70%),radial-gradient(35% 35% at 82% 18%,rgba(34,211,238,.42),transparent 70%),radial-gradient(40% 40% at 70% 92%,rgba(255,61,129,.42),transparent 70%);filter:blur(30px);animation:aur 18s ease-in-out infinite alternate}
+@keyframes aur{to{transform:translate(4%,-3%) rotate(8deg) scale(1.1)}}
+.hero .grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center}
+h1{font-size:clamp(40px,6.2vw,76px);margin-bottom:24px}
+h1,h1 .w{background:linear-gradient(100deg,#fff 45%,#d9ff6b 75%,#7ee8fa);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.hero .lead{font-size:19px;margin-bottom:36px;color:#cfcbef}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.stage{position:relative}
+.chip{position:absolute;z-index:2;padding:9px 18px;border-radius:999px;font:800 13px var(--head);color:var(--dark);box-shadow:0 16px 30px -10px rgba(0,0,0,.6);animation:fa 5s ease-in-out infinite}
+.c1{background:var(--lime);top:-20px;left:-12px}
+.c2{background:var(--pink);color:#fff;right:-14px;top:28%;animation-duration:6.5s;animation-delay:-2s}
+.c3{background:var(--cyan);bottom:-18px;left:12%;animation-duration:7.5s;animation-delay:-4s}
+@keyframes fa{50%{translate:0 -14px;rotate:4deg}}
+.term{background:rgba(8,5,26,.82);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.14);border-radius:18px;overflow:hidden;box-shadow:0 40px 90px -40px #000,0 0 90px -24px rgba(124,58,237,.7)}
+.term .bar{display:flex;gap:7px;padding:13px 16px;border-bottom:1px solid var(--line)}
+.term .bar b{width:11px;height:11px;border-radius:50%}
+.term .bar b:nth-child(1){background:#ff5f57}.term .bar b:nth-child(2){background:#febc2e}.term .bar b:nth-child(3){background:#28c840}
+.term pre{font:400 13.5px/1.95 var(--mono);padding:20px 22px;min-height:290px;color:#d6d2f5;white-space:pre-wrap}
+.ok{color:var(--lime)}.or{color:var(--orange)}.dim{color:var(--mute)}
+.caret{display:inline-block;width:8px;height:15px;background:var(--lime);vertical-align:-2px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:22px 0;font:800 clamp(28px,4.6vw,54px) var(--head);letter-spacing:-.03em;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.45)}
+.mq div{display:inline-block;animation:mq 38s linear infinite}
+.mq:hover div{animation-play-state:paused}
+.mq span{margin:0 30px}
+.mq span:nth-child(3n+1){color:var(--lime);-webkit-text-stroke:0}
+.mq span:nth-child(3n){color:var(--pink);-webkit-text-stroke:0}
+.mq span::after{content:"\2726";margin-left:60px;color:var(--cyan);-webkit-text-stroke:0}
+@keyframes mq{to{transform:translateX(-50%)}}
+#servicos{background:var(--cream);color:var(--dark)}
+#servicos .lead{color:#55526f}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px;counter-reset:s}
+.svc article{counter-increment:s;position:relative;overflow:hidden;padding:38px 32px 44px;border-radius:26px;min-height:320px;box-shadow:0 30px 60px -34px rgba(11,8,32,.5)}
+.svc article:nth-child(1){background:var(--cyan)}
+.svc article:nth-child(2){background:var(--violet);color:#fff}
+.svc article:nth-child(3){background:var(--lime)}
+.svc h3{font-size:26px;margin-bottom:14px}
+.svc h3::before{content:"0" counter(s);display:block;margin-bottom:48px;font:800 64px/1 var(--head);letter-spacing:-.05em;opacity:.28}
+.svc p{font-size:16px;opacity:.88}
+.svc article:hover{translate:0 -12px;rotate:-1.6deg;box-shadow:0 46px 70px -30px rgba(11,8,32,.6)}
+.svc article:nth-child(2):hover{rotate:1.6deg}
+.spot{position:relative}
+.spot::before{content:"";position:absolute;inset:0;border-radius:inherit;z-index:1;pointer-events:none;opacity:0;transition:opacity .4s;background:radial-gradient(420px circle at var(--x,50%) var(--y,0),rgba(34,211,238,.2),transparent 60%)}
+.svc .spot::before{background:radial-gradient(420px circle at var(--x,50%) var(--y,0),rgba(255,255,255,.42),transparent 60%)}
+.spot:hover::before{opacity:1}
+#planos{background:linear-gradient(180deg,var(--bg2),var(--bg))}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px;align-items:stretch}
+.plan{display:flex;flex-direction:column;gap:12px;padding:38px 30px;border:1px solid var(--line);border-radius:26px;background:rgba(255,255,255,.04)}
+.plan h3{font-size:24px}
+.plan p{color:var(--mute);font-size:16px;flex:1}
+.price{margin-top:16px;font:500 14px var(--mono);color:var(--mute)}

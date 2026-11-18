@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nayco | Criação de sites e hospedagem em Canoas, RS</title>
-<meta name="description" content="Sites e landing pages no ar em dias, com hospedagem e manutenção mensal inclusas. Atendimento direto pelo WhatsApp.">
+<title>Nayco | Criação de sites profissionais em Canoas, RS</title>
+<meta name="description" content="Criação de sites profissionais em Canoas e região. Desenvolvemos seu site e oferecemos hospedagem com manutenção opcional por R$ 99/mês.">
 <meta name="theme-color" content="#09061c">
 <link rel="canonical" href="https://www.nayco.com.br/">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -15,11 +15,11 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Nayco">
 <meta property="og:url" content="https://www.nayco.com.br/">
-<meta property="og:title" content="Nayco | Seu site no ar em dias, com hospedagem e manutenção">
-<meta property="og:description" content="Criamos o site, cuidamos da hospedagem e fazemos a manutenção todo mês.">
+<meta property="og:title" content="Nayco | Criação de sites, hospedagem e manutenção">
+<meta property="og:description" content="Sites profissionais para empresas e profissionais. Criação e publicação com hospedagem e manutenção opcionais por R$ 99/mês.">
 <meta property="og:image" content="https://www.nayco.com.br/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Nayco","url":"https://www.nayco.com.br/","description":"Criação de sites, landing pages, hospedagem e manutenção mensal.","email":"contato@nayco.com.br","telephone":"+5551980534875","areaServed":"BR","address":{"@type":"PostalAddress","addressLocality":"Canoas","addressRegion":"RS","addressCountry":"BR"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Nayco","url":"https://www.nayco.com.br/","description":"Criação de sites profissionais para empresas e profissionais em Canoas e região. Hospedagem com manutenção opcional por R$ 99 por mês.","email":"contato@nayco.com.br","telephone":"+5551980534875","areaServed":"BR","address":{"@type":"PostalAddress","addressLocality":"Canoas","addressRegion":"RS","addressCountry":"BR"}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
@@ -114,12 +114,30 @@ h1,h1 .w{background:linear-gradient(100deg,#fff 45%,#d9ff6b 75%,#7ee8fa);-webkit
 .plan.hl .price strong{background:none;color:#fff;-webkit-text-fill-color:#fff}
 .plan:hover{translate:0 -10px;border-color:var(--cyan)}
 .plan.hl:hover{border-color:transparent}
+.plan-link{text-decoration:none;color:inherit;cursor:pointer}
+.plan-link:focus-visible{outline:3px solid var(--cyan);outline-offset:5px}
+.plan-cta{display:inline-flex;align-items:center;justify-content:center;margin-top:12px;padding:13px 18px;border-radius:12px;background:var(--lime);color:var(--dark);font:800 14px var(--head);text-align:center;transition:transform .2s,filter .2s}
+.plan-link:hover .plan-cta{transform:translateY(-2px);filter:brightness(1.08)}
+.plan.hl .plan-cta{background:#fff;color:var(--dark)}
+.bf-banner .bf-terms{margin-top:14px;padding-top:12px;border-top:1px solid rgba(198,244,50,.22)}
+.bf-banner .bf-terms p{line-height:1.6;margin:5px 0}
+.bf-banner .bf-terms b{color:var(--ink)}
 @property --ang{syntax:"<angle>";initial-value:0deg;inherits:false}
 @keyframes spin{to{--ang:360deg}}
 .host{position:relative;margin-top:44px;padding:34px;border:1px solid transparent;border-radius:26px;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;background:linear-gradient(var(--bg2),var(--bg2)) padding-box,conic-gradient(from var(--ang),rgba(34,211,238,.1),var(--cyan),rgba(34,211,238,.1) 35%,var(--pink) 60%,var(--lime) 80%,rgba(34,211,238,.1)) border-box;animation:spin 7s linear infinite}
 .host h3{font-size:22px;margin-bottom:6px}
 .host p{color:var(--mute);font-size:16px}
 .host .price{margin:0;text-align:right}
+.bf-banner{margin:32px 0 0;padding:22px 26px;border:1px solid rgba(198,244,50,.35);border-radius:20px;background:linear-gradient(110deg,rgba(198,244,50,.12),rgba(124,58,237,.2));display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.bf-banner strong{font:800 20px var(--head);color:var(--lime)}
+.bf-banner p{font-size:14px;color:var(--mute);margin-top:5px}
+.bf-clock{display:flex;gap:12px;text-align:center;font-family:var(--mono)}
+.bf-clock span{min-width:48px}
+.bf-clock b{display:block;font-size:24px;color:var(--ink)}
+.bf-clock small{font-size:10px;color:var(--mute)}
+.price del{display:block;font:500 16px var(--mono);color:var(--mute);text-decoration:line-through;margin-bottom:2px}
+.bf-tag{display:inline-block;align-self:flex-start;padding:6px 12px;border-radius:999px;background:var(--lime);color:var(--dark);font:800 11px var(--mono);letter-spacing:.05em}
+.bf-banner[hidden],.bf-tag[hidden],#bf-old-price[hidden]{display:none!important}
 #projetos{background:radial-gradient(600px 420px at 92% 8%,rgba(124,58,237,.3),transparent 70%),radial-gradient(520px 420px at 4% 62%,rgba(255,61,129,.2),transparent 70%),var(--bg)}
 .work{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
 .work figure{position:relative;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--bg2);box-shadow:0 26px 54px -30px #000}
@@ -181,7 +199,7 @@ nav .lang{margin-left:auto}
 nav ul{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;margin:0;padding:8px 24px 16px;background:rgba(9,6,28,.97);border-bottom:1px solid var(--line)}
 header.open nav ul{display:flex}
 nav ul a{display:block;padding:14px 0;font-size:17px}
-.hero .grid,.about,.host{grid-template-columns:1fr}
+.hero .grid,.about,.host,.bf-banner{grid-template-columns:1fr}
 .svc,.work,.quotes,.plans{grid-template-columns:1fr}
 .svc article{min-height:0}.plan.hl{scale:1}.host .price{text-align:left}.lead-form{grid-template-columns:1fr;padding:24px}
 section{padding:76px 0}.hero{padding:60px 0 76px}
@@ -207,8 +225,8 @@ section{padding:76px 0}.hero{padding:60px 0 76px}
 <main id="top">
 <section class="hero"><div class="wrap grid">
 <div>
-<h1 data-i="h1">Seu site no ar em dias, não em semanas.</h1>
-<p class="lead" data-i="h_sub">Criamos o site, cuidamos da hospedagem e fazemos a manutenção todo mês. Você só atende os clientes que chegarem.</p>
+<h1 data-i="h1">Criação de sites profissionais para o seu negócio.</h1>
+<p class="lead" data-i="h_sub">A Nayco cria e publica seu site para fortalecer sua presença na internet e apresentar seus serviços de forma profissional. Se desejar, contrate também nossa hospedagem com manutenção por R$ 99/mês, de forma opcional. Você cuida do seu negócio. Nós cuidamos da tecnologia.</p>
 <div class="cta">
 <a class="btn wa-link" href="https://wa.me/5551980534875?text=Ol%C3%A1!%20Quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener" data-i="cta1">Pedir meu site</a>
 <a class="btn ghost" href="#planos" data-i="cta2">Ver planos</a>
@@ -224,18 +242,51 @@ section{padding:76px 0}.hero{padding:60px 0 76px}
 <div class="svc">
 <article><h3 data-i="s1t">Criação de sites</h3><p data-i="s1d">Site institucional ou landing page sob medida, rápido no celular e pronto para aparecer no Google.</p></article>
 <article><h3 data-i="s2t">Hospedagem</h3><p data-i="s2d">Seu site em servidor estável, com domínio, certificado SSL e backup. Sem você mexer em nada técnico.</p></article>
-<article><h3 data-i="s3t">Manutenção mensal</h3><p data-i="s3d">Trocas de texto, fotos e ajustes todo mês. Se algo quebrar, a gente conserta.</p></article>
+<article><h3 data-i="s3t">Manutenção mensal</h3><p data-i="s3d">Atualizações de textos, fotos e ajustes mensais, disponíveis na contratação da hospedagem com manutenção.</p></article>
 </div>
 </div></section>
 
 <section id="planos" class="alt"><div class="wrap">
 <h2 data-i="p_h">Planos de site</h2><p class="lead" data-i="p_sub">Valor único de criação. A hospedagem com manutenção é uma mensalidade à parte.</p>
-<div class="plans">
-<div class="plan"><h3 data-i="p1t">Landing page</h3><p data-i="p1d">Uma página focada em vender um serviço, com botão direto para o WhatsApp.</p><div class="price"><strong>R$ 497</strong><span data-i="setup">criação</span></div></div>
-<div class="plan hl"><h3 data-i="p2t">Site institucional</h3><p data-i="p2d">Até 5 seções, em português, inglês ou espanhol, com formulário e Google Maps.</p><div class="price"><strong>R$ 997</strong><span data-i="setup">criação</span></div></div>
-<div class="plan"><h3 data-i="p3t">Site com agendamento</h3><p data-i="p3d">Site completo mais agendamento online, com confirmação pelo WhatsApp.</p><div class="price"><strong>R$ 1.497</strong><span data-i="setup">criação</span></div></div>
+<div class="bf-banner" id="bf-banner">
+<div>
+<strong data-i="bf_title">Black Friday Nayco 2026</strong>
+<p data-i="bf_until">Oferta válida até 27/11/2026 às 23h59, horário de Brasília.</p>
+<div class="bf-terms">
+<strong data-i="bf_condition_title">BLACK FRIDAY: 40% OFF NA CRIAÇÃO DO SEU SITE</strong>
+<p data-i="bf_condition_text">Promoção exclusiva para quem contratar também a hospedagem com manutenção da Nayco.</p>
+<p><b data-i="bf_condition_host">Hospedagem + manutenção: R$ 99/mês.</b></p>
+<p data-i="bf_condition_note">A contratação da hospedagem é obrigatória. A mensalidade é cobrada separadamente, desde o início da hospedagem. O desconto vale somente sobre a criação do site.</p>
 </div>
-<div class="host"><div><h3 data-i="hs_t">Hospedagem com manutenção</h3><p data-i="hs_d">Domínio, SSL, backup e até 1 hora de ajustes por mês, incluídos.</p></div><div class="price"><strong>R$ 99</strong><span data-i="per_month">por mês</span></div></div>
+</div>
+<div class="bf-clock" aria-label="Contagem regressiva">
+<span><b id="bf-days">00</b><small data-i="bf_days">dias</small></span>
+<span><b id="bf-hours">00</b><small data-i="bf_hours">horas</small></span>
+<span><b id="bf-minutes">00</b><small data-i="bf_minutes">min</small></span>
+<span><b id="bf-seconds">00</b><small data-i="bf_seconds">seg</small></span>
+</div>
+</div>
+<div class="plans">
+<a class="plan plan-link" data-plan="landing" href="https://wa.me/5551980534875" target="_blank" rel="noopener">
+<h3 data-i="p1t">Landing page</h3>
+<p data-i="p1d">Uma página focada em vender um serviço, com botão direto para o WhatsApp.</p>
+<div class="price"><del id="bf-old-price-1">R$ 497</del><strong id="bf-price-1">R$ 299</strong><span data-i="setup">criação</span></div>
+<span class="plan-cta" data-i="plan_buy">Adquirir já</span>
+</a>
+<a class="plan hl plan-link" data-plan="business" href="https://wa.me/5551980534875" target="_blank" rel="noopener">
+<h3 data-i="p2t">Site institucional</h3>
+<p data-i="p2d">Até 5 seções, em português, inglês ou espanhol, com formulário e Google Maps.</p>
+<div class="price"><del id="bf-old-price">R$ 997</del><strong id="bf-price">R$ 599</strong><span data-i="setup">criação</span></div>
+<span class="plan-cta" data-i="plan_buy">Adquirir já</span>
+</a>
+<a class="plan plan-link" data-plan="booking" href="https://wa.me/5551980534875" target="_blank" rel="noopener">
+<h3 data-i="p3t">Site com agendamento</h3>
+<p data-i="p3d">Site completo mais agendamento online, com confirmação pelo WhatsApp.</p>
+<div class="price"><del id="bf-old-price-3">R$ 1.497</del><strong id="bf-price-3">R$ 899</strong><span data-i="setup">criação</span></div>
+<span class="plan-cta" data-i="plan_buy">Adquirir já</span>
+</a>
+</div>
+<div class="host"><div><h3 data-i="hs_t">Hospedagem com manutenção</h3><p data-i="hs_d">Domínio, SSL, backup e até 1 hora de ajustes por mês, incluídos na mensalidade.</p><p data-i="hs_note">Cobrança mensal de R$ 99 desde o início da hospedagem.</p></div><div class="price"><strong>R$ 99</strong><span data-i="per_month">por mês</span></div></div>
 </div></section>
 
 <section id="projetos"><div class="wrap">
@@ -267,7 +318,7 @@ section{padding:76px 0}.hero{padding:60px 0 76px}
 <div><h2 data-i="a_h">Por que a Nayco</h2><p class="lead" data-i="a_p">Agências genéricas demoram. Freelancers somem. Ferramentas de arrastar e soltar deixam o site com cara de todo mundo.</p></div>
 <ul>
 <li data-i="a1">Entrega em dias, usando modelos prontos ajustados ao seu negócio</li>
-<li data-i="a2">Manutenção mensal inclusa: alguém responde quando você precisa</li>
+<li data-i="a2">Suporte e manutenção mensal disponíveis no plano de hospedagem por R$ 99/mês</li>
 <li data-i="a3">Site em três idiomas, se o seu cliente também fala inglês ou espanhol</li>
 <li data-i="a4">Atendimento direto pelo WhatsApp, sem fila nem ticket</li>
 </ul>
@@ -299,12 +350,12 @@ const WHATS="5551980534875",$=(s,r=document)=>r.querySelector(s),$$=(s,r=documen
 /* PT vem do próprio HTML; aqui só EN e ES */
 const T={en:{
 n_svc:"Services",n_plans:"Plans",n_work:"Projects",n_about:"About",n_cta:"WhatsApp",
-h1:"Your website live in days, not weeks.",h_sub:"We build the site, run the hosting and handle monthly maintenance. You just serve the customers who show up.",
+h1:"Professional website creation for your business.",h_sub:"Nayco creates and launches your website to strengthen your online presence and showcase your services professionally. If you wish, you can also subscribe to our hosting with maintenance for R$ 99/month. You focus on your business. We take care of the technology.",
 cta1:"Order my website",cta2:"See plans",
 s_h:"What Nayco delivers",s_sub:"Three services that work together. Hire the site alone or the full package.",
 s1t:"Website creation",s1d:"Custom business sites and landing pages, fast on mobile and ready to show up on Google.",
 s2t:"Hosting",s2d:"Your site on a stable server with domain, SSL certificate and backups. Nothing technical for you to do.",
-s3t:"Monthly maintenance",s3d:"Text, photo and layout updates every month. If something breaks, we fix it.",
+s3t:"Monthly maintenance",s3d:"Monthly text, photo and layout updates are available with the hosting and maintenance plan.",
 p_h:"Website plans",p_sub:"One-time creation fee. Hosting with maintenance is a separate monthly fee.",
 p1t:"Landing page",p1d:"One page focused on selling one service, with a direct WhatsApp button.",
 p2t:"Business website",p2d:"Up to 5 sections in Portuguese, English or Spanish, with contact form and Google Maps.",
@@ -315,22 +366,22 @@ o_h1:"I have no site or domain",o_h2:"I have a domain but no site",o_h3:"I have 
 o_g1:"Get contacts on WhatsApp",o_g2:"Get bookings",o_g3:"Show my services and projects",o_g4:"Sell products online",
 o_w1:"As soon as possible",o_w2:"Within 7 days",o_w3:"Within 30 days",o_w4:"No rush",
 o_a1:"I have logo and photos",o_a2:"I only have part of it",o_a3:"I need help with that",
-t_h:"What our clients say",t_sub:"Real feedback from people who already have their site live.",hs_t:"Hosting with maintenance",hs_d:"Domain, SSL, backups and up to 1 hour of changes per month, included.",per_month:"per month",
+t_h:"What our clients say",t_sub:"Real feedback from people who already have their site live.",hs_t:"Hosting with maintenance",hs_d:"Domain, SSL, backups and up to 1 hour of monthly changes, included in the subscription.",hs_note:"The R$ 99 monthly fee starts when hosting begins.",per_month:"per month",
 w_h:"Finished sites, already live",w_sub:"Real businesses in Canoas and the surrounding area.",
 d_h:"Demo sites",d_sub:"Ready-made models so you can see how your site could look.",
 dn1:"Demo · Psychology",dn2:"Demo · Dentist",dn3:"Demo · Barbershop",
 a_h:"Why Nayco",a_p:"Generic agencies are slow. Freelancers disappear. Drag-and-drop tools make your site look like everyone else's.",
-a1:"Delivered in days, using ready-made templates tailored to your business",a2:"Monthly maintenance included: someone answers when you need help",
+a1:"Delivered in days, using ready-made templates tailored to your business",a2:"Support and monthly maintenance available with the R$ 99/month hosting plan",
 a3:"Site in three languages if your customers also speak English or Spanish",a4:"Direct support on WhatsApp, no queue or ticket",
-f_h:"Ready to put your business online?",f_p:"Tell us what you do. We reply with a proposal within one business day."},
+bf_title:"Nayco Black Friday 2026",bf_until:"Offer valid until November 27, 2026, at 11:59 PM Brasília time.",bf_days:"days",bf_hours:"hours",bf_minutes:"min",bf_seconds:"sec",bf_offer:"BLACK FRIDAY OFFER",bf_condition_title:"BLACK FRIDAY: 40% OFF WEBSITE CREATION",bf_condition_text:"Exclusive offer for customers who also subscribe to Nayco hosting and maintenance.",bf_condition_host:"Hosting + maintenance: R$ 99/month.",bf_condition_note:"Hosting subscription is mandatory. The monthly fee is charged separately from the start of hosting. The discount applies only to website creation.",plan_buy:"Get it now",f_h:"Ready to put your business online?",f_p:"Tell us what you do. We reply with a proposal within one business day."},
 es:{
 n_svc:"Servicios",n_plans:"Planes",n_work:"Proyectos",n_about:"Nosotros",n_cta:"WhatsApp",
-h1:"Tu sitio web en línea en días, no en semanas.",h_sub:"Creamos el sitio, nos ocupamos del hosting y hacemos el mantenimiento cada mes. Tú solo atiendes a los clientes que lleguen.",
+h1:"Creación de sitios web profesionales para tu negocio.",h_sub:"Nayco crea y publica tu sitio web para fortalecer tu presencia en internet y presentar tus servicios de forma profesional. Si lo deseas, también puedes contratar nuestro hosting con mantenimiento por R$ 99 al mes. Tú te ocupas de tu negocio. Nosotros nos ocupamos de la tecnología.",
 cta1:"Pedir mi sitio",cta2:"Ver planes",
 s_h:"Lo que entrega Nayco",s_sub:"Tres servicios que se complementan. Contrata solo el sitio o el paquete completo.",
 s1t:"Creación de sitios",s1d:"Sitios corporativos y landing pages a medida, rápidos en el móvil y listos para aparecer en Google.",
 s2t:"Hosting",s2d:"Tu sitio en un servidor estable, con dominio, certificado SSL y copias de seguridad. Sin nada técnico para ti.",
-s3t:"Mantenimiento mensual",s3d:"Cambios de texto, fotos y ajustes cada mes. Si algo falla, lo arreglamos.",
+s3t:"Mantenimiento mensual",s3d:"Las actualizaciones mensuales de textos, fotos y diseño están disponibles con el plan de hosting y mantenimiento.",
 p_h:"Planes de sitio web",p_sub:"Pago único de creación. El hosting con mantenimiento es una mensualidad aparte.",
 p1t:"Landing page",p1d:"Una página enfocada en vender un servicio, con botón directo a WhatsApp.",
 p2t:"Sitio corporativo",p2d:"Hasta 5 secciones en portugués, inglés o español, con formulario y Google Maps.",
@@ -341,25 +392,79 @@ o_h1:"No tengo sitio ni dominio",o_h2:"Tengo dominio, pero sin sitio",o_h3:"Ya t
 o_g1:"Recibir contactos por WhatsApp",o_g2:"Recibir reservas",o_g3:"Mostrar mis servicios y proyectos",o_g4:"Vender productos en línea",
 o_w1:"Lo antes posible",o_w2:"En hasta 7 días",o_w3:"En hasta 30 días",o_w4:"Sin prisa",
 o_a1:"Tengo logo y fotos",o_a2:"Solo tengo una parte",o_a3:"Necesito ayuda con eso",
-t_h:"Lo que dicen nuestros clientes",t_sub:"Opiniones reales de quienes ya tienen su sitio en línea.",hs_t:"Hosting con mantenimiento",hs_d:"Dominio, SSL, copias de seguridad y hasta 1 hora de cambios al mes, incluidos.",per_month:"al mes",
+t_h:"Lo que dicen nuestros clientes",t_sub:"Opiniones reales de quienes ya tienen su sitio en línea.",hs_t:"Hosting con mantenimiento",hs_d:"Dominio, SSL, copias de seguridad y hasta 1 hora de cambios mensuales, incluidos en la suscripción.",hs_note:"El pago mensual de R$ 99 comienza cuando empieza el hosting.",per_month:"al mes",
 w_h:"Sitios terminados, ya en línea",w_sub:"Negocios reales de Canoas y la región.",
 d_h:"Sitios demo",d_sub:"Modelos listos para que veas cómo puede quedar tu sitio.",
 dn1:"Demo · Psicología",dn2:"Demo · Dentista",dn3:"Demo · Barbería",
 a_h:"Por qué Nayco",a_p:"Las agencias genéricas tardan. Los freelancers desaparecen. Las herramientas de arrastrar y soltar dejan tu sitio igual que todos.",
-a1:"Entrega en días, con plantillas listas adaptadas a tu negocio",a2:"Mantenimiento mensual incluido: alguien responde cuando lo necesitas",
+a1:"Entrega en días, con plantillas listas adaptadas a tu negocio",a2:"Soporte y mantenimiento mensual disponibles con el plan de hosting de R$ 99 al mes",
 a3:"Sitio en tres idiomas si tus clientes también hablan inglés o español",a4:"Atención directa por WhatsApp, sin filas ni tickets",
-f_h:"¿Ponemos tu negocio en línea?",f_p:"Cuéntanos a qué te dedicas. Respondemos con una propuesta el mismo día hábil."}};
+bf_title:"Black Friday Nayco 2026",bf_until:"Oferta válida hasta el 27/11/2026 a las 23:59, hora de Brasilia.",bf_days:"días",bf_hours:"horas",bf_minutes:"min",bf_seconds:"seg",bf_offer:"OFERTA BLACK FRIDAY",bf_condition_title:"BLACK FRIDAY: 40% DE DESCUENTO EN LA CREACIÓN DE TU SITIO WEB",bf_condition_text:"Oferta exclusiva para quienes también contraten el hosting con mantenimiento de Nayco.",bf_condition_host:"Hosting + mantenimiento: R$ 99 al mes.",bf_condition_note:"La contratación del hosting es obligatoria. La mensualidad se cobra por separado desde el inicio del hosting. El descuento se aplica únicamente a la creación del sitio web.",plan_buy:"Adquirir ahora",f_h:"¿Ponemos tu negocio en línea?",f_p:"Cuéntanos a qué te dedicas. Respondemos con una propuesta el mismo día hábil."}};
 T.pt={};$$("[data-i]").forEach(e=>T.pt[e.dataset.i]=e.textContent);
 const LANGS={pt:"pt-BR",en:"en",es:"es"},MSG={pt:"Olá! Quero um site para o meu negócio.",en:"Hi! I'd like a website for my business.",es:"¡Hola! Quiero un sitio web para mi negocio."};
 const TERM={pt:["Criando seu site...","Ajustando para celular","Configurando domínio e SSL","Ativando backup diário","Publicando","No ar em 7 dias","Manutenção mensal ativa"],
 en:["Building your site...","Tuning for mobile","Setting up domain and SSL","Enabling daily backup","Publishing","Live in 7 days","Monthly maintenance active"],
 es:["Creando tu sitio...","Ajustando para móvil","Configurando dominio y SSL","Activando copia diaria","Publicando","En línea en 7 días","Mantenimiento mensual activo"]};
 const MOTION=document.documentElement.classList.contains("js");
+let currentLang = "pt";
+
+function updatePlanLinks(lang){
+  const active = Date.now() < BF_END;
+
+  const plans = {
+    landing: {
+      name: {
+        pt: "Landing page",
+        en: "Landing page",
+        es: "Landing page"
+      },
+      price: active ? "R$ 299" : "R$ 497"
+    },
+    business: {
+      name: {
+        pt: "Site institucional",
+        en: "Business website",
+        es: "Sitio corporativo"
+      },
+      price: active ? "R$ 599" : "R$ 997"
+    },
+    booking: {
+      name: {
+        pt: "Site com agendamento",
+        en: "Website with booking",
+        es: "Sitio con reservas"
+      },
+      price: active ? "R$ 899" : "R$ 1.497"
+    }
+  };
+
+  const messages = {
+    pt: (name, price) => active
+      ? `Olá! Tenho interesse em adquirir o plano ${name} por ${price} na promoção Black Friday da Nayco. Sei que a oferta exige a contratação da hospedagem com manutenção por R$ 99/mês, cobrada separadamente desde o início. Gostaria de continuar.`
+      : `Olá! Tenho interesse em adquirir o plano ${name}, com criação no valor de ${price}. Gostaria de receber mais informações.`,
+    en: (name, price) => active
+      ? `Hi! I'm interested in the ${name} plan for ${price} under Nayco's Black Friday offer. I understand that the offer requires hosting with maintenance for R$ 99/month, charged separately from the start. I'd like to proceed.`
+      : `Hi! I'm interested in the ${name} plan, with a creation fee of ${price}. I'd like more information.`,
+    es: (name, price) => active
+      ? `¡Hola! Me interesa el plan ${name} por ${price} en la promoción Black Friday de Nayco. Entiendo que la oferta requiere contratar el hosting con mantenimiento por R$ 99 al mes, cobrado por separado desde el inicio. Me gustaría continuar.`
+      : `¡Hola! Me interesa el plan ${name}, con un precio de creación de ${price}. Me gustaría recibir más información.`
+  };
+
+  $$(".plan-link").forEach(link => {
+    const plan = plans[link.dataset.plan];
+    if (!plan) return;
+    const message = messages[lang](plan.name[lang], plan.price);
+    link.href = `https://wa.me/${WHATS}?text=${encodeURIComponent(message)}`;
+  });
+}
+
 function setLang(l){
+  currentLang=l;
   const d=T[l];document.documentElement.lang=LANGS[l];
   $$("[data-i]").forEach(e=>e.textContent=d[e.dataset.i]);
   $$(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===l));
   $$(".wa-link").forEach(a=>a.href=`https://wa.me/${WHATS}?text=${encodeURIComponent(MSG[l])}`);
+  updatePlanLinks(l);
   try{localStorage.setItem("nayco-lang",l)}catch(e){}
   runTerm(l);animH1();tagAll();
 }
@@ -414,6 +519,47 @@ $("#lead").addEventListener("submit",e=>{
   const u=`https://wa.me/${WHATS}?text=${encodeURIComponent(msg)}`;
   window.open(u,"_blank","noopener")||(location.href=u);
 });
+// Prazo fixo: 27/11/2026 às 23h59min59s em Brasília (UTC-3).
+const BF_END = Date.UTC(2026,10,28,2,59,59);
+
+function updateBlackFridayTimer(){
+  const remaining = BF_END - Date.now();
+
+  if(remaining <= 0){
+    $("#bf-banner").hidden = true;
+    document.querySelectorAll('[id^="bf-old-price"]').forEach(el => {
+      el.hidden = true;
+    });
+    document.querySelectorAll(".bf-tag").forEach(el => {
+      el.hidden = true;
+    });
+
+    $("#bf-price-1").textContent = "R$ 497";
+    $("#bf-price").textContent = "R$ 997";
+    $("#bf-price-3").textContent = "R$ 1.497";
+    updatePlanLinks(currentLang);
+    return false;
+  }
+
+  const days = Math.floor(remaining / 86400000);
+  const hours = Math.floor((remaining % 86400000) / 3600000);
+  const minutes = Math.floor((remaining % 3600000) / 60000);
+  const seconds = Math.floor((remaining % 60000) / 1000);
+
+  $("#bf-days").textContent = String(days).padStart(2,"0");
+  $("#bf-hours").textContent = String(hours).padStart(2,"0");
+  $("#bf-minutes").textContent = String(minutes).padStart(2,"0");
+  $("#bf-seconds").textContent = String(seconds).padStart(2,"0");
+
+  return true;
+}
+
+if(updateBlackFridayTimer()){
+  const bfTimer = setInterval(()=>{
+    if(!updateBlackFridayTimer()) clearInterval(bfTimer);
+  },1000);
+}
+
 let saved=null;try{saved=localStorage.getItem("nayco-lang")}catch(e){}
 setLang(T[saved]?saved:"pt");
 </script>

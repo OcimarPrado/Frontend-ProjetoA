@@ -1,0 +1,110 @@
+
+<section id="servicos"><div class="wrap">
+<h2 data-i="s_h">O que a Nayco entrega</h2><p class="lead" data-i="s_sub">Três serviços que se completam. Você pode contratar só o site ou o pacote inteiro.</p>
+<div class="svc">
+<article><h3 data-i="s1t">Criação de sites</h3><p data-i="s1d">Site institucional ou landing page sob medida, rápido no celular e pronto para aparecer no Google.</p></article>
+<article><h3 data-i="s2t">Hospedagem</h3><p data-i="s2d">Seu site em servidor estável, com domínio, certificado SSL e backup. Sem você mexer em nada técnico.</p></article>
+<article><h3 data-i="s3t">Manutenção mensal</h3><p data-i="s3d">Trocas de texto, fotos e ajustes todo mês. Se algo quebrar, a gente conserta.</p></article>
+</div>
+</div></section>
+
+<section id="planos" class="alt"><div class="wrap">
+<h2 data-i="p_h">Planos de site</h2><p class="lead" data-i="p_sub">Valor único de criação. A hospedagem com manutenção é uma mensalidade à parte.</p>
+<div class="plans">
+<div class="plan"><h3 data-i="p1t">Landing page</h3><p data-i="p1d">Uma página focada em vender um serviço, com botão direto para o WhatsApp.</p><div class="price"><strong>R$ 497</strong><span data-i="setup">criação</span></div></div>
+<div class="plan hl"><h3 data-i="p2t">Site institucional</h3><p data-i="p2d">Até 5 seções, em português, inglês ou espanhol, com formulário e Google Maps.</p><div class="price"><strong>R$ 997</strong><span data-i="setup">criação</span></div></div>
+<div class="plan"><h3 data-i="p3t">Site com agendamento</h3><p data-i="p3d">Site completo mais agendamento online, com confirmação pelo WhatsApp.</p><div class="price"><strong>R$ 1.497</strong><span data-i="setup">criação</span></div></div>
+</div>
+<div class="host"><div><h3 data-i="hs_t">Hospedagem com manutenção</h3><p data-i="hs_d">Domínio, SSL, backup e até 1 hora de ajustes por mês, incluídos.</p></div><div class="price"><strong>R$ 99</strong><span data-i="per_month">por mês</span></div></div>
+</div></section>
+
+<section id="projetos"><div class="wrap">
+<h2 data-i="w_h">Sites prontos, já no ar</h2><p class="lead" data-i="w_sub">Negócios reais de Canoas e região.</p>
+<div class="work">
+<figure><a href="https://jvautocenter.com.br" target="_blank" rel="noopener"><img src="img/jvautocenter.jpg?v=4" width="1000" height="1250" loading="lazy" alt="Site da JV Auto Center"><figcaption>JV Auto Center</figcaption></a></figure>
+<figure><a href="https://mulhergauchatour.com.br" target="_blank" rel="noopener"><img src="img/mulhergauchatour.jpg?v=4" width="1000" height="1250" loading="lazy" alt="Site da Mulher Gaúcha Tour"><figcaption>Mulher Gaúcha Tour</figcaption></a></figure>
+<figure><a href="https://mffconsultoria.com.br" target="_blank" rel="noopener"><img src="img/mffconsultoria.jpg?v=4" width="1000" height="1250" loading="lazy" alt="Site da MFF Consultoria"><figcaption>MFF Consultoria</figcaption></a></figure>
+</div>
+<h2 data-i="d_h" style="margin-top:88px">Sites demo</h2><p class="lead" data-i="d_sub">Modelos prontos para você ver como o seu site pode ficar.</p>
+<div class="work">
+<figure><a href="https://psi-demo-sigma.vercel.app/" target="_blank" rel="noopener"><img src="img/demos/psico.jpg?v=4" width="1000" height="1250" loading="lazy" alt="Demo de site para psicologia"><figcaption data-i="dn1">Demo · Psicologia</figcaption></a></figure>
+<figure><a href="https://odonto-demo-livid.vercel.app/" target="_blank" rel="noopener"><img src="img/demos/odonto.jpg?v=4" width="1000" height="1250" loading="lazy" alt="Demo de site para dentista"><figcaption data-i="dn2">Demo · Dentista</figcaption></a></figure>
+<figure><a href="https://demobarbearia-one.vercel.app/" target="_blank" rel="noopener"><img src="img/demos/barber.jpg?v=4" width="1000" height="1250" loading="lazy" alt="Demo de site para barbearia"><figcaption data-i="dn3">Demo · Barbearia</figcaption></a></figure>
+</div>
+</div></section>
+
+<!-- DEPOIMENTOS: troque os textos pelos depoimentos REAIS dos clientes e remova o atributo hidden da section -->
+<section id="clientes" hidden><div class="wrap">
+<h2 data-i="t_h">O que nossos clientes dizem</h2><p class="lead" data-i="t_sub">Opiniões reais de quem já tem o site no ar.</p>
+<div class="quotes">
+<figure class="q"><blockquote><p>TEXTO REAL DO CLIENTE 1</p></blockquote><figcaption>Nome · JV Auto Center</figcaption></figure>
+<figure class="q"><blockquote><p>TEXTO REAL DO CLIENTE 2</p></blockquote><figcaption>Nome · Mulher Gaúcha Tour</figcaption></figure>
+<figure class="q"><blockquote><p>TEXTO REAL DO CLIENTE 3</p></blockquote><figcaption>Nome · MFF Consultoria</figcaption></figure>
+</div>
+</div></section>
+
+<section id="sobre" class="alt"><div class="wrap about">
+<div><h2 data-i="a_h">Por que a Nayco</h2><p class="lead" data-i="a_p">Agências genéricas demoram. Freelancers somem. Ferramentas de arrastar e soltar deixam o site com cara de todo mundo.</p></div>
+<ul>
+<li data-i="a1">Entrega em dias, usando modelos prontos ajustados ao seu negócio</li>
+<li data-i="a2">Manutenção mensal inclusa: alguém responde quando você precisa</li>
+<li data-i="a3">Site em três idiomas, se o seu cliente também fala inglês ou espanhol</li>
+<li data-i="a4">Atendimento direto pelo WhatsApp, sem fila nem ticket</li>
+</ul>
+</div></section>
+
+<section class="final" id="contato"><div class="wrap">
+<h2 data-i="f_h">Vamos colocar seu negócio no ar?</h2><p class="lead" data-i="f_p">Conte o que você faz. Respondemos com uma proposta no mesmo dia útil.</p>
+<form id="lead" class="lead-form">
+<label><span data-i="f_name">Seu nome</span><input name="nome" required autocomplete="name"></label>
+<label><span data-i="f_biz">Nome do negócio e o que você faz</span><input name="negocio" required></label>
+<label><span data-i="f_type">Que tipo de site você precisa?</span><select name="tipo" required><option value="" data-i="f_sel">Selecione</option><option data-i="o_t1">Landing page (uma página)</option><option data-i="o_t2">Site institucional (até 5 seções)</option><option data-i="o_t3">Site com agendamento online</option><option data-i="o_t4">Ainda não sei, quero uma indicação</option></select></label>
+<label><span data-i="f_has">Você já tem site ou domínio?</span><select name="tem" required><option value="" data-i="f_sel">Selecione</option><option data-i="o_h1">Não tenho site nem domínio</option><option data-i="o_h2">Tenho domínio, mas sem site</option><option data-i="o_h3">Já tenho site e quero refazer</option></select></label>
+<label><span data-i="f_goal">Qual é o principal objetivo do site?</span><select name="meta" required><option value="" data-i="f_sel">Selecione</option><option data-i="o_g1">Receber contatos pelo WhatsApp</option><option data-i="o_g2">Receber agendamentos</option><option data-i="o_g3">Mostrar meus serviços e projetos</option><option data-i="o_g4">Vender produtos online</option></select></label>
+<label><span data-i="f_when">Para quando você precisa?</span><select name="prazo" required><option value="" data-i="f_sel">Selecione</option><option data-i="o_w1">O quanto antes</option><option data-i="o_w2">Em até 7 dias</option><option data-i="o_w3">Em até 30 dias</option><option data-i="o_w4">Sem pressa</option></select></label>
+<label class="full"><span data-i="f_assets">Você tem logo e fotos do seu negócio?</span><select name="midia" required><option value="" data-i="f_sel">Selecione</option><option data-i="o_a1">Tenho logo e fotos</option><option data-i="o_a2">Tenho só uma parte</option><option data-i="o_a3">Preciso de ajuda com isso</option></select></label>
+<label class="full"><span data-i="f_ref">Sites que você gosta (opcional)</span><input name="ref"></label>
+<label class="full"><span data-i="f_note">Algo mais que devemos saber? (opcional)</span><textarea name="obs"></textarea></label>
+<button class="btn" type="submit" data-i="f_send">Enviar pelo WhatsApp</button>
+<small data-i="f_hint">Abre o WhatsApp com tudo preenchido. É só apertar enviar.</small>
+</form>
+</main>
+
+<footer><div class="wrap"><span>© <span id="yr">2026</span> Nayco · Canoas, RS</span><span><a href="mailto:contato@nayco.com.br">contato@nayco.com.br</a></span></div></footer>
+
+<a class="wa wa-link" href="https://wa.me/5551980534875?text=Ol%C3%A1!%20Quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.1-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3Z"/></svg></a>
+
+<script>
+const WHATS="5551980534875",$=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+/* PT vem do próprio HTML; aqui só EN e ES */
+const T={en:{
+n_svc:"Services",n_plans:"Plans",n_work:"Projects",n_about:"About",n_cta:"WhatsApp",
+h1:"Your website live in days, not weeks.",h_sub:"We build the site, run the hosting and handle monthly maintenance. You just serve the customers who show up.",
+cta1:"Order my website",cta2:"See plans",
+s_h:"What Nayco delivers",s_sub:"Three services that work together. Hire the site alone or the full package.",
+s1t:"Website creation",s1d:"Custom business sites and landing pages, fast on mobile and ready to show up on Google.",
+s2t:"Hosting",s2d:"Your site on a stable server with domain, SSL certificate and backups. Nothing technical for you to do.",
+s3t:"Monthly maintenance",s3d:"Text, photo and layout updates every month. If something breaks, we fix it.",
+p_h:"Website plans",p_sub:"One-time creation fee. Hosting with maintenance is a separate monthly fee.",
+p1t:"Landing page",p1d:"One page focused on selling one service, with a direct WhatsApp button.",
+p2t:"Business website",p2d:"Up to 5 sections in Portuguese, English or Spanish, with contact form and Google Maps.",
+p3t:"Website with booking",p3d:"Full site plus online booking with WhatsApp confirmation.",
+setup:"setup",f_name:"Your name",f_biz:"Business name and what you do",f_type:"What kind of site do you need?",f_has:"Do you already have a site or domain?",f_goal:"What is the main goal of the site?",f_when:"When do you need it?",f_assets:"Do you have a logo and photos?",f_ref:"Sites you like (optional)",f_note:"Anything else we should know? (optional)",f_sel:"Select",f_send:"Send on WhatsApp",f_hint:"This opens WhatsApp with everything filled in. Just hit send.",
+o_t1:"Landing page (one page)",o_t2:"Business website (up to 5 sections)",o_t3:"Website with online booking",o_t4:"Not sure yet, I'd like advice",
+o_h1:"I have no site or domain",o_h2:"I have a domain but no site",o_h3:"I have a site and want to redo it",
+o_g1:"Get contacts on WhatsApp",o_g2:"Get bookings",o_g3:"Show my services and projects",o_g4:"Sell products online",
+o_w1:"As soon as possible",o_w2:"Within 7 days",o_w3:"Within 30 days",o_w4:"No rush",
+o_a1:"I have logo and photos",o_a2:"I only have part of it",o_a3:"I need help with that",
+t_h:"What our clients say",t_sub:"Real feedback from people who already have their site live.",hs_t:"Hosting with maintenance",hs_d:"Domain, SSL, backups and up to 1 hour of changes per month, included.",per_month:"per month",
+w_h:"Finished sites, already live",w_sub:"Real businesses in Canoas and the surrounding area.",
+d_h:"Demo sites",d_sub:"Ready-made models so you can see how your site could look.",
+dn1:"Demo · Psychology",dn2:"Demo · Dentist",dn3:"Demo · Barbershop",
+a_h:"Why Nayco",a_p:"Generic agencies are slow. Freelancers disappear. Drag-and-drop tools make your site look like everyone else's.",
+a1:"Delivered in days, using ready-made templates tailored to your business",a2:"Monthly maintenance included: someone answers when you need help",
+a3:"Site in three languages if your customers also speak English or Spanish",a4:"Direct support on WhatsApp, no queue or ticket",
+f_h:"Ready to put your business online?",f_p:"Tell us what you do. We reply with a proposal within one business day."},
+es:{
+n_svc:"Servicios",n_plans:"Planes",n_work:"Proyectos",n_about:"Nosotros",n_cta:"WhatsApp",
+h1:"Tu sitio web en línea en días, no en semanas.",h_sub:"Creamos el sitio, nos ocupamos del hosting y hacemos el mantenimiento cada mes. Tú solo atiendes a los clientes que lleguen.",
+cta1:"Pedir mi sitio",cta2:"Ver planes",
+s_h:"Lo que entrega Nayco",s_sub:"Tres servicios que se complementan. Contrata solo el sitio o el paquete completo.",

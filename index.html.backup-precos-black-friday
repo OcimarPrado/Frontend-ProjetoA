@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nayco | Criação de sites e hospedagem em Canoas, RS</title>
+<meta name="description" content="Criação de sites e landing pages. Hospedagem com manutenção opcional por R$ 99/mês. Atendimento direto pelo WhatsApp.">
+<meta name="theme-color" content="#09061c">
+<link rel="canonical" href="https://www.nayco.com.br/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Nayco">
+<meta property="og:url" content="https://www.nayco.com.br/">
+<meta property="og:title" content="Nayco | Criação de sites, hospedagem e manutenção">
+<meta property="og:description" content="Criação de sites com hospedagem e manutenção mensal opcionais por R$ 99.">
+<meta property="og:image" content="https://www.nayco.com.br/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Nayco","url":"https://www.nayco.com.br/","description":"Criação de sites e landing pages. Hospedagem com manutenção mensal opcional.","email":"contato@nayco.com.br","telephone":"+5551980534875","areaServed":"BR","address":{"@type":"PostalAddress","addressLocality":"Canoas","addressRegion":"RS","addressCountry":"BR"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#09061c;--bg2:#0f0a2e;--line:rgba(190,175,255,.16);--ink:#f3f0ff;--mute:#a7a3c9;--cyan:#22d3ee;--violet:#7c3aed;--pink:#ff3d81;--lime:#c6f432;--orange:#ff8a3d;--cream:#f6f1e7;--dark:#0b0820;--brand:linear-gradient(120deg,#22d3ee,#7c3aed 55%,#ff3d81);
+--head:"Montserrat",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px;overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
+::selection{background:var(--lime);color:var(--dark)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--head);font-weight:800;line-height:1.05;letter-spacing:-.035em}
+h2{font-size:clamp(32px,4.6vw,52px);margin-bottom:16px}
+section{padding:112px 0}
+.lead{color:var(--mute);max-width:56ch}
+header{position:sticky;top:0;z-index:10;background:rgba(9,6,28,.7);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;gap:20px;height:68px;transition:height .3s}
+header.sm nav{height:56px}
+.logo{font:800 24px var(--head);text-decoration:none;letter-spacing:-.04em}
+.logo i{font-style:normal;color:var(--lime)}
+nav ul{display:flex;gap:6px;list-style:none;padding:0;margin:0 auto 0 24px}
+nav ul a{text-decoration:none;color:var(--mute);font-size:15px;padding:8px 12px;border-radius:999px;transition:color .2s,background .2s}
+nav ul a:hover{color:var(--ink);background:rgba(255,255,255,.08)}
+.lang{display:flex;gap:2px;border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{background:none;border:0;color:var(--mute);font:500 12px var(--mono);padding:6px 10px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--lime);color:var(--dark)}
+.mb{display:none;background:none;border:1px solid var(--line);border-radius:12px;width:40px;height:40px;color:var(--ink);font-size:20px;cursor:pointer}
+.btn{position:relative;overflow:hidden;display:inline-block;background:linear-gradient(120deg,var(--lime),var(--cyan));color:var(--dark);font:800 15px var(--head);text-decoration:none;padding:16px 30px;border-radius:999px;box-shadow:0 12px 30px -10px rgba(198,244,50,.6);transform:translate(var(--tx,0px),var(--ty,0px));transition:transform .2s,box-shadow .3s}
+.btn:hover{transform:translate(var(--tx,0px),calc(var(--ty,0px) - 3px));box-shadow:0 18px 38px -10px rgba(34,211,238,.8)}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.55) 50%,transparent 65%);transform:translateX(-120%);transition:transform .7s}
+.btn:hover::after{transform:translateX(120%)}
+.btn.ghost{background:rgba(255,255,255,.05);color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.btn.ghost:hover{border-color:var(--pink)}
+nav .btn{padding:10px 20px;font-size:14px}
+.hero{position:relative;padding:100px 0 116px;overflow:hidden;background:radial-gradient(380px 260px at var(--mx,80%) var(--my,15%),rgba(198,244,50,.13),transparent 65%)}
+.hero::before{content:"";position:absolute;inset:-20%;pointer-events:none;background:radial-gradient(40% 40% at 18% 30%,rgba(124,58,237,.6),transparent 70%),radial-gradient(35% 35% at 82% 18%,rgba(34,211,238,.42),transparent 70%),radial-gradient(40% 40% at 70% 92%,rgba(255,61,129,.42),transparent 70%);filter:blur(30px);animation:aur 18s ease-in-out infinite alternate}
+@keyframes aur{to{transform:translate(4%,-3%) rotate(8deg) scale(1.1)}}
+.hero .grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center}
+h1{font-size:clamp(40px,6.2vw,76px);margin-bottom:24px}
+h1,h1 .w{background:linear-gradient(100deg,#fff 45%,#d9ff6b 75%,#7ee8fa);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.hero .lead{font-size:19px;margin-bottom:36px;color:#cfcbef}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.stage{position:relative}
+.chip{position:absolute;z-index:2;padding:9px 18px;border-radius:999px;font:800 13px var(--head);color:var(--dark);box-shadow:0 16px 30px -10px rgba(0,0,0,.6);animation:fa 5s ease-in-out infinite}
+.c1{background:var(--lime);top:-20px;left:-12px}
+.c2{background:var(--pink);color:#fff;right:-14px;top:28%;animation-duration:6.5s;animation-delay:-2s}
+.c3{background:var(--cyan);bottom:-18px;left:12%;animation-duration:7.5s;animation-delay:-4s}
+@keyframes fa{50%{translate:0 -14px;rotate:4deg}}
+.term{background:rgba(8,5,26,.82);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.14);border-radius:18px;overflow:hidden;box-shadow:0 40px 90px -40px #000,0 0 90px -24px rgba(124,58,237,.7)}
+.term .bar{display:flex;gap:7px;padding:13px 16px;border-bottom:1px solid var(--line)}
+.term .bar b{width:11px;height:11px;border-radius:50%}
+.term .bar b:nth-child(1){background:#ff5f57}.term .bar b:nth-child(2){background:#febc2e}.term .bar b:nth-child(3){background:#28c840}
+.term pre{font:400 13.5px/1.95 var(--mono);padding:20px 22px;min-height:290px;color:#d6d2f5;white-space:pre-wrap}
+.ok{color:var(--lime)}.or{color:var(--orange)}.dim{color:var(--mute)}
+.caret{display:inline-block;width:8px;height:15px;background:var(--lime);vertical-align:-2px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:22px 0;font:800 clamp(28px,4.6vw,54px) var(--head);letter-spacing:-.03em;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.45)}
+.mq div{display:inline-block;animation:mq 38s linear infinite}
+.mq:hover div{animation-play-state:paused}
+.mq span{margin:0 30px}
+.mq span:nth-child(3n+1){color:var(--lime);-webkit-text-stroke:0}
+.mq span:nth-child(3n){color:var(--pink);-webkit-text-stroke:0}
+.mq span::after{content:"\2726";margin-left:60px;color:var(--cyan);-webkit-text-stroke:0}
+@keyframes mq{to{transform:translateX(-50%)}}
+#servicos{background:var(--cream);color:var(--dark)}
+#servicos .lead{color:#55526f}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px;counter-reset:s}
+.svc article{counter-increment:s;position:relative;overflow:hidden;padding:38px 32px 44px;border-radius:26px;min-height:320px;box-shadow:0 30px 60px -34px rgba(11,8,32,.5)}
+.svc article:nth-child(1){background:var(--cyan)}
+.svc article:nth-child(2){background:var(--violet);color:#fff}
+.svc article:nth-child(3){background:var(--lime)}
+.svc h3{font-size:26px;margin-bottom:14px}
+.svc h3::before{content:"0" counter(s);display:block;margin-bottom:48px;font:800 64px/1 var(--head);letter-spacing:-.05em;opacity:.28}
+.svc p{font-size:16px;opacity:.88}
+.svc article:hover{translate:0 -12px;rotate:-1.6deg;box-shadow:0 46px 70px -30px rgba(11,8,32,.6)}
+.svc article:nth-child(2):hover{rotate:1.6deg}
+.spot{position:relative}
+.spot::before{content:"";position:absolute;inset:0;border-radius:inherit;z-index:1;pointer-events:none;opacity:0;transition:opacity .4s;background:radial-gradient(420px circle at var(--x,50%) var(--y,0),rgba(34,211,238,.2),transparent 60%)}
+.svc .spot::before{background:radial-gradient(420px circle at var(--x,50%) var(--y,0),rgba(255,255,255,.42),transparent 60%)}
+.spot:hover::before{opacity:1}
+#planos{background:linear-gradient(180deg,var(--bg2),var(--bg))}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px;align-items:stretch}
+.plan{display:flex;flex-direction:column;gap:12px;padding:38px 30px;border:1px solid var(--line);border-radius:26px;background:rgba(255,255,255,.04)}
+.plan h3{font-size:24px}
+.plan p{color:var(--mute);font-size:16px;flex:1}
+.price{margin-top:16px;font:500 14px var(--mono);color:var(--mute)}
+.price strong{display:block;font:800 42px var(--head);letter-spacing:-.04em;background:var(--brand);-webkit-background-clip:text;background-clip:text;color:transparent}
+.plan.hl{background:linear-gradient(150deg,var(--violet),var(--pink));border-color:transparent;scale:1.05;box-shadow:0 40px 80px -30px rgba(255,61,129,.65)}
+.plan.hl p,.plan.hl .price{color:rgba(255,255,255,.88)}
+.plan.hl .price strong{background:none;color:#fff;-webkit-text-fill-color:#fff}
+.plan:hover{translate:0 -10px;border-color:var(--cyan)}
+.plan.hl:hover{border-color:transparent}
+@property --ang{syntax:"<angle>";initial-value:0deg;inherits:false}
+@keyframes spin{to{--ang:360deg}}
+.host{position:relative;margin-top:44px;padding:34px;border:1px solid transparent;border-radius:26px;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;background:linear-gradient(var(--bg2),var(--bg2)) padding-box,conic-gradient(from var(--ang),rgba(34,211,238,.1),var(--cyan),rgba(34,211,238,.1) 35%,var(--pink) 60%,var(--lime) 80%,rgba(34,211,238,.1)) border-box;animation:spin 7s linear infinite}
+.host h3{font-size:22px;margin-bottom:6px}
+.host p{color:var(--mute);font-size:16px}
+.host .price{margin:0;text-align:right}
+.bf-banner{margin:32px 0 0;padding:22px 26px;border:1px solid rgba(198,244,50,.35);border-radius:20px;background:linear-gradient(110deg,rgba(198,244,50,.12),rgba(124,58,237,.2));display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.bf-banner strong{font:800 20px var(--head);color:var(--lime)}
+.bf-banner p{font-size:14px;color:var(--mute);margin-top:5px}
+.bf-clock{display:flex;gap:12px;text-align:center;font-family:var(--mono)}
+.bf-clock span{min-width:48px}
+.bf-clock b{display:block;font-size:24px;color:var(--ink)}
+.bf-clock small{font-size:10px;color:var(--mute)}
+.price del{display:block;font:500 16px var(--mono);color:var(--mute);text-decoration:line-through;margin-bottom:2px}
+.bf-tag{display:inline-block;align-self:flex-start;padding:6px 12px;border-radius:999px;background:var(--lime);color:var(--dark);font:800 11px var(--mono);letter-spacing:.05em}
+.bf-banner[hidden],.bf-tag[hidden],#bf-old-price[hidden]{display:none!important}
+#projetos{background:radial-gradient(600px 420px at 92% 8%,rgba(124,58,237,.3),transparent 70%),radial-gradient(520px 420px at 4% 62%,rgba(255,61,129,.2),transparent 70%),var(--bg)}
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.work figure{position:relative;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--bg2);box-shadow:0 26px 54px -30px #000}
+.work img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:top;background:var(--line);transition:transform .8s var(--ease)}
+.work figure:hover img{transform:scale(1.06)}
+.work figure:hover{border-color:var(--lime)}
+.work figcaption{padding:15px 20px;font:500 13px var(--mono);color:var(--mute);border-top:1px solid var(--line)}
+.work a{display:block;text-decoration:none;color:inherit;transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .35s ease-out;will-change:transform}
+.work a figcaption::after{content:" \2197";color:var(--lime)}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.q{padding:34px 30px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.04)}
+.q blockquote{margin:0}.q p{font-size:18px;line-height:1.6}
+.q p::before{content:"\201C";display:block;font:800 60px/1 var(--head);color:var(--pink);margin-bottom:6px}
+.q figcaption{margin-top:22px;font:500 13px var(--mono);color:var(--mute)}
+#sobre{background:linear-gradient(135deg,#5b21b6,#be185d)}
+#sobre .lead{color:rgba(255,255,255,.84)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.about ul{list-style:none;padding:0}
+.about li{padding:18px 0 18px 30px;border-bottom:1px solid rgba(255,255,255,.25);position:relative;color:#fff;font-size:18px}
+.about li::before{content:"";position:absolute;left:0;top:34px;width:14px;height:3px;border-radius:3px;background:var(--lime)}
+.final{text-align:center;background:var(--lime);color:var(--dark)}
+.final h2{font-size:clamp(36px,6.4vw,78px);max-width:16ch;margin-inline:auto}
+.final .lead{color:#33430a;margin:0 auto 36px}
+.final .btn{background:var(--dark);color:#fff;box-shadow:0 16px 36px -12px rgba(11,8,32,.7)}
+.lead-form{max-width:760px;margin:44px auto 0;padding:34px;text-align:left;background:var(--dark);color:var(--ink);border-radius:28px;display:grid;grid-template-columns:1fr 1fr;gap:18px;box-shadow:0 40px 80px -36px rgba(11,8,32,.8)}
+.lead-form label{display:flex;flex-direction:column;gap:8px;font:500 13px var(--mono);color:var(--mute)}
+.lead-form .full{grid-column:1/-1}
+.lead-form input,.lead-form select,.lead-form textarea{width:100%;font:400 16px system-ui,sans-serif;color:var(--ink);background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:14px;padding:14px 16px;transition:border-color .2s,box-shadow .2s}
+.lead-form select{appearance:none;-webkit-appearance:none;padding-right:40px;background-image:linear-gradient(45deg,transparent 50%,var(--lime) 50%),linear-gradient(135deg,var(--lime) 50%,transparent 50%);background-position:calc(100% - 22px) 50%,calc(100% - 16px) 50%;background-size:6px 6px;background-repeat:no-repeat}
+.lead-form option{color:#111;background:#fff}
+.lead-form input:focus,.lead-form select:focus,.lead-form textarea:focus{outline:0;border-color:var(--lime);box-shadow:0 0 0 4px rgba(198,244,50,.18)}
+.lead-form textarea{min-height:96px;resize:vertical}
+.lead-form .btn{grid-column:1/-1;justify-self:start;border:0;cursor:pointer;background:linear-gradient(120deg,var(--lime),var(--cyan));color:var(--dark);box-shadow:0 12px 30px -10px rgba(198,244,50,.6)}
+.lead-form small{grid-column:1/-1;color:var(--mute);font-size:14px}
+footer{padding:30px 0;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.wa{position:fixed;right:18px;bottom:18px;z-index:20;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.45);transition:transform .25s}
+.wa:hover{transform:scale(1.1) rotate(-6deg)}
+.wa svg{width:28px;height:28px;fill:#fff}
+.wa::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;animation:pulse 2.2s ease-out infinite}
+@keyframes pulse{to{transform:scale(1.7);opacity:0}}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:40;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.js [data-a]{opacity:0;filter:blur(10px);transition:opacity .9s var(--ease),transform .9s var(--ease),filter .9s var(--ease),clip-path 1s var(--ease),translate .5s var(--ease),rotate .5s var(--ease),scale .5s var(--ease),box-shadow .5s,border-color .4s;transition-delay:var(--d,0s)}
+.js [data-a=up]{transform:translateY(44px)}
+.js [data-a=left]{transform:translateX(-56px)}
+.js [data-a=right]{transform:translateX(56px)}
+.js [data-a=zoom]{transform:scale(.88)}
+.js [data-a=flip]{transform:perspective(900px) rotateX(-38deg) translateY(50px);transform-origin:50% 100%}
+.js [data-a=clip]{transform:translateX(-30px);clip-path:inset(0 100% 0 0)}
+.js [data-a].in{opacity:1;transform:none;filter:none;clip-path:inset(0)}
+.js .w{display:inline-block;opacity:0;transform:translateY(36px);animation:wIn .8s var(--ease) forwards}
+@keyframes wIn{to{opacity:1;transform:none}}
+#bar{position:fixed;top:0;left:0;width:100%;height:3px;z-index:30;background:var(--brand);transform-origin:0 50%;transform:scaleX(0)}
+@media(max-width:860px){
+.js [data-a=left],.js [data-a=right]{transform:translateY(36px)}
+.mb{display:block}
+nav .btn{display:none}
+nav .lang{margin-left:auto}
+nav ul{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;margin:0;padding:8px 24px 16px;background:rgba(9,6,28,.97);border-bottom:1px solid var(--line)}
+header.open nav ul{display:flex}
+nav ul a{display:block;padding:14px 0;font-size:17px}
+.hero .grid,.about,.host,.bf-banner{grid-template-columns:1fr}
+.svc,.work,.quotes,.plans{grid-template-columns:1fr}
+.svc article{min-height:0}.plan.hl{scale:1}.host .price{text-align:left}.lead-form{grid-template-columns:1fr;padding:24px}
+section{padding:76px 0}.hero{padding:60px 0 76px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+<script>if(!matchMedia("(prefers-reduced-motion:reduce)").matches)document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Principal">
+<a class="logo" href="#top" aria-label="Nayco">na<i>y</i>co</a>
+<ul>
+<li><a href="#servicos" data-i="n_svc">Serviços</a></li>
+<li><a href="#planos" data-i="n_plans">Planos</a></li>
+<li><a href="#projetos" data-i="n_work">Projetos</a></li>
+<li><a href="#sobre" data-i="n_about">Sobre</a></li>
+</ul>
+<div class="lang" role="group" aria-label="Idioma"><button data-l="pt">PT</button><button data-l="en">EN</button><button data-l="es">ES</button></div>
+<a class="btn wa-link" href="https://wa.me/5551980534875?text=Ol%C3%A1!%20Quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener" data-i="n_cta">WhatsApp</a>
+<button class="mb" aria-label="Menu" aria-expanded="false">☰</button>
+</nav></div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap grid">
+<div>
+<h1 data-i="h1">Seu site no ar em dias, não em semanas.</h1>
+<p class="lead" data-i="h_sub">Criamos seu site. A hospedagem com manutenção é opcional e custa R$ 99 por mês. Você só atende os clientes que chegarem.</p>
+<div class="cta">
+<a class="btn wa-link" href="https://wa.me/5551980534875?text=Ol%C3%A1!%20Quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener" data-i="cta1">Pedir meu site</a>
+<a class="btn ghost" href="#planos" data-i="cta2">Ver planos</a>
+</div>
+</div>
+<div class="stage"><span class="chip c1">SSL ✓</span><span class="chip c2">Mobile first</span><span class="chip c3">WhatsApp</span><div class="term" aria-hidden="true"><div class="bar"><b></b><b></b><b></b></div><pre id="term"></pre></div></div>
+</div></section>
+
+<div class="mq" aria-hidden="true"><div><span>Landing page</span><span>SEO</span><span>SSL</span><span>WhatsApp</span><span>Mobile first</span><span>Google Maps</span><span>Backup</span><span>Landing page</span><span>SEO</span><span>SSL</span><span>WhatsApp</span><span>Mobile first</span><span>Google Maps</span><span>Backup</span></div></div>
+
+<section id="servicos"><div class="wrap">
+<h2 data-i="s_h">O que a Nayco entrega</h2><p class="lead" data-i="s_sub">Três serviços que se completam. Você pode contratar só o site ou o pacote inteiro.</p>
+<div class="svc">
+<article><h3 data-i="s1t">Criação de sites</h3><p data-i="s1d">Site institucional ou landing page sob medida, rápido no celular e pronto para aparecer no Google.</p></article>
+<article><h3 data-i="s2t">Hospedagem</h3><p data-i="s2d">Seu site em servidor estável, com domínio, certificado SSL e backup. Sem você mexer em nada técnico.</p></article>
+<article><h3 data-i="s3t">Manutenção mensal</h3><p data-i="s3d">Atualizações de textos, fotos e ajustes mensais, disponíveis na contratação da hospedagem com manutenção.</p></article>
+</div>
+</div></section>
+
+<section id="planos" class="alt"><div class="wrap">
+<h2 data-i="p_h">Planos de site</h2><p class="lead" data-i="p_sub">Valor único de criação. A hospedagem com manutenção é uma mensalidade à parte.</p>
+<div class="bf-banner" id="bf-banner">
+<div>
+<strong data-i="bf_title">Black Friday Nayco 2026</strong>
+<p data-i="bf_until">Oferta válida até 27/11/2026 às 23h59, horário de Brasília.</p>
+</div>
+<div class="bf-clock" aria-label="Contagem regressiva">
+<span><b id="bf-days">00</b><small data-i="bf_days">dias</small></span>
+<span><b id="bf-hours">00</b><small data-i="bf_hours">horas</small></span>
+<span><b id="bf-minutes">00</b><small data-i="bf_minutes">min</small></span>
+<span><b id="bf-seconds">00</b><small data-i="bf_seconds">seg</small></span>
+</div>
+</div>
+<div class="plans">
+<div class="plan"><h3 data-i="p1t">Landing page</h3><p data-i="p1d">Uma página focada em vender um serviço, com botão direto para o WhatsApp.</p><div class="price"><strong>R$ 497</strong><span data-i="setup">criação</span></div></div>
+<div class="plan hl"><h3 data-i="p2t">Site institucional</h3><p data-i="p2d">Até 5 seções, em português, inglês ou espanhol, com formulário e Google Maps.</p><div class="price">
+<del id="bf-old-price">R$ 1.490</del>
+<strong id="bf-price">R$ 699</strong>
+<span data-i="setup">criação</span>
+</div>
+<span class="bf-tag" data-i="bf_offer">OFERTA BLACK FRIDAY</span></div>
+<div class="plan"><h3 data-i="p3t">Site com agendamento</h3><p data-i="p3d">Site completo mais agendamento online, com confirmação pelo WhatsApp.</p><div class="price"><strong>R$ 1.497</strong><span data-i="setup">criação</span></div></div>
+</div>
+<div class="host"><div><h3 data-i="hs_t">Hospedagem com manutenção</h3><p data-i="hs_d">Domínio, SSL, backup e até 1 hora de ajustes por mês, incluídos na mensalidade.</p><p data-i="hs_note">Cobrança mensal de R$ 99 desde o início da hospedagem.</p></div><div class="price"><strong>R$ 99</strong><span data-i="per_month">por mês</span></div></div>
+</div></section>
+
+<section id="projetos"><div class="wrap">
+<h2 data-i="w_h">Sites prontos, já no ar</h2><p class="lead" data-i="w_sub">Negócios reais de Canoas e região.</p>
+<div class="work">
+<figure><a href="https://jvautocenter.com.br" target="_blank" rel="noopener"><img src="img/jvautocenter.jpg?v=4" width="1000" height="1250" loading="lazy" alt="Site da JV Auto Center"><figcaption>JV Auto Center</figcaption></a></figure>
+<figure><a href="https://mulhergauchatour.com.br" target="_blank" rel="noopener"><img src="img/mulhergauchatour.jpg?v=4" width="1000" height="1250" loading="lazy" alt="Site da Mulher Gaúcha Tour"><figcaption>Mulher Gaúcha Tour</figcaption></a></figure>
+<figure><a href="https://mffconsultoria.com.br" target="_blank" rel="noopener"><img src="img/mffconsultoria.jpg?v=4" width="1000" height="1250" loading="lazy" alt="Site da MFF Consultoria"><figcaption>MFF Consultoria</figcaption></a></figure>
+</div>
+<h2 data-i="d_h" style="margin-top:88px">Sites demo</h2><p class="lead" data-i="d_sub">Modelos prontos para você ver como o seu site pode ficar.</p>
+<div class="work">
+<figure><a href="https://psi-demo-sigma.vercel.app/" target="_blank" rel="noopener"><img src="img/demos/psico.jpg?v=4" width="1000" height="1250" loading="lazy" alt="Demo de site para psicologia"><figcaption data-i="dn1">Demo · Psicologia</figcaption></a></figure>
+<figure><a href="https://odonto-demo-livid.vercel.app/" target="_blank" rel="noopener"><img src="img/demos/odonto.jpg?v=4" width="1000" height="1250" loading="lazy" alt="Demo de site para dentista"><figcaption data-i="dn2">Demo · Dentista</figcaption></a></figure>
+<figure><a href="https://demobarbearia-one.vercel.app/" target="_blank" rel="noopener"><img src="img/demos/barber.jpg?v=4" width="1000" height="1250" loading="lazy" alt="Demo de site para barbearia"><figcaption data-i="dn3">Demo · Barbearia</figcaption></a></figure>
+</div>
+</div></section>
+
+<!-- DEPOIMENTOS: troque os textos pelos depoimentos REAIS dos clientes e remova o atributo hidden da section -->
+<section id="clientes" hidden><div class="wrap">
+<h2 data-i="t_h">O que nossos clientes dizem</h2><p class="lead" data-i="t_sub">Opiniões reais de quem já tem o site no ar.</p>
+<div class="quotes">
+<figure class="q"><blockquote><p>TEXTO REAL DO CLIENTE 1</p></blockquote><figcaption>Nome · JV Auto Center</figcaption></figure>
+<figure class="q"><blockquote><p>TEXTO REAL DO CLIENTE 2</p></blockquote><figcaption>Nome · Mulher Gaúcha Tour</figcaption></figure>
+<figure class="q"><blockquote><p>TEXTO REAL DO CLIENTE 3</p></blockquote><figcaption>Nome · MFF Consultoria</figcaption></figure>
+</div>
+</div></section>
+
+<section id="sobre" class="alt"><div class="wrap about">
+<div><h2 data-i="a_h">Por que a Nayco</h2><p class="lead" data-i="a_p">Agências genéricas demoram. Freelancers somem. Ferramentas de arrastar e soltar deixam o site com cara de todo mundo.</p></div>
+<ul>
+<li data-i="a1">Entrega em dias, usando modelos prontos ajustados ao seu negócio</li>
+<li data-i="a2">Suporte e manutenção mensal disponíveis no plano de hospedagem por R$ 99/mês</li>
+<li data-i="a3">Site em três idiomas, se o seu cliente também fala inglês ou espanhol</li>
+<li data-i="a4">Atendimento direto pelo WhatsApp, sem fila nem ticket</li>
+</ul>
+</div></section>
+
+<section class="final" id="contato"><div class="wrap">
+<h2 data-i="f_h">Vamos colocar seu negócio no ar?</h2><p class="lead" data-i="f_p">Conte o que você faz. Respondemos com uma proposta no mesmo dia útil.</p>
+<form id="lead" class="lead-form">
+<label><span data-i="f_name">Seu nome</span><input name="nome" required autocomplete="name"></label>
+<label><span data-i="f_biz">Nome do negócio e o que você faz</span><input name="negocio" required></label>
+<label><span data-i="f_type">Que tipo de site você precisa?</span><select name="tipo" required><option value="" data-i="f_sel">Selecione</option><option data-i="o_t1">Landing page (uma página)</option><option data-i="o_t2">Site institucional (até 5 seções)</option><option data-i="o_t3">Site com agendamento online</option><option data-i="o_t4">Ainda não sei, quero uma indicação</option></select></label>
+<label><span data-i="f_has">Você já tem site ou domínio?</span><select name="tem" required><option value="" data-i="f_sel">Selecione</option><option data-i="o_h1">Não tenho site nem domínio</option><option data-i="o_h2">Tenho domínio, mas sem site</option><option data-i="o_h3">Já tenho site e quero refazer</option></select></label>
+<label><span data-i="f_goal">Qual é o principal objetivo do site?</span><select name="meta" required><option value="" data-i="f_sel">Selecione</option><option data-i="o_g1">Receber contatos pelo WhatsApp</option><option data-i="o_g2">Receber agendamentos</option><option data-i="o_g3">Mostrar meus serviços e projetos</option><option data-i="o_g4">Vender produtos online</option></select></label>
+<label><span data-i="f_when">Para quando você precisa?</span><select name="prazo" required><option value="" data-i="f_sel">Selecione</option><option data-i="o_w1">O quanto antes</option><option data-i="o_w2">Em até 7 dias</option><option data-i="o_w3">Em até 30 dias</option><option data-i="o_w4">Sem pressa</option></select></label>
+<label class="full"><span data-i="f_assets">Você tem logo e fotos do seu negócio?</span><select name="midia" required><option value="" data-i="f_sel">Selecione</option><option data-i="o_a1">Tenho logo e fotos</option><option data-i="o_a2">Tenho só uma parte</option><option data-i="o_a3">Preciso de ajuda com isso</option></select></label>
+<label class="full"><span data-i="f_ref">Sites que você gosta (opcional)</span><input name="ref"></label>
+<label class="full"><span data-i="f_note">Algo mais que devemos saber? (opcional)</span><textarea name="obs"></textarea></label>
+<button class="btn" type="submit" data-i="f_send">Enviar pelo WhatsApp</button>
+<small data-i="f_hint">Abre o WhatsApp com tudo preenchido. É só apertar enviar.</small>
+</form>
+</main>
+
+<footer><div class="wrap"><span>© <span id="yr">2026</span> Nayco · Canoas, RS</span><span><a href="mailto:contato@nayco.com.br">contato@nayco.com.br</a></span></div></footer>
+
+<a class="wa wa-link" href="https://wa.me/5551980534875?text=Ol%C3%A1!%20Quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.1-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3Z"/></svg></a>
+
+<script>
+const WHATS="5551980534875",$=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+/* PT vem do próprio HTML; aqui só EN e ES */
+const T={en:{
+n_svc:"Services",n_plans:"Plans",n_work:"Projects",n_about:"About",n_cta:"WhatsApp",
+h1:"Your website live in days, not weeks.",h_sub:"We build your website. Hosting with maintenance is optional and costs R$ 99 per month.",
+cta1:"Order my website",cta2:"See plans",
+s_h:"What Nayco delivers",s_sub:"Three services that work together. Hire the site alone or the full package.",
+s1t:"Website creation",s1d:"Custom business sites and landing pages, fast on mobile and ready to show up on Google.",
+s2t:"Hosting",s2d:"Your site on a stable server with domain, SSL certificate and backups. Nothing technical for you to do.",
+s3t:"Monthly maintenance",s3d:"Monthly text, photo and layout updates are available with the hosting and maintenance plan.",
+p_h:"Website plans",p_sub:"One-time creation fee. Hosting with maintenance is a separate monthly fee.",
+p1t:"Landing page",p1d:"One page focused on selling one service, with a direct WhatsApp button.",
+p2t:"Business website",p2d:"Up to 5 sections in Portuguese, English or Spanish, with contact form and Google Maps.",
+p3t:"Website with booking",p3d:"Full site plus online booking with WhatsApp confirmation.",
+setup:"setup",f_name:"Your name",f_biz:"Business name and what you do",f_type:"What kind of site do you need?",f_has:"Do you already have a site or domain?",f_goal:"What is the main goal of the site?",f_when:"When do you need it?",f_assets:"Do you have a logo and photos?",f_ref:"Sites you like (optional)",f_note:"Anything else we should know? (optional)",f_sel:"Select",f_send:"Send on WhatsApp",f_hint:"This opens WhatsApp with everything filled in. Just hit send.",
+o_t1:"Landing page (one page)",o_t2:"Business website (up to 5 sections)",o_t3:"Website with online booking",o_t4:"Not sure yet, I'd like advice",
+o_h1:"I have no site or domain",o_h2:"I have a domain but no site",o_h3:"I have a site and want to redo it",
+o_g1:"Get contacts on WhatsApp",o_g2:"Get bookings",o_g3:"Show my services and projects",o_g4:"Sell products online",
+o_w1:"As soon as possible",o_w2:"Within 7 days",o_w3:"Within 30 days",o_w4:"No rush",
+o_a1:"I have logo and photos",o_a2:"I only have part of it",o_a3:"I need help with that",
+t_h:"What our clients say",t_sub:"Real feedback from people who already have their site live.",hs_t:"Hosting with maintenance",hs_d:"Domain, SSL, backups and up to 1 hour of monthly changes, included in the subscription.",hs_note:"The R$ 99 monthly fee starts when hosting begins.",per_month:"per month",
+w_h:"Finished sites, already live",w_sub:"Real businesses in Canoas and the surrounding area.",
+d_h:"Demo sites",d_sub:"Ready-made models so you can see how your site could look.",
+dn1:"Demo · Psychology",dn2:"Demo · Dentist",dn3:"Demo · Barbershop",
+a_h:"Why Nayco",a_p:"Generic agencies are slow. Freelancers disappear. Drag-and-drop tools make your site look like everyone else's.",
+a1:"Delivered in days, using ready-made templates tailored to your business",a2:"Support and monthly maintenance available with the R$ 99/month hosting plan",
+a3:"Site in three languages if your customers also speak English or Spanish",a4:"Direct support on WhatsApp, no queue or ticket",
+bf_title:"Nayco Black Friday 2026",bf_until:"Offer valid until November 27, 2026, at 11:59 PM Brasília time.",bf_days:"days",bf_hours:"hours",bf_minutes:"min",bf_seconds:"sec",bf_offer:"BLACK FRIDAY OFFER",f_h:"Ready to put your business online?",f_p:"Tell us what you do. We reply with a proposal within one business day."},
+es:{
+n_svc:"Servicios",n_plans:"Planes",n_work:"Proyectos",n_about:"Nosotros",n_cta:"WhatsApp",
+h1:"Tu sitio web en línea en días, no en semanas.",h_sub:"Creamos tu sitio web. El hosting con mantenimiento es opcional y cuesta R$ 99 al mes.",
+cta1:"Pedir mi sitio",cta2:"Ver planes",
+s_h:"Lo que entrega Nayco",s_sub:"Tres servicios que se complementan. Contrata solo el sitio o el paquete completo.",
+s1t:"Creación de sitios",s1d:"Sitios corporativos y landing pages a medida, rápidos en el móvil y listos para aparecer en Google.",
+s2t:"Hosting",s2d:"Tu sitio en un servidor estable, con dominio, certificado SSL y copias de seguridad. Sin nada técnico para ti.",
+s3t:"Mantenimiento mensual",s3d:"Las actualizaciones mensuales de textos, fotos y diseño están disponibles con el plan de hosting y mantenimiento.",
+p_h:"Planes de sitio web",p_sub:"Pago único de creación. El hosting con mantenimiento es una mensualidad aparte.",
+p1t:"Landing page",p1d:"Una página enfocada en vender un servicio, con botón directo a WhatsApp.",
+p2t:"Sitio corporativo",p2d:"Hasta 5 secciones en portugués, inglés o español, con formulario y Google Maps.",
+p3t:"Sitio con reservas",p3d:"Sitio completo más reservas en línea, con confirmación por WhatsApp.",
+setup:"creación",f_name:"Tu nombre",f_biz:"Nombre del negocio y a qué te dedicas",f_type:"¿Qué tipo de sitio necesitas?",f_has:"¿Ya tienes sitio o dominio?",f_goal:"¿Cuál es el objetivo principal del sitio?",f_when:"¿Para cuándo lo necesitas?",f_assets:"¿Tienes logo y fotos?",f_ref:"Sitios que te gustan (opcional)",f_note:"¿Algo más que debamos saber? (opcional)",f_sel:"Selecciona",f_send:"Enviar por WhatsApp",f_hint:"Se abre WhatsApp con todo rellenado. Solo pulsa enviar.",
+o_t1:"Landing page (una página)",o_t2:"Sitio corporativo (hasta 5 secciones)",o_t3:"Sitio con reservas en línea",o_t4:"Aún no sé, quiero una recomendación",
+o_h1:"No tengo sitio ni dominio",o_h2:"Tengo dominio, pero sin sitio",o_h3:"Ya tengo sitio y quiero rehacerlo",
+o_g1:"Recibir contactos por WhatsApp",o_g2:"Recibir reservas",o_g3:"Mostrar mis servicios y proyectos",o_g4:"Vender productos en línea",
+o_w1:"Lo antes posible",o_w2:"En hasta 7 días",o_w3:"En hasta 30 días",o_w4:"Sin prisa",
+o_a1:"Tengo logo y fotos",o_a2:"Solo tengo una parte",o_a3:"Necesito ayuda con eso",
+t_h:"Lo que dicen nuestros clientes",t_sub:"Opiniones reales de quienes ya tienen su sitio en línea.",hs_t:"Hosting con mantenimiento",hs_d:"Dominio, SSL, copias de seguridad y hasta 1 hora de cambios mensuales, incluidos en la suscripción.",hs_note:"El pago mensual de R$ 99 comienza cuando empieza el hosting.",per_month:"al mes",
+w_h:"Sitios terminados, ya en línea",w_sub:"Negocios reales de Canoas y la región.",
+d_h:"Sitios demo",d_sub:"Modelos listos para que veas cómo puede quedar tu sitio.",
+dn1:"Demo · Psicología",dn2:"Demo · Dentista",dn3:"Demo · Barbería",
+a_h:"Por qué Nayco",a_p:"Las agencias genéricas tardan. Los freelancers desaparecen. Las herramientas de arrastrar y soltar dejan tu sitio igual que todos.",
+a1:"Entrega en días, con plantillas listas adaptadas a tu negocio",a2:"Soporte y mantenimiento mensual disponibles con el plan de hosting de R$ 99 al mes",
+a3:"Sitio en tres idiomas si tus clientes también hablan inglés o español",a4:"Atención directa por WhatsApp, sin filas ni tickets",
+bf_title:"Black Friday Nayco 2026",bf_until:"Oferta válida hasta el 27/11/2026 a las 23:59, hora de Brasilia.",bf_days:"días",bf_hours:"horas",bf_minutes:"min",bf_seconds:"seg",bf_offer:"OFERTA BLACK FRIDAY",f_h:"¿Ponemos tu negocio en línea?",f_p:"Cuéntanos a qué te dedicas. Respondemos con una propuesta el mismo día hábil."}};
+T.pt={};$$("[data-i]").forEach(e=>T.pt[e.dataset.i]=e.textContent);
+const LANGS={pt:"pt-BR",en:"en",es:"es"},MSG={pt:"Olá! Quero um site para o meu negócio.",en:"Hi! I'd like a website for my business.",es:"¡Hola! Quiero un sitio web para mi negocio."};
+const TERM={pt:["Criando seu site...","Ajustando para celular","Configurando domínio e SSL","Ativando backup diário","Publicando","No ar em 7 dias","Manutenção mensal ativa"],
+en:["Building your site...","Tuning for mobile","Setting up domain and SSL","Enabling daily backup","Publishing","Live in 7 days","Monthly maintenance active"],
+es:["Creando tu sitio...","Ajustando para móvil","Configurando dominio y SSL","Activando copia diaria","Publicando","En línea en 7 días","Mantenimiento mensual activo"]};
+const MOTION=document.documentElement.classList.contains("js");
+function setLang(l){
+  const d=T[l];document.documentElement.lang=LANGS[l];
+  $$("[data-i]").forEach(e=>e.textContent=d[e.dataset.i]);
+  $$(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===l));
+  $$(".wa-link").forEach(a=>a.href=`https://wa.me/${WHATS}?text=${encodeURIComponent(MSG[l])}`);
+  try{localStorage.setItem("nayco-lang",l)}catch(e){}
+  runTerm(l);animH1();tagAll();
+}
+$$(".lang button").forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+$("#yr").textContent=new Date().getFullYear();
+const hd=$("header"),mb=$(".mb");
+mb.onclick=()=>{const o=hd.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
+$$("nav ul a").forEach(a=>a.onclick=()=>{hd.classList.remove("open");mb.setAttribute("aria-expanded",false)});
+let termTimer;
+function runTerm(l){
+  clearTimeout(termTimer);const L=TERM[l];
+  const lines=[`<span class="dim">$</span> nayco novo-site seunegocio.com.br`,`<span class="dim">›</span> ${L[0]}`,`<span class="ok">✓</span> ${L[1]}`,`<span class="ok">✓</span> ${L[2]}`,`<span class="ok">✓</span> ${L[3]}`,`<span class="or">›</span> ${L[4]}`,`<span class="ok">● ${L[5]}</span>`,`<span class="ok">✓</span> ${L[6]}`];
+  const el=$("#term");
+  if(!MOTION){el.innerHTML=lines.join("\n");return}
+  let i=0;el.innerHTML="";
+  (function next(){
+    if(i>=lines.length){el.insertAdjacentHTML("beforeend","\n<span class='caret'></span>");return}
+    el.insertAdjacentHTML("beforeend",(i?"\n":"")+lines[i++]);
+    termTimer=setTimeout(next,i===1?500:650);
+  })();
+}
+document.body.insertAdjacentHTML("afterbegin",'<div id="bar"></div>');
+const io=("IntersectionObserver" in window)?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);setTimeout(()=>e.target.style.setProperty("--d","0s"),1600)}}),{threshold:.15,rootMargin:"0px 0px -6% 0px"}):null;
+function tag(sel,type,step,base){$$(sel).forEach((e,i)=>{if(e.dataset.a)return;e.dataset.a=type;e.style.setProperty("--d",((base||0)+i*(step||0))+"s")})}
+function tagAll(){
+  if(!MOTION)return;
+  tag(".hero .lead","up",0,.45);tag(".hero .cta","up",0,.6);tag(".term","right",0,.35);
+  tag("#sobre h2","clip");tag(".final h2","zoom");tag(".lead-form","up",0,.1);tag("section:not(.hero) h2","up");tag("section:not(.hero) .lead","up",0,.12);
+  tag(".svc article","flip",.15);tag(".q","up",.12);tag(".plan","zoom",.15);tag(".host","zoom");tag(".work figure","zoom",.1);tag(".about li","right",.12);
+  $$("[data-a]:not(.in)").forEach(e=>io?io.observe(e):e.classList.add("in"));
+}
+function animH1(){
+  if(!MOTION)return;const h=$("h1");
+  h.innerHTML=h.textContent.split(" ").map((w,i)=>`<span class="w" style="animation-delay:${.1+i*.09}s">${w}</span>`).join(" ");
+}
+if(MOTION){
+  let tick=false;
+  addEventListener("scroll",()=>{if(tick)return;tick=true;requestAnimationFrame(()=>{tick=false;const m=document.documentElement.scrollHeight-innerHeight;$("#bar").style.transform=`scaleX(${m>0?scrollY/m:0})`;hd.classList.toggle("sm",scrollY>40)})},{passive:true});
+  const hero=$(".hero");
+  hero.addEventListener("pointermove",e=>{const r=hero.getBoundingClientRect();hero.style.setProperty("--mx",(e.clientX-r.left)+"px");hero.style.setProperty("--my",(e.clientY-r.top)+"px")});
+}
+if(MOTION&&matchMedia("(hover:hover)").matches){
+  $$(".svc article,.work figure,.host,.plan").forEach(el=>{el.classList.add("spot");el.addEventListener("pointermove",e=>{const r=el.getBoundingClientRect();el.style.setProperty("--x",(e.clientX-r.left)+"px");el.style.setProperty("--y",(e.clientY-r.top)+"px")})});
+  $$(".work figure").forEach(f=>{const a=$("a",f);f.addEventListener("pointermove",e=>{const r=f.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;a.style.setProperty("--ry",(x*10)+"deg");a.style.setProperty("--rx",(-y*10)+"deg")});f.addEventListener("pointerleave",()=>{a.style.setProperty("--rx","0deg");a.style.setProperty("--ry","0deg")})});
+  $$(".btn").forEach(b=>{b.addEventListener("pointermove",e=>{const r=b.getBoundingClientRect();b.style.setProperty("--tx",((e.clientX-r.left-r.width/2)*.2)+"px");b.style.setProperty("--ty",((e.clientY-r.top-r.height/2)*.3)+"px")});b.addEventListener("pointerleave",()=>{b.style.setProperty("--tx","0px");b.style.setProperty("--ty","0px")})});
+}
+$("#lead").addEventListener("submit",e=>{
+  e.preventDefault();
+  const f=e.target,v=n=>f.elements[n].value.trim(),s=n=>T.pt[f.elements[n].selectedOptions[0].dataset.i];
+  const L=[["Nome",v("nome")],["Negócio",v("negocio")],["Tipo de site",s("tipo")],["Situação atual",s("tem")],["Objetivo",s("meta")],["Prazo",s("prazo")],["Logo e fotos",s("midia")],["Referências",v("ref")],["Observações",v("obs")]].filter(x=>x[1]);
+  const msg="Olá! Vim pelo site da Nayco e quero um orçamento.\n\n"+L.map(x=>`*${x[0]}:* ${x[1]}`).join("\n");
+  const u=`https://wa.me/${WHATS}?text=${encodeURIComponent(msg)}`;
+  window.open(u,"_blank","noopener")||(location.href=u);
+});
+// Prazo fixo: 27/11/2026 às 23h59min59s em Brasília (UTC-3).
+const BF_END = Date.UTC(2026,10,28,2,59,59);
+
+function updateBlackFridayTimer(){
+  const remaining = BF_END - Date.now();
+
+  if(remaining <= 0){
+    $("#bf-banner").hidden = true;
+    $("#bf-old-price").hidden = true;
+    $(".bf-tag").hidden = true;
+    $("#bf-price").textContent = "R$ 1.490";
+    return false;
+  }
+
+  const days = Math.floor(remaining / 86400000);
+  const hours = Math.floor((remaining % 86400000) / 3600000);
+  const minutes = Math.floor((remaining % 3600000) / 60000);
+  const seconds = Math.floor((remaining % 60000) / 1000);
+
+  $("#bf-days").textContent = String(days).padStart(2,"0");
+  $("#bf-hours").textContent = String(hours).padStart(2,"0");
+  $("#bf-minutes").textContent = String(minutes).padStart(2,"0");
+  $("#bf-seconds").textContent = String(seconds).padStart(2,"0");
+
+  return true;
+}
+
+if(updateBlackFridayTimer()){
+  const bfTimer = setInterval(()=>{
+    if(!updateBlackFridayTimer()) clearInterval(bfTimer);
+  },1000);
+}
+
+let saved=null;try{saved=localStorage.getItem("nayco-lang")}catch(e){}
+setLang(T[saved]?saved:"pt");
+</script>
+</body>
+</html>
+

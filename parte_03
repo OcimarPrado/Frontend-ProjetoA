@@ -1,0 +1,92 @@
+s1t:"Creación de sitios",s1d:"Sitios corporativos y landing pages a medida, rápidos en el móvil y listos para aparecer en Google.",
+s2t:"Hosting",s2d:"Tu sitio en un servidor estable, con dominio, certificado SSL y copias de seguridad. Sin nada técnico para ti.",
+s3t:"Mantenimiento mensual",s3d:"Cambios de texto, fotos y ajustes cada mes. Si algo falla, lo arreglamos.",
+p_h:"Planes de sitio web",p_sub:"Pago único de creación. El hosting con mantenimiento es una mensualidad aparte.",
+p1t:"Landing page",p1d:"Una página enfocada en vender un servicio, con botón directo a WhatsApp.",
+p2t:"Sitio corporativo",p2d:"Hasta 5 secciones en portugués, inglés o español, con formulario y Google Maps.",
+p3t:"Sitio con reservas",p3d:"Sitio completo más reservas en línea, con confirmación por WhatsApp.",
+setup:"creación",f_name:"Tu nombre",f_biz:"Nombre del negocio y a qué te dedicas",f_type:"¿Qué tipo de sitio necesitas?",f_has:"¿Ya tienes sitio o dominio?",f_goal:"¿Cuál es el objetivo principal del sitio?",f_when:"¿Para cuándo lo necesitas?",f_assets:"¿Tienes logo y fotos?",f_ref:"Sitios que te gustan (opcional)",f_note:"¿Algo más que debamos saber? (opcional)",f_sel:"Selecciona",f_send:"Enviar por WhatsApp",f_hint:"Se abre WhatsApp con todo rellenado. Solo pulsa enviar.",
+o_t1:"Landing page (una página)",o_t2:"Sitio corporativo (hasta 5 secciones)",o_t3:"Sitio con reservas en línea",o_t4:"Aún no sé, quiero una recomendación",
+o_h1:"No tengo sitio ni dominio",o_h2:"Tengo dominio, pero sin sitio",o_h3:"Ya tengo sitio y quiero rehacerlo",
+o_g1:"Recibir contactos por WhatsApp",o_g2:"Recibir reservas",o_g3:"Mostrar mis servicios y proyectos",o_g4:"Vender productos en línea",
+o_w1:"Lo antes posible",o_w2:"En hasta 7 días",o_w3:"En hasta 30 días",o_w4:"Sin prisa",
+o_a1:"Tengo logo y fotos",o_a2:"Solo tengo una parte",o_a3:"Necesito ayuda con eso",
+t_h:"Lo que dicen nuestros clientes",t_sub:"Opiniones reales de quienes ya tienen su sitio en línea.",hs_t:"Hosting con mantenimiento",hs_d:"Dominio, SSL, copias de seguridad y hasta 1 hora de cambios al mes, incluidos.",per_month:"al mes",
+w_h:"Sitios terminados, ya en línea",w_sub:"Negocios reales de Canoas y la región.",
+d_h:"Sitios demo",d_sub:"Modelos listos para que veas cómo puede quedar tu sitio.",
+dn1:"Demo · Psicología",dn2:"Demo · Dentista",dn3:"Demo · Barbería",
+a_h:"Por qué Nayco",a_p:"Las agencias genéricas tardan. Los freelancers desaparecen. Las herramientas de arrastrar y soltar dejan tu sitio igual que todos.",
+a1:"Entrega en días, con plantillas listas adaptadas a tu negocio",a2:"Mantenimiento mensual incluido: alguien responde cuando lo necesitas",
+a3:"Sitio en tres idiomas si tus clientes también hablan inglés o español",a4:"Atención directa por WhatsApp, sin filas ni tickets",
+f_h:"¿Ponemos tu negocio en línea?",f_p:"Cuéntanos a qué te dedicas. Respondemos con una propuesta el mismo día hábil."}};
+T.pt={};$$("[data-i]").forEach(e=>T.pt[e.dataset.i]=e.textContent);
+const LANGS={pt:"pt-BR",en:"en",es:"es"},MSG={pt:"Olá! Quero um site para o meu negócio.",en:"Hi! I'd like a website for my business.",es:"¡Hola! Quiero un sitio web para mi negocio."};
+const TERM={pt:["Criando seu site...","Ajustando para celular","Configurando domínio e SSL","Ativando backup diário","Publicando","No ar em 7 dias","Manutenção mensal ativa"],
+en:["Building your site...","Tuning for mobile","Setting up domain and SSL","Enabling daily backup","Publishing","Live in 7 days","Monthly maintenance active"],
+es:["Creando tu sitio...","Ajustando para móvil","Configurando dominio y SSL","Activando copia diaria","Publicando","En línea en 7 días","Mantenimiento mensual activo"]};
+const MOTION=document.documentElement.classList.contains("js");
+function setLang(l){
+  const d=T[l];document.documentElement.lang=LANGS[l];
+  $$("[data-i]").forEach(e=>e.textContent=d[e.dataset.i]);
+  $$(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===l));
+  $$(".wa-link").forEach(a=>a.href=`https://wa.me/${WHATS}?text=${encodeURIComponent(MSG[l])}`);
+  try{localStorage.setItem("nayco-lang",l)}catch(e){}
+  runTerm(l);animH1();tagAll();
+}
+$$(".lang button").forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+$("#yr").textContent=new Date().getFullYear();
+const hd=$("header"),mb=$(".mb");
+mb.onclick=()=>{const o=hd.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
+$$("nav ul a").forEach(a=>a.onclick=()=>{hd.classList.remove("open");mb.setAttribute("aria-expanded",false)});
+let termTimer;
+function runTerm(l){
+  clearTimeout(termTimer);const L=TERM[l];
+  const lines=[`<span class="dim">$</span> nayco novo-site seunegocio.com.br`,`<span class="dim">›</span> ${L[0]}`,`<span class="ok">✓</span> ${L[1]}`,`<span class="ok">✓</span> ${L[2]}`,`<span class="ok">✓</span> ${L[3]}`,`<span class="or">›</span> ${L[4]}`,`<span class="ok">● ${L[5]}</span>`,`<span class="ok">✓</span> ${L[6]}`];
+  const el=$("#term");
+  if(!MOTION){el.innerHTML=lines.join("\n");return}
+  let i=0;el.innerHTML="";
+  (function next(){
+    if(i>=lines.length){el.insertAdjacentHTML("beforeend","\n<span class='caret'></span>");return}
+    el.insertAdjacentHTML("beforeend",(i?"\n":"")+lines[i++]);
+    termTimer=setTimeout(next,i===1?500:650);
+  })();
+}
+document.body.insertAdjacentHTML("afterbegin",'<div id="bar"></div>');
+const io=("IntersectionObserver" in window)?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);setTimeout(()=>e.target.style.setProperty("--d","0s"),1600)}}),{threshold:.15,rootMargin:"0px 0px -6% 0px"}):null;
+function tag(sel,type,step,base){$$(sel).forEach((e,i)=>{if(e.dataset.a)return;e.dataset.a=type;e.style.setProperty("--d",((base||0)+i*(step||0))+"s")})}
+function tagAll(){
+  if(!MOTION)return;
+  tag(".hero .lead","up",0,.45);tag(".hero .cta","up",0,.6);tag(".term","right",0,.35);
+  tag("#sobre h2","clip");tag(".final h2","zoom");tag(".lead-form","up",0,.1);tag("section:not(.hero) h2","up");tag("section:not(.hero) .lead","up",0,.12);
+  tag(".svc article","flip",.15);tag(".q","up",.12);tag(".plan","zoom",.15);tag(".host","zoom");tag(".work figure","zoom",.1);tag(".about li","right",.12);
+  $$("[data-a]:not(.in)").forEach(e=>io?io.observe(e):e.classList.add("in"));
+}
+function animH1(){
+  if(!MOTION)return;const h=$("h1");
+  h.innerHTML=h.textContent.split(" ").map((w,i)=>`<span class="w" style="animation-delay:${.1+i*.09}s">${w}</span>`).join(" ");
+}
+if(MOTION){
+  let tick=false;
+  addEventListener("scroll",()=>{if(tick)return;tick=true;requestAnimationFrame(()=>{tick=false;const m=document.documentElement.scrollHeight-innerHeight;$("#bar").style.transform=`scaleX(${m>0?scrollY/m:0})`;hd.classList.toggle("sm",scrollY>40)})},{passive:true});
+  const hero=$(".hero");
+  hero.addEventListener("pointermove",e=>{const r=hero.getBoundingClientRect();hero.style.setProperty("--mx",(e.clientX-r.left)+"px");hero.style.setProperty("--my",(e.clientY-r.top)+"px")});
+}
+if(MOTION&&matchMedia("(hover:hover)").matches){
+  $$(".svc article,.work figure,.host,.plan").forEach(el=>{el.classList.add("spot");el.addEventListener("pointermove",e=>{const r=el.getBoundingClientRect();el.style.setProperty("--x",(e.clientX-r.left)+"px");el.style.setProperty("--y",(e.clientY-r.top)+"px")})});
+  $$(".work figure").forEach(f=>{const a=$("a",f);f.addEventListener("pointermove",e=>{const r=f.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;a.style.setProperty("--ry",(x*10)+"deg");a.style.setProperty("--rx",(-y*10)+"deg")});f.addEventListener("pointerleave",()=>{a.style.setProperty("--rx","0deg");a.style.setProperty("--ry","0deg")})});
+  $$(".btn").forEach(b=>{b.addEventListener("pointermove",e=>{const r=b.getBoundingClientRect();b.style.setProperty("--tx",((e.clientX-r.left-r.width/2)*.2)+"px");b.style.setProperty("--ty",((e.clientY-r.top-r.height/2)*.3)+"px")});b.addEventListener("pointerleave",()=>{b.style.setProperty("--tx","0px");b.style.setProperty("--ty","0px")})});
+}
+$("#lead").addEventListener("submit",e=>{
+  e.preventDefault();
+  const f=e.target,v=n=>f.elements[n].value.trim(),s=n=>T.pt[f.elements[n].selectedOptions[0].dataset.i];
+  const L=[["Nome",v("nome")],["Negócio",v("negocio")],["Tipo de site",s("tipo")],["Situação atual",s("tem")],["Objetivo",s("meta")],["Prazo",s("prazo")],["Logo e fotos",s("midia")],["Referências",v("ref")],["Observações",v("obs")]].filter(x=>x[1]);
+  const msg="Olá! Vim pelo site da Nayco e quero um orçamento.\n\n"+L.map(x=>`*${x[0]}:* ${x[1]}`).join("\n");
+  const u=`https://wa.me/${WHATS}?text=${encodeURIComponent(msg)}`;
+  window.open(u,"_blank","noopener")||(location.href=u);
+});
+let saved=null;try{saved=localStorage.getItem("nayco-lang")}catch(e){}
+setLang(T[saved]?saved:"pt");
+</script>
+</body>
+</html>
+
