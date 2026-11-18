@@ -320,7 +320,7 @@ $$(".lang button").forEach(b=>b.onclick=()=>setLang(b.dataset.l));
 $("#hostPrice").textContent=HOST_PRICE;
 $("#yr").textContent=new Date().getFullYear();
 function card(img,alt,cap,url){
-  const inner=`<img src="img/${img}" alt="${alt}" loading="lazy" onerror="this.style.visibility='hidden'">${cap}`;
+  const inner=`<img src="img/${img}?v=2" alt="${alt}" loading="lazy" onerror="this.style.visibility='hidden'">${cap}`;
   return `<figure>${url?`<a href="${url}" target="_blank" rel="noopener">${inner}</a>`:inner}</figure>`;
 }
 $("#work").innerHTML=WORK.map(w=>card(w[0],w[1],`<figcaption>${w[1]}</figcaption>`,w[2])).join("");
