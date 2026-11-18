@@ -86,6 +86,8 @@ h1{font-size:clamp(36px,5.6vw,62px);margin-bottom:20px}
 .work figure{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg2)}
 .work img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;background:var(--line)}
 .work figcaption{padding:12px 16px;font:500 13px var(--mono);color:var(--mute)}
+.work a{display:block;text-decoration:none;color:inherit}
+.work a figcaption::after{content:" ↗";color:var(--cyan)}
 
 /* about + contact */
 .about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
@@ -219,15 +221,16 @@ const PLANS = [                        // preços de exemplo: ajuste
   {k:"p2", price:"R$ 997", hl:true},
   {k:"p3", price:"R$ 1.497"}
 ];
-const WORK = [                         // sites prontos (imagens em /img/)
-  ["jvautocenter.png","JV Auto Center"],
-  ["mulhergauchatour.png","Mulher Gaúcha Tour"],
-  ["mffconsultoria.png","MFF Consultoria"]
+/* [imagem em /img/, nome, endereço do site]. Endereço vazio = card sem link */
+const WORK = [                         // sites prontos
+  ["./jvautocenter.jpg","JV Auto Center","https://jvautocenter.com.br"],
+  ["mulhergauchatour.jpg","Mulher Gaúcha Tour","https://mulhergauchatour.com.br"],
+  ["mffconsultoria.jpg","MFF Consultoria","https://mffconsultoria.com.br"]
 ];
-const DEMOS = [                        // sites demo: [imagem, chave de texto]
-  ["demo-psicologia.jpg","dn1"],
-  ["demo-dentista.jpg","dn2"],
-  ["demo-barbearia.jpg","dn3"]
+const DEMOS = [                        // sites demo: [imagem, chave de texto, endereço]
+  ["demo-psicologia.jpg","dn1",""],
+  ["demo-dentista.jpg","dn2",""],
+  ["demo-barbearia.jpg","dn3",""]
 ];
 
 /* ===== Textos PT / EN / ES ===== */
@@ -316,8 +319,12 @@ $$(".lang button").forEach(b=>b.onclick=()=>setLang(b.dataset.l));
 
 $("#hostPrice").textContent=HOST_PRICE;
 $("#yr").textContent=new Date().getFullYear();
-$("#work").innerHTML=WORK.map(w=>`<figure><img src="img/${w[0]}" alt="${w[1]}" loading="lazy" onerror="this.style.visibility='hidden'"><figcaption>${w[1]}</figcaption></figure>`).join("");
-$("#demos").innerHTML=DEMOS.map(w=>`<figure><img src="img/${w[0]}" alt="" loading="lazy" onerror="this.style.visibility='hidden'"><figcaption data-i="${w[1]}"></figcaption></figure>`).join("");
+function card(img,alt,cap,url){
+  const inner=`<img src="img/${img}" alt="${alt}" loading="lazy" onerror="this.style.visibility='hidden'">${cap}`;
+  return `<figure>${url?`<a href="${url}" target="_blank" rel="noopener">${inner}</a>`:inner}</figure>`;
+}
+$("#work").innerHTML=WORK.map(w=>card(w[0],w[1],`<figcaption>${w[1]}</figcaption>`,w[2])).join("");
+$("#demos").innerHTML=DEMOS.map(w=>card(w[0],"",`<figcaption data-i="${w[1]}"></figcaption>`,w[2])).join("");
 
 /* Hero: simulação de deploy (único movimento da página) */
 let termTimer;
