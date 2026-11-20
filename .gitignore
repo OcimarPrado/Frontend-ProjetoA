@@ -1,1 +1,15 @@
+# Arquivos originais de imagens
 img/originais/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Ambiente local
+.env
+.venv/
+
+# Arquivos temporários
+*.tmp
+*.log
+.DS_Store
