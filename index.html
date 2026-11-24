@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -272,6 +271,8 @@ section{padding:76px 0}.hero{padding:60px 0 76px}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}#spider-rig{display:none!important}}
 
+#vc{font:400 10px var(--mono);opacity:.25}
+#vc:empty{display:none}
 </style>
 <script>if(!matchMedia("(prefers-reduced-motion:reduce)").matches)document.documentElement.classList.add("js")</script>
 </head>
@@ -528,7 +529,7 @@ section{padding:76px 0}.hero{padding:60px 0 76px}
 </form>
 </main>
 
-<footer><div class="wrap"><span>© <span id="yr">2026</span> Nayco · Canoas, RS</span><span><a href="mailto:contato@nayco.com.br">contato@nayco.com.br</a></span></div></footer>
+<footer><div class="wrap"><span>© <span id="yr">2026</span> Nayco · Canoas, RS</span><span><a href="mailto:contato@nayco.com.br">contato@nayco.com.br</a></span><span id="vc" aria-hidden="true"></span></div></footer>
 
 <a class="wa wa-link" href="https://wa.me/5551980534875?text=Ol%C3%A1!%20Quero%20um%20site%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.1-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3Z"/></svg></a>
 
@@ -910,6 +911,23 @@ if(updateBlackFridayTimer()){
 
 let saved=null;try{saved=localStorage.getItem("nayco-lang")}catch(e){}
 setLang(T[saved]?saved:"pt");
+</script>
+<script>
+(function(){
+  var el=document.getElementById('vc');if(!el)return;
+  try{
+    if(location.hash==='#eu')localStorage.setItem('nayco_me','1');
+    var me=localStorage.getItem('nayco_me');
+    var seen=localStorage.getItem('nayco_seen');
+    var base='https://api.counterapi.dev/v1/nayco.com.br/visitas';
+    fetch(me||seen?base:base+'/up')
+      .then(function(r){return r.json()})
+      .then(function(d){
+        if(!me&&!seen)localStorage.setItem('nayco_seen','1');
+        if(me)el.textContent='#'+(d.count!=null?d.count:d.value);
+      }).catch(function(){});
+  }catch(e){}
+})();
 </script>
 </body>
 </html>
