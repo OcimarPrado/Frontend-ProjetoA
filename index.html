@@ -915,13 +915,13 @@ setLang(T[saved]?saved:"pt");
 <script>
 (function(){
   var el=document.getElementById('vc');if(!el)return;
-  var WS='SEU-WORKSPACE'; /* troque pelo nome do workspace criado em counterapi.dev */
-  if(WS==='SEU-WORKSPACE')return;
+  var WS='ocimar-nunes-do-prados-team-6347';
+  
   try{
     if(location.hash==='#eu')localStorage.setItem('nayco_me','1');
     var me=localStorage.getItem('nayco_me');
     var seen=localStorage.getItem('nayco_seen');
-    var base='https://api.counterapi.dev/v2/'+WS+'/visitas';
+    var base='https://api.counterapi.dev/v2/'+WS+'/first-counter-6347';
     fetch(me||seen?base:base+'/up')
       .then(function(r){return r.json()})
       .then(function(d){
